@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+.out-pick{margin:17px 0 10px 30px;}
+.out-pick ul li{margin-bottom:15px;width:50%;line-height:28px;}
+.out-pick input[type="text"]{border:1px solid #DFE3E9;border-radius:4px;height:26px;width:196px;text-align:center;color:#999;font-size:12px;}
+.out-pick #inpstart,.out-pick #inpend{text-indent:13px;background:url('../img/icon16.png') no-repeat 50px center; background-size:16px 16px;width:196px; letter-spacing:0;}
+.out-pick ul li .pick-span{margin-right:10px;width:90px;}
+.out-pick ul li .add-to{width:59px;height:20px;line-height:20px;background:#DFE1E5;color:#666;border-radius:3px;}
+.Sale .select2-container{margin-right:20px;}
+.out-bottom {margin-bottom:25px;}
+.out-bottom .bottom-span{width:90px;margin-right:10px;line-height:22px;}
+.out-bottom textarea{border:1px solid #DFE3E9;border-radius:4px;height:50px;width:607px;text-align:left;color:#999;font-size:12px;padding:25px 25px; vertical-align:middle;}
+.out-bottom .reimbursement{border:1px solid #DFE3E9;border-radius:5px;width:650px;height:140px; vertical-align:middle;padding-top:8px;padding-left:8px;}
+.out-bottom .reimbursement p{margin:10px 0 10px 10px;}
+.out-bottom input[type="checkbox"]{width:16px;height:16px;vertical-align:middle;}
+.out-bottom input[type="text"]{width:74px;height:26px;border:1px solid #DFE3E9;border-radius:4px;text-align:center;color:#999;font-size:12px;margin:0 4px;}
+.reimbursement p span{height:16px;line-height:16px;background:url('../img/icon21.png') no-repeat left center; background-size:16px 16px;text-indent:23px;}
+.reimbursement p span.active{background:url('../img/icon20.png') no-repeat left center; background-size:16px 16px; }
+
+/* 添加出差人弹窗 */
+.out-people{width:312px;height:534px;top:50%;left:50%;margin-top:-267px;margin-left:-156px;border-radius:6px;z-index:100; overflow:hidden;}
+.out-people h5{height:42px;line-height:42px;border-radius:4px;background:#46AFE8;border-radius:6px;}
+
+

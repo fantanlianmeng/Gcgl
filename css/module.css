@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+/* 头部 */
+.herder{width:100%;height:59px;background:url('../img/bg1.png') repeat left center; background-size:1366px 59px;min-width:530px;}
+.herder .logo{width:278px;height:59px;background:url('../img/logo.png') no-repeat center center; background-size:278px 33px;margin-left:20px;}
+.herder .herder-right{margin-right:28px;margin-top:18px;}
+.herder .herder-right span{height:18px;line-height:18px;border-right:2px solid #fff;padding-right:13px;margin-right:7px;}
+.herder .herder-right a{color:#fff;}
+
+/* 侧边栏 */
+.sidebar{width:187px;border-top:1px solid #CFCFCF;border-bottom:1px solid #D5D5D5;border-right:1px solid #D5D5D5;border-bottom-right-radius:5px;border-top-right-radius:5px;margin:5px 5px 0 0;padding-top:5px;padding-right:11px;transition:0.5s;-webkit-transition:0.5s;-mos-transition:0.5s;-mz-transition:0.5s;-o-transition:0.5s;}
+.sidebar ul{margin-left:5px;overflow:hidden;white-space:nowrap;}
+.sidebar ul li{margin-bottom:5px;}
+.sidebar ul li p{width:180px;height:45px;line-height:45px;border:1px solid #D5D5D5;background:#EFEFEF;border-radius:5px;}
+.sidebar ul li p img{vertical-align:sub;margin:0 7px 0 14px;}
+.sidebar ul li p i{top:20px;right:15px;width:10px;height:6px;background:url('../img/icon7.png') no-repeat center center; background-size:10px 6px;transition:0.5s;-webkit-transition:0.5s;-mos-transition:0.5s;-mz-transition:0.5s;-o-transition:0.5s;}
+.sidebar ul li p.active i{transform:rotate(180deg);-ms-transform:rotate(180deg);-moz-transform:rotate(180deg);-webkit-transform:rotate(180deg);-o-transform:rotate(180deg);}
+.sidebar ul li .subnav a{color:#5a5a5a;text-indent:16px;height:44px;line-height:44px;margin-top:5px;}
+.sidebar ul li .subnav a.subnav-active{background:#3EABE7;color:#fff;}
+.sidebar .picbox{top:0;right:0;width:11px;height:100%;background:url('../img/icon8.png') no-repeat center center; background-size:7px 8px;}
+.sidebar .picbox.picbox-active{transform:rotate(180deg);-ms-transform:rotate(180deg);-moz-transform:rotate(180deg);-webkit-transform:rotate(180deg);-o-transform:rotate(180deg);}
+
+
+/* 提示消息 */
+.notice{bottom:3px;right:3px;width:324px;height:174px;border:1px solid #DFDFDF;border-radius:5px;}
+.notice i{top:6px;right:6px;width:16px;height:16px;background:url('../img/icon9.png') no-repeat center center; background-size:16px 16px;}
+.notice h4{height:27px;line-height:27px;background:#3EABE7;border-radius:5px;margin-bottom:10px;}
+.notice a{color:#666;height:30px;line-height:30px;padding:0 10px;margin:1px 0;}
+.notice a:hover{color:#333;}
+
+/* 搜索 */
+.content{border:1px solid #CFCFCF;border-radius:5px;margin-top:5px;padding-bottom:20px;overflow: auto;}
+.content .crumbs{margin:20px 0 10px 10px;}
+.content .crumbs span{color:#3eabe7;}
+.content .search{margin:10px 0 0 10px;margin-bottom:21px;}
+.content .search .ad-box span{color:#5a5a5a;margin-right:2px;width:98px;text-align:right}
+.content .search input[type="text"]{width:202px;height:31px;border:1px solid #CFCFCF;border-radius:5px;text-indent:10px;margin-right:10px;}
+.content .search a{color:#fff;background:#3EABE7;width:102px;height:27px;line-height:27px;border-radius:5px;margin-right:20px;margin-top:5px;}
+.content .search a.export{background:#F2F4F7;border:1px solid #DDDEE5;color:#999;}
+
+/* 分页 */
+.paging a{display:inline-block;padding:3px 6px;border:1px solid #DDD;color:#999;margin:0 1px;}
+.paging a.number{width:27px;height:27px;line-height:27px;padding:0;}
+.paging a.number-active{background:#2D8AC2;color:#e0e0e0;}
+.paging span{margin:0 10px;}
+.paging .obtain{width:41px;height:20px;border:1px solid #DDD;color:#646464;margin:0 5px;text-align:center;}
+
+/* 筛选器 */
+.pick{margin:17px 0 10px 10px;height:28px;line-height:28px;}
+.pick input{border:1px solid #DFE3E9;border-radius:4px;height:26px;width:101px;text-align:center;color:#999;}
+.pick input[name="time"]{text-indent:13px;background:url('../img/icon16.png') no-repeat 3px center; background-size:16px 16px;width:100px; letter-spacing:0;}
+.pick ul li{margin-right:17px;margin-bottom:10px;}
+.pick ul li .pick-span{margin-right:5px;}
+
+
+/* 共用盒子 */
+.add-submit{width:103px;height:26px;line-height:26px;color:#fff;border-radius:4px;background:#3EABE7;margin:20px 25px 20px;}
+.add-nav{width:100%;height:38px;line-height:38px;background:url('../img/bg2.png') repeat left center; background-size:1163px 38px;text-indent:17px;}
+.asterisk{ vertical-align:middle;margin-left:10px;}
+
+

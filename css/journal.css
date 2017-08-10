@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+/* 内容 */
+/* 日志汇报 */
+.report-table {margin:10px 15px 15px 15px;}
+.report-table table{background:#E2E2E2;}
+.report-table tr td{background:#fff;height:36px;padding:10px 5px;min-width:90px;}
+.pick,.report-table{max-width:1200px;}
+.pick ul .devotion-time{color:#ec6941;margin-right:20px;}
+.datainp{ width:200px; height:30px; border:1px #ccc solid;}
+
+/* 日志动态 */
+.trends-table{margin:10px 15px 15px 15px;}
+.trends-table table{background:#E2E2E2;}
+.trends-table tr th{background:#fff;height:35px;min-width:50px;}
+.trends-table tr td{background:#fff;height:55px;min-width:50px;}
+.trends-table td a{height:22px;width:120px;line-height:22px;color:#666;display:inline-block;background:#DFE1E5;border-radius:4px;}
+.trends-table td a:hover{color:#000;}
+
+/* 我的工作日志 */
+.cycle a{height:31px;line-height:35px;width:62px;color:#999;margin-bottom:13px;}
+.cycle a:hover{color:#666;}
+.cycle .up{background:url('../img/icon17.png') no-repeat right center; background-size:28px 31px;margin-right:15px;}
+.cycle .down{background:url('../img/icon18.png') no-repeat left center; background-size:28px 31px;}
+.mylog-table .data-head{height:38px;line-height:38px;background:url('../img/bg2.png') repeat left center; background-size:1163px 38px;}
+.mylog-table table{margin-bottom:20px;}
+.mylog-table table th{padding:0 10px;max-width:128px;white-space:nowrap;}
+.mylog-table table td{font-size:12px;border-bottom:1px solid #E7E7E7;border-right:1px solid #E7E7E7;padding:15px 10px 15px 10px;min-width:82px;line-height:22px;}
+.postil a{color:#fff;width:70px;height:27px;line-height:27px;border-radius:3px;margin:0 25px;background:#3EABE7;}
+
+
+
+
+
+
+

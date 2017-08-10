@@ -1,0 +1,648 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>工程项目管理平台</title>
+<link href="css/base-pc.css" rel="stylesheet" type="text/css">
+<link href="css/module.css" rel="stylesheet" type="text/css">
+<link href="css/project-manage.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="p-r">
+	<div class="herder">
+    	<div class="logo d-ib f-l"></div>
+        <div class="herder-right d-ib f-r c-f fs-16 p-r">
+        	<span class="d-ib">您好，管理员</span>
+            <a href="javascript:;" class="d-ib">退出</a>
+        </div>
+        <div class="c-b"></div>
+    </div>
+	
+    <div class="sidebar d-ib f-l p-r o-h">
+    	<ul class="fs-14 c-3">
+        	<li>
+            	<p class="p-r active"><img src="img/icon1.png" alt="">项目管理<i class="d-ib p-a"></i></p>
+                <div class="subnav">
+                	<a href="javascript:;" class="d-b">新建项目</a>
+                    <a href="javascript:;" class="d-b subnav-active">项目管理</a>
+                    <a href="javascript:;" class="d-b">项目总览</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon2.png" alt="">日志管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">日志汇报</a>
+                    <a href="javascript:;" class="d-b">日志动态</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon3.png" alt="">出差管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">出差申请</a>
+                    <a href="javascript:;" class="d-b">出差汇报</a>
+                    <a href="javascript:;" class="d-b">出差动态</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon4.png" alt="">文档管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">文档管理</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon5.png" alt="">运维管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">运维计划</a>
+                    <a href="javascript:;" class="d-b">运维处理</a>
+                    <a href="javascript:;" class="d-b">运维动态</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon6.png" alt="">系统管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">用户管理</a>
+                    <a href="javascript:;" class="d-b">角色管理</a>
+                    <a href="javascript:;" class="d-b">参数配置</a>
+                </div>
+            </li>
+        </ul>
+        <div class="picbox p-a"></div>
+    </div>
+    
+    <div class="content">
+    	<p class="crumbs">您当前的位置：项目管理 &gt; <span>项目管理</span></p>
+        <div class="sheet">
+            <div class="search fs-14">
+                <div class="search-input d-ib">
+                    <span class="d-ib">站点名称：</span>
+                    <input type="text">
+                </div>
+                <a href="javascript:;" class="d-ib ta-c">查询</a>
+                <a href="javascript:;" class="ad-search d-ib ta-l">高级搜索 <img src="img/icon12.png"></a>
+                <div class="ad-box d-n">
+                    <div class="search-input d-ib">
+                        <span class="d-ib">建档日期：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">客户名称：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">合同编号：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">订单编号：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">项目类型：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">设备型号：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">设备数量：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">项目周期：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">立项日期：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">收款状态：</span>
+                        
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">付款方式：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">项目经理：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">项目归属：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">运维周期：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">质保周期：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">业务经理：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">售前支持：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">结项日期：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">所属部门：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">项目服务类型：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">产品类型：</span>
+                        <input type="text">
+                    </div>
+                    <div class="search-input d-ib">
+                        <span class="d-ib">项目阶段：</span>
+                        <input type="text">
+                    </div>
+
+                </div>
+            </div>
+            <div class="manage-table">
+                <table cellspacing="0" cellpadding="0" class="ta-c w">
+                    <tbody>
+                        <tr class="data-head fs-14 c-f">
+                            <th>状态</th>
+                            <th>项目名称</th>
+                            <th>客户名称</th>
+                            <th>产品类型</th>
+                            <th>设备数量</th>
+                            <th>项目经理</th>
+                            <th>业务经理</th>
+                            <th>项目阶段</th>
+                            <th>项目最新进展</th>
+                            <th>项目遗留问题</th>
+                            <th>客户反馈/评价</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td><img src="img/icon13.png" alt="" class="dot"></td>
+                            <td>安徽60套老CMA 图片设备项目</td>
+                            <td>国网富达</td>
+                            <td>视频产品</td>
+                            <td>60</td>
+                            <td>张雪峰</td>
+                            <td>尹永海</td>
+                            <td>项目运维</td>
+                            <td>已安装20套设备</td>
+                            <td>客户临时通知现场杆 塔变更，常规安… </td>
+                            <td class="f_cA">设备运行不稳定</td>
+                            <td>
+                                <a href="javascript:;" class="d-b">查看详情</a>
+                                <a href="javascript:;" class="d-b">站点管理</a>
+                                <i class="d-b c-p"></i>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td><img src="img/icon14.png" alt="" class="dot"></td>
+                            <td>安徽60套老CMA 图片设备项目</td>
+                            <td>国网富达</td>
+                            <td>视频产品</td>
+                            <td>60</td>
+                            <td>张雪峰</td>
+                            <td>尹永海</td>
+                            <td>项目运维</td>
+                            <td>已安装20套设备</td>
+                            <td>客户临时通知现场杆 塔变更，常规安… </td>
+                            <td class="f_cA">设备运行不稳定</td>
+                            <td>
+                                <a href="javascript:;" class="d-b">查看详情</a>
+                                <a href="javascript:;" class="d-b">站点管理</a>
+                                <a href="javascript:;" class="d-b">日志管理</a>
+                                <a href="javascript:;" class="d-b">出差汇报</a>
+                                <a href="javascript:;" class="d-b">运维汇报</a>
+                                <a href="javascript:;" class="d-b">文档管理</a>
+                                <a href="javascript:;" class="stage d-b">阶段总结</a>
+                                <i class="d-b c-p operate-active"></i>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td><img src="img/icon13.png" alt="" class="dot"></td>
+                            <td>安徽60套老CMA 图片设备项目</td>
+                            <td>国网富达</td>
+                            <td>视频产品</td>
+                            <td>60</td>
+                            <td>张雪峰</td>
+                            <td>尹永海</td>
+                            <td>项目运维</td>
+                            <td>已安装20套设备</td>
+                            <td>客户临时通知现场杆 塔变更，常规安… </td>
+                            <td class="f_cA">设备运行不稳定</td>
+                            <td>
+                                <a href="javascript:;" class="d-b">查看详情</a>
+                                <a href="javascript:;" class="d-b">站点管理</a>
+                                <i class="d-b c-p"></i>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td><img src="img/icon13.png" alt="" class="dot"></td>
+                            <td>安徽60套老CMA 图片设备项目</td>
+                            <td>国网富达</td>
+                            <td>视频产品</td>
+                            <td>60</td>
+                            <td>张雪峰</td>
+                            <td>尹永海</td>
+                            <td>项目运维</td>
+                            <td>已安装20套设备</td>
+                            <td>客户临时通知现场杆 塔变更，常规安… </td>
+                            <td class="f_cA">设备运行不稳定</td>
+                            <td>
+                                <a href="javascript:;" class="d-b">查看详情</a>
+                                <a href="javascript:;" class="d-b">站点管理</a>
+                                <i class="d-b c-p"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="paging ta-c fs-14 c-9">
+                    <a href="javascript:;">首页</a>
+                    <a href="javascript:;">上一页</a>
+                    <a href="javascript:;" class="number number-active">1</a>
+                    <a href="javascript:;" class="number">2</a>
+                    <a href="javascript:;" class="number">3</a>
+                    <a href="javascript:;">下一页</a>
+                    <a href="javascript:;">尾页</a>
+                    <span class="d-ib">共1页/2条数据</span>
+                    跳转<input type="text" class="obtain" value="1">页
+                </div>
+            </div>
+        </div>
+		
+        <!--阶段管理-->
+        <div class="new-summary d-n">
+            <a href="javascript:;" class="summary-a d-ib ta-c">新建总结</a>
+            <div class="manage-table">
+                <table cellspacing="0" cellpadding="0" class="ta-c w">
+                    <tbody>
+                        <tr class="data-head fs-14 c-f">
+                            <th>序号</th>
+                            <th>阶段总结日期</th>
+                            <th>项目最新进展</th>
+                            <th>项目遗留问题</th>
+                            <th>客户反馈/评价</th>
+                            <th>备注</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>1</td>
+                            <td>2017-04-21</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">编辑</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>2</td>
+                            <td>2017-04-21</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">编辑</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>3</td>
+                            <td>2017-04-21</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">编辑</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="paging ta-c fs-14 c-9">
+                    <a href="javascript:;">首页</a>
+                    <a href="javascript:;">上一页</a>
+                    <a href="javascript:;" class="number number-active">1</a>
+                    <a href="javascript:;" class="number">2</a>
+                    <a href="javascript:;" class="number">3</a>
+                    <a href="javascript:;">下一页</a>
+                    <a href="javascript:;">尾页</a>
+                    <span class="d-ib">共1页/2条数据</span>
+                    跳转<input type="text" class="obtain" value="1">页
+                </div>
+            </div>
+        </div>
+        
+        <!--站点管理-->
+        <div class="new-summary d-n">
+            <div class="search fs-14">
+                <div class="search-input d-ib">
+                    <span class="d-ib">项目名称：</span>
+                    <input type="text">
+                </div>
+                <a href="javascript:;" class="d-ib ta-c">查询</a>
+                <a href="javascript:;" class="d-ib ta-c">添加站点</a>
+                <a href="javascript:;" class="export d-ib ta-c">导出表格</a>
+            </div>
+            <div class="manage-table">
+                <table cellspacing="0" cellpadding="0" class="ta-c w">
+                    <tbody>
+                        <tr class="data-head fs-14 c-f">
+                            <th>序号</th>
+                            <th>省份</th>
+                            <th>地区</th>
+                            <th>站点名称</th>
+                            <th>设备MN号</th>
+                            <th>安装人员</th>
+                            <th>安装日期</th>
+                            <th>通讯网络</th>
+                            <th>设备SIM卡号</th>
+                            <th>SIM网络</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>1</td>
+                            <td>2017-04-21</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                            	<a href="javascript:;" class="d-ib">详情</a>
+                                <a href="javascript:;" class="d-ib">编辑</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>1</td>
+                            <td>2017-04-21</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                            	<a href="javascript:;" class="d-ib">详情</a>
+                                <a href="javascript:;" class="d-ib">编辑</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>1</td>
+                            <td>2017-04-21</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                            	<a href="javascript:;" class="d-ib">详情</a>
+                                <a href="javascript:;" class="d-ib">编辑</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="paging ta-c fs-14 c-9">
+                    <a href="javascript:;">首页</a>
+                    <a href="javascript:;">上一页</a>
+                    <a href="javascript:;" class="number number-active">1</a>
+                    <a href="javascript:;" class="number">2</a>
+                    <a href="javascript:;" class="number">3</a>
+                    <a href="javascript:;">下一页</a>
+                    <a href="javascript:;">尾页</a>
+                    <span class="d-ib">共1页/2条数据</span>
+                    跳转<input type="text" class="obtain" value="1">页
+                </div>
+            </div>
+        </div>
+        
+        <!--添加站点-->
+        <div class="new-site ta-c d-n">
+            <h5 class="fs-14 c-f ta-l">详情</h5>
+            <table cellspacing="0" cellpadding="0" class="ta-c w">
+                <tbody>
+                    <tr class="fs-12 c-6 ta-l">
+                        <td>省份</td>
+                        <td><input type="text" value="浙江省"></td>
+                        <td>地区</td>
+                        <td><input type="text" value=""></td>
+                        <td>站点名称</td>
+                        <td><input type="text" value=""></td>
+                        <td>设备MN号</td>
+                        <td><input type="text" value=""></td>
+                        <td>安装人员</td>
+                        <td><input type="text" value=""></td>
+                    </tr>
+                    <tr class="fs-12 c-6 ta-l">
+                        <td>安装日期</td>
+                        <td><input type="text" value=""></td>
+                        <td>通讯网络</td>
+                        <td><input type="text" value=""></td>
+                        <td>设备SIM卡号</td>
+                        <td><input type="text" value=""></td>
+                        <td>SIM网络</td>
+                        <td><input type="text" value=""></td>
+                        <td>设备IP地址</td>
+                        <td><input type="text" value=""></td>
+                    </tr>
+                    <tr class="fs-12 c-6 ta-l">
+                        <td>设备端口</td>
+                        <td><input type="text" value=""></td>
+                        <td>第一中心上报IP</td>
+                        <td><input type="text" value=""></td>
+                        <td>第一中心上报端口</td>
+                        <td><input type="text" value=""></td>
+                        <td>第二中心上报IP</td>
+                        <td><input type="text" value=""></td>
+                        <td>第二中心上报端口</td>
+                        <td><input type="text" value=""></td>
+                    </tr>
+                    <tr class="fs-12 c-6 ta-l">
+                        <td>平台访问地址</td>
+                        <td><input type="text" value=""></td>
+                        <td>用户名</td>
+                        <td><input type="text" value=""></td>
+                        <td>密码</td>
+                        <td><input type="text" value=""></td>
+                        <td>设备程序版本</td>
+                        <td><input type="text" value=""></td>
+                        <td>硬件详细配置</td>
+                        <td><input type="text" value=""></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="add-photos ta-c">
+                <div class="photos-box d-ib">
+                    <a href="javascript:;" class="d-ib"></a>
+                </div>
+                <div class="photos-box d-ib">
+                    <a href="javascript:;" class="d-ib"></a>
+                </div>
+                <div class="photos-box d-ib">
+                    <a href="javascript:;" class="d-ib"></a>
+                </div>
+                <div class="photos-box d-ib">
+                    <a href="javascript:;" class="d-ib"></a>
+                </div>
+            </div>
+            <a href="javascript:;" class="keep d-ib">保存</a>
+        </div>
+        
+        <!--站点详情-->
+        <div class="new-site ta-c d-n">
+            <h5 class="fs-14 c-f ta-l">详情</h5>
+            <table cellspacing="0" cellpadding="0" class="ta-c w">
+                <tbody>
+                    <tr class="fs-12 c-6 ta-l">
+                        <td>省份</td>
+                        <td>浙江省</td>
+                        <td>地区</td>
+                        <td>浙江省</td>
+                        <td>站点名称</td>
+                        <td>浙江省</td>
+                        <td>设备MN号</td>
+                        <td>浙江省</td>
+                        <td>安装人员</td>
+                        <td>浙江省</td>
+                    </tr>
+                    <tr class="fs-12 c-6 ta-l">
+                        <td>安装日期</td>
+                        <td></td>
+                        <td>通讯网络</td>
+                        <td></td>
+                        <td>设备SIM卡号</td>
+                        <td></td>
+                        <td>SIM网络</td>
+                        <td></td>
+                        <td>设备IP地址</td>
+                        <td></td>
+                    </tr>
+                    <tr class="fs-12 c-6 ta-l">
+                        <td>设备端口</td>
+                        <td></td>
+                        <td>第一中心上报IP</td>
+                        <td></td>
+                        <td>第一中心上报端口</td>
+                        <td></td>
+                        <td>第二中心上报IP</td>
+                        <td></td>
+                        <td>第二中心上报端口</td>
+                        <td></td>
+                    </tr>
+                    <tr class="fs-12 c-6 ta-l">
+                        <td>平台访问地址</td>
+                        <td></td>
+                        <td>用户名</td>
+                        <td></td>
+                        <td>密码</td>
+                        <td></td>
+                        <td>设备程序版本</td>
+                        <td></td>
+                        <td>硬件详细配置</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="add-photos fa-14 ta-c">
+                <div class="photos-box reveal d-ib">
+                    <a href="javascript:;" class="d-ib">显示照片</a>
+                </div>
+                <div class="photos-box reveal d-ib">
+                    <a href="javascript:;" class="d-ib">显示照片</a>
+                </div>
+                <div class="photos-box reveal d-ib">
+                    <a href="javascript:;" class="d-ib">显示照片</a>
+                </div>
+                <div class="photos-box reveal d-ib">
+                    <a href="javascript:;" class="d-ib">显示照片</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--提示消息-->
+    <div class="notice p-f fs-12 bg-f">
+    	<i class="close p-a"></i>
+        <h4 class="fs-14 c-f ta-c">提示消息</h4>
+        <a href="javascript:;" class="d-b">
+        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
+            <span class="f-r">2017-10-21</span>
+        </a>
+        <a href="javascript:;" class="d-b">
+        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
+            <span class="f-r">2017-10-21</span>
+        </a>
+        <a href="javascript:;" class="d-b">
+        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
+            <span class="f-r">2017-10-21</span>
+        </a>
+    </div>
+    
+     
+</body>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script>
+	//提示消息
+	$(".close").click(function(){
+		$(".notice").fadeOut();
+	})
+	//侧边栏
+	$(".sidebar ul li p").click(function(){
+		$(this).next(".subnav").slideToggle();
+		if($(this).hasClass("active")){
+			$(this).removeClass("active");
+		}else{
+			$(this).addClass("active");
+		}
+	})
+	$(".picbox").click(function(){
+		var sidebar_width = $(".sidebar").width();
+		if(sidebar_width === 0){
+			$(".sidebar").css({"width":"187px"});
+			$(".picbox").removeClass("picbox-active");
+		}else{
+			$(".sidebar").css({"width":"0px"});
+			$(".picbox").addClass("picbox-active");	
+		}
+	})
+	//高级搜索
+	$(".ad-search").click(function(){
+		$(this).next(".ad-box").toggle();
+	})
+	
+	//内容跳转
+	$(".stage").click(function(){
+		$(".new-summary").show();
+		$(".sheet").hide();	
+	})
+	
+</script>
+
+</html>

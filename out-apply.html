@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>工程项目管理平台</title>
+<link href="css/base-pc.css" rel="stylesheet" type="text/css">
+<link href="css/module.css" rel="stylesheet" type="text/css">
+<link href="css/select2.css" rel="stylesheet" type="text/css">
+<link href="My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css">
+<link href="css/out.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="p-r">
+	<div class="herder">
+    	<div class="logo d-ib f-l"></div>
+        <div class="herder-right d-ib f-r c-f fs-16 p-r">
+        	<span class="d-ib">您好，管理员</span>
+            <a href="javascript:;" class="d-ib">退出</a>
+        </div>
+        <div class="c-b"></div>
+    </div>
+	
+    <div class="sidebar d-ib f-l p-r o-h">
+    	<ul class="fs-14 c-3">
+        	<li>
+            	<p class="p-r active"><img src="img/icon1.png" alt="">项目管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">新建项目</a>
+                    <a href="javascript:;" class="d-b">项目管理</a>
+                    <a href="javascript:;" class="d-b">项目总览</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon2.png" alt="">日志管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">日志汇报</a>
+                    <a href="javascript:;" class="d-b">日志动态</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon3.png" alt="">出差管理<i class="d-ib p-a"></i></p>
+                <div class="subnav">
+                	<a href="javascript:;" class="d-b subnav-active">出差申请</a>
+                    <a href="javascript:;" class="d-b">出差汇报</a>
+                    <a href="javascript:;" class="d-b">出差动态</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon4.png" alt="">文档管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">文档管理</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon5.png" alt="">运维管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">运维计划</a>
+                    <a href="javascript:;" class="d-b">运维处理</a>
+                    <a href="javascript:;" class="d-b">运维动态</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon6.png" alt="">系统管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">用户管理</a>
+                    <a href="javascript:;" class="d-b">角色管理</a>
+                    <a href="javascript:;" class="d-b">参数配置</a>
+                </div>
+            </li>
+        </ul>
+        <div class="picbox p-a"></div>
+    </div>
+    
+    <div class="content">
+    	<p class="crumbs">您当前的位置：日志管理 &gt; <span>日志汇报</span></p>
+      
+        <!--日志汇报-->
+        <div class="add-out ta-c">
+        	<form action="">
+                <p class="add-nav fs-14 c-f ta-l">出差申请单</p>
+                <div class="out-pick fs-12 c-9 ta-l">
+                    <ul class="lif-l w">
+                        <li class="d-ib">
+                            <span class="pick-span d-ib c-6">出差申请人：</span>
+                            <p class="datep d-ib">李一一</p>
+                        </li>
+                        <li class="d-ib">
+                            <span class="pick-span d-ib c-6">拟派出差人：</span>
+                            <a href="#" class="add-to d-ib ta-c">添加</a>
+                            <img src="img/icon19.png" alt="" class="asterisk">
+						</li>
+                        <li class="d-ib">
+                            <span class="pick-span d-ib c-6">出差地点：</span>
+                            <div class="d-ib" data-toggle="distpicker">
+                                <select class="js-select100 select-normal" id="province1"></select>
+                                <select class="js-select100 select-normal" id="city1"></select>
+                                <select class="js-select100 select-normal" id="district1"></select>
+                                <div class="c-b"></div>
+                            </div>
+                        </li>
+                        <li class="d-ib Sale">
+                            <span class="pick-span d-ib c-6">所属销售：</span>
+                            <select class="js-A1-slt1 select-normal" name="worktype" id="province">
+                                <option>请选择</option>
+                                <option>请选择</option>
+                            </select>
+                            <select class="js-A1-slt1 select-normal city" name="worktype1">
+                            	<option>请选择</option>
+                                <option>请选择</option>
+                            </select>
+                            <select class="js-A1-slt1 select-normal city" name="worktype2">
+                                <option>请选择</option>
+                                <option>请选择</option>
+                            </select>
+                            <img src="img/icon19.png" alt="" class="asterisk">
+                        </li>
+                        <li class="d-ib">
+                            <span class="pick-span d-ib c-6">所属项目：</span>
+                            <select class="js-select200 select-normal" name="branch">
+                                <option>PC软件部</option>
+                                <option>请选择</option>
+                            </select>
+                        </li>
+                        <li class="d-ib">&nbsp</li>
+                        <li class="d-ib">
+                            <span class="pick-span d-ib c-6">所用产品：</span>
+                            <input type="text" value="自动选择">
+                        </li>
+                        <li class="d-ib">
+                            <span class="pick-span d-ib c-6">客户名称：</span>
+                            <input type="text" value="自动选择">
+                        </li>
+                        <li class="d-ib">
+                            <span class="pick-span d-ib c-6">联系人：</span>
+                            <select class="js-select200 select-normal" name="branch">
+                                <option>小张</option>
+                                <option>请选择</option>
+                            </select>
+                            <img src="img/icon19.png" alt="" class="asterisk">
+                        </li>
+                        <li class="d-ib">
+                            <span class="pick-span d-ib c-6">联系方式：</span>
+                            <input type="text" value="联系方式">
+                            <img src="img/icon19.png" alt="" class="asterisk">
+                        </li>
+                        <li class="d-ib">
+                            <span class="pick-span d-ib c-6">电子邮箱：</span>
+                            <input type="text" value="电子邮箱">
+                        </li>
+                        <li class="d-ib">
+                            <span class="pick-span d-ib c-6">QQ/MSN号：</span>
+                            <input type="text" value="QQ/MSN号">
+                        </li>
+                        <li class="d-ib">
+                            <span class="pick-span d-ib c-6">预计开始时间：</span>
+                            <input id="inpstart" name="time1" type="text" value="" placeholder="请选择"  readonly>
+                            <img src="img/icon19.png" alt="" class="asterisk">
+                        </li>
+                        <li class="d-ib">
+                            <span class="pick-span d-ib c-6">预计结束时间：</span>
+                            <input id="inpend" name="time2" type="text" value="" placeholder="请选择"  readonly>
+                            <img src="img/icon19.png" alt="" class="asterisk">
+                        </li>
+                        <div class="c-b"></div>
+                    </ul>
+                    <div class="out-bottom">
+                    	<span class="d-ib c-6 bottom-span">出差事由及 <br /> 解决问题:</span>
+                        <textarea rows="10" cols="30">请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择择请选择请选择请选择</textarea>
+                    </div>
+                    <div class="out-bottom">
+                    	<span class="d-ib c-6 bottom-span">交通工具:</span>
+                        <select class="js-select150 select-normal" name="branch">
+                            <option>飞机</option>
+                            <option>火车</option>
+                        </select>
+                    </div>
+                    <div class="out-bottom">
+                    	<span class="d-ib c-6 bottom-span">差旅费报销方式:</span>
+                        <div class="reimbursement d-ib">
+                        	<p>
+                        		<label>
+                                	<input name="Fruit" type="checkbox" value="" class="d-n"/>
+                                	<span class="d-ib active">我司全额支付</span>
+                                </label>
+                            </p>
+                            <p>
+                            	<label>
+                                	<input name="Fruit" type="checkbox" value="" class="d-n"/>
+                                    <span class="d-ib">我方先垫付，客户支付</span>
+                                    ( <input name="Fruit" type="checkbox" value="" />单程车票 )
+                                </label>
+                            </p>
+                            <p>
+                            	<label>
+                                	<input name="Fruit" type="checkbox" value="" class="d-n"/>
+                                    <span class="d-ib">无需垫付，客户提供</span>
+                                </label>
+                           	</p>
+                            <p>
+                            	<label>
+                                	<input name="Fruit" type="checkbox" value="" class="d-n"/>
+                                    <span class="d-ib">客户统一向公司支付每人每日</span>
+                                <input type="text" value="100">元人员安装费</label>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+				
+                <div>
+                    <a href="javascript:;" class="add-submit d-ib ta-c fs-14">重置</a>
+                    <a href="javascript:;" class="add-submit d-ib ta-c fs-14">提交</a>
+                </div>
+            </form>
+
+        </div>
+        
+    </div>
+	
+    <!--添加出差人-->
+    <div class="out-people bg-f p-f">
+    	<h5 class="fs-14 c-f ta-c">添加出差人</h5>
+    </div>
+    
+    <!--提示消息-->
+    <div class="notice p-f fs-12 bg-f">
+    	<i class="close p-a"></i>
+        <h4 class="fs-14 c-f ta-c">提示消息</h4>
+        <a href="javascript:;" class="d-b">
+        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
+            <span class="f-r">2017-10-21</span>
+        </a>
+        <a href="javascript:;" class="d-b">
+        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
+            <span class="f-r">2017-10-21</span>
+        </a>
+        <a href="javascript:;" class="d-b">
+        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
+            <span class="f-r">2017-10-21</span>
+        </a>
+    </div>
+    
+    <!--添加联系人信息弹窗-->
+    <div class="mask p-f"></div>
+    <div class="information bg-f p-f o-h d-n">
+    	<h5 class="fs-14 c-f ta-c">添加联系人信息</h5>
+        <div class="information-box ta-l">
+        	<div class="d-ib f-l">
+                <span class="d-ib fs-12 c-6">客户联系人</span>
+                <input type="text" name="created-date" value="小小陈">
+            </div>
+            <div class="d-ib f-l">
+                <span class="d-ib fs-12 c-6">职位</span>
+                <input type="text" name="created-date" value="项目经理">
+            </div>
+            <div class="d-ib f-l">
+                <span class="d-ib fs-12 c-6">职责</span>
+                <input type="text" name="created-date" value="项目经理">
+            </div>
+            <div class="d-ib f-l">
+                <span class="d-ib fs-12 c-6">手机号</span>
+                <input type="text" name="created-date" value="15126468975">
+            </div>
+            <div class="d-ib f-l">
+                <span class="d-ib fs-12 c-6">邮箱</span>
+                <input type="text" name="created-date" value="761115495@qq.com">
+            </div>
+            <div class="d-ib f-l">
+                <span class="d-ib fs-12 c-6">座机</span>
+                <input type="text" name="created-date" value="3326546">
+            </div>
+            <p class="c-b"></p>
+        </div>
+        <div class="information-a ta-c fa-14">
+        	<a href="javascript:;" class="cancel d-ib">取消</a>
+            <a href="javascript:;" class="confirm d-ib">保存</a>
+        </div>
+    </div>
+     
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/select2_option.js"></script>
+<script src="jeDate/jedate.js"></script>
+<script src="js/distpicker.data.js"></script>
+<script src="js/distpicker.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+	//时间控件
+	jeDate({
+		dateCell:"#inpstart",
+		format:"YYYY-MM-DD",
+		isinitVal:true,
+		minDate:"2014-09-19"
+	})	
+	jeDate({
+		dateCell:"#inpend",
+		format:"YYYY-MM-DD",
+		isinitVal:true,
+		minDate:"2014-09-19"
+	})		
+		
+	//下拉框两级联动
+	var currentShowCity = 0;
+	$(document).ready(function() {
+		$("#province").change(function() {
+			$("#province option").each(function(i, o) {
+				if ($(this).attr("selected")){
+					$(".city").next("span").hide();
+					$(".city").eq(i).next("span").show();
+					currentShowCity = i;
+				}
+			});
+		});
+		$("#province").change();
+	});
+	
+	//提示消息
+	$(".close").click(function(){
+		$(".notice").fadeOut();
+	})
+	//侧边栏
+	$(".sidebar ul li p").click(function(){
+		$(this).next(".subnav").slideToggle();
+		if($(this).hasClass("active")){
+			$(this).removeClass("active");
+		}else{
+			$(this).addClass("active");	
+		}
+	})
+	$(".picbox").click(function(){
+		var sidebar_width = $(".sidebar").width();
+		if(sidebar_width === 0){
+			$(".sidebar").css({"width":"187px"});
+			$(".picbox").removeClass("picbox-active");
+		}else{
+			$(".sidebar").css({"width":"0px"});
+			$(".picbox").addClass("picbox-active");	
+		}
+	})
+	
+	//添加项目
+	$(".append-pr").click(function(){
+		$(".sheet").hide();
+		$(".add-sheet").show();
+	})
+	
+	$(".append").click(function(){
+		$(".mask,.information").show();
+	})
+	$(".cancel,.confirm").click(function(){
+		$(".mask,.information").hide();
+	})
+    $(".add-pack input").click(function(){
+        $(this).next(".add-second").toggle();
+    })
+	
+	$(".reimbursement span").click(function(){
+		$(this).toggleClass("active");
+	})
+	
+</script>
+
+</html>

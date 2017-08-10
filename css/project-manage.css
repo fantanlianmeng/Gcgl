@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+/* 高级搜索 */
+.content .search .ad-search{background:#E5E5E5;color:#666;text-indent:15px}
+.content .search .ad-search img{margin-left:5px; vertical-align:middle;}
+.ad-box{margin-top: 10px;}
+.search-input{margin-bottom:10px;}
+
+/* 项目管理内容 */
+.manage-table .data-head{height:38px;line-height:38px;background:url('../img/bg2.png') repeat left center; background-size:1163px 38px;}
+.manage-table table{margin-bottom:20px;}
+.manage-table table th{padding:0 10px;max-width:128px;white-space:nowrap;}
+.manage-table table td{font-size:12px;border-bottom:1px solid #E7E7E7;border-right:1px solid #E7E7E7;padding:3px 5px;max-width: 128px;}
+.manage-table table td .dot{width:20px;height:20px; vertical-align:middle;}
+.manage-table table td a{color:#666;background:#DFE1E5;min-width:55px;height:21px;line-height:21px; border-radius:4px;border:1px solid #CCC;margin:10px 3px 0 3px;}
+.manage-table table td i{height:6px;width:100%;padding:8px 0 7px 0;background:url('../img/icon7.png') no-repeat center center; background-size:10px 6px;}
+.manage-table table td i.operate-active{transform:rotate(180deg);-ms-transform:rotate(180deg);-moz-transform:rotate(180deg);-webkit-transform:rotate(180deg);-o-transform:rotate(180deg);}
+.new-summary .summary-a{color:#fff;background:#3EABE7;width:102px;height:27px;line-height:27px;border-radius:5px;margin:15px 20px 20px 10px;}
+
+/* 添加站点 */
+.new-site h5{height:38px;line-height:38px;text-indent: 20px;background:url('../img/bg2.png') repeat left center; background-size:1163px 38px;}
+.new-site table td{font-size:12px;height:47px;line-height:47px;border-bottom:1px solid #E7E7E7;border-right:1px solid #E7E7E7;padding:0 15px 0 15px;white-space:nowrap;}
+.new-site table td input{width: 100%;height: 90%;text-align: center;min-width: 40px;font-size:12px;color:#999;}
+.add-photos{border-bottom:1px solid #E2E2E2;}
+.add-photos .photos-box{width: 240px;height:170px;line-height:170px;;border: 1px solid #E2E2E2;border-radius: 6px;margin: 15px 20px 15px 20px;}
+.new-site .keep{color:#fff;background:#3EABE7;width:102px;height:27px;line-height:27px;border-radius:5px;margin-top: 120px;}
+.add-photos .photos-box a{width:100%;height:100%;background:url('../img/icon15.png') no-repeat center center; background-size:122px 51px;color:#999;}
+.add-photos .reveal a{background:none;}
+
+/* 项目总览 */
+.add-nav{width:100%;height:38px;line-height:38px;background:url('../img/bg2.png') repeat left center; background-size:1163px 38px;text-indent:17px;}
+.overview-p{color:#EC6C45;margin-top:5px;}
+.details-table {margin:10px 15px 15px 15px;}
+.details-table table{background:#E2E2E2;}
+.details-table tr th{background:#F2F2F2;height:34px;padding:0 10px;}
+.details-table tr td{background:#fff;height:36px;padding:0 5px;min-width:50px;}
+.details-table table td a{color:#666;background:#DFE1E5;width:46px;height:21px;line-height:21px; border-radius:4px;border:1px solid #CCC;margin:0 3px;}
+
+
+
+
+
+
+

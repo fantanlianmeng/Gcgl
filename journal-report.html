@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>工程项目管理平台</title>
+<link href="css/base-pc.css" rel="stylesheet" type="text/css">
+<link href="css/module.css" rel="stylesheet" type="text/css">
+<link href="css/select2.css" rel="stylesheet" type="text/css">
+<link href="My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css">
+<link href="css/journal.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="p-r">
+	<div class="herder">
+    	<div class="logo d-ib f-l"></div>
+        <div class="herder-right d-ib f-r c-f fs-16 p-r">
+        	<span class="d-ib">您好，管理员</span>
+            <a href="javascript:;" class="d-ib">退出</a>
+        </div>
+        <div class="c-b"></div>
+    </div>
+	
+    <div class="sidebar d-ib f-l p-r o-h">
+    	<ul class="fs-14 c-3">
+        	<li>
+            	<p class="p-r active"><img src="img/icon1.png" alt="">项目管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">新建项目</a>
+                    <a href="javascript:;" class="d-b">项目管理</a>
+                    <a href="javascript:;" class="d-b">项目总览</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon2.png" alt="">日志管理<i class="d-ib p-a"></i></p>
+                <div class="subnav">
+                	<a href="javascript:;" class="d-b subnav-active">日志汇报</a>
+                    <a href="javascript:;" class="d-b">日志动态</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon3.png" alt="">出差管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">出差申请</a>
+                    <a href="javascript:;" class="d-b">出差汇报</a>
+                    <a href="javascript:;" class="d-b">出差动态</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon4.png" alt="">文档管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">文档管理</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon5.png" alt="">运维管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">运维计划</a>
+                    <a href="javascript:;" class="d-b">运维处理</a>
+                    <a href="javascript:;" class="d-b">运维动态</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon6.png" alt="">系统管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">用户管理</a>
+                    <a href="javascript:;" class="d-b">角色管理</a>
+                    <a href="javascript:;" class="d-b">参数配置</a>
+                </div>
+            </li>
+        </ul>
+        <div class="picbox p-a"></div>
+    </div>
+    
+    <div class="content">
+    	<p class="crumbs">您当前的位置：日志管理 &gt; <span>日志汇报</span></p>
+        
+        <!--日志汇报-->
+        <div class="add-sheet ta-c">
+        	<form action="">
+                <p class="add-nav fs-14 c-f ta-l">日志汇报</p>
+                <div class="pick fs-12 c-6">
+                    <ul class="lif-l">
+                        <li class="d-ib">
+                            <span class="pick-span d-ib fs-14 fw-1">选择日期</span>
+                            <p class="datep d-ib"><input class="datainp" id="dateinfo" name="time" type="text" value="" placeholder="请选择"  readonly></p>
+                        </li>
+                        <li class="d-ib">
+                            <span class="pick-span d-ib fs-14 fw-1">工作时间</span>
+                            <input type="text" name="duration" id="duration" class="duration" value="8" >
+						</li>
+                        <li class="d-ib">
+                            <span class="pick-span d-ib fs-14 fw-1">工作类型</span>
+                            <select class="js-select100 select-normal" name="worktype" id="province">
+                                <option>日常工作</option>
+                                <option>项目工作</option>
+                            </select>
+                            <select class="js-select150 select-normal city" name="worktype1"></select>
+                            <select class="js-select150 select-normal city" name="worktype2">
+                                <option>项目名名称</option>
+                                <option>请选择</option>
+                            </select>
+                        </li>
+                        <li class="d-ib">
+                            <span class="pick-span d-ib fs-14 fw-1">所属部门</span>
+                            <select class="js-select100 select-normal" name="branch">
+                                <option>PC软件部</option>
+                                <option>请选择</option>
+                            </select>
+                        </li>
+                        <span class="devotion-time f-r fs-12">当日已投入工作时间：8</span>
+                        <div class="c-b"></div>
+                    </ul>
+                </div>
+                
+                <div class="report-table">
+                	<table cellspacing="1" cellpadding="0" class="fs-12 w">
+                        <tbody>
+                            <tr class="c-9">
+                                <td>工作内容</td>
+                                <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
+                            </tr>
+                            <tr class="c-9">
+                                <td>遗留问题</td>
+                                <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
+                            </tr>
+                            <tr class="c-9">
+                                <td>客户反馈/评价</td>
+                                <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <a href="javascript:;" class="add-submit d-ib ta-c fs-14">保存</a>
+            </form>
+        </div>
+        
+    </div>
+
+    <!--提示消息-->
+    <div class="notice p-f fs-12 bg-f">
+    	<i class="close p-a"></i>
+        <h4 class="fs-14 c-f ta-c">提示消息</h4>
+        <a href="javascript:;" class="d-b">
+        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
+            <span class="f-r">2017-10-21</span>
+        </a>
+        <a href="javascript:;" class="d-b">
+        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
+            <span class="f-r">2017-10-21</span>
+        </a>
+        <a href="javascript:;" class="d-b">
+        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
+            <span class="f-r">2017-10-21</span>
+        </a>
+    </div>
+    
+    <!--添加联系人信息弹窗-->
+    <div class="mask p-f d-n"></div>
+    <div class="information bg-f p-f o-h d-n">
+    	<h5 class="fs-14 c-f ta-c">添加联系人信息</h5>
+        <div class="information-box ta-l">
+        	<div class="d-ib f-l">
+                <span class="d-ib fs-12 c-6">客户联系人</span>
+                <input type="text" name="created-date" value="小小陈">
+            </div>
+            <div class="d-ib f-l">
+                <span class="d-ib fs-12 c-6">职位</span>
+                <input type="text" name="created-date" value="项目经理">
+            </div>
+            <div class="d-ib f-l">
+                <span class="d-ib fs-12 c-6">职责</span>
+                <input type="text" name="created-date" value="项目经理">
+            </div>
+            <div class="d-ib f-l">
+                <span class="d-ib fs-12 c-6">手机号</span>
+                <input type="text" name="created-date" value="15126468975">
+            </div>
+            <div class="d-ib f-l">
+                <span class="d-ib fs-12 c-6">邮箱</span>
+                <input type="text" name="created-date" value="761115495@qq.com">
+            </div>
+            <div class="d-ib f-l">
+                <span class="d-ib fs-12 c-6">座机</span>
+                <input type="text" name="created-date" value="3326546">
+            </div>
+            <p class="c-b"></p>
+        </div>
+        <div class="information-a ta-c fa-14">
+        	<a href="javascript:;" class="cancel d-ib">取消</a>
+            <a href="javascript:;" class="confirm d-ib">保存</a>
+        </div>
+    </div>
+     
+</body>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/select2_option.js"></script>
+<script type="text/javascript" src="jeDate/jedate.js"></script>
+<script>
+	//时间控件
+	jeDate({
+		dateCell:"#dateinfo",
+		format:"YYYY-MM-DD",
+		isinitVal:true,
+		minDate:"2014-09-19"
+	})
+	//下拉框两级联动
+	var currentShowCity = 0;
+	$(document).ready(function() {
+		$("#province").change(function() {
+			$("#province option").each(function(i, o) {
+				if ($(this).attr("selected")){
+					$(".city").next("span").hide();
+					$(".city").eq(i).next("span").show();
+					$(".city").eq(0).next("span").hide();
+					currentShowCity = i;
+				}
+			});
+		});
+		$("#province").change();
+	});
+	
+	//提示消息
+	$(".close").click(function(){
+		$(".notice").fadeOut();
+	})
+	//侧边栏
+	$(".sidebar ul li p").click(function(){
+		$(this).next(".subnav").slideToggle();
+		if($(this).hasClass("active")){
+			$(this).removeClass("active");
+		}else{
+			$(this).addClass("active");	
+		}
+	})
+	$(".picbox").click(function(){
+		var sidebar_width = $(".sidebar").width();
+		if(sidebar_width === 0){
+			$(".sidebar").css({"width":"187px"});
+			$(".picbox").removeClass("picbox-active");
+		}else{
+			$(".sidebar").css({"width":"0px"});
+			$(".picbox").addClass("picbox-active");	
+		}
+	})
+	
+	//添加项目
+	$(".append-pr").click(function(){
+		$(".sheet").hide();
+		$(".add-sheet").show();
+	})
+	
+	$(".append").click(function(){
+		$(".mask,.information").show();
+	})
+	$(".cancel,.confirm").click(function(){
+		$(".mask,.information").hide();
+	})
+    $(".add-pack input").click(function(){
+        $(this).next(".add-second").toggle();
+    })
+</script>
+
+<script type="text/javascript"> 
+
+
+
+</script> 
+
+
+</html>
