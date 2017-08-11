@@ -1,14 +1,10 @@
 $(function(){
-	$(".js-dashboard-slt").select2({
-  		width: "80px",
-	  	minimumResultsForSearch: Infinity
-	});
 	$(".js-A1-slt1").select2({
   		width: "94px",
 	  	minimumResultsForSearch: Infinity
 	});
-	$(".js-select140").select2({
-		width: "140px",
+	$(".js-select125").select2({
+		width: "125px",
 		minimumResultsForSearch: Infinity
 	});
 
@@ -23,8 +19,11 @@ $(function(){
 	});
 	
 	$(".js-select200").select2({
-  		width: "200px",
+  		width: "202px",
 	  	minimumResultsForSearch: Infinity
 	});
-
+	$(".js-select270").select2({
+  		width: "270px",
+	  	minimumResultsForSearch: Infinity
+	});
 });

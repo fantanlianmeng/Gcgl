@@ -6,6 +6,7 @@
 <link href="css/base-pc.css" rel="stylesheet" type="text/css">
 <link href="css/module.css" rel="stylesheet" type="text/css">
 <link href="css/select2.css" rel="stylesheet" type="text/css">
+<link href="lay/css/layui.css" rel="stylesheet"/>
 <link href="My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css">
 <link href="css/out.css" rel="stylesheet" type="text/css">
 
@@ -220,6 +221,18 @@
     <!--添加出差人-->
     <div class="out-people bg-f p-f">
     	<h5 class="fs-14 c-f ta-c">添加出差人</h5>
+        <div class="check-name">
+        	<span class="f-l">人员菜单：</span>
+            <span class="f-r">全选</span>
+            <input type="checkbox" class="f-r d-n checkall" id="check-all">
+            <label for="check-all" class="f-r"></label>
+            <div class="c-b"></div>
+        </div>
+        <ul id="demo"></ul>
+        <div class="opt ta-c fs-14 ta-c">
+        	<a href="#" class="cancel d-ib">取消</a>
+            <a href="#" class="keep d-ib">保存</a>
+        </div>
     </div>
     
     <!--提示消息-->
@@ -285,7 +298,7 @@
 <script src="js/distpicker.data.js"></script>
 <script src="js/distpicker.js"></script>
 <script src="js/main.js"></script>
-
+<script src="layui.js"></script>
 <script>
 	//时间控件
 	jeDate({
@@ -361,5 +374,177 @@
 	})
 	
 </script>
+<script>
+	layui.use('tree', function() {
+				var tree = layui.tree({
+					elem: '#demo', //指定元素，生成的树放到哪个元素上
+					check: 'checkbox', //勾选风格
+					skin: 'as', //设定皮肤
+					drag: true,//点击每一项时是否生成提示信息
+					checkboxName: 'aa[]',//复选框的name属性值
+					checkboxStyle: "",//设置复选框的样式，必须为字符串，css样式怎么写就怎么写
+					click: function(item) { //点击节点回调
+						console.log("item")
+					},
+					onchange: function (){//当当前input发生变化后所执行的回调
+						console.log(this);
+					},
+					nodes: [ //节点
+						{
+							name: '工程中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '产品中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '工程中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '产品中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '工程中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '产品中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							spread: true, //是否是展开状态，true为展开状态
+							checked: true,//复选框默认是否选中	
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2,
+								checked: true  //复选框默认是否选中
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '工程中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '产品中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						}
+					]
+				});
+			});
 
+	$(".checkall").click(function(){
+		var checkall = $(".checkall").prop("checked");
+		var checkall_demo = $("#demo").find("input").prop("checked");
+		if( checkall == true ){//选中
+			$("#demo").find("input").attr("checked",true);
+		}
+		if( checkall_demo == true ){
+			$(".checkall").attr("checked",true);
+		}
+	})
+	
+
+</script>
 </html>

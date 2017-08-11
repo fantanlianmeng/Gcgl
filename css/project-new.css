@@ -34,10 +34,7 @@
 .information-box div{width:240px;height:26px;margin-bottom:35px;margin-left:5px;line-height:26px;background:url('../img/icon11.png') no-repeat 225px center; background-size:7px 4px;}
 .information-box span{width:61px;margin-right:18px;text-align:right;}
 .information-box input{height:26px;width:132px;text-indent:10px;border:1px solid #DFE3E9;border-radius:5px;color:#333;}
-.information-a{margin-top:30px;}
-.information-a a{width:103px;height:27px;line-height:27px;color:#fff;border-radius:4px;margin:0 12px;}
-.information-a .confirm{background:#3EABE7;}
-.information-a .cancel{background:#C9C9C9;}
+
 
 
 
