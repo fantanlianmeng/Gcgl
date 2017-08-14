@@ -1,0 +1,462 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>工程项目管理平台</title>
+<link href="css/base-pc.css" rel="stylesheet" type="text/css">
+<link href="css/module.css" rel="stylesheet" type="text/css">
+<link href="css/select2.css" rel="stylesheet" type="text/css">
+<link href="lay/css/layui.css" rel="stylesheet"/>
+<link href="css/out.css" rel="stylesheet" type="text/css">
+<link href="css/operation.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="p-r">
+	<div class="herder">
+    	<div class="logo d-ib f-l"></div>
+        <div class="herder-right d-ib f-r c-f fs-16 p-r">
+        	<span class="d-ib">您好，管理员</span>
+            <a href="javascript:;" class="d-ib">退出</a>
+        </div>
+        <div class="c-b"></div>
+    </div>
+	
+    <div class="sidebar d-ib f-l p-r o-h">
+    	<ul class="fs-14 c-3">
+        	<li>
+            	<p class="p-r"><img src="img/icon1.png" alt="">项目管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">新建项目</a>
+                    <a href="javascript:;" class="d-b">项目管理</a>
+                    <a href="javascript:;" class="d-b">项目总览</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon2.png" alt="">日志管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">日志汇报</a>
+                    <a href="javascript:;" class="d-b">日志动态</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon3.png" alt="">出差管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">出差申请</a>
+                    <a href="javascript:;" class="d-b">出差汇报</a>
+                    <a href="javascript:;" class="d-b">出差动态</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon4.png" alt="">文档管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">文档管理</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r active"><img src="img/icon5.png" alt="">运维管理<i class="d-ib p-a"></i></p>
+                <div class="subnav">
+                	<a href="javascript:;" class="d-b subnav-active">运维计划</a>
+                    <a href="javascript:;" class="d-b">运维处理</a>
+                    <a href="javascript:;" class="d-b">运维动态</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon6.png" alt="">系统管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">用户管理</a>
+                    <a href="javascript:;" class="d-b">角色管理</a>
+                    <a href="javascript:;" class="d-b">参数配置</a>
+                </div>
+            </li>
+        </ul>
+        <div class="picbox p-a"></div>
+    </div>
+    
+    <div class="content filemanage">
+    	<p class="crumbs">您当前的位置：运维管理 &gt; <span>运维计划</span></p>
+      	 
+         <!--运维计划-->
+         <div class="operation-plan">
+         	<p class="add-nav fs-14 c-f ta-l">运维计划</p>
+            <form action="">
+            	<div class="plan-box fs-12 c-6 ta-c">
+                	<div class="plan-classify">
+                    	<span class="plan-span d-ib">项目名称：</span>
+                        <select class="js-select370 select-normal city" name="worktype2">
+                            <option>请选择</option>
+                            <option>请选择</option>
+                        </select>
+                    </div>
+                    <div class="plan-classify">
+                    	<span class="plan-span d-ib">客户名称：</span>
+                        <input type="text" value="自动选择" class="genre fs-12 c-9 ta-c" readonly>
+                        &nbsp&nbsp&nbsp
+                        <span class="plan-span d-ib">产品类型：</span>
+                        <input type="text" value="自动选择" class="genre fs-12 c-9 ta-c" readonly>
+                    </div>
+                    <div class="plan-classify">
+                    	<span class="plan-span d-ib">拟派运维人员：</span>
+                        <a href="javascript:;" class="d-ib ta-c">添加人员</a>
+                    </div>
+                    <div class="plan-classify">
+                    	<span class="plan-span d-ib">运维类型：</span>
+                        <div class="operation-type d-ib">
+                            <label><span class="active d-ib ta-r c-9">故障运维</span><input name="Fruit" type="radio" value="" class="d-n" checked/></label>
+                            <label><span class="d-ib ta-r c-9">例行运维</span><input name="Fruit" type="radio" value="" class="d-n"/></label>
+                        </div>
+                        <div class="batch d-ib">
+                        	<span>运维批次：</span>
+                             <input type="text" value="2" class="batch-input fs-12 c-9 ta-c">
+                        </div>
+                    </div>
+                    <div class="plan-classify">
+                    	<span class="plan-span d-ib">计划开始时间：</span>
+                        <input id="inpstart" name="time1" type="text" value="" placeholder="请选择" readonly>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <span class="plan-span d-ib">计划结束时间：</span>
+                        <input id="inpend" name="time1" type="text" value="" placeholder="请选择" readonly>
+                    </div>
+                    
+                    <div class="plan-table">
+                    	<div class="nodelist fs-12 c-f p-r">
+                        	<span class="d-ib f-l">站点列表</span>
+                            <a href="javascript:;" class="d-ib ta-c f-r">添加运维站点</a>
+                            <div class="c-b"></div>
+                        </div>
+                        <table cellspacing="1" cellpadding="0" class="fs-12 w">
+                            <tbody>
+                                <tr class="c-6">
+                                    <th>序号</th>
+                                    <th>站点名称</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tr class="c-9">
+                                    <td>1</td>
+                                    <td>站点名称站点名称站点名称站点名称</td>
+                                    <td><a href="javascript:;" class="d-ib">删除</a></td>
+                                </tr>
+                                <tr class="c-9">
+                                    <td>2</td>
+                                    <td>站点名称站点名称站点名称站点名称</td>
+                                    <td><a href="javascript:;" class="d-ib">删除</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <a href="javascript:;" class="add-submit d-ib ta-c fs-14">保存</a>
+                </div>
+            </form>
+         </div>
+    </div>
+	
+    <div class="mask p-f d-n"></div>
+    <!--添加出差人-->
+    <div class="out-people bg-f p-f d-n">
+    	<h5 class="fs-14 c-f ta-c">添加人员</h5>
+        <div class="check-name">
+        	<span class="f-l">人员菜单：</span>
+            <span class="f-r">全选</span>
+            <input type="checkbox" class="f-r d-n checkall" id="check-all">
+            <label for="check-all" class="f-r"></label>
+            <div class="c-b"></div>
+        </div>
+        <ul id="demo"></ul>
+        <div class="opt ta-c fs-14 ta-c">
+        	<a href="#" class="cancel d-ib">取消</a>
+            <a href="#" class="keep d-ib">保存</a>
+        </div>
+    </div>
+    
+    <!--添加运维站点-->
+    <div class="plus-site bg-f p-f fs-12 c-6 d-n">
+    	<h5 class="fs-14 c-f ta-c">添加运维站点</h5>
+        <p class="site-name">站点名称：&nbsp&nbsp&nbsp <span class="c-9">新一代E区</span></p>
+        <div class="exist">
+        	<span class="d-ib">已存在的站点：</span>
+            <div class="all-check d-ib">
+            	<input type="checkbox" class="checksite d-n" id="check-site">
+                <label for="check-site" class=""></label>
+                <span>全选</span>
+            </div>
+            <span class="selected-span d-ib">已选择站点1个</span>
+        </div>
+        <div class="choose-site c-9">
+        	<div class="choosebox d-ib">
+                <input type="checkbox" class="checksite d-n" id="site1">
+                <label for="site1" class=""></label>
+                <span>新一代E区</span>
+            </div>
+            <div class="choosebox d-ib">
+                <input type="checkbox" class="checksite d-n" id="site2">
+                <label for="site2" class=""></label>
+                <span>新一代E区</span>
+            </div>
+            <div class="choosebox d-ib">
+                <input type="checkbox" class="checksite d-n" id="site3">
+                <label for="site3" class=""></label>
+                <span>新一代E区</span>
+            </div>
+            <div class="choosebox d-ib">
+                <input type="checkbox" class="checksite d-n" id="site4">
+                <label for="site4" class=""></label>
+                <span>新一代E区</span>
+            </div>
+        </div>
+        <div class="opt ta-c fs-14 ta-c">
+        	<a href="#" class="cancel d-ib">取消</a>
+            <a href="#" class="keep d-ib">保存</a>
+        </div>
+    </div>
+    
+    <!--提示消息-->
+    <div class="notice p-f fs-12 bg-f">
+    	<i class="close p-a"></i>
+        <h4 class="fs-14 c-f ta-c">提示消息</h4>
+        <a href="javascript:;" class="d-b">
+        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
+            <span class="f-r">2017-10-21</span>
+        </a>
+        <a href="javascript:;" class="d-b">
+        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
+            <span class="f-r">2017-10-21</span>
+        </a>
+        <a href="javascript:;" class="d-b">
+        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
+            <span class="f-r">2017-10-21</span>
+        </a>
+    </div>
+    
+</body>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/select2_option.js"></script>
+<script src="jeDate/jedate.js"></script>
+<script src="layui.js"></script>
+<script>
+	
+	$(".operation-type label").click(function(){
+		var checkaone = $(".operation-type label").find("input").prop("checked");
+		if( checkaone == true ){
+			$(".operation-type label span").removeClass("active")
+			$(this).find("span").addClass("active");
+		}
+	})
+	
+	
+	//时间控件
+	jeDate({
+		dateCell:"#inpstart",
+		format:"YYYY-MM-DD",
+		isinitVal:true,
+		minDate:"2014-09-19"
+	})	
+	jeDate({
+		dateCell:"#inpend",
+		format:"YYYY-MM-DD",
+		isinitVal:true,
+		minDate:"2014-09-19"
+	})		
+	//提示消息
+	$(".close").click(function(){
+		$(".notice").fadeOut();
+	})
+	//侧边栏
+	$(".sidebar ul li p").click(function(){
+		$(this).next(".subnav").slideToggle();
+		if($(this).hasClass("active")){
+			$(this).removeClass("active");
+		}else{
+			$(this).addClass("active");	
+		}
+	})
+	$(".picbox").click(function(){
+		var sidebar_width = $(".sidebar").width();
+		if(sidebar_width === 0){
+			$(".sidebar").css({"width":"187px"});
+			$(".picbox").removeClass("picbox-active");
+		}else{
+			$(".sidebar").css({"width":"0px"});
+			$(".picbox").addClass("picbox-active");	
+		}
+	})
+</script>
+<script>
+	layui.use('tree', function() {
+				var tree = layui.tree({
+					elem: '#demo', //指定元素，生成的树放到哪个元素上
+					check: 'checkbox', //勾选风格
+					skin: 'as', //设定皮肤
+					drag: true,//点击每一项时是否生成提示信息
+					checkboxName: 'aa[]',//复选框的name属性值
+					checkboxStyle: "",//设置复选框的样式，必须为字符串，css样式怎么写就怎么写
+					click: function(item) { //点击节点回调
+						console.log("item")
+					},
+					onchange: function (){//当当前input发生变化后所执行的回调
+						console.log(this);
+					},
+					nodes: [ //节点
+						{
+							name: '工程中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '产品中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '工程中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '产品中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '工程中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '产品中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							spread: true, //是否是展开状态，true为展开状态
+							checked: true,//复选框默认是否选中	
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2,
+								checked: true  //复选框默认是否选中
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '工程中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '产品中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						}
+					]
+				});
+			});
+	
+	//添加人员
+	$(".cancel,.confirm").click(function(){
+		$(".mask,.information,.out-people").hide();
+	})
+	$(".checkall").click(function(){
+		var checkall = $(".checkall").prop("checked");
+		var checkall_demo = $("#demo").find("input").prop("checked");
+		if( checkall == true ){//选中
+			$("#demo").find("input").attr("checked",true);
+		}
+		if( checkall_demo == true ){
+			$(".checkall").attr("checked",true);
+		}
+	})
+	//添加运维站点
+	$(".all-check label").click(function(){
+		$(".choose-site").find("input").attr("checked",true);
+	})
+</script>
+</html>

@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>工程项目管理平台</title>
+<link href="css/base-pc.css" rel="stylesheet" type="text/css">
+<link href="css/module.css" rel="stylesheet" type="text/css">
+<link href="css/select2.css" rel="stylesheet" type="text/css">
+<link href="css/project-new.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="p-r">
+	<div class="herder">
+    	<div class="logo d-ib f-l"></div>
+        <div class="herder-right d-ib f-r c-f fs-16 p-r">
+        	<span class="d-ib">您好，管理员</span>
+            <a href="javascript:;" class="d-ib">退出</a>
+        </div>
+        <div class="c-b"></div>
+    </div>
+	
+    <div class="sidebar d-ib f-l p-r o-h">
+    	<ul class="fs-14 c-3">
+        	<li>
+            	<p class="p-r"><img src="img/icon1.png" alt="">项目管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">新建项目</a>
+                    <a href="javascript:;" class="d-b">项目管理</a>
+                    <a href="javascript:;" class="d-b">项目总览</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon2.png" alt="">日志管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">日志汇报</a>
+                    <a href="javascript:;" class="d-b">日志动态</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon3.png" alt="">出差管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">出差申请</a>
+                    <a href="javascript:;" class="d-b">出差汇报</a>
+                    <a href="javascript:;" class="d-b">出差动态</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r active"><img src="img/icon4.png" alt="">文档管理<i class="d-ib p-a"></i></p>
+                <div class="subnav">
+                	<a href="javascript:;" class="d-b subnav-active">文档管理</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon5.png" alt="">运维管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">运维计划</a>
+                    <a href="javascript:;" class="d-b">运维处理</a>
+                    <a href="javascript:;" class="d-b">运维动态</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon6.png" alt="">系统管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">用户管理</a>
+                    <a href="javascript:;" class="d-b">角色管理</a>
+                    <a href="javascript:;" class="d-b">参数配置</a>
+                </div>
+            </li>
+        </ul>
+        <div class="picbox p-a"></div>
+    </div>
+    
+    <div class="content filemanage">
+    	<p class="crumbs">您当前的位置：文档管理 &gt; <span>文档管理</span></p>
+      	
+        <!--文档管理-->
+        <div class="sheet d-n">
+            <div class="search fs-14">
+                <span class="d-ib">项目名称：</span>
+                <input type="text">
+                <a href="javascript:;" class="d-ib ta-c">查询</a>
+            </div>
+            <div class="data-table">
+                <table cellspacing="0" cellpadding="0" class="ta-c w">
+                    <tbody>
+                        <tr class="data-head fs-14 c-f">
+                            <th>项目名称</th>
+                            <th>立项日期</th>
+                            <th>合同编号</th>
+                            <th>类型</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>安徽60套老CMA图片设备项目</td>
+                            <td>2016-12-12</td>
+                            <td>WWKJ-20170402-01</td>
+                            <td class="f_cA">
+                            	<select class="js-select125 select-normal" name="branch">
+                                    <option>售前支持</option>
+                                    <option>请选择</option>
+                                </select>
+                            </td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">查看</a>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>安徽60套老CMA图片设备项目</td>
+                            <td>2016-12-12</td>
+                            <td>WWKJ-20170402-01</td>
+                            <td class="f_cA">
+                            	<select class="js-select125 select-normal" name="branch">
+                                    <option>现场调研</option>
+                                    <option>请选择</option>
+                                </select>
+                            </td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">查看</a>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>安徽60套老CMA图片设备项目</td>
+                            <td>2016-12-12</td>
+                            <td>WWKJ-20170402-01</td>
+                            <td class="f_cA">
+                            	<select class="js-select125 select-normal" name="branch">
+                                    <option>备货发货</option>
+                                    <option>场景支持</option>
+                                    <option>场景支持</option>
+                                    <option>备货发货</option>
+                                    <option>实施方案</option>
+                                    <option>实时监控</option>
+                                    <option>试运行</option>
+                                </select>
+                            </td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">查看</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="paging ta-c fs-14 c-9">
+                    <a href="javascript:;">首页</a>
+                    <a href="javascript:;">上一页</a>
+                    <a href="javascript:;" class="number number-active">1</a>
+                    <a href="javascript:;" class="number">2</a>
+                    <a href="javascript:;" class="number">3</a>
+                    <a href="javascript:;">下一页</a>
+                    <a href="javascript:;">尾页</a>
+                    <span class="d-ib">共1页/2条数据</span>
+                    跳转<input type="text" class="obtain" value="1">页
+                </div>
+            </div>
+        </div>
+        
+        <!--添加项目-->
+        <div class="sheet">
+            <div class="search fs-14 ta-r">
+                <a href="javascript:;" class="d-ib ta-c">上传文件</a>
+            </div>
+            <div class="data-table">
+                <table cellspacing="0" cellpadding="0" class="ta-c w">
+                    <tbody>
+                        <tr class="data-head fs-14 c-f">
+                            <th>序号</th>
+                            <th>成果物</th>
+                            <th>文件名</th>
+                            <th>上传人员</th>
+                            <th>上传日期</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>1</td>
+                            <td>厂商联系方式/技术资料</td>
+                            <td>文件名文件名文件名</td>
+                            <td class="f_cA">李李李</td>
+                            <td class="f_cA">2017-5-25  08：20</td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">下载</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>1</td>
+                            <td>厂商联系方式/技术资料</td>
+                            <td>文件名文件名文件名</td>
+                            <td class="f_cA">李李李</td>
+                            <td class="f_cA">2017-5-25  08：20</td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">下载</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>1</td>
+                            <td>厂商联系方式/技术资料</td>
+                            <td>文件名文件名文件名</td>
+                            <td class="f_cA">李李李</td>
+                            <td class="f_cA">2017-5-25  08：20</td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">下载</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>1</td>
+                            <td>厂商联系方式/技术资料</td>
+                            <td>文件名文件名文件名</td>
+                            <td class="f_cA">李李李</td>
+                            <td class="f_cA">2017-5-25  08：20</td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">下载</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>1</td>
+                            <td>厂商联系方式/技术资料</td>
+                            <td>文件名文件名文件名</td>
+                            <td class="f_cA">李李李</td>
+                            <td class="f_cA">2017-5-25  08：20</td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">下载</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>1</td>
+                            <td>厂商联系方式/技术资料</td>
+                            <td>文件名文件名文件名</td>
+                            <td class="f_cA">李李李</td>
+                            <td class="f_cA">2017-5-25  08：20</td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">下载</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>1</td>
+                            <td>厂商联系方式/技术资料</td>
+                            <td>文件名文件名文件名</td>
+                            <td class="f_cA">李李李</td>
+                            <td class="f_cA">2017-5-25  08：20</td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">下载</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="paging ta-c fs-14 c-9">
+                    <a href="javascript:;">首页</a>
+                    <a href="javascript:;">上一页</a>
+                    <a href="javascript:;" class="number number-active">1</a>
+                    <a href="javascript:;" class="number">2</a>
+                    <a href="javascript:;" class="number">3</a>
+                    <a href="javascript:;">下一页</a>
+                    <a href="javascript:;">尾页</a>
+                    <span class="d-ib">共1页/2条数据</span>
+                    跳转<input type="text" class="obtain" value="1">页
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!--提示消息-->
+    <div class="notice p-f fs-12 bg-f">
+    	<i class="close p-a"></i>
+        <h4 class="fs-14 c-f ta-c">提示消息</h4>
+        <a href="javascript:;" class="d-b">
+        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
+            <span class="f-r">2017-10-21</span>
+        </a>
+        <a href="javascript:;" class="d-b">
+        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
+            <span class="f-r">2017-10-21</span>
+        </a>
+        <a href="javascript:;" class="d-b">
+        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
+            <span class="f-r">2017-10-21</span>
+        </a>
+    </div>
+    
+    <!--上传文件弹窗-->
+    <div class="mask p-f d-n"></div>
+    <div class="file-popup bg-f p-f o-h d-n">
+    	<h5 class="fs-14 c-f ta-c">上传文件</h5>
+        <div class="filepopup-box ta-l fs-12 c-6">
+        	<ul>
+            	<li>
+                	<span class="popup-span d-ib">成果物：</span>
+                	<select class="js-select150 select-normal" name="branch">
+                        <option>项目招标技术文件</option>
+                        <option>请选择</option>
+                    </select>
+                </li>
+                <li class="choice-popup">
+                	<span class="popup-span d-ib">选择文件：</span>
+                    <a href="#" class="d-ib">选择文件</a>
+                    <a href="#" class="d-ib">确认并上传</a>
+                </li>
+                <li>
+                	<span class="popup-span d-ib">上传文件：</span>
+                    <div class="Progress c-9 d-ib">
+                    	<span class="f-l">文件.jpg(5kb)</span>
+                        <span class="f-r">已上传50%</span>
+                        <div class="c-b"></div>
+                        <div class="Progress-box">
+                        	<p class="Progress-p"></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                	<span>已上传文件：</span>
+                    <div class="Selected d-ib">
+                    	<p>已上传文件已上传文件.jpg</p>
+                        <p>已上传文件已上传文件.jpg</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="information-a ta-c fa-14">
+        	<a href="javascript:;" class="cancel d-ib">取消</a>
+            <a href="javascript:;" class="confirm d-ib">保存</a>
+        </div>
+    </div>
+    
+     
+</body>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/select2_option.js"></script>
+<script>
+	//提示消息
+	$(".close").click(function(){
+		$(".notice").fadeOut();
+	})
+	//侧边栏
+	$(".sidebar ul li p").click(function(){
+		$(this).next(".subnav").slideToggle();
+		if($(this).hasClass("active")){
+			$(this).removeClass("active");
+		}else{
+			$(this).addClass("active");	
+		}
+	})
+	$(".picbox").click(function(){
+		var sidebar_width = $(".sidebar").width();
+		if(sidebar_width === 0){
+			$(".sidebar").css({"width":"187px"});
+			$(".picbox").removeClass("picbox-active");
+		}else{
+			$(".sidebar").css({"width":"0px"});
+			$(".picbox").addClass("picbox-active");	
+		}
+	})
+	
+	
+</script>
+
+</html>

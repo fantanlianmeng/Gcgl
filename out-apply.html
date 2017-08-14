@@ -7,7 +7,6 @@
 <link href="css/module.css" rel="stylesheet" type="text/css">
 <link href="css/select2.css" rel="stylesheet" type="text/css">
 <link href="lay/css/layui.css" rel="stylesheet"/>
-<link href="My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css">
 <link href="css/out.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -353,24 +352,9 @@
 		}
 	})
 	
-	//添加项目
-	$(".append-pr").click(function(){
-		$(".sheet").hide();
-		$(".add-sheet").show();
-	})
-	
-	$(".append").click(function(){
-		$(".mask,.information").show();
-	})
+	//添加出差人
 	$(".cancel,.confirm").click(function(){
-		$(".mask,.information").hide();
-	})
-    $(".add-pack input").click(function(){
-        $(this).next(".add-second").toggle();
-    })
-	
-	$(".reimbursement span").click(function(){
-		$(this).toggleClass("active");
+		$(".mask,.information,.out-people").hide();
 	})
 	
 </script>
@@ -544,7 +528,5 @@
 			$(".checkall").attr("checked",true);
 		}
 	})
-	
-
 </script>
 </html>

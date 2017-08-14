@@ -1,0 +1,441 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>工程项目管理平台</title>
+<link href="css/base-pc.css" rel="stylesheet" type="text/css">
+<link href="css/module.css" rel="stylesheet" type="text/css">
+<link href="css/select2.css" rel="stylesheet" type="text/css">
+<link href="css/out.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="p-r">
+	<div class="herder">
+    	<div class="logo d-ib f-l"></div>
+        <div class="herder-right d-ib f-r c-f fs-16 p-r">
+        	<span class="d-ib">您好，管理员</span>
+            <a href="javascript:;" class="d-ib">退出</a>
+        </div>
+        <div class="c-b"></div>
+    </div>
+	
+    <div class="sidebar d-ib f-l p-r o-h">
+    	<ul class="fs-14 c-3">
+        	<li>
+            	<p class="p-r"><img src="img/icon1.png" alt="">项目管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">新建项目</a>
+                    <a href="javascript:;" class="d-b">项目管理</a>
+                    <a href="javascript:;" class="d-b">项目总览</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon2.png" alt="">日志管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">日志汇报</a>
+                    <a href="javascript:;" class="d-b">日志动态</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon3.png" alt="">出差管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">出差申请</a>
+                    <a href="javascript:;" class="d-b">出差汇报</a>
+                    <a href="javascript:;" class="d-b">出差动态</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon4.png" alt="">文档管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">文档管理</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r active"><img src="img/icon5.png" alt="">运维管理<i class="d-ib p-a"></i></p>
+                <div class="subnav">
+                	<a href="javascript:;" class="d-b">运维计划</a>
+                    <a href="javascript:;" class="d-b subnav-active">运维处理</a>
+                    <a href="javascript:;" class="d-b">运维动态</a>
+                </div>
+            </li>
+            <li>
+            	<p class="p-r"><img src="img/icon6.png" alt="">系统管理<i class="d-ib p-a"></i></p>
+                <div class="subnav d-n">
+                	<a href="javascript:;" class="d-b">用户管理</a>
+                    <a href="javascript:;" class="d-b">角色管理</a>
+                    <a href="javascript:;" class="d-b">参数配置</a>
+                </div>
+            </li>
+        </ul>
+        <div class="picbox p-a"></div>
+    </div>
+    
+    <div class="content">
+    	<p class="crumbs">您当前的位置：出差管理 &gt; <span>出差汇报</span></p>
+        
+        <!--运维日报-->
+        <div class="add-render ta-c">
+        	<form action="">
+                <p class="add-nav fs-14 c-f ta-l">运维日报</p>
+                <a href="javascript:;" class="shrink ta-l d-b"><img src="img/icon24.png" alt=""></a>
+                <div class="render-box">
+                    <div class="pick fs-12 c-6">
+                        <ul class="lif-l">
+                            <li class="d-ib">
+                                <span class="pick-span d-ib fs-12 fw-1">选择日期：</span>
+                                <p class="datep d-ib"><input class="datainp" id="dateinfo" name="time" type="text" value="" placeholder="请选择"  readonly></p>
+                            </li>
+                            <li class="d-ib">
+                                <span class="pick-span d-ib fs-12 fw-1">项目名称：</span>
+                                <select class="js-select125 select-normal" name="branch">
+                                    <option>PC软件部</option>
+                                    <option>请选择</option>
+                                </select>
+                            </li>
+                            <li class="d-ib">
+                                <span class="pick-span d-ib fs-12 fw-1">工作量：</span>
+                                <input type="text" name="duration" id="duration" class="duration" value="8" >
+                            </li>
+                            <div class="c-b"></div>
+                        </ul>
+                    </div>
+                
+                    <div class="render-table">
+                        <table cellspacing="1" cellpadding="0" class="fs-12 w">
+                            <tbody>
+                                <tr class="c-9">
+                                    <td class="c-6">工作计划：</td>
+                                    <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
+                                </tr>
+                                <tr class="c-9">
+                                    <td class="c-6">工作内容：</td>
+                                    <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
+                                </tr>
+                                <tr class="c-9">
+                                    <td class="c-6">存在问题：</td>
+                                    <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                
+                    <p class="detailed-a fs-12 c-6 ta-l">运维费用明细：<a href="javascript:;" class="d-ib ta-c">添加明细</a></p>
+                    <div class="cost-table">
+                        <table cellspacing="1" cellpadding="0" class="fs-12 w">
+                            <tbody>
+                                <tr class="c-6">
+                                    <th>序号</th>
+                                    <th>费用品名</th>
+                                    <th>数量</th>
+                                    <th>单位</th>
+                                    <th>单价</th>
+                                    <th>总金额</th>
+                                    <th>费用类别</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tr class="c-9">
+                                    <td>1</td>
+                                    <td>C40混凝土</td>
+                                    <td>12</td>
+                                    <td>L</td>
+                                    <td>350</td>
+                                    <td>4200</td>
+                                    <td>耗材费</td>
+                                    <td>
+                                        <a href="javascript:;" class="d-ib ta-c fs-12">编辑</a>
+                                        <a href="javascript:;" class="d-ib ta-c fs-12">删除</a>
+                                    </td>
+                                </tr>
+                                <tr class="c-9">
+                                    <td>1</td>
+                                    <td>C40混凝土</td>
+                                    <td>12</td>
+                                    <td>小时</td>
+                                    <td>350</td>
+                                    <td>4200</td>
+                                    <td>车辆租赁 </td>
+                                    <td>
+                                        <a href="javascript:;" class="add-submit d-ib ta-c fs-14">编辑</a>
+                                        <a href="javascript:;" class="add-submit d-ib ta-c fs-14">删除</a>
+                                    </td>
+                                </tr>
+                                <tr class="c-9">
+                                    <td colspan="5">金额总计</td>
+                                    <td>4250</td>
+                                    <td colspan="2"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <!--运维站点记录-->
+        <div class="add-render add-render2 ta-c">
+        	<form action="">
+                <p class="add-nav fs-14 c-f ta-l">运维站点记录</p>
+                <div class="render-box operation-record">
+                    <div class="cost-table">
+                        <table cellspacing="1" cellpadding="0" class="fs-12 w f-l">
+                            <tbody>
+                                <tr class="c-6">
+                                    <th>序号</th>
+                                    <th>站点名称</th>
+                                    <th>处理日期</th>
+                                    <th>现场问题描述</th>
+                                    <th>解决方法</th>
+                                    <th>当前状态</th>
+                                    <th>备注</th>
+                                    <th>完成情况</th>
+                                    <th>备件耗材</th>
+                                    <th>操作</th>
+                                </tr>
+                                <tr class="c-9">
+                                    <td>1</td>
+                                    <td>正兴鑫苑住宅楼</td>
+                                    <td>2017-08-08</td>
+                                    <td>现场问题描述现场...</td>
+                                    <td>解决方法解决方法...</td>
+                                    <td>正常</td>
+                                    <td>备注备注备注备注...</td>
+                                    <td>已完成</td>
+                                    <td>某某耗材  15个</td>
+                                    <td>
+                                    	<a href="javascript:;" class="d-ib ta-c fs-12">编辑</a>
+                                        <a href="javascript:;" class="d-ib ta-c fs-12">删除</a>
+                                    </td>
+                                </tr>
+                                <tr class="c-9">
+                                    <td>1</td>
+                                    <td>正兴鑫苑住宅楼</td>
+                                    <td>2017-08-08</td>
+                                    <td>现场问题描述现场...</td>
+                                    <td>解决方法解决方法...</td>
+                                    <td>正常</td>
+                                    <td>备注备注备注备注...</td>
+                                    <td>已完成</td>
+                                    <td>某某耗材  15个</td>
+                                    <td>
+                                    	<a href="javascript:;" class="d-ib ta-c fs-12">编辑</a>
+                                        <a href="javascript:;" class="d-ib ta-c fs-12">删除</a>
+                                    </td>
+                                </tr>
+                                <tr class="c-9">
+                                    <td>1</td>
+                                    <td>正兴鑫苑住宅楼</td>
+                                    <td>2017-08-08</td>
+                                    <td>现场问题描述现场...</td>
+                                    <td>解决方法解决方法...</td>
+                                    <td>正常</td>
+                                    <td>备注备注备注备注...</td>
+                                    <td>已完成</td>
+                                    <td>某某耗材  15个</td>
+                                    <td>
+                                    	<a href="javascript:;" class="d-ib ta-c fs-12">编辑</a>
+                                        <a href="javascript:;" class="d-ib ta-c fs-12">删除</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="c-b"></div>
+                    </div>
+                    
+                    <a href="javascript:;" class="add-submit d-ib ta-c fs-14">提交</a>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+	
+    <!--编辑运维站点记录-->
+    <div class="mask p-f"></div>
+    <div class="edit-operation p-f bg-f fs-12 c-6">
+    	<h5 class="fs-14 c-f ta-c">编辑运维站点记录</h5>
+        <div class="edit-box">
+        	<div class="maintain-box">
+            	<div class="edit-name d-ib">
+                    <span>站点名称：</span>
+                    <span class="c-9">正兴鑫苑住宅楼</span>
+                </div>
+                <div class="edit-time d-ib">
+                    <span>处理日期：</span>
+                    <input class="datainp" id="handle" name="time" type="text" value="" placeholder="请选择"  readonly>
+                </div>
+                <div class="edit-situation d-ib">
+	                <span>完成情况：</span>
+                    <select class="js-select100 select-normal" name="branch">
+                        <option>已完成</option>
+                        <option>未完成</option>
+                    </select>
+                </div>
+            </div>
+            <div class="maintain-box">
+            	<span class="edit-span d-ib">现场问题描述：</span>
+                <textarea>正兴鑫苑住宅楼正兴鑫苑住宅楼正兴鑫苑住宅楼正兴鑫苑住宅楼兴鑫苑住宅楼</textarea>
+            </div>
+            <div class="maintain-box">
+            	<span class="edit-span d-ib">解决方法：</span>
+                <textarea>正兴鑫苑住宅楼正兴鑫苑住宅楼正兴鑫苑住宅楼正兴鑫住宅楼正兴鑫苑住宅楼</textarea>
+            </div>
+            <div class="maintain-box">
+            	<span class="edit-span d-ib">当前状态：</span>
+                <select class="js-select100 select-normal" name="branch">
+                    <option>正常</option>
+                    <option>不正常</option>
+                </select>
+            </div>
+            <div class="maintain-box">
+            	<span class="edit-span d-ib">备注：</span>
+                <textarea>正兴鑫苑住宅楼正兴鑫苑住宅楼正兴鑫苑住宅楼正兴鑫住宅楼正兴鑫苑住宅楼</textarea>
+            </div>
+            <p class="edit-p">
+            	<span class="f-l">备件耗材：</span>
+                <a href="#" class="d-ib f-r ta-c">添加耗材</a>
+                <i class="d-ib f-r"></i>
+                <div class="c-b"></div>
+            </p>
+            <div class="supplies-table ta-c">
+                <table cellspacing="1" cellpadding="0" class="fs-12 w">
+                    <tbody>
+                        <tr class="c-6">
+                            <th>物料名称</th>
+                            <th>规格编号</th>
+                            <th>数量</th>
+                            <th>单位</th>
+                            <th>备注</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr class="c-9">
+                            <td>物料</td>
+                            <td>C40混凝土</td>
+                            <td>12</td>
+                            <td>L</td>
+                            <td>站点名称站点名</td>
+                            <td>
+                                <a href="javascript:;" class="d-ib ta-c fs-12">删除</a>
+                                <a href="javascript:;" class="d-ib ta-c fs-12">修改</a>
+                            </td>
+                        </tr>
+                        <tr class="c-9">
+                            <td>物料</td>
+                            <td>C40混凝土</td>
+                            <td>12</td>
+                            <td>L</td>
+                            <td>站点名称站点名</td>
+                            <td>
+                                <a href="javascript:;" class="d-ib ta-c fs-12">删除</a>
+                                <a href="javascript:;" class="d-ib ta-c fs-12">修改</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="opt ta-c fs-14 ta-c">
+                <a href="#" class="cancel d-ib">取消</a>
+                <a href="#" class="keep d-ib">保存</a>
+            </div>
+        </div>
+    </div>
+    
+    <!--提示消息-->
+    <div class="notice p-f fs-12 bg-f">
+    	<i class="close p-a"></i>
+        <h4 class="fs-14 c-f ta-c">提示消息</h4>
+        <a href="javascript:;" class="d-b">
+        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
+            <span class="f-r">2017-10-21</span>
+        </a>
+        <a href="javascript:;" class="d-b">
+        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
+            <span class="f-r">2017-10-21</span>
+        </a>
+        <a href="javascript:;" class="d-b">
+        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
+            <span class="f-r">2017-10-21</span>
+        </a>
+    </div>
+
+</body>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/select2_option.js"></script>
+<script type="text/javascript" src="jeDate/jedate.js"></script>
+<script>
+	$(".shrink").click(function(){
+		$(this).next(".render-box").slideToggle();
+		$(this).find("img").toggleClass("shrink-active")
+	})
+	//添加明细
+	$(".detailed-a a").click(function(){
+		$(".mask,.detailed").show();
+	})
+	$(".cancel,.confirm").click(function(){
+		$(".mask,.detailed").hide();
+	})
+	
+	//时间控件
+	jeDate({
+		dateCell:"#dateinfo",
+		format:"YYYY-MM-DD",
+		isinitVal:true,
+		minDate:"2014-09-19"
+	})
+	jeDate({
+		dateCell:"#handle",
+		format:"YYYY-MM-DD",
+		isinitVal:true,
+		minDate:"2014-09-19"
+	})
+	//下拉框两级联动
+	var currentShowCity = 0;
+	$(document).ready(function() {
+		$("#province").change(function() {
+			$("#province option").each(function(i, o) {
+				if ($(this).attr("selected")){
+					$(".city").next("span").hide();
+					$(".city").eq(i).next("span").show();
+					$(".city").eq(0).next("span").hide();
+					currentShowCity = i;
+				}
+			});
+		});
+		$("#province").change();
+	});
+	
+	//提示消息
+	$(".close").click(function(){
+		$(".notice").fadeOut();
+	})
+	//侧边栏
+	$(".sidebar ul li p").click(function(){
+		$(this).next(".subnav").slideToggle();
+		if($(this).hasClass("active")){
+			$(this).removeClass("active");
+		}else{
+			$(this).addClass("active");	
+		}
+	})
+	$(".picbox").click(function(){
+		var sidebar_width = $(".sidebar").width();
+		if(sidebar_width === 0){
+			$(".sidebar").css({"width":"187px"});
+			$(".picbox").removeClass("picbox-active");
+		}else{
+			$(".sidebar").css({"width":"0px"});
+			$(".picbox").addClass("picbox-active");	
+		}
+	})
+
+
+</script>
+
+<script type="text/javascript"> 
+
+
+
+</script> 
+
+
+</html>

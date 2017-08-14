@@ -26,4 +26,8 @@ $(function(){
   		width: "270px",
 	  	minimumResultsForSearch: Infinity
 	});
+	$(".js-select370").select2({
+  		width: "370px",
+	  	minimumResultsForSearch: Infinity
+	});
 });

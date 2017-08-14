@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+.operation-plan .plan-box{margin:20px 10px 10px 30px;width:462px;}
+.plan-box .plan-classify{margin-bottom:25px;text-align:left;}
+.plan-box .plan-classify .plan-span{width:85px;}
+.plan-box .plan-classify input.genre{width:130px;height:27px;border:1px solid #DFE3E9;border-radius:4px;}
+.plan-box .plan-classify input.batch-input{width:90px;height:27px;border:1px solid #DFE3E9;border-radius:4px;}
+.plan-box .plan-classify .batch{margin-left:14px;}
+.plan-box .plan-classify a{width:80px;height:21px;line-height:21px;;background:#DFE1E5;color:#666;border-radius:3px;}
+.plan-box .plan-classify label span{width:73px;height:20px;line-height:20px;background: url(../img/icon21.png) no-repeat left center;background-size: 16px 16px;margin-right:25px;}
+.plan-box .plan-classify label span.active{background: url(../img/icon20.png) no-repeat left center;}
+
+.plan-classify #inpstart, .plan-classify #inpend {text-indent: 16px;background: url(../img/icon16.png) no-repeat 16px center;background-size: 16px 16px;width: 120px;letter-spacing: 0;border: 1px solid #DFE3E9;border-radius: 4px;height: 26px;text-align: center;color: #999;font-size: 12px;margin-left:5px;}
+
+.plan-table .nodelist{height:32px;line-height:33px;background:#3EABE7;top:2px;}
+.plan-table .nodelist span{margin-left:25px;}
+.plan-table .nodelist a{width:86px;height:19px;line-height:20px;color:#fff;border:1px solid #fff;border-radius:4px;margin:6px 20px 0 0;}
+.plan-table table{background:#E2E2E2;margin-bottom:50px;}
+.plan-table table th{background:#F2F2F2;height:32px;}
+.plan-table table td{background:#fff;height:36px;}
+.plan-table table td a{width:58px;height:20px;line-height:21px;background:#DFE1E5;color:#666;border-radius:3px;}
+
+/* 添加运维站点 */
+.plus-site{width:550px;height:364px;top:50%;left:50%;margin-top:-182px;margin-left:-275px;border-radius:6px;z-index:100; overflow:hidden;}
+.plus-site h5{height:42px;line-height:42px;border-radius:4px;background:#46AFE8;border-radius:6px;}
+.plus-site .site-name{margin:30px 0 20px 70px;}
+.plus-site .exist{margin:0 0 12px 70px;}
+.plus-site .exist .all-check{margin:0 50px 0 50px;}
+.plus-site .exist .selected-span{color:#ec6941;}
+.plus-site .choose-site{margin:0 0 0 65px;border:1px solid #DFE3E9;border-radius:5px;padding:8px 5px;width:400px;}
+.plus-site .choose-site .choosebox{width:130px;margin-bottom:12px;}
+.plus-site label {background-color: #FFF;border: 1px solid #DFE3E9;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);padding: 7px;border-radius: 5px;display: inline-block;position: relative;margin-right: 8px;margin-top:2px;vertical-align:bottom;}
+.plus-site label:active {box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);}
+.plus-site input:checked + label {background-color: #E9EDF1;border: 1px solid #DFE3E9;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);color: #243441;}
+.plus-site input:checked + label:after {content: '\2714';position: absolute;top: -1px;left: 0px;color: #97CDEC;width: 100%;text-align: center;font-size: 12px;}
+.plus-site .opt{margin-top:25px;}
+.plus-site .opt a{margin:0 10px;}
+
+
+
+
+
+
+
+
+
+
