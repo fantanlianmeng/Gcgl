@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>工程项目管理平台</title>
+<link href="css/base-pc.css" rel="stylesheet" type="text/css">
+<link href="css/module.css" rel="stylesheet" type="text/css">
+<link href="css/select2.css" rel="stylesheet" type="text/css">
+<link href="lay/css/layui.css" rel="stylesheet"/>
+<link href="css/out.css" rel="stylesheet" type="text/css">
+<link href="css/project-new.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="p-r">
+	<div id="header"></div>
+    <div id="sidebar"></div>
+    <div id="notice"></div>
+    
+    <div class="content filemanage">
+    	<p class="crumbs">您当前的位置：系统管理 &gt; <a href="system-role.html">角色管理</a></p>
+      	
+        <!--用户管理-->
+        <div class="sheet">
+            <div class="search fs-14">
+                <span class="d-ib">角色名称：</span>
+                <input type="text">
+                <a href="javascript:;" class="d-ib ta-c">查询</a>
+                <a href="javascript:;" class="d-ib ta-c">添加角色</a>
+            </div>
+            <div class="data-table">
+                <table cellspacing="0" cellpadding="0" class="ta-c w">
+                    <tbody>
+                        <tr class="data-head fs-14 c-f">
+                            <th>序号</th>
+                            <th>角色名称</th>
+                            <th>所属部门</th>
+                            <th>备注信息</th>
+                            <th>分配菜单权限</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>1</td>
+                            <td>系统管理员</td>
+                            <td>工程中心</td>
+                            <td>工程中心工程中心工程中心工程中心工程中心工程中心</td>
+                            <td><a href="javascript:;" class="assign-a d-ib">分配权限</a></td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">编辑</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>1</td>
+                            <td>系统管理员</td>
+                            <td>工程中心</td>
+                            <td>工程中心工程中心工程中心工程中心工程中心工程中心</td>
+                            <td><a href="javascript:;" class="assign-a d-ib">分配权限</a></td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">编辑</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>1</td>
+                            <td>系统管理员</td>
+                            <td>工程中心</td>
+                            <td>工程中心工程中心工程中心工程中心工程中心工程中心</td>
+                            <td><a href="javascript:;" class="assign-a d-ib">分配权限</a></td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">编辑</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>1</td>
+                            <td>系统管理员</td>
+                            <td>工程中心</td>
+                            <td>工程中心工程中心工程中心工程中心工程中心工程中心</td>
+                            <td><a href="javascript:;" class="assign-a d-ib">分配权限</a></td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">编辑</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="paging ta-c fs-14 c-9">
+                    <a href="javascript:;">首页</a>
+                    <a href="javascript:;">上一页</a>
+                    <a href="javascript:;" class="number number-active">1</a>
+                    <a href="javascript:;" class="number">2</a>
+                    <a href="javascript:;" class="number">3</a>
+                    <a href="javascript:;">下一页</a>
+                    <a href="javascript:;">尾页</a>
+                    <span class="d-ib">共1页/2条数据</span>
+                    跳转<input type="text" class="obtain" value="1">页
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!--分配菜单权限-->
+    <div class="mask p-f d-n"></div>
+    <div class="out-people bg-f p-f d-n" id="out-people">
+    	<h5 class="fs-14 c-f ta-c">分配菜单权限</h5>
+        <div class="check-name">
+        	<span class="f-l">选择权限：</span>
+            <span class="f-r">全选</span>
+            <input type="checkbox" class="f-r d-n checkall" id="check-all">
+            <label for="check-all" class="f-r"></label>
+            <div class="c-b"></div>
+        </div>
+        <ul id="demo"></ul>
+        <div class="opt ta-c fs-14 ta-c">
+        	<a href="#" class="cancel d-ib">取消</a>
+            <a href="#" class="keep d-ib">保存</a>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/select2_option.js"></script>
+<script src="layui.js"></script>
+<script>
+	$(document).ready(function(){
+        $("#header").load('header.html');
+        $("#sidebar").load('sidebar.html',function(){
+			$("#system").addClass('active').next(".subnav").show();
+			$("#system-role").addClass('subnav-active');
+		});
+        $("#notice").load('notice.html');
+    });
+
+	$(".assign-a").click(function(){
+		$(".mask,#out-people").show();
+	})
+
+    $(".cancel,.keep").click(function(){
+        $(".mask,#out-people").hide();
+    })
+</script>
+<script>
+	layui.use('tree', function() {
+				var tree = layui.tree({
+					elem: '#demo', //指定元素，生成的树放到哪个元素上
+					check: 'checkbox', //勾选风格
+					skin: 'as', //设定皮肤
+					drag: true,//点击每一项时是否生成提示信息
+					checkboxName: 'aa[]',//复选框的name属性值
+					checkboxStyle: "",//设置复选框的样式，必须为字符串，css样式怎么写就怎么写
+					click: function(item) { //点击节点回调
+						console.log("item")
+					},
+					onchange: function (){//当当前input发生变化后所执行的回调
+						console.log(this);
+					},
+					nodes: [ //节点
+						{
+							name: '工程中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '产品中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '工程中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '产品中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '工程中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '产品中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							spread: true, //是否是展开状态，true为展开状态
+							checked: true,//复选框默认是否选中	
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2,
+								checked: true  //复选框默认是否选中
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '工程中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						},{
+							name: '产品中心', //节点名称
+							checkboxValue: 0,//复选框的值
+							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+								nodeName: "工程中心",
+								alias: "changyong"
+							},
+							children: [{
+								name: '李一一',
+								checkboxValue: 1
+							}, {
+								name: '李一一',
+								checkboxValue: 2
+							}, {
+								name: '李一一',
+								checkboxValue: 3
+							}]
+						}
+					]
+				});
+	});
+
+	$(".checkall").click(function(){
+		var checkall = $(".checkall").prop("checked");
+		var checkall_demo = $("#demo").find("input").prop("checked");
+		if( checkall == true ){//选中
+			$("#demo").find("input").attr("checked",true);
+		}
+		if( checkall_demo == true ){
+			$(".checkall").attr("checked",true);
+		}
+	})
+</script>
+
+</html>

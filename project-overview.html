@@ -4,75 +4,20 @@
 <meta charset="utf-8">
 <title>工程项目管理平台</title>
 <link href="css/base-pc.css" rel="stylesheet" type="text/css">
+<link href="css/select2.css" rel="stylesheet" type="text/css">
 <link href="css/module.css" rel="stylesheet" type="text/css">
 <link href="css/project-manage.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="p-r">
-	<div class="herder">
-    	<div class="logo d-ib f-l"></div>
-        <div class="herder-right d-ib f-r c-f fs-16 p-r">
-        	<span class="d-ib">您好，管理员</span>
-            <a href="javascript:;" class="d-ib">退出</a>
-        </div>
-        <div class="c-b"></div>
-    </div>
-	
-    <div class="sidebar d-ib f-l p-r o-h">
-    	<ul class="fs-14 c-3">
-        	<li>
-            	<p class="p-r active"><img src="img/icon1.png" alt="">项目管理<i class="d-ib p-a"></i></p>
-                <div class="subnav">
-                	<a href="javascript:;" class="d-b">新建项目</a>
-                    <a href="javascript:;" class="d-b">项目管理</a>
-                    <a href="javascript:;" class="d-b subnav-active">项目总览</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon2.png" alt="">日志管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">日志汇报</a>
-                    <a href="javascript:;" class="d-b">日志动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon3.png" alt="">出差管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">出差申请</a>
-                    <a href="javascript:;" class="d-b">出差汇报</a>
-                    <a href="javascript:;" class="d-b">出差动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon4.png" alt="">文档管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">文档管理</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon5.png" alt="">运维管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">运维计划</a>
-                    <a href="javascript:;" class="d-b">运维处理</a>
-                    <a href="javascript:;" class="d-b">运维动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon6.png" alt="">系统管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">用户管理</a>
-                    <a href="javascript:;" class="d-b">角色管理</a>
-                    <a href="javascript:;" class="d-b">参数配置</a>
-                </div>
-            </li>
-        </ul>
-        <div class="picbox p-a"></div>
-    </div>
+	<div id="header"></div>
+    <div id="sidebar"></div>
+    <div id="notice"></div>
     
     <div class="content">
-    	<p class="crumbs">您当前的位置：项目管理 &gt; <span>项目总览</span></p>
+    	<p class="crumbs">您当前的位置：项目管理 &gt; <a href="project-overview.html">项目总览</a></p>
         <!--项目总览-->
-        <div class="overview d-n">
+        <div class="overview" id="overview">
             <div class="search fs-14">
                 <div class="search-input d-ib">
                     <span class="d-ib">项目名称：</span>
@@ -99,7 +44,10 @@
                     </div>
                     <div class="search-input d-ib">
                         <span class="d-ib">项目类型：</span>
-                        <input type="text">
+                        <select class="js-select200 select-normal" name="worktype1">
+                            <option>请选择</option>
+                            <option>请选择</option>
+                        </select>
                     </div>
                     <div class="search-input d-ib">
                         <span class="d-ib">设备型号：</span>
@@ -109,9 +57,14 @@
                         <span class="d-ib">设备数量：</span>
                         <input type="text">
                     </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">项目周期：</span>
-                        <input type="text">
+                    <div class="search-input search-input2 d-ib">
+                        <span class="d-ib f-l">项目周期：</span>
+                        <input type="text" class="f-l">
+                        <select class="js-A1-slt1 select-normal f-l" name="worktype1">
+                            <option>请选择</option>
+                            <option>请选择</option>
+                        </select>
+                        <div class="c-b"></div>
                     </div>
                     <div class="search-input d-ib">
                         <span class="d-ib">立项日期：</span>
@@ -119,7 +72,6 @@
                     </div>
                     <div class="search-input d-ib">
                         <span class="d-ib">收款状态：</span>
-                        
                         <input type="text">
                     </div>
                     <div class="search-input d-ib">
@@ -132,15 +84,28 @@
                     </div>
                     <div class="search-input d-ib">
                         <span class="d-ib">项目归属：</span>
-                        <input type="text">
+                        <select class="js-select200 select-normal" name="worktype1">
+                            <option>请选择</option>
+                            <option>请选择</option>
+                        </select>
                     </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">运维周期：</span>
-                        <input type="text">
+                    <div class="search-input search-input2 d-ib">
+                        <span class="d-ib f-l">运维周期：</span>
+                        <input type="text" class="f-l">
+                        <select class="js-A1-slt1 select-normal f-l" name="worktype1">
+                            <option>请选择</option>
+                            <option>请选择</option>
+                        </select>
+                        <div class="c-b"></div>
                     </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">质保周期：</span>
-                        <input type="text">
+                    <div class="search-input search-input2 d-ib">
+                        <span class="d-ib f-l">质保周期：</span>
+                        <input type="text" class="f-l">
+                        <select class="js-A1-slt1 select-normal f-l" name="worktype1">
+                            <option>请选择</option>
+                            <option>请选择</option>
+                        </select>
+                        <div class="c-b"></div>
                     </div>
                     <div class="search-input d-ib">
                         <span class="d-ib">业务经理：</span>
@@ -156,21 +121,33 @@
                     </div>
                     <div class="search-input d-ib">
                         <span class="d-ib">所属部门：</span>
-                        <input type="text">
+                        <select class="js-select200 select-normal" name="worktype1">
+                            <option>请选择</option>
+                            <option>请选择</option>
+                        </select>
                     </div>
                     <div class="search-input d-ib">
                         <span class="d-ib">项目服务类型：</span>
-                        <input type="text">
+                        <select class="js-select200 select-normal" name="worktype1">
+                            <option>请选择</option>
+                            <option>请选择</option>
+                        </select>
                     </div>
                     <div class="search-input d-ib">
                         <span class="d-ib">产品类型：</span>
-                        <input type="text">
+                        <select class="js-select200 select-normal" name="worktype1">
+                            <option>请选择</option>
+                            <option>请选择</option>
+                        </select>
                     </div>
                     <div class="search-input d-ib">
                         <span class="d-ib">项目阶段：</span>
-                        <input type="text">
+                        <select class="js-select200 select-normal" name="worktype1">
+                            <option>请选择</option>
+                            <option>请选择</option>
+                        </select>
                     </div>
-
+                
                 </div>
                 <p class="overview-p">进行项目统计：20 &nbsp;项目总数：30 &nbsp;进行项目统计：20 &nbsp;项目总数：30 &nbsp;进行项目统计：20 &nbsp;项目总数：30 </p>
             </div>
@@ -201,13 +178,16 @@
                             <td>尹永海</td>
                             <td>项目运维</td>
                             <td>已安装20套设备</td>
-                            <td>客户临时通知现场杆 塔变更，常规安… 
-                            	<i class="d-b c-p"></i>
+                            <td>客户临时通知现场杆 塔变更，常规安…
+                            	<span class="manage-abox d-n">
+                                	客户临时通知现场杆 塔变更，常客户临时通知现场杆 塔变更，常
+                                </span> 
+                            	<i class="manage-i d-b c-p"></i>
                             </td>
                             <td class="f_cA">设备运行不稳定</td>
                             <td>
-                                <a href="javascript:;" class="d-b">项目详情</a>
-                                <a href="javascript:;" class="d-b">日志详情</a>
+                                <a href="javascript:;" class="project-detailsa d-b">项目详情</a>
+                                <a href="javascript:;" class="log-detailsa d-b">日志详情</a>
                             </td>
                         </tr>
                         <tr class="fs-12 c-9">
@@ -223,8 +203,8 @@
                             <td>客户临时通知现场杆 塔变更，常规安… </td>
                             <td class="f_cA">设备运行不稳定</td>
                             <td>
-                                <a href="javascript:;" class="d-b">项目详情</a>
-                                <a href="javascript:;" class="d-b">日志详情</a>
+                                <a href="javascript:;" class="project-detailsa d-b">项目详情</a>
+                                <a href="javascript:;" class="log-detailsa d-b">日志详情</a>
                             </td>
                         </tr>
                         <tr class="fs-12 c-9">
@@ -240,8 +220,8 @@
                             <td>客户临时通知现场杆 塔变更，常规安… </td>
                             <td class="f_cA">设备运行不稳定</td>
                             <td>
-                                <a href="javascript:;" class="d-b">项目详情</a>
-                                <a href="javascript:;" class="d-b">日志详情</a>
+                                <a href="javascript:;" class="project-detailsa d-b">项目详情</a>
+                                <a href="javascript:;" class="log-detailsa d-b">日志详情</a>
                             </td>
                         </tr>
                         <tr class="fs-12 c-9">
@@ -257,8 +237,8 @@
                             <td>客户临时通知现场杆 塔变更，常规安… </td>
                             <td class="f_cA">设备运行不稳定</td>
                             <td>
-                                <a href="javascript:;" class="d-b">项目详情</a>
-                                <a href="javascript:;" class="d-b">日志详情</a>
+                                <a href="javascript:;" class="project-detailsa d-b">项目详情</a>
+                                <a href="javascript:;" class="log-detailsa d-b">日志详情</a>
                             </td>
                         </tr>
                     </tbody>
@@ -278,7 +258,7 @@
         </div>
 		
         <!--项目详情-->
-        <div class="details ta-c d-n">
+        <div class="details ta-c d-n" id="details">
         	<p class="add-nav fs-14 c-f ta-l">项目基本信息</p>
             <div class="details-table">
                 <table cellspacing="1" cellpadding="0" class="fs-12 w">
@@ -527,7 +507,7 @@
         </div>
         
         <!--日志详情-->
-        <div class="process">
+        <div class="process d-n" id="process">
         	 <div class="manage-table">
                 <table cellspacing="0" cellpadding="0" class="ta-c w">
                     <tbody>
@@ -565,70 +545,44 @@
                         </tr>
                     </tbody>
                 </table>
-                <div class="paging ta-c fs-14 c-9">
-                    <a href="javascript:;">首页</a>
-                    <a href="javascript:;">上一页</a>
-                    <a href="javascript:;" class="number number-active">1</a>
-                    <a href="javascript:;" class="number">2</a>
-                    <a href="javascript:;" class="number">3</a>
-                    <a href="javascript:;">下一页</a>
-                    <a href="javascript:;">尾页</a>
-                    <span class="d-ib">共1页/2条数据</span>
-                    跳转<input type="text" class="obtain" value="1">页
-                </div>
             </div>
         </div>
     </div>
 
-    <!--提示消息-->
-    <div class="notice p-f fs-12 bg-f">
-    	<i class="close p-a"></i>
-        <h4 class="fs-14 c-f ta-c">提示消息</h4>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-    </div>
-    
-     
 </body>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/select2_option.js"></script>
 <script>
-	//提示消息
-	$(".close").click(function(){
-		$(".notice").fadeOut();
-	})
-	//侧边栏
-	$(".sidebar ul li p").click(function(){
-		$(this).next(".subnav").slideToggle();
-		if($(this).hasClass("active")){
-			$(this).removeClass("active");
-		}else{
-			$(this).addClass("active");
-		}
-	})
-	$(".picbox").click(function(){
-		var sidebar_width = $(".sidebar").width();
-		if(sidebar_width === 0){
-			$(".sidebar").css({"width":"187px"});
-			$(".picbox").removeClass("picbox-active");
-		}else{
-			$(".sidebar").css({"width":"0px"});
-			$(".picbox").addClass("picbox-active");	
-		}
-	})
+	$(document).ready(function(){
+        $("#header").load('header.html');
+        $("#sidebar").load('sidebar.html',function(){
+			$("#project").addClass('active').next(".subnav").show();
+			$("#project-overview").addClass('subnav-active');
+		});
+        $("#notice").load('notice.html');
+    });
 	
 	//高级搜索
 	$(".ad-search").click(function(){
 		$(this).next(".ad-box").toggle();
+	})
+
+	$(".manage-i").click(function(){
+		$(this).toggleClass("operate-active")
+		$(this).parent("td").find(".manage-abox").slideToggle();
+	})
+	
+	$(".project-detailsa").click(function(){
+		$("#process,#overview").hide();
+		$("#details").show();
+		$(".crumbs").append("&gt; <a href='javascript:;'>项目详情</a>");
+	})
+	
+	$(".log-detailsa").click(function(){
+		$("#details,#overview").hide();
+		$("#process").show();
+		$(".crumbs").append("&gt; <a href='javascript:;'>日志详情</a>");
 	})
 </script>
 

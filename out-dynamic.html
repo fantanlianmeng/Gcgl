@@ -6,77 +6,20 @@
 <link href="css/base-pc.css" rel="stylesheet" type="text/css">
 <link href="css/module.css" rel="stylesheet" type="text/css">
 <link href="css/select2.css" rel="stylesheet" type="text/css">
-<link href="My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css">
 <link href="css/out.css" rel="stylesheet" type="text/css">
-
+W
 </head>
 
 <body class="p-r">
-	<div class="herder">
-    	<div class="logo d-ib f-l"></div>
-        <div class="herder-right d-ib f-r c-f fs-16 p-r">
-        	<span class="d-ib">您好，管理员</span>
-            <a href="javascript:;" class="d-ib">退出</a>
-        </div>
-        <div class="c-b"></div>
-    </div>
-	
-    <div class="sidebar d-ib f-l p-r o-h">
-    	<ul class="fs-14 c-3">
-        	<li>
-            	<p class="p-r active"><img src="img/icon1.png" alt="">项目管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">新建项目</a>
-                    <a href="javascript:;" class="d-b">项目管理</a>
-                    <a href="javascript:;" class="d-b">项目总览</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon2.png" alt="">日志管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">日志汇报</a>
-                    <a href="javascript:;" class="d-b">日志动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon3.png" alt="">出差管理<i class="d-ib p-a"></i></p>
-                <div class="subnav">
-                	<a href="javascript:;" class="d-b">出差申请</a>
-                    <a href="javascript:;" class="d-b">出差汇报</a>
-                    <a href="javascript:;" class="d-b subnav-active">出差动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon4.png" alt="">文档管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">文档管理</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon5.png" alt="">运维管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">运维计划</a>
-                    <a href="javascript:;" class="d-b">运维处理</a>
-                    <a href="javascript:;" class="d-b">运维动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon6.png" alt="">系统管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">用户管理</a>
-                    <a href="javascript:;" class="d-b">角色管理</a>
-                    <a href="javascript:;" class="d-b">参数配置</a>
-                </div>
-            </li>
-        </ul>
-        <div class="picbox p-a"></div>
-    </div>
+	<div id="header"></div>
+    <div id="sidebar"></div>
+    <div id="notice"></div>
     
     <div class="content">
-    	<p class="crumbs">您当前的位置：出差管理 &gt; <span>出差汇报</span></p>
+    	<p class="crumbs">您当前的位置：出差管理 &gt; <a href="out-dynamic.html">出差汇报</a></p>
         
         <!--出差总结-->
-        <div class="dynamic d-n">
+        <div class="dynamic" id="dynamic">
         	<div class="search fs-14">
             	<ul>
                 	<li class="d-ib">
@@ -129,9 +72,9 @@
                             <td>2016-05-30  09：00</td>
                             <td class="f_cA">5</td>
                             <td>
-                                <a href="javascript:;" class="d-ib">详情</a>
+                                <a href="javascript:;" class="details-a d-ib">详情</a>
                                 <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">审核</a>
+                                <a href="javascript:;" class="review-a d-ib">审核</a>
                                 <a href="javascript:;" class="d-ib">删除</a>
                             </td>
                         </tr>
@@ -147,9 +90,9 @@
                             <td>2016-05-30  09：00</td>
                             <td class="f_cA">5</td>
                             <td>
-                                <a href="javascript:;" class="d-ib">详情</a>
+                                <a href="javascript:;" class="details-a d-ib">详情</a>
                                 <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">审核</a>
+                                <a href="javascript:;" class="review-a d-ib">审核</a>
                                 <a href="javascript:;" class="d-ib">删除</a>
                             </td>
                         </tr>
@@ -165,9 +108,9 @@
                             <td>2016-05-30  09：00</td>
                             <td class="f_cA">5</td>
                             <td>
-                                <a href="javascript:;" class="d-ib">详情</a>
+                                <a href="javascript:;" class="details-a d-ib">详情</a>
                                 <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">审核</a>
+                                <a href="javascript:;" class="review-a d-ib">审核</a>
                                 <a href="javascript:;" class="d-ib">删除</a>
                             </td>
                         </tr>
@@ -183,9 +126,9 @@
                             <td>2016-05-30  09：00</td>
                             <td class="f_cA">5</td>
                             <td>
-                                <a href="javascript:;" class="d-ib">详情</a>
+                                <a href="javascript:;" class="details-a d-ib">详情</a>
                                 <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">审核</a>
+                                <a href="javascript:;" class="review-a d-ib">审核</a>
                                 <a href="javascript:;" class="d-ib">删除</a>
                             </td>
                         </tr>
@@ -201,9 +144,9 @@
                             <td>2016-05-30  09：00</td>
                             <td class="f_cA">5</td>
                             <td>
-                                <a href="javascript:;" class="d-ib">详情</a>
+                                <a href="javascript:;" class="details-a d-ib">详情</a>
                                 <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">审核</a>
+                                <a href="javascript:;" class="review-a d-ib">审核</a>
                                 <a href="javascript:;" class="d-ib">删除</a>
                             </td>
                         </tr>
@@ -222,233 +165,346 @@
                     跳转<input type="text" class="obtain" value="1">页
                 </div>
             </div>
-            
         </div>
         
-        <!--出差日报-->
-        <div class="add-render ta-c">
-            <p class="add-nav fs-14 c-f ta-l">出差汇报</p>
-            <a href="javascript:;" class="shrink ta-l d-b"><img src="img/icon24.png" alt=""></a>
-            <div class="render-box">
-                <div class="everyday-table">
-                    <table cellspacing="1" cellpadding="0" class="ta-c w">
-                        <tbody>
-                            <tr class="fs-12 c-6">
-                                <th>出差日期</th>
-                                <th>汇报人</th>
-                                <th>工作计划</th>
-                                <th>工作内容</th>
-                                <th>存在问题</th>
-                                <th>客户反馈/评价</th>
-                            </tr>
-                            <tr class="fs-12 c-9">
-                                <td>2017-04-28</td>
-                                <td>张晓宇</td>
-                                <td>周一日常工作周一日常工作周一日常工作 周一日常工作周一日常工作周一日常工作</td>
-                                <td>遗留问题遗留问题遗留问题遗留问 题遗留问题遗留问题遗留问题问题</td>
-                                <td>周一日常工作周一日常工作周一日常工作 周一日常工作周一日常工作周一日常工作</td>
-                                <td>遗留问题遗留问题遗留问题遗留问 题遗留问题遗留问题遗留问题问题</td>
-                            </tr>
-                            <tr class="fs-12 c-9">
-                                <td>2017-04-28</td>
-                                <td>张晓宇</td>
-                                <td>周一日常工作周一日常工作周一日常工作 周一日常工作周一日常工作周一日常工作</td>
-                                <td>遗留问题遗留问题遗留问题遗留问 题遗留问题遗留问题遗留问题问题</td>
-                                <td>周一日常工作周一日常工作周一日常工作 周一日常工作周一日常工作周一日常工作</td>
-                                <td>遗留问题遗留问题遗留问题遗留问 题遗留问题遗留问题遗留问题问题</td>
-                            </tr>
-                            <tr class="fs-12 c-9">
-                                <td>2017-04-28</td>
-                                <td>张晓宇</td>
-                                <td>周一日常工作周一日常工作周一日常工作 周一日常工作周一日常工作周一日常工作</td>
-                                <td>遗留问题遗留问题遗留问题遗留问 题遗留问题遗留问题遗留问题问题</td>
-                                <td>周一日常工作周一日常工作周一日常工作 周一日常工作周一日常工作周一日常工作</td>
-                                <td>遗留问题遗留问题遗留问题遗留问 题遗留问题遗留问题遗留问题问题</td>
-                            </tr>
-                        </tbody>
-                    </table>
+        <!--出差详情-->
+        <div class="d-n" id="business">
+            <!--出差日报-->
+            <div class="add-render ta-c">
+                <p class="add-nav fs-14 c-f ta-l">出差日报</p>
+                <a href="javascript:;" class="shrink ta-l d-b"><img src="img/icon24.png" alt=""></a>
+                <div class="render-box">
+                    <div class="everyday-table">
+                        <table cellspacing="1" cellpadding="0" class="ta-c w">
+                            <tbody>
+                                <tr class="fs-12 c-6">
+                                    <th>出差日期</th>
+                                    <th>汇报人</th>
+                                    <th>工作计划</th>
+                                    <th>工作内容</th>
+                                    <th>存在问题</th>
+                                    <th>客户反馈/评价</th>
+                                </tr>
+                                <tr class="fs-12 c-9">
+                                    <td>2017-04-28</td>
+                                    <td>张晓宇</td>
+                                    <td>周一日常工作周一日常工作周一日常工作 周一日常工作周一日常工作周一日常工作</td>
+                                    <td>遗留问题遗留问题遗留问题遗留问 题遗留问题遗留问题遗留问题问题</td>
+                                    <td>周一日常工作周一日常工作周一日常工作 周一日常工作周一日常工作周一日常工作</td>
+                                    <td>遗留问题遗留问题遗留问题遗留问 题遗留问题遗留问题遗留问题问题</td>
+                                </tr>
+                                <tr class="fs-12 c-9">
+                                    <td>2017-04-28</td>
+                                    <td>张晓宇</td>
+                                    <td>周一日常工作周一日常工作周一日常工作 周一日常工作周一日常工作周一日常工作</td>
+                                    <td>遗留问题遗留问题遗留问题遗留问 题遗留问题遗留问题遗留问题问题</td>
+                                    <td>周一日常工作周一日常工作周一日常工作 周一日常工作周一日常工作周一日常工作</td>
+                                    <td>遗留问题遗留问题遗留问题遗留问 题遗留问题遗留问题遗留问题问题</td>
+                                </tr>
+                                <tr class="fs-12 c-9">
+                                    <td>2017-04-28</td>
+                                    <td>张晓宇</td>
+                                    <td>周一日常工作周一日常工作周一日常工作 周一日常工作周一日常工作周一日常工作</td>
+                                    <td>遗留问题遗留问题遗留问题遗留问 题遗留问题遗留问题遗留问题问题</td>
+                                    <td>周一日常工作周一日常工作周一日常工作 周一日常工作周一日常工作周一日常工作</td>
+                                    <td>遗留问题遗留问题遗留问题遗留问 题遗留问题遗留问题遗留问题问题</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+            </div>
+            
+            <!--出差总结-->
+            <div class="add-render add-render2 add-render3 ta-c">
+            	<form action="">
+                    <p class="add-nav fs-14 c-f ta-l">出差总结</p>
+                    <a href="javascript:;" class="shrink ta-l d-b"><img src="img/icon24.png" alt=""></a>
+                    <div class="render-box">
+                        <div class="pick fs-12 c-6">
+                            <ul class="lif-l">
+                                <li class="d-ib">
+                                    <span class="pick-span d-ib fs-12 fw-1">实际开始日期：</span>
+                                    <input type="text" name="duration" id="duration" class="duration" value="2017-01-02" readonly>
+                                </li>
+                                <li class="d-ib">
+                                    <span class="pick-span d-ib fs-12 fw-1">实际结束日期：</span>
+                                    <input type="text" name="duration" id="duration1" class="duration" value="2017-01-02" readonly>
+                                </li>
+                                <li class="d-ib">
+                                    <span class="pick-span d-ib fs-12 fw-1">总计出差天数：</span>
+                                    <input type="text" name="duration" id="duration2" class="duration" value="8" readonly>
+                                </li>
+                                <li class="d-ib">
+                                    <span class="pick-span d-ib fs-12 fw-1">出差人员：</span>
+                                    <input type="text" name="duration" id="duration3" class="duration" value="李一一" readonly>
+                                </li>
+                                <div class="c-b"></div>
+                            </ul>
+                        </div>
+                    
+                        <div class="render-table ta-l">
+                            <table cellspacing="1" cellpadding="0" class="fs-12 w">
+                                <tbody>
+                                    <tr class="c-9">
+                                        <td class="c-6 ta-c">出差总结：</td>
+                                        <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
+                                    </tr>
+                                    <tr class="c-9">
+                                        <td class="c-6 ta-c">存在问题：</td>
+                                        <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
+                                    </tr>
+                                    <tr class="c-9">
+                                        <td class="c-6 ta-c">客户反馈/评价：</td>
+                                        <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="cost-table">
+                        	<div class="construction d-ib ta-r f-l fs-12">
+                                <p class="c-6">施工费用明细：</p>
+                                <a href="#" class="d-ib ta-c">导出表格</a>
+                            </div>
+                            <table cellspacing="1" cellpadding="0" class="fs-12 w f-l">
+                                <tbody>
+                                    <tr class="c-6">
+                                        <th>序号</th>
+                                        <th>费用品名</th>
+                                        <th>数量</th>
+                                        <th>单位</th>
+                                        <th>单价</th>
+                                        <th>总金额</th>
+                                        <th>费用类别</th>
+                                        <th>汇报人</th>
+                                    </tr>
+                                    <tr class="c-9">
+                                        <td>1</td>
+                                        <td>C40混凝土</td>
+                                        <td>12</td>
+                                        <td>m³</td>
+                                        <td>350</td>
+                                        <td>4200</td>
+                                        <td>耗材费</td>
+                                        <td>李一一</td>
+                                    </tr>
+                                    <tr class="c-9">
+                                        <td>1</td>
+                                        <td>C40混凝土</td>
+                                        <td>12</td>
+                                        <td>m³</td>
+                                        <td>350</td>
+                                        <td>4200</td>
+                                        <td>耗材费</td>
+                                        <td>李一一</td>
+                                    </tr>
+                                    <tr class="c-9">
+                                        <td colspan="5">金额总计</td>
+                                        <td>4250</td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="c-b"></div>
+                        </div>
+                        
+                        <p class="filesummary fs-12 c-6 ta-l">出差报告文件上传：<span class="d-ib">出差文件.jpg</span></p>
+                        
+                    </div>
+                </form>
             </div>
         </div>
         
-        <!--出差总结-->
-        <div class="add-render add-render2 add-render3 ta-c">
-        	<form action="">
-                <p class="add-nav fs-14 c-f ta-l">出差汇报</p>
-                <a href="javascript:;" class="shrink ta-l d-b"><img src="img/icon24.png" alt=""></a>
-                <div class="render-box">
-                    <div class="pick fs-12 c-6">
-                        <ul class="lif-l">
-                            <li class="d-ib">
-                                <span class="pick-span d-ib fs-12 fw-1">实际开始日期：</span>
-                                <input type="text" name="duration" id="duration" class="duration" value="2017-01-02" readonly>
-                            </li>
-                            <li class="d-ib">
-                                <span class="pick-span d-ib fs-12 fw-1">实际结束日期：</span>
-                                <input type="text" name="duration" id="duration" class="duration" value="2017-01-02" readonly>
-                            </li>
-                            <li class="d-ib">
-                                <span class="pick-span d-ib fs-12 fw-1">总计出差天数：</span>
-                                <input type="text" name="duration" id="duration" class="duration" value="8" readonly>
-                            </li>
-                            <li class="d-ib">
-                                <span class="pick-span d-ib fs-12 fw-1">出差人员：</span>
-                                <input type="text" name="duration" id="duration" class="duration" value="李一一" readonly>
-                            </li>
-                            <div class="c-b"></div>
-                        </ul>
-                    </div>
-                
-                    <div class="render-table ta-l">
-                        <table cellspacing="1" cellpadding="0" class="fs-12 w">
-                            <tbody>
-                                <tr class="c-9">
-                                    <td class="c-6 ta-c">出差总结：</td>
-                                    <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
-                                </tr>
-                                <tr class="c-9">
-                                    <td class="c-6 ta-c">存在问题：</td>
-                                    <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
-                                </tr>
-                                <tr class="c-9">
-                                    <td class="c-6 ta-c">客户反馈/评价：</td>
-                                    <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                    <div class="cost-table">
-                    	<div class="construction d-ib ta-r f-l fs-12">
-                            <p class="c-6">施工费用明细：</p>
-                            <a href="#" class="d-ib ta-c">导出表格</a>
+        <!--出差审核-->
+        <div class="d-n" id="review">
+            <div class="add-render add-render2 add-render3 ta-c">
+                <form action="">
+                    <p class="add-nav fs-14 c-f ta-l">出差总结</p>
+                    <a href="javascript:;" class="shrink ta-l d-b"><img src="img/icon24.png" alt=""></a>
+                    <div class="render-box">
+                        <div class="pick fs-12 c-6">
+                            <ul class="lif-l">
+                                <li class="d-ib">
+                                    <span class="pick-span d-ib fs-12 fw-1">实际开始日期：</span>
+                                    <input type="text" name="duration" id="duration" class="duration" value="2017-01-02" readonly>
+                                </li>
+                                <li class="d-ib">
+                                    <span class="pick-span d-ib fs-12 fw-1">实际结束日期：</span>
+                                    <input type="text" name="duration" id="duration" class="duration" value="2017-01-02" readonly>
+                                </li>
+                                <li class="d-ib">
+                                    <span class="pick-span d-ib fs-12 fw-1">总计出差天数：</span>
+                                    <input type="text" name="duration" id="duration" class="duration" value="8" readonly>
+                                </li>
+                                <li class="d-ib">
+                                    <span class="pick-span d-ib fs-12 fw-1">出差人员：</span>
+                                    <input type="text" name="duration" id="duration" class="duration" value="李一一" readonly>
+                                </li>
+                                <div class="c-b"></div>
+                            </ul>
                         </div>
-                        <table cellspacing="1" cellpadding="0" class="fs-12 w f-l">
-                            <tbody>
-                                <tr class="c-6">
-                                    <th>序号</th>
-                                    <th>费用品名</th>
-                                    <th>数量</th>
-                                    <th>单位</th>
-                                    <th>单价</th>
-                                    <th>总金额</th>
-                                    <th>费用类别</th>
-                                    <th>汇报人</th>
-                                </tr>
-                                <tr class="c-9">
-                                    <td>1</td>
-                                    <td>C40混凝土</td>
-                                    <td>12</td>
-                                    <td>m³</td>
-                                    <td>350</td>
-                                    <td>4200</td>
-                                    <td>耗材费</td>
-                                    <td>李一一</td>
-                                </tr>
-                                <tr class="c-9">
-                                    <td>1</td>
-                                    <td>C40混凝土</td>
-                                    <td>12</td>
-                                    <td>m³</td>
-                                    <td>350</td>
-                                    <td>4200</td>
-                                    <td>耗材费</td>
-                                    <td>李一一</td>
-                                </tr>
-                                <tr class="c-9">
-                                    <td colspan="5">金额总计</td>
-                                    <td>4250</td>
-                                    <td colspan="2"></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="c-b"></div>
+                    
+                        <div class="render-table ta-l">
+                            <table cellspacing="1" cellpadding="0" class="fs-12 w">
+                                <tbody>
+                                    <tr class="c-9">
+                                        <td class="c-6 ta-c">出差总结：</td>
+                                        <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
+                                    </tr>
+                                    <tr class="c-9">
+                                        <td class="c-6 ta-c">存在问题：</td>
+                                        <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
+                                    </tr>
+                                    <tr class="c-9">
+                                        <td class="c-6 ta-c">客户反馈/评价：</td>
+                                        <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="cost-table">
+                            <div class="construction d-ib ta-r f-l fs-12">
+                                <p class="c-6">施工费用明细：</p>
+                                <a href="#" class="d-ib ta-c">导出表格</a>
+                            </div>
+                            <table cellspacing="1" cellpadding="0" class="fs-12 w f-l">
+                                <tbody>
+                                    <tr class="c-6">
+                                        <th>序号</th>
+                                        <th>费用品名</th>
+                                        <th>数量</th>
+                                        <th>单位</th>
+                                        <th>单价</th>
+                                        <th>总金额</th>
+                                        <th>费用类别</th>
+                                    </tr>
+                                    <tr class="c-9">
+                                        <td>1</td>
+                                        <td>C40混凝土</td>
+                                        <td>12</td>
+                                        <td>m³</td>
+                                        <td>350</td>
+                                        <td>4200</td>
+                                        <td>耗材费</td>
+                                    </tr>
+                                    <tr class="c-9">
+                                        <td>1</td>
+                                        <td>C40混凝土</td>
+                                        <td>12</td>
+                                        <td>m³</td>
+                                        <td>350</td>
+                                        <td>4200</td>
+                                        <td>耗材费</td>
+                                    </tr>
+                                    <tr class="c-6">
+                                        <td colspan="5">金额总计</td>
+                                        <td>4250</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="c-b"></div>
+                        </div>
+                        
+                        <div class="preview ta-l fs-12 c-6">
+                            <span class="preview-span d-ib">已上传文件：</span>
+                            <select class="js-select270 select-normal" name="preview">
+                                <option>PC通州油烟三期项目现场安装报告</option>
+                                <option>请选择</option>
+                            </select>
+                            <a href="#" class="ta-c d-ib">下载</a>
+                        </div>
+                        
                     </div>
+                </form>
+            </div>
+            
+            <div class="add-render add-render4 ta-c">
+                <form action="">
+                    <p class="add-nav fs-14 c-f ta-l">出差审核</p>
+                    <a href="javascript:;" class="shrink ta-l d-b"><img src="img/icon24.png" alt=""></a>
+                    <div class="render-box">
+                        <div class="pick fs-12 c-6">
+                            <ul class="lif-l">
+                                <li class="d-ib">
+                                    <span class="pick-span d-ib fs-12 fw-1">实际开始日期：</span>
+                                    <select class="js-select100 select-normal" name="preview">
+                                        <option>PC通州油烟三期项目现场安装报告</option>
+                                        <option>请选择</option>
+                                    </select>
+                                </li>
+                                <li class="d-ib">
+                                    <span class="pick-span d-ib fs-12 fw-1">实际结束日期：</span>
+                                    <select class="js-select100 select-normal" name="preview">
+                                        <option>PC通州油烟三期项目现场安装报告</option>
+                                        <option>请选择</option>
+                                    </select>
+                                </li>
+                                <li class="d-ib">
+                                    <span class="pick-span d-ib fs-12 fw-1">总计出差天数：</span>
+                                    <input type="text" name="duration" id="duration" class="duration" value="8" readonly>
+                                </li>
+                                <li class="d-ib">
+                                    <span class="pick-span d-ib fs-12 fw-1">出差人员：</span>
+                                    <select class="js-select100 select-normal" name="preview">
+                                        <option>PC通州油烟三期项目现场安装报告</option>
+                                        <option>请选择</option>
+                                    </select>
+                                </li>
+                                <div class="c-b"></div>
+                            </ul>
+                        </div>
                     
-                    <p class="filesummary fs-12 c-6 ta-l">出差报告文件上传：<span class="d-ib">出差文件.jpg</span></p>
-                    
-                </div>
-            </form>
+                        <div class="render-table ta-l">
+                            <table cellspacing="1" cellpadding="0" class="fs-12 w">
+                                <tbody>
+                                    <tr class="c-9">
+                                        <td class="c-6 ta-c">备注：</td>
+                                        <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <a href="javascript:;" class="add-submit d-ib ta-c fs-14">提交</a>
+                    </div>
+                </form>
+            </div>
         </div>
-        
     </div>
-    
-    <!--提示消息-->
-    <div class="notice p-f fs-12 bg-f">
-    	<i class="close p-a"></i>
-        <h4 class="fs-14 c-f ta-c">提示消息</h4>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-    </div>
+
 
 </body>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
 <script>
+	$(document).ready(function(){
+        $("#header").load('header.html');
+        $("#sidebar").load('sidebar.html',function(){
+			$("#out").addClass('active').next(".subnav").show();
+			$("#out-dynamic").addClass('subnav-active');
+		});
+        $("#notice").load('notice.html');
+    });
+	
 	$(".shrink").click(function(){
 		$(this).next(".render-box").slideToggle();
 		$(this).find("img").toggleClass("shrink-active")
 	})
-	
-	//下拉框两级联动
-	var currentShowCity = 0;
-	$(document).ready(function() {
-		$("#province").change(function() {
-			$("#province option").each(function(i, o) {
-				if ($(this).attr("selected")){
-					$(".city").next("span").hide();
-					$(".city").eq(i).next("span").show();
-					$(".city").eq(0).next("span").hide();
-					currentShowCity = i;
-				}
-			});
-		});
-		$("#province").change();
-	});
-	
-	//提示消息
-	$(".close").click(function(){
-		$(".notice").fadeOut();
-	})
-	//侧边栏
-	$(".sidebar ul li p").click(function(){
-		$(this).next(".subnav").slideToggle();
-		if($(this).hasClass("active")){
-			$(this).removeClass("active");
-		}else{
-			$(this).addClass("active");	
-		}
-	})
-	$(".picbox").click(function(){
-		var sidebar_width = $(".sidebar").width();
-		if(sidebar_width === 0){
-			$(".sidebar").css({"width":"187px"});
-			$(".picbox").removeClass("picbox-active");
-		}else{
-			$(".sidebar").css({"width":"0px"});
-			$(".picbox").addClass("picbox-active");	
-		}
-	})
 
-
+	$(".details-a").click(function(){
+        $("#dynamic,#review").hide();
+        $("#business").show();
+        $(".crumbs").append("&gt; <a href='javascript:;'>详情</a>");
+    })
+    $(".review-a").click(function(){
+        $("#dynamic,#business").hide();
+        $("#review").show()
+        $(".crumbs").append("&gt; <a href='javascript:;'>审核</a>");
+    })
+    
 </script>
-
-<script type="text/javascript"> 
-
-
-
-</script> 
-
 
 </html>

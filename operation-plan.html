@@ -4,76 +4,21 @@
 <meta charset="utf-8">
 <title>工程项目管理平台</title>
 <link href="css/base-pc.css" rel="stylesheet" type="text/css">
+<link href="lay/css/layui.css" rel="stylesheet"/>
 <link href="css/module.css" rel="stylesheet" type="text/css">
 <link href="css/select2.css" rel="stylesheet" type="text/css">
-<link href="lay/css/layui.css" rel="stylesheet"/>
+<link href="css/jedate.css" rel="stylesheet" type="text/css">
 <link href="css/out.css" rel="stylesheet" type="text/css">
 <link href="css/operation.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="p-r">
-	<div class="herder">
-    	<div class="logo d-ib f-l"></div>
-        <div class="herder-right d-ib f-r c-f fs-16 p-r">
-        	<span class="d-ib">您好，管理员</span>
-            <a href="javascript:;" class="d-ib">退出</a>
-        </div>
-        <div class="c-b"></div>
-    </div>
-	
-    <div class="sidebar d-ib f-l p-r o-h">
-    	<ul class="fs-14 c-3">
-        	<li>
-            	<p class="p-r"><img src="img/icon1.png" alt="">项目管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">新建项目</a>
-                    <a href="javascript:;" class="d-b">项目管理</a>
-                    <a href="javascript:;" class="d-b">项目总览</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon2.png" alt="">日志管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">日志汇报</a>
-                    <a href="javascript:;" class="d-b">日志动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon3.png" alt="">出差管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">出差申请</a>
-                    <a href="javascript:;" class="d-b">出差汇报</a>
-                    <a href="javascript:;" class="d-b">出差动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon4.png" alt="">文档管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">文档管理</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r active"><img src="img/icon5.png" alt="">运维管理<i class="d-ib p-a"></i></p>
-                <div class="subnav">
-                	<a href="javascript:;" class="d-b subnav-active">运维计划</a>
-                    <a href="javascript:;" class="d-b">运维处理</a>
-                    <a href="javascript:;" class="d-b">运维动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon6.png" alt="">系统管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">用户管理</a>
-                    <a href="javascript:;" class="d-b">角色管理</a>
-                    <a href="javascript:;" class="d-b">参数配置</a>
-                </div>
-            </li>
-        </ul>
-        <div class="picbox p-a"></div>
-    </div>
+    <div id="header"></div>
+    <div id="sidebar"></div>
+    <div id="notice"></div>
     
     <div class="content filemanage">
-    	<p class="crumbs">您当前的位置：运维管理 &gt; <span>运维计划</span></p>
+    	<p class="crumbs">您当前的位置：运维管理 &gt; <a href="operation-plan.html">运维计划</a></p>
       	 
          <!--运维计划-->
          <div class="operation-plan">
@@ -96,7 +41,7 @@
                     </div>
                     <div class="plan-classify">
                     	<span class="plan-span d-ib">拟派运维人员：</span>
-                        <a href="javascript:;" class="d-ib ta-c">添加人员</a>
+                        <a href="javascript:;" class="add-personnel d-ib ta-c">添加人员</a>
                     </div>
                     <div class="plan-classify">
                     	<span class="plan-span d-ib">运维类型：</span>
@@ -120,7 +65,7 @@
                     <div class="plan-table">
                     	<div class="nodelist fs-12 c-f p-r">
                         	<span class="d-ib f-l">站点列表</span>
-                            <a href="javascript:;" class="d-ib ta-c f-r">添加运维站点</a>
+                            <a href="javascript:;" class="plussite-a d-ib ta-c f-r">添加运维站点</a>
                             <div class="c-b"></div>
                         </div>
                         <table cellspacing="1" cellpadding="0" class="fs-12 w">
@@ -150,8 +95,8 @@
     </div>
 	
     <div class="mask p-f d-n"></div>
-    <!--添加出差人-->
-    <div class="out-people bg-f p-f d-n">
+    <!--添加人员-->
+    <div class="out-people bg-f p-f d-n" id="out-people">
     	<h5 class="fs-14 c-f ta-c">添加人员</h5>
         <div class="check-name">
         	<span class="f-l">人员菜单：</span>
@@ -168,7 +113,7 @@
     </div>
     
     <!--添加运维站点-->
-    <div class="plus-site bg-f p-f fs-12 c-6 d-n">
+    <div class="plus-site bg-f p-f fs-12 c-6 d-n" id="plus-site">
     	<h5 class="fs-14 c-f ta-c">添加运维站点</h5>
         <p class="site-name">站点名称：&nbsp&nbsp&nbsp <span class="c-9">新一代E区</span></p>
         <div class="exist">
@@ -178,7 +123,7 @@
                 <label for="check-site" class=""></label>
                 <span>全选</span>
             </div>
-            <span class="selected-span d-ib">已选择站点1个</span>
+            <span class="selected-span d-ib">已选择站点<span id="number">1</span>个</span>
         </div>
         <div class="choose-site c-9">
         	<div class="choosebox d-ib">
@@ -208,31 +153,23 @@
         </div>
     </div>
     
-    <!--提示消息-->
-    <div class="notice p-f fs-12 bg-f">
-    	<i class="close p-a"></i>
-        <h4 class="fs-14 c-f ta-c">提示消息</h4>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-    </div>
     
 </body>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
-<script src="jeDate/jedate.js"></script>
+<script src="js/jquery.jedate.js"></script>
 <script src="layui.js"></script>
 <script>
+	$(document).ready(function(){
+        $("#header").load('header.html');
+        $("#sidebar").load('sidebar.html',function(){
+			$("#operation").addClass('active').next(".subnav").show();
+			$("#operation-plan").addClass('subnav-active');
+		});
+        $("#notice").load('notice.html');
+    });
+	
 	
 	$(".operation-type label").click(function(){
 		var checkaone = $(".operation-type label").find("input").prop("checked");
@@ -241,44 +178,59 @@
 			$(this).find("span").addClass("active");
 		}
 	})
+	//添加人员
+	$(".add-personnel").click(function(){
+		$(".mask,#out-people").show();
+	})
+	$(".plussite-a").click(function(){
+		$(".mask,#plus-site").show();
+	})
+	$(".cancel,.keep").click(function(){
+		$(".mask,#out-people,#plus-site").hide();
+	})
 	
-	
-	//时间控件
-	jeDate({
-		dateCell:"#inpstart",
-		format:"YYYY-MM-DD",
-		isinitVal:true,
-		minDate:"2014-09-19"
-	})	
-	jeDate({
-		dateCell:"#inpend",
-		format:"YYYY-MM-DD",
-		isinitVal:true,
-		minDate:"2014-09-19"
-	})		
-	//提示消息
-	$(".close").click(function(){
-		$(".notice").fadeOut();
+	//添加运维站点
+	function check_le(){
+		var check_length = $(".choosebox").find("input:checked").length
+		$("#number").text(check_length)
+	}
+	check_le()
+	$(".all-check label").click(function(){
+		$(".choose-site").find("input").attr("checked",true);
+		check_le()
 	})
-	//侧边栏
-	$(".sidebar ul li p").click(function(){
-		$(this).next(".subnav").slideToggle();
-		if($(this).hasClass("active")){
-			$(this).removeClass("active");
-		}else{
-			$(this).addClass("active");	
+	$(".choosebox label").click(function(){
+var check_length = $(".choosebox").find("input:checked").length
+		$("#number").text(check_length)
+		var checkall_demo = $(".choosebox").find(":checkbox").prop("checked");
+		if( checkall == true ){//选中
+			alert(1)
+			$(".all-check").find("input").attr("checked",true);
 		}
+
 	})
-	$(".picbox").click(function(){
-		var sidebar_width = $(".sidebar").width();
-		if(sidebar_width === 0){
-			$(".sidebar").css({"width":"187px"});
-			$(".picbox").removeClass("picbox-active");
-		}else{
-			$(".sidebar").css({"width":"0px"});
-			$(".picbox").addClass("picbox-active");	
+
+
+	//实现日期选择联动
+	var start = {
+		format: 'YYYY-MM-DD',
+		choosefun: function(elem,datas){
+			end.minDate = datas; //开始日选好后，重置结束日的最小日期
+			endDates();
 		}
-	})
+	};
+	var end = {
+		format: 'YYYY-MM-DD',
+		choosefun: function(elem,datas){
+			start.maxDate = datas; //将结束日的初始值设定为开始日的最大日期
+		}
+	};
+	function endDates() {
+		end.trigger = false;
+		$("#inpend").jeDate(end);
+	}
+	$("#inpstart").jeDate(start);
+	$("#inpend").jeDate(end);
 </script>
 <script>
 	layui.use('tree', function() {
@@ -438,25 +390,13 @@
 						}
 					]
 				});
-			});
-	
-	//添加人员
-	$(".cancel,.confirm").click(function(){
-		$(".mask,.information,.out-people").hide();
-	})
+	});
 	$(".checkall").click(function(){
 		var checkall = $(".checkall").prop("checked");
 		var checkall_demo = $("#demo").find("input").prop("checked");
 		if( checkall == true ){//选中
 			$("#demo").find("input").attr("checked",true);
 		}
-		if( checkall_demo == true ){
-			$(".checkall").attr("checked",true);
-		}
-	})
-	//添加运维站点
-	$(".all-check label").click(function(){
-		$(".choose-site").find("input").attr("checked",true);
 	})
 </script>
 </html>

@@ -10,71 +10,15 @@
 </head>
 
 <body class="p-r">
-	<div class="herder">
-    	<div class="logo d-ib f-l"></div>
-        <div class="herder-right d-ib f-r c-f fs-16 p-r">
-        	<span class="d-ib">您好，管理员</span>
-            <a href="javascript:;" class="d-ib">退出</a>
-        </div>
-        <div class="c-b"></div>
-    </div>
-	
-    <div class="sidebar d-ib f-l p-r o-h">
-    	<ul class="fs-14 c-3">
-        	<li>
-            	<p class="p-r"><img src="img/icon1.png" alt="">项目管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">新建项目</a>
-                    <a href="javascript:;" class="d-b">项目管理</a>
-                    <a href="javascript:;" class="d-b">项目总览</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon2.png" alt="">日志管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">日志汇报</a>
-                    <a href="javascript:;" class="d-b">日志动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon3.png" alt="">出差管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">出差申请</a>
-                    <a href="javascript:;" class="d-b">出差汇报</a>
-                    <a href="javascript:;" class="d-b">出差动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r active"><img src="img/icon4.png" alt="">文档管理<i class="d-ib p-a"></i></p>
-                <div class="subnav">
-                	<a href="javascript:;" class="d-b subnav-active">文档管理</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon5.png" alt="">运维管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">运维计划</a>
-                    <a href="javascript:;" class="d-b">运维处理</a>
-                    <a href="javascript:;" class="d-b">运维动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon6.png" alt="">系统管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">用户管理</a>
-                    <a href="javascript:;" class="d-b">角色管理</a>
-                    <a href="javascript:;" class="d-b">参数配置</a>
-                </div>
-            </li>
-        </ul>
-        <div class="picbox p-a"></div>
-    </div>
+	<div id="header"></div>
+    <div id="sidebar"></div>
+    <div id="notice"></div>
     
     <div class="content filemanage">
-    	<p class="crumbs">您当前的位置：文档管理 &gt; <span>文档管理</span></p>
+    	<p class="crumbs">您当前的位置：文档管理 &gt; <a href="file-manage.html">文档管理</a></p>
       	
         <!--文档管理-->
-        <div class="sheet d-n">
+        <div class="sheet" id="document-man">
             <div class="search fs-14">
                 <span class="d-ib">项目名称：</span>
                 <input type="text">
@@ -101,7 +45,7 @@
                                 </select>
                             </td>
                             <td>
-                                <a href="javascript:;" class="d-ib">查看</a>
+                                <a href="javascript:;" class="see d-ib">查看</a>
                             </td>
                         </tr>
                         <tr class="fs-12 c-9">
@@ -115,7 +59,7 @@
                                 </select>
                             </td>
                             <td>
-                                <a href="javascript:;" class="d-ib">查看</a>
+                                <a href="javascript:;" class="see d-ib">查看</a>
                             </td>
                         </tr>
                         <tr class="fs-12 c-9">
@@ -134,7 +78,7 @@
                                 </select>
                             </td>
                             <td>
-                                <a href="javascript:;" class="d-ib">查看</a>
+                                <a href="javascript:;" class="see d-ib">查看</a>
                             </td>
                         </tr>
                     </tbody>
@@ -153,10 +97,10 @@
             </div>
         </div>
         
-        <!--添加项目-->
-        <div class="sheet">
+        <!--查看文档-->
+        <div class="sheet d-n" id="view-documents">
             <div class="search fs-14 ta-r">
-                <a href="javascript:;" class="d-ib ta-c">上传文件</a>
+                <a href="javascript:;" class="upload-files d-ib ta-c">上传文件</a>
             </div>
             <div class="data-table">
                 <table cellspacing="0" cellpadding="0" class="ta-c w">
@@ -263,28 +207,10 @@
         </div>
         
     </div>
-
-    <!--提示消息-->
-    <div class="notice p-f fs-12 bg-f">
-    	<i class="close p-a"></i>
-        <h4 class="fs-14 c-f ta-c">提示消息</h4>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-    </div>
     
     <!--上传文件弹窗-->
     <div class="mask p-f d-n"></div>
-    <div class="file-popup bg-f p-f o-h d-n">
+    <div class="file-popup bg-f p-f o-h d-n" id="file-popup">
     	<h5 class="fs-14 c-f ta-c">上传文件</h5>
         <div class="filepopup-box ta-l fs-12 c-6">
         	<ul>
@@ -332,31 +258,25 @@
 <script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
 <script>
-	//提示消息
-	$(".close").click(function(){
-		$(".notice").fadeOut();
-	})
-	//侧边栏
-	$(".sidebar ul li p").click(function(){
-		$(this).next(".subnav").slideToggle();
-		if($(this).hasClass("active")){
-			$(this).removeClass("active");
-		}else{
-			$(this).addClass("active");	
-		}
-	})
-	$(".picbox").click(function(){
-		var sidebar_width = $(".sidebar").width();
-		if(sidebar_width === 0){
-			$(".sidebar").css({"width":"187px"});
-			$(".picbox").removeClass("picbox-active");
-		}else{
-			$(".sidebar").css({"width":"0px"});
-			$(".picbox").addClass("picbox-active");	
-		}
-	})
-	
-	
-</script>
+	$(document).ready(function(){
+        $("#header").load('header.html');
+        $("#sidebar").load('sidebar.html',function(){
+			$("#file").addClass('active').next(".subnav").show();
+			$("#file-manage").addClass('subnav-active');
+		});
+        $("#notice").load('notice.html');
+    });
 
+    $(".see").click(function(){
+        $("#document-man").hide();
+        $("#view-documents").show();
+        $(".crumbs").append("&gt; <a href='javascript:;'>查看</a>");
+    })
+    $(".upload-files").click(function(){
+        $(".mask,#file-popup").show();
+    })
+    $(".cancel,.confirm").click(function(){
+        $(".mask,#file-popup").hide();
+    })
+</script>
 </html>

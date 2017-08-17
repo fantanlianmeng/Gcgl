@@ -264,7 +264,7 @@
 
 .select2-container--default .select2-results > .select2-results__options {
   max-height: 200px;
-  overflow-y: auto; }
+  overflow-y: auto;}
 
 .select2-container--default .select2-results__option[role=group] {
   padding: 0; }
@@ -299,7 +299,8 @@
   height:22px;
   line-height:22px;
   background-color: #5897fb;
-  color: white; }
+  color: white;
+  white-space: nowrap}
 
 .select2-container--default .select2-results__group {
   cursor: default;

@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>工程项目管理平台</title>
+<link href="css/base-pc.css" rel="stylesheet" type="text/css">
+<link href="css/module.css" rel="stylesheet" type="text/css">
+<link href="css/select2.css" rel="stylesheet" type="text/css">
+<link href="css/project-new.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="p-r">
+	<div id="header"></div>
+    <div id="sidebar"></div>
+    <div id="notice"></div>
+    
+    <div class="content filemanage">
+    	<p class="crumbs">您当前的位置：系统管理 &gt; <a href="system-parameter.html">参数配置</a></p>
+      	
+        <!--参数配置-->
+        <div class="allocation">
+        	<div class="parameter fa-14">
+				<a href="#" class="parameter-active d-ib">项目归属</a>
+                <a href="#" class="d-ib">所属部门</a>
+                <a href="#" class="d-ib">所属部门</a>
+                <a href="#" class="d-ib">所属部门</a>
+                <a href="#" class="d-ib">所属部门</a>
+                <a href="#" class="d-ib">所属部门</a>
+                <a href="#" class="d-ib">所属部门</a>
+                <a href="#" class="append d-ib">添加参数种类</a>
+            </div>
+            <div class="query fs-12 c-3">
+            	<span>名称：</span>
+                <input type="text">
+                <a href="#" class="d-ib">查询</a>
+                <a href="#" class="attribute d-ib">添加参数属性</a>
+            </div>
+            <div class="parameter-table fs-12 c-9">
+            	 <table cellspacing="1" cellpadding="0" class="ta-c w">
+                    <tbody>
+                        <tr class="data-head fs-14 c-f">
+                            <th>序号</th>
+                            <th>名称</th>
+                            <th>备注</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>1</td>
+                            <td>站点</td>
+                            <td>站点名称站点名</td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">修改</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>1</td>
+                            <td>站点</td>
+                            <td>站点名称站点名</td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">修改</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                        <tr class="fs-12 c-9">
+                            <td>1</td>
+                            <td>站点</td>
+                            <td>站点名称站点名</td>
+                            <td>
+                                <a href="javascript:;" class="d-ib">修改</a>
+                                <a href="javascript:;" class="d-ib">删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <!--添加参数属性-->
+    <div class="mask p-f d-n"></div>
+	<div class="add-parameter p-f bg-f d-n" id="parameter-property">
+    	<h5 class="c-f fs-14 ta-c">添加参数属性</h5>
+        <div class="system-nature fs-12 c-6">
+        	<div class="nature-box d-ib">
+                <span class="nature-span d-ib">所属类别：</span>
+                <select class="js-select133 select-normal" name="branch">
+                    <option>PC软件部</option>
+                    <option>请选择</option>
+                </select>
+            </div>
+            <div class="nature-box d-ib">
+                <span class="nature-span d-ib">属性名称：</span>
+                <input type="text" value="站点">
+            </div>
+            <div class="nature-box d-ib">
+                <span class="nature-span d-ib">备注：</span>
+                <textarea></textarea>
+            </div>
+            <div class="information-a ta-c fs-14 ta-c">
+                <a href="#" class="cancel d-ib">取消</a>
+                <a href="#" class="confirm d-ib">保存</a>
+            </div>
+        </div>
+    </div>
+    
+    <!--添加参数种类-->
+    <div class="add-parameter p-f bg-f d-n" id="parameter-type">
+    	<h5 class="c-f fs-14 ta-c">添加参数种类</h5>
+        <div class="system-nature fs-12 c-6">
+            <div class="nature-box d-ib">
+                <span class="nature-span d-ib">种类名称：</span>
+                <input type="text" value="站点">
+            </div>
+            <div class="nature-box d-ib">
+                <span class="nature-span d-ib">备注：</span>
+                <textarea></textarea>
+            </div>
+            <div class="information-a ta-c fs-14 ta-c">
+                <a href="#" class="cancel d-ib">取消</a>
+                <a href="#" class="confirm d-ib">保存</a>
+            </div>
+        </div>
+    </div>
+    
+     
+</body>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/select2_option.js"></script>
+<script>
+	$(document).ready(function(){
+        $("#header").load('header.html');
+        $("#sidebar").load('sidebar.html',function(){
+			$("#system").addClass('active').next(".subnav").show();
+			$("#system-parameter").addClass('subnav-active');
+		});
+        $("#notice").load('notice.html');
+    });
+
+    $(".cancel,.confirm").click(function(){
+        $(".mask,#parameter-property,#parameter-type").hide();
+    })
+
+    $(".append").click(function(){
+        $(".mask,#parameter-type").show();
+    })
+    $(".attribute").click(function(){
+        $(".mask,#parameter-property").show();
+    })
+</script>
+
+</html>

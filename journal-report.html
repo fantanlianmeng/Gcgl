@@ -5,78 +5,22 @@
 <title>工程项目管理平台</title>
 <link href="css/base-pc.css" rel="stylesheet" type="text/css">
 <link href="css/module.css" rel="stylesheet" type="text/css">
+<link href="css/jedate.css" rel="stylesheet" type="text/css">
 <link href="css/select2.css" rel="stylesheet" type="text/css">
-<link href="My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css">
 <link href="css/journal.css" rel="stylesheet" type="text/css">
 
 </head>
 
 <body class="p-r">
-	<div class="herder">
-    	<div class="logo d-ib f-l"></div>
-        <div class="herder-right d-ib f-r c-f fs-16 p-r">
-        	<span class="d-ib">您好，管理员</span>
-            <a href="javascript:;" class="d-ib">退出</a>
-        </div>
-        <div class="c-b"></div>
-    </div>
-	
-    <div class="sidebar d-ib f-l p-r o-h">
-    	<ul class="fs-14 c-3">
-        	<li>
-            	<p class="p-r active"><img src="img/icon1.png" alt="">项目管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">新建项目</a>
-                    <a href="javascript:;" class="d-b">项目管理</a>
-                    <a href="javascript:;" class="d-b">项目总览</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon2.png" alt="">日志管理<i class="d-ib p-a"></i></p>
-                <div class="subnav">
-                	<a href="javascript:;" class="d-b subnav-active">日志汇报</a>
-                    <a href="javascript:;" class="d-b">日志动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon3.png" alt="">出差管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">出差申请</a>
-                    <a href="javascript:;" class="d-b">出差汇报</a>
-                    <a href="javascript:;" class="d-b">出差动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon4.png" alt="">文档管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">文档管理</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon5.png" alt="">运维管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">运维计划</a>
-                    <a href="javascript:;" class="d-b">运维处理</a>
-                    <a href="javascript:;" class="d-b">运维动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon6.png" alt="">系统管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">用户管理</a>
-                    <a href="javascript:;" class="d-b">角色管理</a>
-                    <a href="javascript:;" class="d-b">参数配置</a>
-                </div>
-            </li>
-        </ul>
-        <div class="picbox p-a"></div>
-    </div>
+	<div id="header"></div>
+    <div id="sidebar"></div>
+    <div id="notice"></div>
     
     <div class="content">
-    	<p class="crumbs">您当前的位置：日志管理 &gt; <span>日志汇报</span></p>
+    	<p class="crumbs">您当前的位置：日志管理 &gt; <a href="journal-report.html">日志汇报</a></p>
         
         <!--日志汇报-->
-        <div class="add-sheet ta-c">
+        <div class="add-sheet ta-c" id="add-sheet">
         	<form action="">
                 <p class="add-nav fs-14 c-f ta-l">日志汇报</p>
                 <div class="pick fs-12 c-6">
@@ -137,24 +81,6 @@
         </div>
         
     </div>
-
-    <!--提示消息-->
-    <div class="notice p-f fs-12 bg-f">
-    	<i class="close p-a"></i>
-        <h4 class="fs-14 c-f ta-c">提示消息</h4>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-    </div>
     
     <!--添加联系人信息弹窗-->
     <div class="mask p-f d-n"></div>
@@ -194,17 +120,26 @@
     </div>
      
 </body>
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="js/jquery.jedate.js"></script>
 <script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
-<script type="text/javascript" src="jeDate/jedate.js"></script>
 <script>
+	$(document).ready(function(){
+        $("#header").load('header.html');
+        $("#sidebar").load('sidebar.html',function(){
+			$("#journal").addClass('active').next(".subnav").show();
+			$("#journal-report").addClass('subnav-active');
+		});
+        $("#notice").load('notice.html');
+    });
+
 	//时间控件
-	jeDate({
-		dateCell:"#dateinfo",
-		format:"YYYY-MM-DD",
+	$("#dateinfo").jeDate({
 		isinitVal:true,
-		minDate:"2014-09-19"
+		ishmsVal:false,
+		format:"YYYY-MM-DD",
+		zIndex:3000,
 	})
 	//下拉框两级联动
 	var currentShowCity = 0;
@@ -222,30 +157,6 @@
 		$("#province").change();
 	});
 	
-	//提示消息
-	$(".close").click(function(){
-		$(".notice").fadeOut();
-	})
-	//侧边栏
-	$(".sidebar ul li p").click(function(){
-		$(this).next(".subnav").slideToggle();
-		if($(this).hasClass("active")){
-			$(this).removeClass("active");
-		}else{
-			$(this).addClass("active");	
-		}
-	})
-	$(".picbox").click(function(){
-		var sidebar_width = $(".sidebar").width();
-		if(sidebar_width === 0){
-			$(".sidebar").css({"width":"187px"});
-			$(".picbox").removeClass("picbox-active");
-		}else{
-			$(".sidebar").css({"width":"0px"});
-			$(".picbox").addClass("picbox-active");	
-		}
-	})
-	
 	//添加项目
 	$(".append-pr").click(function(){
 		$(".sheet").hide();
@@ -262,12 +173,5 @@
         $(this).next(".add-second").toggle();
     })
 </script>
-
-<script type="text/javascript"> 
-
-
-
-</script> 
-
 
 </html>

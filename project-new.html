@@ -4,73 +4,19 @@
 <meta charset="utf-8">
 <title>工程项目管理平台</title>
 <link href="css/base-pc.css" rel="stylesheet" type="text/css">
+<link href="css/select2.css" rel="stylesheet" type="text/css">
 <link href="css/module.css" rel="stylesheet" type="text/css">
 <link href="css/project-new.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="p-r">
-	<div class="herder">
-    	<div class="logo d-ib f-l"></div>
-        <div class="herder-right d-ib f-r c-f fs-16 p-r">
-        	<span class="d-ib">您好，管理员</span>
-            <a href="javascript:;" class="d-ib">退出</a>
-        </div>
-        <div class="c-b"></div>
-    </div>
-	
-    <div class="sidebar d-ib f-l p-r o-h">
-    	<ul class="fs-14 c-3">
-        	<li>
-            	<p class="p-r active"><img src="img/icon1.png" alt="">项目管理<i class="d-ib p-a"></i></p>
-                <div class="subnav">
-                	<a href="javascript:;" class="d-b subnav-active">新建项目</a>
-                    <a href="javascript:;" class="d-b">项目管理</a>
-                    <a href="javascript:;" class="d-b">项目总览</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon2.png" alt="">日志管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">日志汇报</a>
-                    <a href="javascript:;" class="d-b">日志动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon3.png" alt="">出差管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">出差申请</a>
-                    <a href="javascript:;" class="d-b">出差汇报</a>
-                    <a href="javascript:;" class="d-b">出差动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon4.png" alt="">文档管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">文档管理</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon5.png" alt="">运维管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">运维计划</a>
-                    <a href="javascript:;" class="d-b">运维处理</a>
-                    <a href="javascript:;" class="d-b">运维动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon6.png" alt="">系统管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">用户管理</a>
-                    <a href="javascript:;" class="d-b">角色管理</a>
-                    <a href="javascript:;" class="d-b">参数配置</a>
-                </div>
-            </li>
-        </ul>
-        <div class="picbox p-a"></div>
-    </div>
+	<div id="header"></div>
+    <div id="sidebar"></div>
+    <div id="notice"></div>
     
     <div class="content">
-    	<p class="crumbs">您当前的位置：项目管理 &gt; <span>新建项目</span></p>
+    	<p class="crumbs">您当前的位置：项目管理 &gt; <a href="project-new.html">新建项目</a></p>
+
         <div class="sheet">
             <div class="search fs-14">
                 <span class="d-ib">项目名称：</span>
@@ -78,75 +24,19 @@
                 <a href="javascript:;" class="d-ib ta-c">查询</a>
                 <a href="javascript:;" class="append-pr d-ib ta-c">添加项目</a>
             </div>
-            <div class="data-table">
-                <table cellspacing="0" cellpadding="0" class="ta-c w">
-                    <tbody>
-                        <tr class="data-head fs-14 c-f">
-                            <th>建档时间</th>
-                            <th>项目名称</th>
-                            <th>合同编号</th>
-                            <th>订单编号</th>
-                            <th>客户名称</th>
-                            <th>项目经理</th>
-                            <th>产品类型</th>
-                            <th>设备数量</th>
-                            <th>操作</th>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>2017-04-28</td>
-                            <td>通州油烟三期</td>
-                            <td>WWKJ-20170402-01</td>
-                            <td>SEORD-17-04-264-OK</td>
-                            <td>通州环保局</td>
-                            <td>张雪峰</td>
-                            <td>油烟产品</td>
-                            <td class="f_cA">200</td>
-                            <td>
-                                <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>2017-04-28</td>
-                            <td>通州油烟三期</td>
-                            <td>WWKJ-20170402-01</td>
-                            <td>SEORD-17-04-264-OK</td>
-                            <td>通州环保局</td>
-                            <td>张雪峰</td>
-                            <td>油烟产品</td>
-                            <td class="f_cA">200</td>
-                            <td>
-                                <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>2017-04-28</td>
-                            <td>通州油烟三期</td>
-                            <td>WWKJ-20170402-01</td>
-                            <td>SEORD-17-04-264-OK</td>
-                            <td>通州环保局</td>
-                            <td>张雪峰</td>
-                            <td>油烟产品</td>
-                            <td class="f_cA">200</td>
-                            <td>
-                                <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="paging ta-c fs-14 c-9">
-                    <a href="javascript:;">首页</a>
-                    <a href="javascript:;">上一页</a>
-                    <a href="javascript:;" class="number number-active">1</a>
-                    <a href="javascript:;" class="number">2</a>
-                    <a href="javascript:;" class="number">3</a>
-                    <a href="javascript:;">下一页</a>
-                    <a href="javascript:;">尾页</a>
-                    <span class="d-ib">共1页/2条数据</span>
-                    跳转<input type="text" class="obtain" value="1">页
-                </div>
+            
+            <div id="pagetable1"></div>
+            
+            <div class="paging ta-c fs-14 c-9">
+                <a href="javascript:;">首页</a>
+                <a href="javascript:;">上一页</a>
+                <a href="javascript:;" class="number number-active">1</a>
+                <a href="javascript:;" class="number">2</a>
+                <a href="javascript:;" class="number">3</a>
+                <a href="javascript:;">下一页</a>
+                <a href="javascript:;">尾页</a>
+                <span class="d-ib">共1页/2条数据</span>
+                跳转<input type="text" class="obtain" value="1">页
             </div>
         </div>
         
@@ -176,14 +66,11 @@
                         <input type="text" name="order-number" value="1111111">
                     </div>
                     <div class="d-ib f-l p-r">
-                    	<i class="d-ib p-a"></i>
                     	<span>项目类型</span>
-                        <input type="text" name="project-type" value="合同项目">
-                        <p class="add-second p-a bg-f d-n">
-                        	<a href="javascript:;" class="d-b">万维盈创</a>
-                            <a href="javascript:;" class="d-b">万维盈创</a>
-                            <a href="javascript:;" class="d-b">万维盈创</a>
-                        </p>
+                        <select class="js-select133 select-normal" name="worktype1">
+                            <option>请选择</option>
+                            <option>请选择</option>
+                        </select>
                     </div>
                     <div class="d-ib f-l">
                     	<span>设备型号</span>
@@ -215,13 +102,10 @@
                     </div>
                     <div class="d-ib f-l p-r">
                     	<span>项目归属</span>
-                        <input type="text" name="attribution" value="万维盈创">
-                        <i class="d-ib p-a"></i>
-                        <p class="add-second p-a bg-f d-n">
-                        	<a href="javascript:;" class="d-b">万维盈创</a>
-                            <a href="javascript:;" class="d-b">万维盈创</a>
-                            <a href="javascript:;" class="d-b">万维盈创</a>
-                        </p>
+                        <select class="js-select133 select-normal" name="worktype1">
+                            <option>请选择</option>
+                            <option>请选择</option>
+                        </select>
                     </div>
                     <div class="d-ib f-l">
                     	<span>运维周期</span>
@@ -245,38 +129,29 @@
                     </div>
                     <div class="d-ib f-l p-r">
                     	<span>服务类型</span>
-                        <input type="text" name="service" value="运维">
-                        <i class="d-ib p-a"></i>
-                        <p class="add-second p-a bg-f d-n">
-                        	<a href="javascript:;" class="d-b">万维盈创</a>
-                            <a href="javascript:;" class="d-b">万维盈创</a>
-                            <a href="javascript:;" class="d-b">万维盈创</a>
-                        </p>
+                        <select class="js-select133 select-normal" name="worktype1">
+                            <option>请选择</option>
+                            <option>请选择</option>
+                        </select>
                     </div>
                     <div class="d-ib f-l p-r">
                     	<span>产品类型</span>
-                        <input type="text" name="product" value="油烟产品">
-                        <i class="d-ib p-a"></i>
-                        <p class="add-second p-a bg-f d-n">
-                        	<a href="javascript:;" class="d-b">万维盈创</a>
-                            <a href="javascript:;" class="d-b">万维盈创</a>
-                            <a href="javascript:;" class="d-b">万维盈创</a>
-                        </p>
+                        <select class="js-select133 select-normal" name="worktype1">
+                            <option>请选择</option>
+                            <option>请选择</option>
+                        </select>
                     </div>
                     <div class="d-ib f-l p-r">
-                    	<i class="d-ib p-a"></i>
                     	<span>项目阶段</span>
-                        <input type="text" name="phase" value="结项">
-                        <p class="add-second p-a bg-f d-n">
-                        	<a href="javascript:;" class="d-b">万维盈创</a>
-                            <a href="javascript:;" class="d-b">万维盈创</a>
-                            <a href="javascript:;" class="d-b">万维盈创</a>
-                        </p>
+                        <select class="js-select133 select-normal" name="worktype1">
+                            <option>请选择</option>
+                            <option>请选择</option>
+                        </select>
                     </div>
                     <div class="c-b"></div>
             	</div>
                 
-                <p class="add-nav fs-14 c-f ta-l">项目联系人信息 <a href="javascript:;" class="append f-r fs-12 ta-c">添加联系人信息</a></p>
+                <p class="add-nav fs-14 c-f ta-l">项目联系人信息 <a href="javascript:;" class="contacts append f-r fs-12 ta-c">添加联系人信息</a></p>
                 <div class="contacts-table">
                 	<table cellspacing="1" cellpadding="0" class="fs-12 w">
                         <tbody>
@@ -317,8 +192,8 @@
                     </table>
                 </div>
                 
-                <p class="add-nav fs-14 c-f ta-l">项目发货信息 <a href="javascript:;" class="append f-r fs-12 ta-c">添加发货信息</a></p>
-                <div class="contacts">
+                <p class="add-nav fs-14 c-f ta-l">项目发货信息 <a href="javascript:;" class="deliver append f-r fs-12 ta-c">添加发货信息</a></p>
+                <div class="contacts-table">
                 	<table cellspacing="1" cellpadding="0" class="fs-12 w">
                         <tbody>
                             <tr class="c-6">
@@ -371,53 +246,31 @@
             </form>
         </div>
     </div>
-
-    <!--提示消息-->
-    <div class="notice p-f fs-12 bg-f">
-    	<i class="close p-a"></i>
-        <h4 class="fs-14 c-f ta-c">提示消息</h4>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-    </div>
     
     <!--添加联系人信息弹窗-->
     <div class="mask p-f d-n"></div>
-    <div class="information bg-f p-f o-h d-n">
+    <div class="information bg-f p-f o-h d-n" id="contacts">
     	<h5 class="fs-14 c-f ta-c">添加联系人信息</h5>
         <div class="information-box ta-l">
-        	<div class="d-ib f-l">
-                <span class="d-ib fs-12 c-6">客户联系人</span>
+        	<div class="d-ib f-l xing">
+                <span class="information-span d-ib fs-12 c-6">客户联系人</span>
                 <input type="text" name="created-date" value="小小陈">
             </div>
-            <div class="d-ib f-l">
-                <span class="d-ib fs-12 c-6">职位</span>
+            <div class="d-ib f-l xing">
+                <span class="information-span d-ib fs-12 c-6">职位</span>
                 <input type="text" name="created-date" value="项目经理">
             </div>
-            <div class="d-ib f-l">
-                <span class="d-ib fs-12 c-6">职责</span>
+            <div class="d-ib f-l xing ze">
+                <span class="information-span d-ib fs-12 c-6">职责</span>
                 <input type="text" name="created-date" value="项目经理">
             </div>
-            <div class="d-ib f-l">
-                <span class="d-ib fs-12 c-6">手机号</span>
+            <div class="d-ib f-l xing">
+                <span class="information-span d-ib fs-12 c-6">手机号</span>
                 <input type="text" name="created-date" value="15126468975">
             </div>
             <div class="d-ib f-l">
-                <span class="d-ib fs-12 c-6">邮箱</span>
+                <span class="information-span d-ib fs-12 c-6">邮箱</span>
                 <input type="text" name="created-date" value="761115495@qq.com">
-            </div>
-            <div class="d-ib f-l">
-                <span class="d-ib fs-12 c-6">座机</span>
-                <input type="text" name="created-date" value="3326546">
             </div>
             <p class="c-b"></p>
         </div>
@@ -427,51 +280,87 @@
         </div>
     </div>
     
-     
+    <!--添加发货信息-->
+    <div class="information information2 bg-f p-f o-h d-n" id="deliver">
+        <h5 class="fs-14 c-f ta-c">添加发货信息</h5>
+        <div class="information-box ta-l">
+            <div class="d-ib f-l xing">
+                <span class="information-span d-ib fs-12 c-6">发货类别</span>
+                <select class="js-select133 select-normal" name="worktype1">
+                    <option>请选择</option>
+                    <option>请选择</option>
+                </select>
+            </div>
+            <div class="d-ib f-l xing">
+                <span class="information-span d-ib fs-12 c-6">发货日期</span>
+                <input type="text" name="created-date" value="">
+            </div>
+            <div class="d-ib f-l xing">
+                <span class="information-span d-ib fs-12 c-6">收货人</span>
+                <input type="text" name="created-date" value="">
+            </div>
+            <div class="d-ib f-l xing">
+                <span class="information-span d-ib fs-12 c-6">收货人联系方式</span>
+                <input type="text" name="created-date" value="">
+            </div>
+            <div class="d-ib f-l xing">
+                <span class="information-span d-ib fs-12 c-6">发货件数</span>
+                <input type="text" name="created-date" value="">
+            </div>
+            <div class="d-ib f-l xing">
+                <span class="information-span d-ib fs-12 c-6">快递公司</span>
+                <input type="text" name="created-date" value="">
+            </div>
+            <div class="d-ib f-l xing">
+                <span class="information-span d-ib fs-12 c-6">快递单号</span>
+                <input type="text" name="created-date" value="">
+            </div>
+            <div class="d-ib f-l xing">
+                <span class="information-span d-ib fs-12 c-6">发货费</span>
+                <input type="text" name="created-date" value="">
+            </div>
+            <div class="d-ib f-l xing ze">
+                <span class="information-span d-ib fs-12 c-6">发货地址</span>
+                <input type="text" name="created-date" value="">
+            </div>
+            <p class="c-b"></p>
+        </div>
+        <div class="information-a ta-c fa-14">
+            <a href="javascript:;" class="cancel d-ib">取消</a>
+            <a href="javascript:;" class="confirm d-ib">保存</a>
+        </div>
+    </div>
+    
 </body>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/select2_option.js"></script>
 <script>
-	//提示消息
-	$(".close").click(function(){
-		$(".notice").fadeOut();
-	})
-	//侧边栏
-	$(".sidebar ul li p").click(function(){
-		$(this).next(".subnav").slideToggle();
-		if($(this).hasClass("active")){
-			$(this).removeClass("active");
-		}else{
-			$(this).addClass("active");	
-		}
-	})
-	$(".picbox").click(function(){
-		var sidebar_width = $(".sidebar").width();
-		if(sidebar_width === 0){
-			$(".sidebar").css({"width":"187px"});
-			$(".picbox").removeClass("picbox-active");
-		}else{
-			$(".sidebar").css({"width":"0px"});
-			$(".picbox").addClass("picbox-active");	
-		}
-	})
+	$(document).ready(function(){
+        $("#header").load('header.html');
+        $("#sidebar").load('sidebar.html',function(){
+			$("#project").addClass('active').next(".subnav").show();
+			$("#project-new").addClass('subnav-active');
+		});
+        $("#notice").load('notice.html');
+		$("#pagetable1").load('pagetable1.html');
+    });
 	
-	//添加项目
+	//添加弹窗
 	$(".append-pr").click(function(){
 		$(".sheet").hide();
 		$(".add-sheet").show();
+        $(".crumbs").append("&gt; <a href='javascript:;'>添加项目</a>");
 	})
-	
-	$(".append").click(function(){
-		$(".mask,.information").show();
+	$(".contacts").click(function(){
+		$(".mask,#contacts").show();
 	})
+    $(".deliver").click(function(){
+        $(".mask,#deliver").show();
+    })
 	$(".cancel,.confirm").click(function(){
 		$(".mask,.information").hide();
 	})
-    $(".add-pack input").click(function(){
-        $(this).next(".add-second").toggle();
-    })
-	
-	
 	
 </script>
 

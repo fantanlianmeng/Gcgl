@@ -5,74 +5,19 @@
 <title>工程项目管理平台</title>
 <link href="css/base-pc.css" rel="stylesheet" type="text/css">
 <link href="css/module.css" rel="stylesheet" type="text/css">
+<link href="css/jedate.css" rel="stylesheet" type="text/css">
 <link href="css/select2.css" rel="stylesheet" type="text/css">
 <link href="css/out.css" rel="stylesheet" type="text/css">
 
 </head>
 
 <body class="p-r">
-	<div class="herder">
-    	<div class="logo d-ib f-l"></div>
-        <div class="herder-right d-ib f-r c-f fs-16 p-r">
-        	<span class="d-ib">您好，管理员</span>
-            <a href="javascript:;" class="d-ib">退出</a>
-        </div>
-        <div class="c-b"></div>
-    </div>
-	
-    <div class="sidebar d-ib f-l p-r o-h">
-    	<ul class="fs-14 c-3">
-        	<li>
-            	<p class="p-r"><img src="img/icon1.png" alt="">项目管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">新建项目</a>
-                    <a href="javascript:;" class="d-b">项目管理</a>
-                    <a href="javascript:;" class="d-b">项目总览</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon2.png" alt="">日志管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">日志汇报</a>
-                    <a href="javascript:;" class="d-b">日志动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon3.png" alt="">出差管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">出差申请</a>
-                    <a href="javascript:;" class="d-b">出差汇报</a>
-                    <a href="javascript:;" class="d-b">出差动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon4.png" alt="">文档管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">文档管理</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r active"><img src="img/icon5.png" alt="">运维管理<i class="d-ib p-a"></i></p>
-                <div class="subnav">
-                	<a href="javascript:;" class="d-b">运维计划</a>
-                    <a href="javascript:;" class="d-b subnav-active">运维处理</a>
-                    <a href="javascript:;" class="d-b">运维动态</a>
-                </div>
-            </li>
-            <li>
-            	<p class="p-r"><img src="img/icon6.png" alt="">系统管理<i class="d-ib p-a"></i></p>
-                <div class="subnav d-n">
-                	<a href="javascript:;" class="d-b">用户管理</a>
-                    <a href="javascript:;" class="d-b">角色管理</a>
-                    <a href="javascript:;" class="d-b">参数配置</a>
-                </div>
-            </li>
-        </ul>
-        <div class="picbox p-a"></div>
-    </div>
+	<div id="header"></div>
+    <div id="sidebar"></div>
+    <div id="notice"></div>
     
     <div class="content">
-    	<p class="crumbs">您当前的位置：出差管理 &gt; <span>出差汇报</span></p>
+    	<p class="crumbs">您当前的位置：出差管理 &gt; <a href="operation-handle.html">出差汇报</a></p>
         
         <!--运维日报-->
         <div class="add-render ta-c">
@@ -203,7 +148,7 @@
                                     <td>已完成</td>
                                     <td>某某耗材  15个</td>
                                     <td>
-                                    	<a href="javascript:;" class="d-ib ta-c fs-12">编辑</a>
+                                    	<a href="javascript:;" class="siterecord-a d-ib ta-c fs-12">编辑</a>
                                         <a href="javascript:;" class="d-ib ta-c fs-12">删除</a>
                                     </td>
                                 </tr>
@@ -218,7 +163,7 @@
                                     <td>已完成</td>
                                     <td>某某耗材  15个</td>
                                     <td>
-                                    	<a href="javascript:;" class="d-ib ta-c fs-12">编辑</a>
+                                    	<a href="javascript:;" class="siterecord-a d-ib ta-c fs-12">编辑</a>
                                         <a href="javascript:;" class="d-ib ta-c fs-12">删除</a>
                                     </td>
                                 </tr>
@@ -233,7 +178,7 @@
                                     <td>已完成</td>
                                     <td>某某耗材  15个</td>
                                     <td>
-                                    	<a href="javascript:;" class="d-ib ta-c fs-12">编辑</a>
+                                    	<a href="javascript:;" class="siterecord-a d-ib ta-c fs-12">编辑</a>
                                         <a href="javascript:;" class="d-ib ta-c fs-12">删除</a>
                                     </td>
                                 </tr>
@@ -250,8 +195,8 @@
     </div>
 	
     <!--编辑运维站点记录-->
-    <div class="mask p-f"></div>
-    <div class="edit-operation p-f bg-f fs-12 c-6">
+    <div class="mask p-f d-n"></div>
+    <div class="edit-operation p-f bg-f fs-12 c-6 d-n" id="edit-operation">
     	<h5 class="fs-14 c-f ta-c">编辑运维站点记录</h5>
         <div class="edit-box">
         	<div class="maintain-box">
@@ -261,7 +206,7 @@
                 </div>
                 <div class="edit-time d-ib">
                     <span>处理日期：</span>
-                    <input class="datainp" id="handle" name="time" type="text" value="" placeholder="请选择"  readonly>
+                    <input class="datainp" id="dateinfo2" name="time" type="text" value="" placeholder="请选择"  readonly>
                 </div>
                 <div class="edit-situation d-ib">
 	                <span>完成情况：</span>
@@ -339,103 +284,46 @@
         </div>
     </div>
     
-    <!--提示消息-->
-    <div class="notice p-f fs-12 bg-f">
-    	<i class="close p-a"></i>
-        <h4 class="fs-14 c-f ta-c">提示消息</h4>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-        <a href="javascript:;" class="d-b">
-        	<span class="f-l">收到来自张雪峰的日志批注消息</span>
-            <span class="f-r">2017-10-21</span>
-        </a>
-    </div>
-
 </body>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
-<script type="text/javascript" src="jeDate/jedate.js"></script>
+<script src="js/jquery.jedate.js"></script>
 <script>
+	$(document).ready(function(){
+        $("#header").load('header.html');
+        $("#sidebar").load('sidebar.html',function(){
+			$("#operation").addClass('active').next(".subnav").show();
+			$("#operation-handle").addClass('subnav-active');
+		});
+        $("#notice").load('notice.html');
+    });
+
 	$(".shrink").click(function(){
 		$(this).next(".render-box").slideToggle();
 		$(this).find("img").toggleClass("shrink-active")
 	})
-	//添加明细
-	$(".detailed-a a").click(function(){
-		$(".mask,.detailed").show();
-	})
-	$(".cancel,.confirm").click(function(){
-		$(".mask,.detailed").hide();
-	})
-	
-	//时间控件
-	jeDate({
-		dateCell:"#dateinfo",
-		format:"YYYY-MM-DD",
-		isinitVal:true,
-		minDate:"2014-09-19"
-	})
-	jeDate({
-		dateCell:"#handle",
-		format:"YYYY-MM-DD",
-		isinitVal:true,
-		minDate:"2014-09-19"
-	})
-	//下拉框两级联动
-	var currentShowCity = 0;
-	$(document).ready(function() {
-		$("#province").change(function() {
-			$("#province option").each(function(i, o) {
-				if ($(this).attr("selected")){
-					$(".city").next("span").hide();
-					$(".city").eq(i).next("span").show();
-					$(".city").eq(0).next("span").hide();
-					currentShowCity = i;
-				}
-			});
-		});
-		$("#province").change();
-	});
-	
-	//提示消息
-	$(".close").click(function(){
-		$(".notice").fadeOut();
-	})
-	//侧边栏
-	$(".sidebar ul li p").click(function(){
-		$(this).next(".subnav").slideToggle();
-		if($(this).hasClass("active")){
-			$(this).removeClass("active");
-		}else{
-			$(this).addClass("active");	
-		}
-	})
-	$(".picbox").click(function(){
-		var sidebar_width = $(".sidebar").width();
-		if(sidebar_width === 0){
-			$(".sidebar").css({"width":"187px"});
-			$(".picbox").removeClass("picbox-active");
-		}else{
-			$(".sidebar").css({"width":"0px"});
-			$(".picbox").addClass("picbox-active");	
-		}
-	})
 
+	$(".siterecord-a").click(function(){
+        $(".mask,#edit-operation").show();
+    })
+	$(".cancel,.keep").click(function(){
+        $(".mask,#edit-operation").hide();
+    })
+
+	//时间控件
+    $("#dateinfo").jeDate({
+        isinitVal:true,
+        ishmsVal:false,
+        format:"YYYY-MM-DD",
+        zIndex:3000,
+    })
+    $("#dateinfo2").jeDate({
+        isinitVal:true,
+        ishmsVal:false,
+        format:"YYYY-MM-DD",
+        zIndex:3000,
+    })
 
 </script>
-
-<script type="text/javascript"> 
-
-
-
-</script> 
-
-
 </html>

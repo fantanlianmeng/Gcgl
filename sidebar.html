@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>侧边栏</title>
+</head>
+<body>
+<div class="sidebar d-ib f-l p-r o-h">
+    <ul class="fs-14 c-3">
+        <li>
+            <p class="p-r" id="project"><img src="img/icon1.png" alt="" />项目管理<i class="d-ib p-a"></i></p>
+            <div class="subnav d-n">
+                <a href="project-new.html" class="d-b" id="project-new">新建项目</a>
+                <a href="project-manage.html" class="d-b" id="project-manage">项目管理</a>
+                <a href="project-overview.html" class="d-b" id="project-overview">项目总览</a>
+            </div>
+        </li>
+        <li>
+            <p class="p-r" id="journal"><img src="img/icon2.png" alt="" />日志管理<i class="d-ib p-a"></i></p>
+            <div class="subnav d-n">
+                <a href="journal-report.html" class="d-b" id="journal-report">日志汇报</a>
+                <a href="journal-dynamic.html" class="d-b" id="journal-dynamic">日志动态</a>
+            </div>
+        </li>
+        <li>
+            <p class="p-r" id="out"><img src="img/icon3.png" alt="" />出差管理<i class="d-ib p-a"></i></p>
+            <div class="subnav d-n">
+                <a href="out-apply.html" class="d-b" id="out-apply">出差申请</a>
+                <a href="out-manage.html" class="d-b" id="out-manage">出差汇报</a>
+                <a href="out-dynamic.html" class="d-b" id="out-dynamic">出差动态</a>
+            </div>
+        </li>
+        <li>
+            <p class="p-r" id="file"><img src="img/icon4.png" alt="" />文档管理<i class="d-ib p-a"></i></p>
+            <div class="subnav d-n">
+                <a href="file-manage.html" class="d-b" id="file-manage">文档管理</a>
+            </div>
+        </li>
+        <li>
+            <p class="p-r" id="operation"><img src="img/icon5.png" alt="" />运维管理<i class="d-ib p-a"></i></p>
+            <div class="subnav d-n">
+                <a href="operation-plan.html" class="d-b" id="operation-plan">运维计划</a>
+                <a href="operation-handle.html" class="d-b" id="operation-handle">运维处理</a>
+                <a href="operation-dynamic.html" class="d-b" id="operation-dynamic">运维动态</a>
+            </div>
+        </li>
+        <li>
+            <p class="p-r" id="system"><img src="img/icon6.png" alt="" />系统管理<i class="d-ib p-a"></i></p>
+            <div class="subnav d-n">
+                <a href="system-user.html" class="d-b" id="system-user">用户管理</a>
+                <a href="system-role.html" class="d-b" id="system-role">角色管理</a>
+                <a href="system-parameter.html" class="d-b" id="system-parameter">参数配置</a>
+            </div>
+        </li>
+    </ul>
+    <div class="picbox p-a"></div>
+</div>
+<script>
+	$(".sidebar ul li p").click(function(){
+		$(this).next(".subnav").slideToggle();
+		if($(this).hasClass("active")){
+			$(this).removeClass("active");
+		}else{
+			$(this).addClass("active");
+		}
+	});
+	$(".picbox").click(function(){
+		var sidebar_width = $(".sidebar").width();
+		if(sidebar_width === 0){
+			$(".sidebar").css({"width":"187px"});
+			$(".picbox").removeClass("picbox-active");
+		}else{
+			$(".sidebar").css({"width":"0px"});
+			$(".picbox").addClass("picbox-active");	
+		}
+	});
+</script>
+</body>
+</html>

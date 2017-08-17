@@ -3,23 +3,29 @@ $(function(){
   		width: "94px",
 	  	minimumResultsForSearch: Infinity
 	});
-	$(".js-select125").select2({
-		width: "125px",
-		minimumResultsForSearch: Infinity
-	});
 
 	$(".js-select100").select2({
   		width: "100px",
 	  	minimumResultsForSearch: Infinity
 	});
-
+	
+	$(".js-select125").select2({
+		width: "125px",
+		minimumResultsForSearch: Infinity
+	});
+	
+	$(".js-select133").select2({
+		width: "133px",
+		minimumResultsForSearch: Infinity
+	});
+	
 	$(".js-select150").select2({
   		width: "160px",
 	  	minimumResultsForSearch: Infinity
 	});
 	
 	$(".js-select200").select2({
-  		width: "202px",
+  		width: "203px",
 	  	minimumResultsForSearch: Infinity
 	});
 	$(".js-select270").select2({

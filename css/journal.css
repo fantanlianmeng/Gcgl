@@ -8,6 +8,7 @@
 .pick,.report-table{max-width:1200px;}
 .pick ul .devotion-time{color:#ec6941;margin-right:20px;}
 .datainp{ width:200px; height:30px; border:1px #ccc solid;}
+#add-sheet .report-table tr td{padding:30px 20px 25px 20px;}
 
 /* 日志动态 */
 .trends-table{margin:10px 15px 15px 15px;}
@@ -28,9 +29,13 @@
 .mylog-table table td{font-size:12px;border-bottom:1px solid #E7E7E7;border-right:1px solid #E7E7E7;padding:15px 10px 15px 10px;min-width:82px;line-height:22px;}
 .postil a{color:#fff;width:70px;height:27px;line-height:27px;border-radius:3px;margin:0 25px;background:#3EABE7;}
 
-
-
-
-
+/* 批注弹窗 */
+.postil-t{width:550px;height:306px;top:50%;left:50%;margin-top:-153px;margin-left:-275px;border-radius:6px;z-index:100; overflow:hidden;}
+.postil-t h5{height:42px;line-height:42px;border-radius:4px;background:#46AFE8;border-radius:6px;}
+.postil-t .postil-box{margin:30px 0 20px 30px;background:url('../img/icon11.png') no-repeat 465px center; background-size:6px 6px;}
+.postil-t .postil-box textarea{width:355px;height:125px;border:1px solid #DFE3E9;border-radius:5px; vertical-align: middle;padding:10px 15px;resize:none;font-size:12px;color:#999;}
+.postil-a a{width:108px;height:27px;line-height:27px;color:#fff;border-radius:3px;margin:0 25px;}
+.postil-a .cancel{background:#8D8D8D;}
+.postil-a .confirm{background:#3EABE7;}
 
 

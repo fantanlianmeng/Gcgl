@@ -20,7 +20,7 @@ input:focus,textarea:focus{outline: none;}
 :-ms-input-placeholder{color:#666}
 /*去除IOS input阴影*/
 *html .d-ib{height:1%} /*触发元素的hasLayout属性*/
-a,a:visited,a:active,a:link,a:hover{text-decoration: none;}
+a,a:visited,a:active,a:link,a:hover{text-decoration: none;cursor:pointer;}
 /**********
 	字体图标
 **********/
