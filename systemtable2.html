@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>工程项目管理平台</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/ui.jqgrid-bootstrap.css">
+
+    <script src="js/jquery.jqGrid.min.js"></script>
+</head>
+
+<body>
+
+    <div class="system-table2">
+        <table id="system2"></table>
+    </div>
+        
+</body>
+<script src="table/system-table2.js"></script>
+<script>
+$(".assign-a").click(function(){
+	$(".mask,#out-people").show();
+})
+
+$(".cancel,.keep").click(function(){
+	$(".mask,#out-people").hide();
+})
+</script>
+</html>

@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+.login-body{overflow-x:hidden;overflow-y:hidden;}
 .login{top:50%;left:50%;margin-top:-384px;margin-left:-683px;width:1366px;height:768px;background:url('../img/login-bg.png') no-repeat center center; background-size:1366px 768px;}
 .content{width:860px;margin:200px auto 0;}
 .login-left{margin-left:67px;}

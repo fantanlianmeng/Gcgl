@@ -10,12 +10,9 @@
 </head>
 
 <body class="p-r">
-	<div id="header"></div>
-    <div id="sidebar"></div>
-    <div id="notice"></div>
     
     <div class="content filemanage">
-    	<p class="crumbs">您当前的位置：系统管理 &gt; <a href="system-user.html">用户管理</span></p>
+    	<p class="crumbs">您当前的位置：系统管理 &gt; <a href="javascript:;">用户管理</a></p>
       	
         <!--用户管理-->
         <div class="sheet">
@@ -25,102 +22,17 @@
                 <a href="javascript:;" class="d-ib ta-c">查询</a>
                 <a href="javascript:;" class="adduser-a d-ib ta-c">添加用户</a>
             </div>
-            <div class="data-table">
-                <table cellspacing="0" cellpadding="0" class="ta-c w">
-                    <tbody>
-                        <tr class="data-head fs-14 c-f">
-                            <th>序号</th>
-                            <th>用户名</th>
-                            <th>角色名称</th>
-                            <th>所属部门</th>
-                            <th>联系方式</th>
-                            <th>操作</th>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>1</td>
-                            <td>吴王芳</td>
-                            <td>系统管理员</td>
-                            <td>工程中心</td>
-                            <td>13333333333</td>
-                            <td>
-                                <a href="javascript:;" class="d-ib">详情</a>
-                                <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>1</td>
-                            <td>吴王芳</td>
-                            <td>系统管理员</td>
-                            <td>工程中心</td>
-                            <td>13333333333</td>
-                            <td>
-                                <a href="javascript:;" class="d-ib">详情</a>
-                                <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>1</td>
-                            <td>吴王芳</td>
-                            <td>系统管理员</td>
-                            <td>工程中心</td>
-                            <td>13333333333</td>
-                            <td>
-                                <a href="javascript:;" class="d-ib">详情</a>
-                                <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>1</td>
-                            <td>吴王芳</td>
-                            <td>系统管理员</td>
-                            <td>工程中心</td>
-                            <td>13333333333</td>
-                            <td>
-                                <a href="javascript:;" class="d-ib">详情</a>
-                                <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>1</td>
-                            <td>吴王芳</td>
-                            <td>系统管理员</td>
-                            <td>工程中心</td>
-                            <td>13333333333</td>
-                            <td>
-                                <a href="javascript:;" class="d-ib">详情</a>
-                                <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>1</td>
-                            <td>吴王芳</td>
-                            <td>系统管理员</td>
-                            <td>工程中心</td>
-                            <td>13333333333</td>
-                            <td>
-                                <a href="javascript:;" class="d-ib">详情</a>
-                                <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="paging ta-c fs-14 c-9">
-                    <a href="javascript:;">首页</a>
-                    <a href="javascript:;">上一页</a>
-                    <a href="javascript:;" class="number number-active">1</a>
-                    <a href="javascript:;" class="number">2</a>
-                    <a href="javascript:;" class="number">3</a>
-                    <a href="javascript:;">下一页</a>
-                    <a href="javascript:;">尾页</a>
-                    <span class="d-ib">共1页/2条数据</span>
-                    跳转<input type="text" class="obtain" value="1">页
-                </div>
+            <div id="systemtable1"></div>
+            <div class="paging ta-c fs-14 c-9">
+                <a href="javascript:;">首页</a>
+                <a href="javascript:;">上一页</a>
+                <a href="javascript:;" class="number number-active">1</a>
+                <a href="javascript:;" class="number">2</a>
+                <a href="javascript:;" class="number">3</a>
+                <a href="javascript:;">下一页</a>
+                <a href="javascript:;">尾页</a>
+                <span class="d-ib">共1页/2条数据</span>
+                跳转<input type="text" class="obtain" value="1">页
             </div>
         </div>
         
@@ -176,6 +88,7 @@
 			$("#system-user").addClass('subnav-active');
 		});
         $("#notice").load('notice.html');
+		$("#systemtable1").load('systemtable1.html');
     });
 
     $(".adduser-a").click(function(){

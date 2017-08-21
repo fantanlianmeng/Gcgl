@@ -27,9 +27,11 @@
 .plus-site .site-name{margin:30px 0 20px 70px;}
 .plus-site .exist{margin:0 0 12px 70px;}
 .plus-site .exist .all-check{margin:0 50px 0 50px;}
+.plus-site .exist .all-check input{display: none;}
 .plus-site .exist .selected-span{color:#ec6941;}
 .plus-site .choose-site{margin:0 0 0 65px;border:1px solid #DFE3E9;border-radius:5px;padding:8px 5px;width:400px;}
 .plus-site .choose-site .choosebox{width:130px;margin-bottom:12px;}
+.plus-site .choose-site .choosebox input{display: none;}
 .plus-site label {background-color: #FFF;border: 1px solid #DFE3E9;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);padding: 7px;border-radius: 5px;display: inline-block;position: relative;margin-right: 8px;margin-top:2px;vertical-align:bottom;}
 .plus-site label:active {box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);}
 .plus-site input:checked + label {background-color: #E9EDF1;border: 1px solid #DFE3E9;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);color: #243441;}

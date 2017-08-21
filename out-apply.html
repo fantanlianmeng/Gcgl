@@ -13,12 +13,9 @@
 </head>
 
 <body class="p-r">
-	<div id="header"></div>
-    <div id="sidebar"></div>
-    <div id="notice"></div>
     
     <div class="content">
-    	<p class="crumbs">您当前的位置：日志管理 &gt; <a href="out-apply.html">出差申请</a></p>
+    	<p class="crumbs">您当前的位置：出差管理 &gt; <a href="javascript:;">出差申请</a></p>
       
         <!--出差申请-->
         <div class="add-out ta-c">
@@ -199,7 +196,6 @@
                     <a href="javascript:;" class="add-submit d-ib ta-c fs-14">提交</a>
                 </div>
             </form>
-
         </div>
         
     </div>
@@ -211,7 +207,7 @@
         <div class="check-name">
         	<span class="f-l">人员菜单：</span>
             <span class="f-r">全选</span>
-            <input type="checkbox" class="f-r d-n checkall" id="check-all">
+            <input type="checkbox" class="f-r checkall" id="check-all">
             <label for="check-all" class="f-r"></label>
             <div class="c-b"></div>
         </div>
@@ -287,19 +283,13 @@
     //差旅费报销方式
 	$(".reimbursement p :radio:checked").parent("p").find("span").addClass("active");
 	$(".check-box").find(":checkbox:checked").next("i").addClass("i-active");
-	$(".reimbursement span").click(function(){
+	$(".reimbursement p").click(function(){
 		$(".reimbursement p span").removeClass("active");
-		$(this).addClass("active");
-		$(this).next(":radio").attr("checked",true);
-		$(".check-box").find(":checkbox").attr("checked",false);
-		$(".check-box i").removeClass("i-active");
-	})
-	$(".check-box").click(function(){
-		$(".reimbursement p span").removeClass("active");
-		$(".check-box i").removeClass("i-active");
-		$(".check-box").find(":checkbox:checked").next("i").addClass("i-active");
-		$(this).parent("p").find("span").addClass("active");
-		$(this).parent("p").find(":radio").attr("checked",true);
+		$(this).find("span").addClass("active");
+		$(this).find(":radio").attr("checked",true);
+		$(".reimbursement p").not(this).find(":checkbox").attr("checked",false);
+        $(".check-box").find("i").removeClass("i-active");
+        $(".check-box").find(":checkbox:checked").next("i").addClass("i-active");
 	})
 
 	
@@ -329,177 +319,177 @@
 	$(".cancel,.confirm").click(function(){
 		$(".mask,.information,.out-people").hide();
 	})
-	
+
 </script>
 <script>
 	layui.use('tree', function() {
-				var tree = layui.tree({
-					elem: '#demo', //指定元素，生成的树放到哪个元素上
-					check: 'checkbox', //勾选风格
-					skin: 'as', //设定皮肤
-					drag: true,//点击每一项时是否生成提示信息
-					checkboxName: 'aa[]',//复选框的name属性值
-					checkboxStyle: "",//设置复选框的样式，必须为字符串，css样式怎么写就怎么写
-					click: function(item) { //点击节点回调
-						console.log("item")
+		var tree = layui.tree({
+			elem: '#demo', //指定元素，生成的树放到哪个元素上
+			check: 'checkbox', //勾选风格
+			skin: 'as', //设定皮肤
+			drag: true,//点击每一项时是否生成提示信息
+			checkboxName: 'aa[]',//复选框的name属性值
+			checkboxStyle: "",//设置复选框的样式，必须为字符串，css样式怎么写就怎么写
+			click: function(item) { //点击节点回调
+				console.log("item")
+			},
+			onchange: function (){//当当前input发生变化后所执行的回调
+				console.log(this);
+			},
+			nodes: [ //节点
+				{
+					name: '工程中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
 					},
-					onchange: function (){//当当前input发生变化后所执行的回调
-						console.log(this);
+					children: [{
+						name: '李一一',
+						checkboxValue: 1
+					}, {
+						name: '李一一',
+						checkboxValue: 2
+					}, {
+						name: '李一一',
+						checkboxValue: 3
+					}]
+				},{
+					name: '产品中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
 					},
-					nodes: [ //节点
-						{
-							name: '工程中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '产品中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '工程中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '产品中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '工程中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '产品中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							spread: true, //是否是展开状态，true为展开状态
-							checked: true,//复选框默认是否选中	
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2,
-								checked: true  //复选框默认是否选中
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '工程中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '产品中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						}
-					]
-				});
+					children: [{
+						name: '李一一',
+						checkboxValue: 1
+					}, {
+						name: '李一一',
+						checkboxValue: 2
+					}, {
+						name: '李一一',
+						checkboxValue: 3
+					}]
+				},{
+					name: '工程中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一一',
+						checkboxValue: 1
+					}, {
+						name: '李一一',
+						checkboxValue: 2
+					}, {
+						name: '李一一',
+						checkboxValue: 3
+					}]
+				},{
+					name: '产品中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一一',
+						checkboxValue: 1
+					}, {
+						name: '李一一',
+						checkboxValue: 2
+					}, {
+						name: '李一一',
+						checkboxValue: 3
+					}]
+				},{
+					name: '工程中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一一',
+						checkboxValue: 1
+					}, {
+						name: '李一一',
+						checkboxValue: 2
+					}, {
+						name: '李一一',
+						checkboxValue: 3
+					}]
+				},{
+					name: '产品中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					spread: true, //是否是展开状态，true为展开状态
+					checked: true,//复选框默认是否选中	
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一一',
+						checkboxValue: 1
+					}, {
+						name: '李一一',
+						checkboxValue: 2,
+						checked: true  //复选框默认是否选中
+					}, {
+						name: '李一一',
+						checkboxValue: 3
+					}]
+				},{
+					name: '工程中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一一',
+						checkboxValue: 1
+					}, {
+						name: '李一一',
+						checkboxValue: 2
+					}, {
+						name: '李一一',
+						checkboxValue: 3
+					}]
+				},{
+					name: '产品中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一一',
+						checkboxValue: 1
+					}, {
+						name: '李一一',
+						checkboxValue: 2
+					}, {
+						name: '李一一',
+						checkboxValue: 3
+					}]
+				}
+			]
+		});
 	});
 
-	$(".checkall").click(function(){
-		var checkall = $(".checkall").prop("checked");
-		var checkall_demo = $("#demo").find("input").prop("checked");
+    $("#check-all").attr("checked",false);
+	$("#check-all").click(function(){
+		var checkall = $("#check-all").prop("checked");
 		if( checkall == true ){//选中
 			$("#demo").find("input").attr("checked",true);
 		}
-		if( checkall_demo == true ){
-			$(".checkall").attr("checked",true);
-		}
+        if( checkall == false ){//未选中
+            $("#demo").find("input").attr("checked",false);
+        }
 	})
 </script>
 </html>

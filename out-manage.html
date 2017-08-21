@@ -12,17 +12,14 @@
 </head>
 
 <body class="p-r">
-	<div id="header"></div>
-    <div id="sidebar"></div>
-    <div id="notice"></div>
     
     <div class="content">
-    	<p class="crumbs">您当前的位置：出差管理 &gt; <a href="out-manage.html">出差汇报</a></p>
+    	<p class="crumbs">您当前的位置：出差管理 &gt; <a href="javascript:;">出差汇报</a></p>
         
         <!--出差日报-->
         <div class="add-render ta-c">
         	<form action="">
-                <p class="add-nav fs-14 c-f ta-l">出差汇报</p>
+                <p class="add-nav fs-14 c-f ta-l">出差日报</p>
                 <a href="javascript:;" class="shrink ta-l d-b"><img src="img/icon24.png" alt=""></a>
                 <div class="render-box">
                     <div class="pick fs-12 c-6">
@@ -125,18 +122,18 @@
         <!--出差总结-->
         <div class="add-render add-render2 ta-c">
         	<form action="">
-                <p class="add-nav fs-14 c-f ta-l">出差汇报</p>
+                <p class="add-nav fs-14 c-f ta-l">出差总结</p>
                 <a href="javascript:;" class="shrink ta-l d-b"><img src="img/icon24.png" alt=""></a>
                 <div class="render-box">
                     <div class="pick fs-12 c-6">
                         <ul class="lif-l">
                             <li class="d-ib">
                                 <span class="pick-span d-ib fs-12 fw-1">实际开始日期：</span>
-                                <p class="datep d-ib"><input class="datainp" id="dateinfo1" name="time" type="text" value="" placeholder="请选择"  readonly></p>
+                                <p class="datep d-ib"><input class="datainp" id="inpstart" name="time" type="text" value="" placeholder="请选择"  readonly></p>
                             </li>
                             <li class="d-ib">
                                 <span class="pick-span d-ib fs-12 fw-1">实际结束日期：</span>
-                                <p class="datep d-ib"><input class="datainp" id="dateinfo2" name="time" type="text" value="" placeholder="请选择"  readonly></p>
+                                <p class="datep d-ib"><input class="datainp" id="inpend" name="time" type="text" value="" placeholder="请选择"  readonly></p>
                             </li>
                             <li class="d-ib">
                                 <span class="pick-span d-ib fs-12 fw-1">总计出差天数：</span>
@@ -153,7 +150,7 @@
                         </ul>
                     </div>
                 
-                    <div class="render-table">
+                    <div class="render-table d-ib f-l">
                         <table cellspacing="1" cellpadding="0" class="fs-12 w">
                             <tbody>
                                 <tr class="c-9">
@@ -172,7 +169,7 @@
                         </table>
                     </div>
                     
-                    <div class="cost-table">
+                    <div class="cost-table d-ib f-l">
                         <span class="d-ib f-l ta-r c-6">施工费用明细：</span>
                         <table cellspacing="1" cellpadding="0" class="fs-12 w f-l">
                             <tbody>
@@ -212,8 +209,8 @@
                         </table>
                         <div class="c-b"></div>
                     </div>
-                    
-                    <div class="speech fs-12 c-6 ta-l">
+                    <div class="c-b"></div>
+                    <div class="speech fs-12 c-6 ta-l w">
                         <div class="speech-box1 d-ib f-l">
                             <span>出差报告文件上传：</span>
                             <a href="javascript:;" class="file d-ib f-r p-r ta-c o-h">选择文件<input type="file" class="upload" /></a><p></p>
@@ -313,6 +310,26 @@
         format:"YYYY-MM-DD",
         zIndex:3000,
     })
+	//实现日期选择联动
+	var start = {
+		format: 'YYYY-MM-DD',
+		choosefun: function(elem,datas){
+			end.minDate = datas; //开始日选好后，重置结束日的最小日期
+			endDates();
+		}
+	};
+	var end = {
+		format: 'YYYY-MM-DD',
+		choosefun: function(elem,datas){
+			start.maxDate = datas; //将结束日的初始值设定为开始日的最大日期
+		}
+	};
+	function endDates() {
+		end.trigger = false;
+		$("#inpend").jeDate(end);
+	}
+	$("#inpstart").jeDate(start);
+	$("#inpend").jeDate(end);
 
 </script>
 

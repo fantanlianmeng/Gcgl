@@ -4,7 +4,7 @@
 .content .search .ad-search{background:#E5E5E5;color:#666;text-indent:15px}
 .content .search .ad-search img{margin-left:5px; vertical-align:middle;}
 .ad-box{margin-top: 10px;}
-.search-input{margin-bottom:10px;width:318px;}
+.search-input{margin-bottom:10px;width:345px;}
 .content .search .search-input2 input[type="text"]{width:107px;margin-right:0;margin-left:4px;}
 .content .search .ad-box .search-input2 > span{line-height:30px;white-space:nowrap;}
 
@@ -29,13 +29,15 @@
 .new-site .extend .extend-box input{width: 132px;height: 27px;text-align: center;font-size:12px;color:#999;border:1px solid #E0E4EA;border-radius:4px;}
 .new-site .extend .extend-box2 {margin-left:20px;}
 .new-site .extend .extend-box2 input{width:430px;}
-.add-photos{border-bottom:1px solid #E2E2E2;}
-.add-photos .photos-box{width: 240px;height:170px;line-height:170px;;border: 1px solid #E2E2E2;border-radius: 6px;margin: 15px;}
+.add-photos .photos-box{width: 100%;height:172px;margin:30px 0 15px 0;}
 .new-site .keep{color:#fff;background:#3EABE7;width:102px;height:27px;line-height:27px;border-radius:5px;margin-top: 120px;}
-.add-photos .photos-box a{width:100%;height:100%;background:url('../img/icon15.png') no-repeat center center; background-size:122px 51px;color:#999;}
+.add-photos .photos-box a{width:240px;height:170px;background:url('../img/icon15.png') no-repeat center center; background-size:122px 51px;color:#999;display:inline-block;border:1px solid #ddd;}
+.photos-a1{top:0;left:40px;}
+.photos-a2{top:0;left:315px;}
+.photos-a3{top:0;left:590px;}
+.photos-a4{top:0;left:865px;}
 .add-photos .photos-box2 a{background:url('../img/icon27.png') no-repeat center center; background-size:56px 14px;}
 .add-photos .reveal a{background:none;}
-
 
 
 /* 项目总览 */
@@ -65,9 +67,9 @@
 .operation-examine .examine-box .pick-span{width:85px;}
 .examine-box .remarks{margin-top:20px;}
 .examine-box .remarks textarea{width:352px;height:100px;;border: 1px solid #DFE3E9;border-radius:4px;font-size:12px;color:#999;vertical-align:middle;padding:17px 20px;resize:none;}
+.repair .pick{height:195px; }
 
-
-
+.add-render .everyday-table table{margin:0 20px 0 30px;}
 
 
 

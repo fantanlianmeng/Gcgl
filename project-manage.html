@@ -4,19 +4,18 @@
 <meta charset="utf-8">
 <title>工程项目管理平台</title>
 <link href="css/base-pc.css" rel="stylesheet" type="text/css">
+<link href="css/IMGUP.css" rel="stylesheet" />
 <link href="css/select2.css" rel="stylesheet" type="text/css">
 <link href="css/module.css" rel="stylesheet" type="text/css">
 <link href="css/project-manage.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="p-r">
-	<div id="header"></div>
-    <div id="sidebar"></div>
-    <div id="notice"></div>
     
-    <div class="content">
-    	<p class="crumbs">您当前的位置：项目管理 &gt; <a href="project-manage.html">项目管理</a></p>
-        <div class="sheet">
+    <div id="page2">
+    	<div class="content">
+    	<p class="crumbs">您当前的位置：项目管理 &gt; <a href="javascript:;" class="crumbs-first">项目管理</a></p>
+        <div class="sheet" id="sheet">
             <div class="search fs-14">
                 <div class="search-input d-ib">
                     <span class="d-ib">站点名称：</span>
@@ -269,84 +268,39 @@
                         </tr>
                     </tbody>
                 </table>
-                <div class="paging ta-c fs-14 c-9">
-                    <a href="javascript:;">首页</a>
-                    <a href="javascript:;">上一页</a>
-                    <a href="javascript:;" class="number number-active">1</a>
-                    <a href="javascript:;" class="number">2</a>
-                    <a href="javascript:;" class="number">3</a>
-                    <a href="javascript:;">下一页</a>
-                    <a href="javascript:;">尾页</a>
-                    <span class="d-ib">共1页/2条数据</span>
-                    跳转<input type="text" class="obtain" value="1">页
-                </div>
+                
+            </div>
+
+            <div id="pagetable4" class="d-n"></div>
+
+            <div class="paging ta-c fs-14 c-9">
+                <a href="javascript:;">首页</a>
+                <a href="javascript:;">上一页</a>
+                <a href="javascript:;" class="number number-active">1</a>
+                <a href="javascript:;" class="number">2</a>
+                <a href="javascript:;" class="number">3</a>
+                <a href="javascript:;">下一页</a>
+                <a href="javascript:;">尾页</a>
+                <span class="d-ib">共1页/2条数据</span>
+                跳转<input type="text" class="obtain" value="1">页
             </div>
         </div>
 		
         <!--阶段管理-->
         <div class="new-summary d-n" id="stage-summary">
             <a href="javascript:;" class="summary-a d-ib ta-c">新建总结</a>
-            <div class="manage-table">
-                <table cellspacing="0" cellpadding="0" class="ta-c w">
-                    <tbody>
-                        <tr class="data-head fs-14 c-f">
-                            <th>序号</th>
-                            <th>阶段总结日期</th>
-                            <th>项目最新进展</th>
-                            <th>项目遗留问题</th>
-                            <th>客户反馈/评价</th>
-                            <th>备注</th>
-                            <th>操作</th>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>1</td>
-                            <td>2017-04-21</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                                <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>2</td>
-                            <td>2017-04-21</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                                <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>3</td>
-                            <td>2017-04-21</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                                <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="paging ta-c fs-14 c-9">
-                    <a href="javascript:;">首页</a>
-                    <a href="javascript:;">上一页</a>
-                    <a href="javascript:;" class="number number-active">1</a>
-                    <a href="javascript:;" class="number">2</a>
-                    <a href="javascript:;" class="number">3</a>
-                    <a href="javascript:;">下一页</a>
-                    <a href="javascript:;">尾页</a>
-                    <span class="d-ib">共1页/2条数据</span>
-                    跳转<input type="text" class="obtain" value="1">页
-                </div>
+
+            <div id="pagetable5"></div>
+            <div class="paging ta-c fs-14 c-9">
+                <a href="javascript:;">首页</a>
+                <a href="javascript:;">上一页</a>
+                <a href="javascript:;" class="number number-active">1</a>
+                <a href="javascript:;" class="number">2</a>
+                <a href="javascript:;" class="number">3</a>
+                <a href="javascript:;">下一页</a>
+                <a href="javascript:;">尾页</a>
+                <span class="d-ib">共1页/2条数据</span>
+                跳转<input type="text" class="obtain" value="1">页
             </div>
         </div>
         
@@ -362,86 +316,18 @@
                 <a href="javascript:;" class="export d-ib ta-c">导出表格</a>
                 <a href="javascript:;" class="export d-ib ta-c">导入表格</a>
             </div>
-            <div class="manage-table">
-                <table cellspacing="0" cellpadding="0" class="ta-c w">
-                    <tbody>
-                        <tr class="data-head fs-14 c-f">
-                            <th>序号</th>
-                            <th>省份</th>
-                            <th>地区</th>
-                            <th>站点名称</th>
-                            <th>设备MN号</th>
-                            <th>安装人员</th>
-                            <th>安装日期</th>
-                            <th>通讯网络</th>
-                            <th>设备SIM卡号</th>
-                            <th>SIM网络</th>
-                            <th>操作</th>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>1</td>
-                            <td>2017-04-21</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                            	<a href="javascript:;" class="sitedetails d-ib">详情</a>
-                                <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>1</td>
-                            <td>2017-04-21</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                            	<a href="javascript:;" class="sitedetails d-ib">详情</a>
-                                <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>1</td>
-                            <td>2017-04-21</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>
-                            	<a href="javascript:;" class="sitedetails d-ib">详情</a>
-                                <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="paging ta-c fs-14 c-9">
-                    <a href="javascript:;">首页</a>
-                    <a href="javascript:;">上一页</a>
-                    <a href="javascript:;" class="number number-active">1</a>
-                    <a href="javascript:;" class="number">2</a>
-                    <a href="javascript:;" class="number">3</a>
-                    <a href="javascript:;">下一页</a>
-                    <a href="javascript:;">尾页</a>
-                    <span class="d-ib">共1页/2条数据</span>
-                    跳转<input type="text" class="obtain" value="1">页
-                </div>
+
+            <div id="pagetable6"></div>
+            <div class="paging ta-c fs-14 c-9">
+                <a href="javascript:;">首页</a>
+                <a href="javascript:;">上一页</a>
+                <a href="javascript:;" class="number number-active">1</a>
+                <a href="javascript:;" class="number">2</a>
+                <a href="javascript:;" class="number">3</a>
+                <a href="javascript:;">下一页</a>
+                <a href="javascript:;">尾页</a>
+                <span class="d-ib">共1页/2条数据</span>
+                跳转<input type="text" class="obtain" value="1">页
             </div>
         </div>
         
@@ -526,20 +412,16 @@
                     <input type="text" value="山东省">
                 </div>
                 <div class="add-photos ta-c">
-                    <div class="photos-box d-ib">
-                        <a href="javascript:;" class="d-ib"></a>
+                    <div class="photos-box d-ib o-h p-r" >
+						<a href="javascript:;" class="div_imgfile photos-a1 d-ib p-a"></a>
+                        <a href="javascript:;" class="div_imgfile photos-a2 d-ib p-a"></a>
+                        <a href="javascript:;" class="div_imgfile photos-a3 d-ib p-a"></a>
+                        <a href="javascript:;" class="div_imgfile photos-a4 d-ib p-a"></a>
+                        <div class="c-b"></div>
                     </div>
-                    <div class="photos-box d-ib">
-                        <a href="javascript:;" class="d-ib"></a>
-                    </div>
-                    <div class="photos-box d-ib">
-                        <a href="javascript:;" class="d-ib"></a>
-                    </div>
-                    <div class="photos-box d-ib">
-                        <a href="javascript:;" class="d-ib"></a>
-                    </div>
+                    <input type="text" name="filePath" id="callbackPath2">
                 </div>
-            	<p class="ta-c"><a href="javascript:;" class="keep ta-c d-ib">保存</a></p>
+            	<p class="ta-c"><a href="javascript:;" class="keep ok ta-c d-ib" id="btn_ImgUpStart">保存</a></p>
             </div>
             <div class="extend ta-l d-n">
             	<div class="extend-box d-ib">
@@ -731,11 +613,10 @@
             </div> 
         </div>
     </div>
+	</div>
 
-    
-     
-</body>
-<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script src="js/IMGUP.js"></script>
 <script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
 <script>
@@ -746,8 +627,11 @@
 			$("#project-manage").addClass('subnav-active');
 		});
         $("#notice").load('notice.html');
+        $("#pagetable4").load('pagetable4.html');
+        $("#pagetable5").load('pagetable5.html');
+        $("#pagetable6").load('pagetable6.html');
     });
-	
+
 	//高级搜索
 	$(".ad-search").click(function(){
 		$(this).next(".ad-box").toggle();
@@ -759,24 +643,17 @@
 	})
 	
 	//内容跳转
-	function sitea(){
-		$(".sitea").click(function(){
-			$(".sheet,#add-site,#site-details").hide();
-			$("#site-management").show();
-			$(".crumbs").html("您当前的位置：项目管理 &gt <a href='project-manage.html'>项目管理</a> &gt <a class='sitea'>站点管理</a>");
-			sitea()
-		})
-	}
-	sitea()
 	$(".stage").click(function(){
 		$(".sheet,#add-site,#site-details").hide();
 		$("#stage-summary").show();
 		$(".crumbs").append("&gt; <a href='javascript:;'>阶段总结</a>");
+		recovery()
 	})
 	$(".add-sitea").click(function(){
 		$(".sheet,#site-details,#site-management").hide();
 		$("#add-site").show();
 		$(".crumbs").append("&gt; <a href='javascript:;'>添加站点</a>");
+		sitea()
 	})
 	$("#add-site h5 span").click(function(){
 		$("#add-site h5 span").removeClass("site-active");
@@ -792,8 +669,25 @@
 		$(".sheet,#add-site,#site-management").hide();
 		$("#site-details").show();
 		$(".crumbs").append("&gt; <a href='javascript:;'>详情</a>");
+		sitea()
 	})
+	function sitea(){
+		$(".sitea").click(function(){
+			$(".sheet,#add-site,#site-details").hide();
+			$("#site-management").show();
+			$(".crumbs").html("您当前的位置：项目管理 &gt <a class='crumbs-first'>项目管理</a> &gt <a class='sitea'>站点管理</a>");
+			recovery()
+		})
+	}
+	sitea()
+	function recovery(){
+		$(".crumbs-first").click(function(){
+			$("#stage-summary,#site-management,#add-site,#site-details").hide();
+			$("#sheet").show();
+			$(".crumbs").html("您当前的位置：项目管理 &gt; <a class='crumbs-first'>项目管理</a>");
+		})
+	}
 	
 </script>
-
+</body>
 </html>

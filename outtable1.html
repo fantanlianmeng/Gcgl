@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>工程项目管理平台</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/ui.jqgrid-bootstrap.css">
+
+    <script src="js/jquery.jqGrid.min.js"></script>
+</head>
+
+<body>
+
+    <div class="out-table1">
+        <table id="out1"></table>
+    </div>
+        
+</body>
+<script src="table/out-table1.js"></script>
+<script>
+	$(".details-a").click(function(){
+        $("#dynamic,#review").hide();
+        $("#business").show();
+        $(".crumbs").append("&gt; <a href='javascript:;'>详情</a>");
+		recovery()
+    })
+    $(".review-a").click(function(){
+        $("#dynamic,#business").hide();
+        $("#review").show()
+        $(".crumbs").append("&gt; <a href='javascript:;'>审核</a>");
+		recovery()
+    })
+    
+	function recovery(){
+		$(".crumbs-first").click(function(){
+			$("#business,#review").hide();
+			$("#dynamic").show();
+			$(".crumbs").html("您当前的位置：出差管理 &gt; <a href='javascript:;' class='crumbs-first'>出差动态</a>");
+		})
+	}
+</script>
+</html>

@@ -10,75 +10,15 @@
 </head>
 
 <body class="p-r">
-	<div id="header"></div>
-    <div id="sidebar"></div>
-    <div id="notice"></div>
     
     <div class="content">
-    	<p class="crumbs">您当前的位置：日志管理 &gt; <a href="journal-dynamic.html">日志动态</a></p>
+    	<p class="crumbs">您当前的位置：日志管理 &gt; <a href="javascript:;" class="crumbs-first">日志动态</a></p>
 
         <!--日志动态-->
         <div class="add-trends ta-c" id="add-trends">
         	<p class="add-nav fs-14 c-f ta-l">2017.04.17~2017.04.23</p>
-            <div class="trends-table">
-                <table cellspacing="1" cellpadding="0" class="fs-12 w">
-                    <tbody>
-                        <tr class="c-6 fs-14">
-                            <th>序号</th>
-                            <th>名称</th>
-                            <th>周一</th>
-                            <th>周二</th>
-                            <th>周三</th>
-                            <th>周四</th>
-                            <th>周五</th>
-                            <th>周六</th>
-                            <th>周日</th>
-                            <th>所属部门</th>
-                            <th>最近更新日期</th>
-                        </tr>
-                        <tr class="c-9">
-                            <td class="c-6">1</td>
-                            <td><a href="javascript:;" class="my-work">我的工作日志</a></td>
-                            <td>8</td>
-                            <td>8</td>
-                            <td>8</td>
-                            <td>8</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>系统集成部</td>
-                            <td>2017-04-17  19:00</td>
-                        </tr>
-                        <tr class="c-9">
-                            <td class="c-6">1</td>
-                            <td><a href="javascript:;" class="my-work">裴振佳的工作日志</a></td>
-                            <td>8</td>
-                            <td>8</td>
-                            <td>8</td>
-                            <td></td>
-                            <td>8</td>
-                            <td></td>
-                            <td></td>
-                            <td>系统集成部</td>
-                            <td>2017-04-17  19:00</td>
-                        </tr>
-                        <tr class="c-9">
-                            <td class="c-6">1</td>
-                            <td><a href="javascript:;" class="my-work">吴王芳的工作日志</a></td>
-                            <td>8</td>
-                            <td>8</td>
-                            <td>8</td>
-                            <td></td>
-                            <td>8</td>
-                            <td></td>
-                            <td></td>
-                            <td>系统集成部</td>
-                            <td>2017-04-17  19:00</td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
+            
+            <div id="journaltable1"></div>
         </div>
         
         <!--我的工作日志-->
@@ -184,22 +124,27 @@
 			$("#journal-dynamic").addClass('subnav-active');
 		});
         $("#notice").load('notice.html');
+        $("#journaltable1").load('journaltable1.html');
     });
 
 
 	//添加项目
-	$(".my-work").click(function(){
-		var myname = $(this).text();
-		$("#add-trends").hide();
-		$("#mylog").show();
-		$(".crumbs").append("&gt; <a href='javascript:;'>"+myname+"</a>");
-	})
+	
 	$(".comment").click(function(){
 		$(".mask,#postil").show();
 	})
 	$(".cancel,.confirm").click(function(){
 		$(".mask,#postil").hide();
 	})
+	
+	function recovery(){
+		$(".crumbs-first").click(function(){
+			$("#mylog").hide();
+			$("#add-trends").show();
+			$(".crumbs").html("您当前的位置：日志管理 &gt; <a href='javascript:;' class='crumbs-first'>日志动态</a>");
+		})
+	}
+	
 </script>
 
 </html>

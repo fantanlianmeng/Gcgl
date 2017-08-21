@@ -12,12 +12,8 @@
 </head>
 
 <body class="p-r">
-	<div id="header"></div>
-    <div id="sidebar"></div>
-    <div id="notice"></div>
-    
     <div class="content filemanage">
-    	<p class="crumbs">您当前的位置：系统管理 &gt; <a href="system-role.html">角色管理</a></p>
+    	<p class="crumbs">您当前的位置：系统管理 &gt; <a href="javascript:;">角色管理</a></p>
       	
         <!--用户管理-->
         <div class="sheet">
@@ -28,62 +24,7 @@
                 <a href="javascript:;" class="d-ib ta-c">添加角色</a>
             </div>
             <div class="data-table">
-                <table cellspacing="0" cellpadding="0" class="ta-c w">
-                    <tbody>
-                        <tr class="data-head fs-14 c-f">
-                            <th>序号</th>
-                            <th>角色名称</th>
-                            <th>所属部门</th>
-                            <th>备注信息</th>
-                            <th>分配菜单权限</th>
-                            <th>操作</th>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>1</td>
-                            <td>系统管理员</td>
-                            <td>工程中心</td>
-                            <td>工程中心工程中心工程中心工程中心工程中心工程中心</td>
-                            <td><a href="javascript:;" class="assign-a d-ib">分配权限</a></td>
-                            <td>
-                                <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>1</td>
-                            <td>系统管理员</td>
-                            <td>工程中心</td>
-                            <td>工程中心工程中心工程中心工程中心工程中心工程中心</td>
-                            <td><a href="javascript:;" class="assign-a d-ib">分配权限</a></td>
-                            <td>
-                                <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>1</td>
-                            <td>系统管理员</td>
-                            <td>工程中心</td>
-                            <td>工程中心工程中心工程中心工程中心工程中心工程中心</td>
-                            <td><a href="javascript:;" class="assign-a d-ib">分配权限</a></td>
-                            <td>
-                                <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>1</td>
-                            <td>系统管理员</td>
-                            <td>工程中心</td>
-                            <td>工程中心工程中心工程中心工程中心工程中心工程中心</td>
-                            <td><a href="javascript:;" class="assign-a d-ib">分配权限</a></td>
-                            <td>
-                                <a href="javascript:;" class="d-ib">编辑</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div id="systemtable2"></div>
                 <div class="paging ta-c fs-14 c-9">
                     <a href="javascript:;">首页</a>
                     <a href="javascript:;">上一页</a>
@@ -131,15 +72,10 @@
 			$("#system-role").addClass('subnav-active');
 		});
         $("#notice").load('notice.html');
+		$("#systemtable2").load('systemtable2.html');
     });
 
-	$(".assign-a").click(function(){
-		$(".mask,#out-people").show();
-	})
-
-    $(".cancel,.keep").click(function(){
-        $(".mask,#out-people").hide();
-    })
+	
 </script>
 <script>
 	layui.use('tree', function() {
@@ -301,15 +237,15 @@
 				});
 	});
 
-	$(".checkall").click(function(){
-		var checkall = $(".checkall").prop("checked");
-		var checkall_demo = $("#demo").find("input").prop("checked");
+	$("#check-all").attr("checked",false);
+	$("#check-all").click(function(){
+		var checkall = $("#check-all").prop("checked");
 		if( checkall == true ){//选中
 			$("#demo").find("input").attr("checked",true);
 		}
-		if( checkall_demo == true ){
-			$(".checkall").attr("checked",true);
-		}
+        if( checkall == false ){//未选中
+            $("#demo").find("input").attr("checked",false);
+        }
 	})
 </script>
 

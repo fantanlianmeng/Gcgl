@@ -12,12 +12,8 @@
 </head>
 
 <body class="p-r">
-	<div id="header"></div>
-    <div id="sidebar"></div>
-    <div id="notice"></div>
-    
     <div class="content">
-    	<p class="crumbs">您当前的位置：出差管理 &gt; <a href="operation-handle.html">出差汇报</a></p>
+    	<p class="crumbs">您当前的位置：运维管理 &gt; <a href="javascript:;">运维处理</a></p>
         
         <!--运维日报-->
         <div class="add-render ta-c">
@@ -122,70 +118,8 @@
         	<form action="">
                 <p class="add-nav fs-14 c-f ta-l">运维站点记录</p>
                 <div class="render-box operation-record">
-                    <div class="cost-table">
-                        <table cellspacing="1" cellpadding="0" class="fs-12 w f-l">
-                            <tbody>
-                                <tr class="c-6">
-                                    <th>序号</th>
-                                    <th>站点名称</th>
-                                    <th>处理日期</th>
-                                    <th>现场问题描述</th>
-                                    <th>解决方法</th>
-                                    <th>当前状态</th>
-                                    <th>备注</th>
-                                    <th>完成情况</th>
-                                    <th>备件耗材</th>
-                                    <th>操作</th>
-                                </tr>
-                                <tr class="c-9">
-                                    <td>1</td>
-                                    <td>正兴鑫苑住宅楼</td>
-                                    <td>2017-08-08</td>
-                                    <td>现场问题描述现场...</td>
-                                    <td>解决方法解决方法...</td>
-                                    <td>正常</td>
-                                    <td>备注备注备注备注...</td>
-                                    <td>已完成</td>
-                                    <td>某某耗材  15个</td>
-                                    <td>
-                                    	<a href="javascript:;" class="siterecord-a d-ib ta-c fs-12">编辑</a>
-                                        <a href="javascript:;" class="d-ib ta-c fs-12">删除</a>
-                                    </td>
-                                </tr>
-                                <tr class="c-9">
-                                    <td>1</td>
-                                    <td>正兴鑫苑住宅楼</td>
-                                    <td>2017-08-08</td>
-                                    <td>现场问题描述现场...</td>
-                                    <td>解决方法解决方法...</td>
-                                    <td>正常</td>
-                                    <td>备注备注备注备注...</td>
-                                    <td>已完成</td>
-                                    <td>某某耗材  15个</td>
-                                    <td>
-                                    	<a href="javascript:;" class="siterecord-a d-ib ta-c fs-12">编辑</a>
-                                        <a href="javascript:;" class="d-ib ta-c fs-12">删除</a>
-                                    </td>
-                                </tr>
-                                <tr class="c-9">
-                                    <td>1</td>
-                                    <td>正兴鑫苑住宅楼</td>
-                                    <td>2017-08-08</td>
-                                    <td>现场问题描述现场...</td>
-                                    <td>解决方法解决方法...</td>
-                                    <td>正常</td>
-                                    <td>备注备注备注备注...</td>
-                                    <td>已完成</td>
-                                    <td>某某耗材  15个</td>
-                                    <td>
-                                    	<a href="javascript:;" class="siterecord-a d-ib ta-c fs-12">编辑</a>
-                                        <a href="javascript:;" class="d-ib ta-c fs-12">删除</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="c-b"></div>
-                    </div>
+                
+                    <div id="operationtable1"></div>
                     
                     <a href="javascript:;" class="add-submit d-ib ta-c fs-14">提交</a>
                 </div>
@@ -297,6 +231,7 @@
 			$("#operation-handle").addClass('subnav-active');
 		});
         $("#notice").load('notice.html');
+		$("#operationtable1").load('operationtable1.html');
     });
 
 	$(".shrink").click(function(){
