@@ -14,14 +14,15 @@
 .out-bottom .reimbursement{border:1px solid #DFE3E9;border-radius:5px;width:650px;height:140px; vertical-align:middle;padding-top:8px;padding-left:8px;}
 .out-bottom .reimbursement p{margin:10px 0 10px 10px;}
 .out-bottom .reimbursement p .check-box{margin: 0 5px;}
-.out-bottom .reimbursement input{display:none;}
+.out-bottom .reimbursement input[type="radio"]{display:none;}
+.out-bottom .reimbursement input[type="checkbox"]{display:none;}
 .out-bottom input[type="checkbox"]{width:16px;height:16px;vertical-align:middle;}
 .out-bottom input[type="text"]{width:74px;height:26px;border:1px solid #DFE3E9;border-radius:4px;text-align:center;color:#999;font-size:12px;margin:0 4px;}
 .reimbursement p span{height:16px;line-height:16px;background:url('../img/icon21.png') no-repeat left center; background-size:16px 16px;text-indent:23px;}
 .reimbursement p span.active{background:url('../img/icon20.png') no-repeat left center; background-size:16px 16px; }
 .out-bottom label i{width:16px;height:16px;background:url('../img/icon28.png') no-repeat center center; background-size:16px 16px; vertical-align:sub;margin-right:3px;}
 .out-bottom label i.i-active{width:16px;height:16px;background:url('../img/icon29.png') no-repeat center center; background-size:16px 16px;}
-
+#staff input{border:none;margin-right:4px;color:#999;font-size:12px;width:70px;resize:none;height:16px;border-bottom:1px solid #ddd;text-align:center;}
 
 
 /* 添加出差人弹窗 */
@@ -57,7 +58,9 @@
 .add-render .pick input {width: 125px;}
 .render-table tr{display:block;margin-bottom:20px;max-width:1000px;}
 .render-table tr td{min-width:118px;}
-.render-table tr td.ta-l{padding:23px 22px;line-height:22px;border:1px solid #DFE3E9;border-radius:5px;}
+.render-table tr td img{margin-right:10px;}
+.render-table tr td.ta-l{padding:23px 22px;line-height:22px;border:1px solid #DFE3E9;border-radius:5px;width:100%;}
+.render-table tr td.ta-l textarea{}
 .render-table tr td img{margin-right:8px;}
 .add-render .detailed-a{margin:10px 0 20px 30px;}
 .add-render .detailed-a a{width:64px;height:21px;line-height:21px;color:#666;background:#DFE1E5;margin-left:15px;border-radius:3px;}
@@ -69,8 +72,8 @@
 .cost-table td a{width:48px;height:21px;line-height:21px;background:#DFE1E5;color:#666;border-radius:3px;margin:5px 7px;}
 
 /* 出差总结 */
-.add-render2 .pick{margin: 0 0 10px 5px;max-width:1000px;}
-.add-render2 .pick ul li {margin-right: 120px;width:334px;}
+.add-render2 .pick{margin: 0 0 10px 5px;max-width:1000px;height:100px;}
+.add-render2 .pick ul li {margin-right: 142px;width:334px;}
 .add-render2 .pick ul li .pick-span{width:100px;margin-right:12px;margin-bottom:10px;text-align:right;}
 .add-render2 .pick input[name="time"]{width: 200px;background: url(../img/icon16.png) no-repeat 30px center;}
 .add-render2 .pick input {width: 200px;}
@@ -82,7 +85,7 @@
 .speech-box1 p{height:13px;}
 .file:hover {color: #444;background: #999}
 .file input[type="file"]{position: absolute;font-size: 100px;right: 0;top: 0;opacity: 0;filter: alpha(opacity=0);cursor: pointer}
-.speech-box2 textarea{width:450px;height:100px;;border:1px solid #DFE3E9;border-radius:4px;resize:none; vertical-align:top;margin-left:8px;}
+.speech-box2 textarea{width:450px;height:100px;;border:1px solid #DFE3E9;border-radius:4px;resize:none; vertical-align:top;margin-left:8px;padding:20px 30px;}
 
 /* 添加明细弹窗 */
 .detailed{width:548px;height:300px;top:50%;left:50%;margin-top:-150px;margin-left:-274px;border-radius:6px;z-index:100;}
@@ -124,6 +127,13 @@
 
 .add-render4 .pick{margin:40px 30px 30px 30px;}
 .operation-record{margin:30px 0 0 25px;}
+
+/* 出差审核 */
+#review .add-render3 .pick input{border:none;text-indent:18px;}
+#review .add-render3 .render-table tr td{border:none;}
+#review .add-render .pick input{width:98px;}
+#review .add-render .pick ul li{margin-right:40px;}
+
 
 
 /* 编辑运维站点记录 */

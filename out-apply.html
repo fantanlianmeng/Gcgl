@@ -1,18 +1,8 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>工程项目管理平台</title>
-<link href="css/base-pc.css" rel="stylesheet" type="text/css">
-<link href="css/module.css" rel="stylesheet" type="text/css">
+
 <link href="css/jedate.css" rel="stylesheet" type="text/css">
-<link href="css/select2.css" rel="stylesheet" type="text/css">
 <link href="lay/css/layui.css" rel="stylesheet"/>
 <link href="css/out.css" rel="stylesheet" type="text/css">
 
-</head>
-
-<body class="p-r">
     
     <div class="content">
     	<p class="crumbs">您当前的位置：出差管理 &gt; <a href="javascript:;">出差申请</a></p>
@@ -29,6 +19,9 @@
                         </li>
                         <li class="d-ib">
                             <span class="pick-span d-ib c-6">拟派出差人：</span>
+                            <p class="d-ib" id="staff">
+                                <input type="text" value="李一一" readonly>
+                            </p>
                             <a href="#" class="traveller add-to d-ib ta-c">添加</a>
                             <img src="img/icon19.png" alt="" class="asterisk">
 						</li>
@@ -104,7 +97,7 @@
                     </ul>
                     <div class="out-bottom">
                     	<span class="d-ib c-6 bottom-span">出差事由及 <br /> 解决问题:</span>
-                        <textarea rows="10" cols="30">请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择择请选择请选择请选择</textarea>
+                        <textarea>请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择择请选择请选择请选择</textarea>
                     </div>
                     <div class="out-bottom">
                     	<span class="d-ib c-6 bottom-span">交通工具:</span>
@@ -207,14 +200,14 @@
         <div class="check-name">
         	<span class="f-l">人员菜单：</span>
             <span class="f-r">全选</span>
-            <input type="checkbox" class="f-r checkall" id="check-all">
+            <input type="checkbox" class="f-r checkall d-n" id="check-all">
             <label for="check-all" class="f-r"></label>
             <div class="c-b"></div>
         </div>
         <ul id="demo"></ul>
         <div class="opt ta-c fs-14 ta-c">
-        	<a href="javascript:;" class="cancel d-ib">取消</a>
-            <a href="javascript:;" class="keep d-ib">保存</a>
+        	<a href="javascript:;" class="cancel d-ib" id="people-cancel">取消</a>
+            <a href="javascript:;" class="keep d-ib" id="people-keep">保存</a>
         </div>
     </div>
     
@@ -253,9 +246,7 @@
             <a href="javascript:;" class="confirm d-ib">保存</a>
         </div>
     </div>
-     
-</body>
-<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+
 <script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
 <script src="js/jquery.jedate.js"></script>
@@ -264,14 +255,6 @@
 <script src="js/main.js"></script>
 <script src="layui.js"></script>
 <script>
-	$(document).ready(function(){
-        $("#header").load('header.html');
-        $("#sidebar").load('sidebar.html',function(){
-			$("#out").addClass('active').next(".subnav").show();
-			$("#out-apply").addClass('subnav-active');
-		});
-        $("#notice").load('notice.html');
-    });
 	
     $(".cancel,.keep").click(function(){
         $(".mask,#out-people").hide();
@@ -329,12 +312,17 @@
 			skin: 'as', //设定皮肤
 			drag: true,//点击每一项时是否生成提示信息
 			checkboxName: 'aa[]',//复选框的name属性值
-			checkboxStyle: "",//设置复选框的样式，必须为字符串，css样式怎么写就怎么写
-			click: function(item) { //点击节点回调
-				console.log("item")
-			},
+			checkboxStyle: "",//设置复选框的样式，必须为字符串
 			onchange: function (){//当当前input发生变化后所执行的回调
-				console.log(this);
+				var strchecked =$("#demo ul :checked").length;
+				var str =$("#demo ul :checked").parent("li").find("a").find("cite").map(function(index,elem){
+						return $(elem).text();
+					}).get().join(",")
+				$("#staff input").val(str);
+				$("#staff").show();
+				if(strchecked ==0){
+					$("#staff").hide();
+				}
 			},
 			nodes: [ //节点
 				{
@@ -345,13 +333,13 @@
 						alias: "changyong"
 					},
 					children: [{
-						name: '李一一',
+						name: '李一1',
 						checkboxValue: 1
 					}, {
-						name: '李一一',
+						name: '李一2',
 						checkboxValue: 2
 					}, {
-						name: '李一一',
+						name: '李一3',
 						checkboxValue: 3
 					}]
 				},{
@@ -362,13 +350,13 @@
 						alias: "changyong"
 					},
 					children: [{
-						name: '李一一',
+						name: '李一4',
 						checkboxValue: 1
 					}, {
-						name: '李一一',
+						name: '李一5',
 						checkboxValue: 2
 					}, {
-						name: '李一一',
+						name: '李一6',
 						checkboxValue: 3
 					}]
 				},{
@@ -379,13 +367,13 @@
 						alias: "changyong"
 					},
 					children: [{
-						name: '李一一',
+						name: '李一7',
 						checkboxValue: 1
 					}, {
-						name: '李一一',
+						name: '李一8',
 						checkboxValue: 2
 					}, {
-						name: '李一一',
+						name: '李一9',
 						checkboxValue: 3
 					}]
 				},{
@@ -396,13 +384,13 @@
 						alias: "changyong"
 					},
 					children: [{
-						name: '李一一',
+						name: '李一10',
 						checkboxValue: 1
 					}, {
-						name: '李一一',
+						name: '李一11',
 						checkboxValue: 2
 					}, {
-						name: '李一一',
+						name: '李一12',
 						checkboxValue: 3
 					}]
 				},{
@@ -413,13 +401,13 @@
 						alias: "changyong"
 					},
 					children: [{
-						name: '李一一',
+						name: '李一13',
 						checkboxValue: 1
 					}, {
-						name: '李一一',
+						name: '李一14',
 						checkboxValue: 2
 					}, {
-						name: '李一一',
+						name: '李一15',
 						checkboxValue: 3
 					}]
 				},{
@@ -435,11 +423,11 @@
 						name: '李一一',
 						checkboxValue: 1
 					}, {
-						name: '李一一',
+						name: '李一二',
 						checkboxValue: 2,
 						checked: true  //复选框默认是否选中
 					}, {
-						name: '李一一',
+						name: '李一三',
 						checkboxValue: 3
 					}]
 				},{
@@ -491,5 +479,32 @@
             $("#demo").find("input").attr("checked",false);
         }
 	})
+	
+	$(".check-name label").click(function(){
+		strchecked()
+	})
+	
+	function strchecked(){
+		setTimeout(function(){
+			var strchecked =$("#demo ul :checked").length;
+			var str =$("#demo ul :checked").parent("li").find("a").find("cite").map(function(index,elem){
+				return $(elem).text();
+			}).get().join(",")
+			$("#staff input").val(str)
+			if(strchecked==0){
+				$("#staff").hide();
+			}else{
+				$("#staff").show();
+			}
+		},100)
+	}
+	strchecked()
+	
+	$("#people-cancel").click(function(){
+		$("#demo :checkbox").attr("checked",false)
+		$("#staff input").val("")
+		$("#staff").hide();
+	})
+	
 </script>
 </html>

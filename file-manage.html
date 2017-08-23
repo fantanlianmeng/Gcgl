@@ -1,15 +1,4 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>工程项目管理平台</title>
-<link href="css/base-pc.css" rel="stylesheet" type="text/css">
-<link href="css/module.css" rel="stylesheet" type="text/css">
-<link href="css/select2.css" rel="stylesheet" type="text/css">
-<link href="css/project-new.css" rel="stylesheet" type="text/css">
-</head>
 
-<body class="p-r">
     
     <div class="content filemanage">
     	<p class="crumbs">您当前的位置：文档管理 &gt; <a href="javascript:;" class="crumbs-first">文档管理</a></p>
@@ -99,20 +88,9 @@
             <a href="javascript:;" class="confirm d-ib">保存</a>
         </div>
     </div>
-    
-     
-</body>
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script src="js/select2.js"></script>
-<script src="js/select2_option.js"></script>
+
 <script>
 	$(document).ready(function(){
-        $("#header").load('header.html');
-        $("#sidebar").load('sidebar.html',function(){
-			$("#file").addClass('active').next(".subnav").show();
-			$("#file-manage").addClass('subnav-active');
-		});
-        $("#notice").load('notice.html');
 		$("#filetable1").load('filetable1.html');
 		$("#filetable2").load('filetable2.html');
     });

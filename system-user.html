@@ -1,16 +1,4 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>工程项目管理平台</title>
-<link href="css/base-pc.css" rel="stylesheet" type="text/css">
-<link href="css/module.css" rel="stylesheet" type="text/css">
-<link href="css/select2.css" rel="stylesheet" type="text/css">
-<link href="css/project-new.css" rel="stylesheet" type="text/css">
-</head>
 
-<body class="p-r">
-    
     <div class="content filemanage">
     	<p class="crumbs">您当前的位置：系统管理 &gt; <a href="javascript:;">用户管理</a></p>
       	
@@ -49,7 +37,10 @@
             </div>
             <div class="d-ib f-l xing">
                 <span class="d-ib fs-12 c-6">角色类型：</span>
-                <input type="text" name="created-date" value="项目经理">
+                <select class="js-select133 select-normal" name="branch">
+                    <option>项目经理</option>
+                    <option>请选择</option>
+                </select>
             </div>
             <div class="d-ib f-l xing">
                 <span class="d-ib fs-12 c-6">用户密码：</span>
@@ -65,7 +56,7 @@
             </div>
             <div class="d-ib f-l">
                 <span class="d-ib fs-12 c-6">联系方式：</span>
-                <input type="text" name="created-date" value="3326546">
+                <input type="text" name="created-date" value="3326546" class="limit-number">
             </div>
             <p class="c-b"></p>
         </div>
@@ -75,19 +66,10 @@
         </div>
     </div>
     
-     
-</body>
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
 <script>
 	$(document).ready(function(){
-        $("#header").load('header.html');
-        $("#sidebar").load('sidebar.html',function(){
-			$("#system").addClass('active').next(".subnav").show();
-			$("#system-user").addClass('subnav-active');
-		});
-        $("#notice").load('notice.html');
 		$("#systemtable1").load('systemtable1.html');
     });
 

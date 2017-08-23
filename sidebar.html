@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>侧边栏</title>
-</head>
-<body>
+<!--侧边栏-->
 <div class="sidebar d-ib f-l p-r o-h">
     <ul class="fs-14 c-3">
         <li>
-            <p class="p-r" id="project"><img src="img/icon1.png" alt="" />项目管理<i class="d-ib p-a"></i></p>
+            <p class="p-r active" id="project"><img src="img/icon1.png" alt="" />项目管理<i class="d-ib p-a"></i></p>
             <div class="subnav d-n">
-                <a href="javascript:;" class="d-b" id="project-new">新建项目</a>
+                <a href="javascript:;" class="d-b subnav-active" id="project-new">新建项目</a>
                 <a href="javascript:;" class="d-b" id="project-manage">项目管理</a>
                 <a href="javascript:;" class="d-b" id="project-overview">项目总览</a>
             </div>
@@ -56,15 +50,20 @@
     <div class="picbox p-a"></div>
 </div>
 
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script>
+	$('input.limit-number').on('focus input propertychange click',function(){//纯数字
+		var value = $(this).val()
+		if(/\D/g.test(value)){$(this).val(value.replace(/\D/g,''))}
+	})
+	
+	$(".sidebar .active").next(".subnav").show();
 	$(".sidebar ul li p").click(function(){
+		$(".sidebar ul li p").not(this).removeClass("active");
+		$(this).toggleClass("active");
 		$(".sidebar ul li p").not(this).next(".subnav").slideUp();
 		$(this).next(".subnav").slideToggle();
-		if($(this).hasClass("active")){
-			$(this).removeClass("active");
-		}else{
-			$(this).addClass("active");
-		}
+
 	});
 	$(".sidebar ul li a").click(function(){
 		$(".sidebar ul li a").removeClass('subnav-active');
@@ -83,7 +82,7 @@
 	
 	$("#project-new").click(function(){
 		$(".content").remove()
-		$("#content-box").load('index.html');
+		$("#content-box").load('sheet.html');
 	})
 	$("#project-manage").click(function(){
 		$(".content").remove()
@@ -142,5 +141,3 @@
 		$("#content-box").load('system-parameter.html')
 	})
 </script>
-</body>
-</html>

@@ -77,7 +77,10 @@
   .select2-results__option[aria-selected] {
 	height:22px;
 	line-height:22px;
-    cursor: pointer; }
+    cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+}
 
 .select2-container--open .select2-dropdown {
   left: 0; }

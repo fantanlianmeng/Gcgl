@@ -14,7 +14,9 @@
 .add-pack span{height:28px;line-height:28px;}
 .add-pack input[type="text"]{width:131px;height:26px;border:1px solid #DFE3E9;border-radius:4px;text-align:center;color:#999; float:right;}
 .add-pack input[type="text"]:focus{border-color:#2EA2F8;color:#333;}
-.add-pack div{margin:15px 22px 0 10px;width:206px; overflow:hidden;}
+.add-pack .duan-p{padding-right:4px;}
+.add-pack input.duan{width:66px;float:none;margin-right:-4px;}
+.add-pack div{margin:15px 22px 0 10px;width:206px; overflow:hidden;height:30px;}
 .add-pack div i{top:13px;right:10px;width:7px;height:4px;background:url('../img/icon10.png') no-repeat center center; background-size:7px 4px;}
 .add-pack div>span{width:65px;display:inline-block;overflow:hidden;vertical-align:top;text-align:left;}
 .contacts-table {margin:10px 15px;}
@@ -25,7 +27,7 @@
 
 .add-second{top:28px;right:0;width:132px;border:1px solid #ddd;z-index:1;}
 .add-second a{color:#666;height:30px;line-height:30px;}
-.add-second a:hover{background:#4DB2E9;color:2fff;}
+.add-second a:hover{background:#4DB2E9;color:#fff;}
 
 /* 添加联系人信息 添加发货信息 弹窗*/
 .information{width:548px;height:360px;top:50%;left:50%;margin-top:-183px;margin-left:-274px;border-radius:6px;z-index:100;}
@@ -40,7 +42,7 @@
 .add-user{width:550px;height:304px;top:50%;left:50%;margin-top:-152px;margin-left:-275px;}
 .add-user .information-box{margin:0 0 0 28px;}
 .add-user h5{margin-bottom:33px;}
-.add-user .information-box span{margin-right:10px;}
+.add-user .information-box div>span{margin-right:10px;width:60px;}
 .add-user .information-box div{width:250px;margin-bottom:18px;}
 .add-user .information-box div.xing{background:url('../img/icon11.png') no-repeat 215px center;}
 .information2 .information-box{margin-left:0;}

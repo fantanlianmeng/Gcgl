@@ -4,10 +4,10 @@ $("#table6").jqGrid({
     datatype: function (data) {
         var thegrid = jQuery("#table6")[0];
         data = eval("(" +'{"page":1,"total":2,"records":13,"rows":['
-            +' {"ctn1":"1","ctn2":"2017-04-28","ctn3":"","ctn4":"","ctn5":"","ctn6":"","ctn7":"","ctn8":"","ctn9":"","ctn10":"","ctn11":"<a class=\'d-ib\'>详情</a><a class=\'d-ib\'>编辑</a><a class=\'d-ib\'>删除</a>"}'
-            +',{"ctn1":"1","ctn2":"2017-04-28","ctn3":"","ctn4":"","ctn5":"","ctn6":"","ctn7":"","ctn8":"","ctn9":"","ctn10":"","ctn11":"<a class=\'d-ib\'>详情</a><a class=\'d-ib\'>编辑</a><a class=\'d-ib\'>删除</a>"}'
-            +',{"ctn1":"1","ctn2":"2017-04-28","ctn3":"","ctn4":"","ctn5":"","ctn6":"","ctn7":"","ctn8":"","ctn9":"","ctn10":"","ctn11":"<a class=\'d-ib\'>详情</a><a class=\'d-ib\'>编辑</a><a class=\'d-ib\'>删除</a>"}'
-            +',{"ctn1":"1","ctn2":"2017-04-28","ctn3":"","ctn4":"","ctn5":"","ctn6":"","ctn7":"","ctn8":"","ctn9":"","ctn10":"","ctn11":"<a class=\'d-ib\'>详情</a><a class=\'d-ib\'>编辑</a><a class=\'d-ib\'>删除</a>"}'
+            +' {"ctn1":"1","ctn2":"2017-04-28","ctn3":"","ctn4":"","ctn5":"","ctn6":"","ctn7":"","ctn8":"","ctn9":"","ctn10":"","ctn11":"<a class=\'sitedetails d-ib\'>详情</a><a class=\'d-ib\'>编辑</a><a class=\'d-ib\'>删除</a>"}'
+            +',{"ctn1":"1","ctn2":"2017-04-28","ctn3":"","ctn4":"","ctn5":"","ctn6":"","ctn7":"","ctn8":"","ctn9":"","ctn10":"","ctn11":"<a class=\'sitedetails d-ib\'>详情</a><a class=\'d-ib\'>编辑</a><a class=\'d-ib\'>删除</a>"}'
+            +',{"ctn1":"1","ctn2":"2017-04-28","ctn3":"","ctn4":"","ctn5":"","ctn6":"","ctn7":"","ctn8":"","ctn9":"","ctn10":"","ctn11":"<a class=\'sitedetails d-ib\'>详情</a><a class=\'d-ib\'>编辑</a><a class=\'d-ib\'>删除</a>"}'
+            +',{"ctn1":"1","ctn2":"2017-04-28","ctn3":"","ctn4":"","ctn5":"","ctn6":"","ctn7":"","ctn8":"","ctn9":"","ctn10":"","ctn11":"<a class=\'sitedetails d-ib\'>详情</a><a class=\'d-ib\'>编辑</a><a class=\'d-ib\'>删除</a>"}'
 
             + "]})");
         thegrid.addJSONData(data);//给div添加json格式的数据

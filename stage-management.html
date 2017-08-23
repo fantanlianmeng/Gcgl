@@ -1,0 +1,47 @@
+
+    <!--站点管理-->
+    <div class="new-summary">
+        <div class="search fs-14">
+            <div class="search-input d-ib">
+                <span class="d-ib">项目名称：</span>
+                <input type="text">
+            </div>
+            <a href="javascript:;" class="d-ib ta-c">查询</a>
+            <a href="javascript:;" class="add-sitea d-ib ta-c">添加站点</a>
+            <a href="javascript:;" class="export d-ib ta-c">导出表格</a>
+            <a href="javascript:;" class="export d-ib ta-c">导入表格</a>
+        </div>
+
+        <div id="pagetable6"></div>
+        <div class="paging ta-c fs-14 c-9">
+            <a href="javascript:;">首页</a>
+            <a href="javascript:;">上一页</a>
+            <a href="javascript:;" class="number number-active">1</a>
+            <a href="javascript:;" class="number">2</a>
+            <a href="javascript:;" class="number">3</a>
+            <a href="javascript:;">下一页</a>
+            <a href="javascript:;">尾页</a>0
+            <span class="d-ib">共1页/2条数据</span>
+            跳转<input type="text" class="obtain" value="1">页
+        </div>
+    </div>
+
+    <!--添加站点-->
+    <div id="add-site"></div>
+    
+    <!--站点详情-->
+    <div id="site-details"></div>
+
+<script>
+	$(document).ready(function(){
+        $("#pagetable6").load('pagetable6.html');
+    });
+    $(".add-sitea").click(function(){
+        $(".new-summary").hide();
+        $("#add-site").load('add-site.html');
+        $(".crumbs").append("&gt; <a href='javascript:;'>添加站点</a>");
+        sitea()
+    })
+    
+</script>
+

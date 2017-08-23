@@ -1,29 +1,18 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>工程项目管理平台</title>
-<link href="css/base-pc.css" rel="stylesheet" type="text/css">
-<link href="css/module.css" rel="stylesheet" type="text/css">
-<link href="css/select2.css" rel="stylesheet" type="text/css">
-<link href="css/project-new.css" rel="stylesheet" type="text/css">
-</head>
 
-<body class="p-r">
     <div class="content filemanage">
     	<p class="crumbs">您当前的位置：系统管理 &gt; <a href="javascript:;">参数配置</a></p>
       	
         <!--参数配置-->
         <div class="allocation">
         	<div class="parameter fa-14">
-				<a href="#" class="parameter-active d-ib">项目归属</a>
-                <a href="#" class="d-ib">所属部门</a>
-                <a href="#" class="d-ib">所属部门</a>
-                <a href="#" class="d-ib">所属部门</a>
-                <a href="#" class="d-ib">所属部门</a>
-                <a href="#" class="d-ib">所属部门</a>
-                <a href="#" class="d-ib">所属部门</a>
-                <a href="#" class="append d-ib">添加参数种类</a>
+				<a href="javascript:;" class="parameter-active parameter-a d-ib">项目归属</a>
+                <a href="javascript:;" class="parameter-a d-ib">所属部门</a>
+                <a href="javascript:;" class="parameter-a d-ib">所属部门</a>
+                <a href="javascript:;" class="parameter-a d-ib">所属部门</a>
+                <a href="javascript:;" class="parameter-a d-ib">所属部门</a>
+                <a href="javascript:;" class="parameter-a d-ib">所属部门</a>
+                <a href="javascript:;" class="parameter-a d-ib">所属部门</a>
+                <a href="javascript:;" class="append d-ib">添加参数种类</a>
             </div>
             <div class="query fs-12 c-3">
             	<span>名称：</span>
@@ -118,21 +107,10 @@
             </div>
         </div>
     </div>
-    
-     
-</body>
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
 <script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
 <script>
-	$(document).ready(function(){
-        $("#header").load('header.html');
-        $("#sidebar").load('sidebar.html',function(){
-			$("#system").addClass('active').next(".subnav").show();
-			$("#system-parameter").addClass('subnav-active');
-		});
-        $("#notice").load('notice.html');
-    });
 
     $(".cancel,.confirm").click(function(){
         $(".mask,#parameter-property,#parameter-type").hide();
@@ -144,6 +122,12 @@
     $(".attribute").click(function(){
         $(".mask,#parameter-property").show();
     })
+	
+	$(".parameter .parameter-a").click(function(){
+		$(".parameter .parameter-a").removeClass("parameter-active")
+		$(this).addClass("parameter-active")	
+	})
+	
 </script>
 
 </html>

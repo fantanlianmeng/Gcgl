@@ -1,16 +1,6 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>工程项目管理平台</title>
-<link href="css/base-pc.css" rel="stylesheet" type="text/css">
-<link href="css/module.css" rel="stylesheet" type="text/css">
-<link href="css/select2.css" rel="stylesheet" type="text/css">
+
 <link href="css/out.css" rel="stylesheet" type="text/css">
 
-</head>
-
-<body class="p-r">
     <div class="content">
     	<p class="crumbs">您当前的位置：出差管理 &gt; <a href="javascript:;" class="crumbs-first">出差动态</a></p>
         
@@ -278,27 +268,27 @@
                         <div class="pick fs-12 c-6">
                             <ul class="lif-l">
                                 <li class="d-ib">
-                                    <span class="pick-span d-ib fs-12 fw-1">实际开始日期：</span>
+                                    <span class="pick-span d-ib fs-12 fw-1">出差类别：</span>
                                     <select class="js-select100 select-normal" name="preview">
-                                        <option>PC通州油烟三期项目现场安装报告</option>
+                                        <option>公出</option>
                                         <option>请选择</option>
                                     </select>
                                 </li>
                                 <li class="d-ib">
-                                    <span class="pick-span d-ib fs-12 fw-1">实际结束日期：</span>
+                                    <span class="pick-span d-ib fs-12 fw-1">出差性质：</span>
                                     <select class="js-select100 select-normal" name="preview">
-                                        <option>PC通州油烟三期项目现场安装报告</option>
+                                        <option>安装</option>
                                         <option>请选择</option>
                                     </select>
                                 </li>
                                 <li class="d-ib">
-                                    <span class="pick-span d-ib fs-12 fw-1">总计出差天数：</span>
+                                    <span class="pick-span d-ib fs-12 fw-1">现场施工天数：</span>
                                     <input type="text" name="duration" id="duration" class="duration" value="8" readonly>
                                 </li>
                                 <li class="d-ib">
-                                    <span class="pick-span d-ib fs-12 fw-1">出差人员：</span>
+                                    <span class="pick-span d-ib fs-12 fw-1">出差结果：</span>
                                     <select class="js-select100 select-normal" name="preview">
-                                        <option>PC通州油烟三期项目现场安装报告</option>
+                                        <option>PC通过</option>
                                         <option>请选择</option>
                                     </select>
                                 </li>
@@ -311,7 +301,9 @@
                                 <tbody>
                                     <tr class="c-9">
                                         <td class="c-6 ta-c">备注：</td>
-                                        <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
+                                        <td class="ta-l">
+                                        	<textarea>日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</textarea>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -323,18 +315,8 @@
         </div>
     </div>
 
-</body>
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script src="js/select2.js"></script>
-<script src="js/select2_option.js"></script>
 <script>
 	$(document).ready(function(){
-        $("#header").load('header.html');
-        $("#sidebar").load('sidebar.html',function(){
-			$("#out").addClass('active').next(".subnav").show();
-			$("#out-dynamic").addClass('subnav-active');
-		});
-        $("#notice").load('notice.html');
         $("#outtable1").load('outtable1.html');
 		$("#outtable2").load('outtable2.html');
 		$("#outtable3").load('outtable3.html');

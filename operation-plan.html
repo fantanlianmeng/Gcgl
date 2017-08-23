@@ -1,18 +1,8 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>工程项目管理平台</title>
-<link href="css/base-pc.css" rel="stylesheet" type="text/css">
+
 <link href="lay/css/layui.css" rel="stylesheet"/>
-<link href="css/module.css" rel="stylesheet" type="text/css">
-<link href="css/select2.css" rel="stylesheet" type="text/css">
 <link href="css/jedate.css" rel="stylesheet" type="text/css">
 <link href="css/out.css" rel="stylesheet" type="text/css">
 <link href="css/operation.css" rel="stylesheet" type="text/css">
-</head>
-
-<body class="p-r">
     
     <div class="content filemanage">
     	<p class="crumbs">您当前的位置：运维管理 &gt; <a href="javascript:;">运维计划</a></p>
@@ -38,17 +28,20 @@
                     </div>
                     <div class="plan-classify">
                     	<span class="plan-span d-ib">拟派运维人员：</span>
+                        <p class="d-ib" id="staff">
+                            <input type="text" value="李一一" readonly>
+                        </p>
                         <a href="javascript:;" class="add-personnel d-ib ta-c">添加人员</a>
                     </div>
                     <div class="plan-classify">
                     	<span class="plan-span d-ib">运维类型：</span>
                         <div class="operation-type d-ib">
-                            <label><span class="active d-ib ta-r c-9">故障运维</span><input name="Fruit" type="radio" value="" class="d-n" checked/></label>
-                            <label><span class="d-ib ta-r c-9">例行运维</span><input name="Fruit" type="radio" value="" class="d-n"/></label>
+                            <label class="operation-label1"><span class="active d-ib ta-r c-9">故障运维</span><input name="Fruit" type="radio" value="" class="d-n" checked/></label>
+                            <label class="operation-label2"><span class="d-ib ta-r c-9">例行运维</span><input name="Fruit" type="radio" value="" class="d-n"/></label>
                         </div>
-                        <div class="batch d-ib">
+                        <div class="batch d-n">
                         	<span>运维批次：</span>
-                             <input type="text" value="2" class="batch-input fs-12 c-9 ta-c">
+                            <input type="text" value="2" class="batch-input limit-number fs-12 c-9 ta-c">
                         </div>
                     </div>
                     <div class="plan-classify">
@@ -104,68 +97,74 @@
         </div>
         <ul id="demo"></ul>
         <div class="opt ta-c fs-14 ta-c">
-        	<a href="#" class="cancel d-ib">取消</a>
-            <a href="#" class="keep d-ib">保存</a>
+        	<a href="javascript:;" class="cancel d-ib" id="people-cancel">取消</a>
+            <a href="javascript:;" class="keep d-ib" id="people-keep">保存</a>
         </div>
     </div>
     
     <!--添加运维站点-->
     <div class="plus-site bg-f p-f fs-12 c-6 d-n" id="plus-site">
     	<h5 class="fs-14 c-f ta-c">添加运维站点</h5>
-        <p class="site-name">站点名称：&nbsp&nbsp&nbsp <span class="c-9">新一代E区</span></p>
+        <p class="site-name">站点名称：&nbsp&nbsp&nbsp <input type="text" id="siteinput" value="新一代E区" readonly placeholder="请选择站点"></p>
         <div class="exist">
         	<span class="d-ib">已存在的站点：</span>
             <div class="all-check d-ib">
-            	<input type="checkbox" class="checksite " id="check-site">
-                <label for="check-site" class=""></label>
-                <span>全选</span>
+            	<label>
+            		<input type="checkbox" class="checksite " id="check-site">
+                    <i class="d-ib"></i>
+                    <span>全选</span>
+                </label>
             </div>
             <span class="selected-span d-ib">已选择站点<span id="number">0</span>个</span>
         </div>
         <div class="choose-site c-9">
         	<div class="choosebox d-ib">
-                <input type="checkbox" class="checksite " id="site1">
-                <label for="site1" class=""></label>
-                <span>新一代E区</span>
+            	<label>
+            		<input type="checkbox" class="checksite " id="site1">
+                    <i class="d-ib"></i>
+                    <span>新一代E区</span>
+                </label>
             </div>
             <div class="choosebox d-ib">
-                <input type="checkbox" class="checksite " id="site2">
-                <label for="site2" class=""></label>
-                <span>新一代E区</span>
+            	<label>
+            		<input type="checkbox" class="checksite " id="site2">
+                    <i class="d-ib"></i>
+                    <span>新一代E区</span>
+                </label>
             </div>
             <div class="choosebox d-ib">
-                <input type="checkbox" class="checksite " id="site3">
-                <label for="site3" class=""></label>
-                <span>新一代E区</span>
+                <label>
+            		<input type="checkbox" class="checksite " id="site2">
+                    <i class="d-ib"></i>
+                    <span>新一代E区</span>
+                </label>
             </div>
             <div class="choosebox d-ib">
-                <input type="checkbox" class="checksite " id="site4">
-                <label for="site4" class=""></label>
-                <span>新一代E区</span>
+                <label>
+            		<input type="checkbox" class="checksite " id="site2">
+                    <i class="d-ib"></i>
+                    <span>新一代E区</span>
+                </label>
             </div>
         </div>
         <div class="opt ta-c fs-14 ta-c">
-        	<a href="#" class="cancel d-ib">取消</a>
-            <a href="#" class="keep d-ib">保存</a>
+        	<a href="javascript:;" class="cancel d-ib" id="site-cancel">取消</a>
+            <a href="javascript:;" class="keep d-ib" id="site-keep">保存</a>
         </div>
     </div>
     
-    
-</body>
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
 <script src="js/jquery.jedate.js"></script>
 <script src="layui.js"></script>
 <script>
-	$(document).ready(function(){
-        $("#header").load('header.html');
-        $("#sidebar").load('sidebar.html',function(){
-			$("#operation").addClass('active').next(".subnav").show();
-			$("#operation-plan").addClass('subnav-active');
-		});
-        $("#notice").load('notice.html');
-    });
+	
+	$(".operation-label1").click(function(){
+		$(".batch").hide()
+	})
+	$(".operation-label2").click(function(){
+		$(".batch").show()
+	})
 	
 	
 	$(".operation-type label").click(function(){
@@ -187,7 +186,6 @@
 	})
 	
 	//添加运维站点
-
 	$("#check-site").attr("checked",false);
 	$(".choose-site").find(".choosebox input").attr("checked",false);
 	$("#check-site").click(function(){
@@ -201,16 +199,26 @@
         number()
 	})
 	$(".choose-site .choosebox label").click(function(){
-		$(this).attr('disabled','disabled');
+		number()
+	})
+	$("#site-cancel").click(function(){
+		$(".choose-site :checked").attr("checked",false)
 		number()
 	})
 	function number(){
 		setTimeout(function(){
+			var str =$(".choose-site :checked").parent("label").find("span").map(function(index,elem){
+				return $(elem).text();
+			}).get().join(",")
+			$("#siteinput").val(str)
 			var check_length = $(".choosebox").find("input:checked").length;
 			$("#number").text(check_length);
+			if(check_length == 0){
+				$("#check-site").attr("checked",false)	
+			}
 		},100)
 	}
-
+	number()
 
 	//实现日期选择联动
 	var start = {
@@ -235,163 +243,169 @@
 </script>
 <script>
 	layui.use('tree', function() {
-				var tree = layui.tree({
-					elem: '#demo', //指定元素，生成的树放到哪个元素上
-					check: 'checkbox', //勾选风格
-					skin: 'as', //设定皮肤
-					drag: true,//点击每一项时是否生成提示信息
-					checkboxName: 'aa[]',//复选框的name属性值
-					checkboxStyle: "",//设置复选框的样式，必须为字符串，css样式怎么写就怎么写
-					click: function(item) { //点击节点回调
-						console.log("item")
+		var tree = layui.tree({
+			elem: '#demo', //指定元素，生成的树放到哪个元素上
+			check: 'checkbox', //勾选风格
+			skin: 'as', //设定皮肤
+			drag: true,//点击每一项时是否生成提示信息
+			checkboxName: 'aa[]',//复选框的name属性值
+			checkboxStyle: "",//设置复选框的样式，必须为字符串
+			onchange: function (){//当当前input发生变化后所执行的回调
+				var strchecked =$("#demo ul :checked").length;
+				var str =$("#demo ul :checked").parent("li").find("a").find("cite").map(function(index,elem){
+						return $(elem).text();
+					}).get().join(",")
+				$("#staff input").val(str);
+				$("#staff").show();
+				if(strchecked ==0){
+					$("#staff").hide();
+				}
+			},
+			nodes: [ //节点
+				{
+					name: '工程中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
 					},
-					onchange: function (){//当当前input发生变化后所执行的回调
-						console.log(this);
+					children: [{
+						name: '李一1',
+						checkboxValue: 1
+					}, {
+						name: '李一2',
+						checkboxValue: 2
+					}, {
+						name: '李一3',
+						checkboxValue: 3
+					}]
+				},{
+					name: '产品中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
 					},
-					nodes: [ //节点
-						{
-							name: '工程中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '产品中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '工程中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '产品中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '工程中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '产品中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							spread: true, //是否是展开状态，true为展开状态
-							checked: true,//复选框默认是否选中	
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2,
-								checked: true  //复选框默认是否选中
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '工程中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '产品中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						}
-					]
-				});
+					children: [{
+						name: '李一4',
+						checkboxValue: 1
+					}, {
+						name: '李一5',
+						checkboxValue: 2
+					}, {
+						name: '李一6',
+						checkboxValue: 3
+					}]
+				},{
+					name: '工程中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一7',
+						checkboxValue: 1
+					}, {
+						name: '李一8',
+						checkboxValue: 2
+					}, {
+						name: '李一9',
+						checkboxValue: 3
+					}]
+				},{
+					name: '产品中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一10',
+						checkboxValue: 1
+					}, {
+						name: '李一11',
+						checkboxValue: 2
+					}, {
+						name: '李一12',
+						checkboxValue: 3
+					}]
+				},{
+					name: '工程中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一13',
+						checkboxValue: 1
+					}, {
+						name: '李一14',
+						checkboxValue: 2
+					}, {
+						name: '李一15',
+						checkboxValue: 3
+					}]
+				},{
+					name: '产品中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					spread: true, //是否是展开状态，true为展开状态
+					checked: true,//复选框默认是否选中	
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一一',
+						checkboxValue: 1
+					}, {
+						name: '李一二',
+						checkboxValue: 2,
+						checked: true  //复选框默认是否选中
+					}, {
+						name: '李一三',
+						checkboxValue: 3
+					}]
+				},{
+					name: '工程中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一一',
+						checkboxValue: 1
+					}, {
+						name: '李一一',
+						checkboxValue: 2
+					}, {
+						name: '李一一',
+						checkboxValue: 3
+					}]
+				},{
+					name: '产品中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一一',
+						checkboxValue: 1
+					}, {
+						name: '李一一',
+						checkboxValue: 2
+					}, {
+						name: '李一一',
+						checkboxValue: 3
+					}]
+				}
+			]
+		});
 	});
+	
 	$("#check-all").attr("checked",false);
 	$("#check-all").click(function(){
 		var checkall = $("#check-all").prop("checked");
@@ -401,6 +415,32 @@
         if( checkall == false ){//未选中
             $("#demo").find("input").attr("checked",false);
         }
+	})
+	
+	$(".check-name label").click(function(){
+		strchecked()
+	})
+	
+	function strchecked(){
+		setTimeout(function(){
+			var strchecked =$("#demo ul :checked").length;
+			var str =$("#demo ul :checked").parent("li").find("a").find("cite").map(function(index,elem){
+				return $(elem).text();
+			}).get().join(",")
+			$("#staff input").val(str)
+			if(strchecked==0){
+				$("#staff").hide();
+			}else{
+				$("#staff").show();
+			}
+		},100)
+	}
+	strchecked()
+	
+	$("#people-cancel").click(function(){
+		$("#demo :checkbox").attr("checked",false)
+		$("#staff input").val("")
+		$("#staff").hide();
 	})
 </script>
 </html>

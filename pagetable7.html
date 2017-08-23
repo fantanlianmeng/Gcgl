@@ -18,24 +18,18 @@
 <script src="table/project-table7.js"></script>
 <script>
 	$(".project-detailsa").click(function(){
-		$("#process,#overview").hide();
-		$("#details").show();
+		$("#overview").hide();
+		$("#details").load('details.html');
 		$(".crumbs").append("&gt; <a href='javascript:;'>项目详情</a>");
 		recovery()
 	})
 	
 	$(".log-detailsa").click(function(){
-		$("#details,#overview").hide();
-		$("#process").show();
+		$("#overview").hide();
+		$("#pagetable13").load('pagetable13.html');
 		$(".crumbs").append("&gt; <a href='javascript:;'>日志详情</a>");
 		recovery()
 	})
-	function recovery(){
-		$(".crumbs-first").click(function(){
-			$("#details,#process").hide();
-			$("#overview").show();
-			$(".crumbs").html("您当前的位置：项目管理 &gt; <a href='javascript:;' class='crumbs-first'>项目总览</a>");
-		})
-	}
+	
 </script>
 </html>

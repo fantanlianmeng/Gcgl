@@ -9,6 +9,8 @@
 .pick ul .devotion-time{color:#ec6941;margin-right:20px;}
 .datainp{ width:200px; height:30px; border:1px #ccc solid;}
 #add-sheet .report-table tr td{padding:30px 20px 25px 20px;}
+#add-sheet .report-table tr td textarea{width:100%;height:100%;color:#999;font-size:12px;line-height:20px;border:none;resize:none;}
+#add-sheet .report-table tr td.report-name{width:160px;}
 
 /* 日志动态 */
 .trends-table{margin:10px 15px 15px 15px;}

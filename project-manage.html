@@ -1,21 +1,10 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>工程项目管理平台</title>
-<link href="css/base-pc.css" rel="stylesheet" type="text/css">
-<link href="css/IMGUP.css" rel="stylesheet" />
-<link href="css/select2.css" rel="stylesheet" type="text/css">
-<link href="css/module.css" rel="stylesheet" type="text/css">
-<link href="css/project-manage.css" rel="stylesheet" type="text/css">
-</head>
 
-<body class="p-r">
-    
-    <div id="page2">
-    	<div class="content">
+<link href="css/IMGUP.css" rel="stylesheet" />
+<link href="css/project-manage.css" rel="stylesheet" type="text/css">
+
+    <div class="content">
     	<p class="crumbs">您当前的位置：项目管理 &gt; <a href="javascript:;" class="crumbs-first">项目管理</a></p>
-        <div class="sheet" id="sheet">
+        <div class="sheet" id="sheet2">
             <div class="search fs-14">
                 <div class="search-input d-ib">
                     <span class="d-ib">站点名称：</span>
@@ -146,7 +135,6 @@
                             <option>请选择</option>
                         </select>
                     </div>
-                
                 </div>
             </div>
             <div class="manage-table">
@@ -268,7 +256,6 @@
                         </tr>
                     </tbody>
                 </table>
-                
             </div>
 
             <div id="pagetable4" class="d-n"></div>
@@ -287,349 +274,20 @@
         </div>
 		
         <!--阶段管理-->
-        <div class="new-summary d-n" id="stage-summary">
-            <a href="javascript:;" class="summary-a d-ib ta-c">新建总结</a>
+        <div id="stage-summary"></div>
 
-            <div id="pagetable5"></div>
-            <div class="paging ta-c fs-14 c-9">
-                <a href="javascript:;">首页</a>
-                <a href="javascript:;">上一页</a>
-                <a href="javascript:;" class="number number-active">1</a>
-                <a href="javascript:;" class="number">2</a>
-                <a href="javascript:;" class="number">3</a>
-                <a href="javascript:;">下一页</a>
-                <a href="javascript:;">尾页</a>
-                <span class="d-ib">共1页/2条数据</span>
-                跳转<input type="text" class="obtain" value="1">页
-            </div>
-        </div>
-        
         <!--站点管理-->
-        <div class="new-summary d-n" id="site-management">
-            <div class="search fs-14">
-                <div class="search-input d-ib">
-                    <span class="d-ib">项目名称：</span>
-                    <input type="text">
-                </div>
-                <a href="javascript:;" class="d-ib ta-c">查询</a>
-                <a href="javascript:;" class="add-sitea d-ib ta-c">添加站点</a>
-                <a href="javascript:;" class="export d-ib ta-c">导出表格</a>
-                <a href="javascript:;" class="export d-ib ta-c">导入表格</a>
-            </div>
+        <div id="stage-management"></div>
 
-            <div id="pagetable6"></div>
-            <div class="paging ta-c fs-14 c-9">
-                <a href="javascript:;">首页</a>
-                <a href="javascript:;">上一页</a>
-                <a href="javascript:;" class="number number-active">1</a>
-                <a href="javascript:;" class="number">2</a>
-                <a href="javascript:;" class="number">3</a>
-                <a href="javascript:;">下一页</a>
-                <a href="javascript:;">尾页</a>
-                <span class="d-ib">共1页/2条数据</span>
-                跳转<input type="text" class="obtain" value="1">页
-            </div>
-        </div>
-        
-        <!--添加站点-->
-        <div class="new-site ta-c d-n" id="add-site">
-            <h5 class="fs-14 c-f ta-l">
-            	<span class="d-ib site-active">企业信息</span>
-                <span class="d-ib">站点基础</span>
-                <span class="d-ib">站点扩展</span>
-            </h5>
-            <div class="extend ta-l">
-            	<div class="extend-box d-ib">
-                	<span class="d-ib c-6">省份</span>
-                    <select class="js-select133 select-normal" name="worktype1">
-                        <option>请选择</option>
-                        <option>请选择</option>
-                    </select>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">地区</span>
-                    <select class="js-select133 select-normal" name="worktype2">
-                        <option>请选择</option>
-                        <option>请选择</option>
-                    </select>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">企业</span>
-                    <select class="js-select133 select-normal" name="worktype3">
-                        <option>请选择</option>
-                        <option>请选择</option>
-                    </select>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">企业编码</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box extend-box2 d-ib">
-                	<span class="d-ib c-6">企业地址</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">联系人</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box extend-box2 d-ib">
-                	<span class="d-ib c-6">联系人电话</span>
-                    <input type="text" value="山东省">
-                </div>
-                <p class="ta-c"><a href="javascript:;" class="keep ta-c d-ib">保存</a></p>
-            </div>
-            <div class="extend ta-l d-n">
-            	<div class="extend-box d-ib">
-                	<span class="d-ib c-6">站点名称</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">设备MN号</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">设备SN号</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">传输方式</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">设备SIM卡号</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">SIM卡网络</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">设备安装日期</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">安装人员</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="add-photos ta-c">
-                    <div class="photos-box d-ib o-h p-r" >
-						<a href="javascript:;" class="div_imgfile photos-a1 d-ib p-a"></a>
-                        <a href="javascript:;" class="div_imgfile photos-a2 d-ib p-a"></a>
-                        <a href="javascript:;" class="div_imgfile photos-a3 d-ib p-a"></a>
-                        <a href="javascript:;" class="div_imgfile photos-a4 d-ib p-a"></a>
-                        <div class="c-b"></div>
-                    </div>
-                    <input type="text" name="filePath" id="callbackPath2">
-                </div>
-            	<p class="ta-c"><a href="javascript:;" class="keep ok ta-c d-ib" id="btn_ImgUpStart">保存</a></p>
-            </div>
-            <div class="extend ta-l d-n">
-            	<div class="extend-box d-ib">
-                	<span class="d-ib c-6">设备IP地址</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">设备端口</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">第一中心上报IP</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">第一中心上报端口</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">第二中心上报IP</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">第二中心上报端口</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">平台访问地址</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">用户名</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">密码</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">设备型号</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">设备程序版本</span>
-                    <input type="text" value="山东省">
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">硬件详细配置</span>
-                    <input type="text" value="山东省">
-                </div>
-                <p class="ta-c"><a href="javascript:;" class="keep ta-c d-ib">保存</a></p>
-            </div> 
-        </div>
-        
-        <!--站点详情-->
-		<div class="new-site new-site2 ta-c d-n" id="site-details">
-            <h5 class="fs-14 c-f ta-l">
-            	<span class="d-ib site-active">企业信息</span>
-                <span class="d-ib">站点基础</span>
-                <span class="d-ib">站点扩展</span>
-            </h5>
-            <div class="extend ta-l">
-            	<div class="extend-box d-ib">
-                	<span class="d-ib c-6">省份</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">地区</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">企业</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">企业编码</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box extend-box2 d-ib">
-                	<span class="d-ib c-6">企业地址</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">联系人</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box extend-box2 d-ib">
-                	<span class="d-ib c-6">联系人电话</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-            </div>
-            <div class="extend ta-l d-n">
-            	<div class="extend-box d-ib">
-                	<span class="d-ib c-6">站点名称</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">设备MN号</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">设备SN号</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">传输方式</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">设备SIM卡号</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">SIM卡网络</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">设备安装日期</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">安装人员</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="add-photos ta-c">
-                    <div class="photos-box photos-box2 d-ib">
-                        <a href="javascript:;" class="d-ib"></a>
-                    </div>
-                    <div class="photos-box photos-box2 d-ib">
-                        <a href="javascript:;" class="d-ib"></a>
-                    </div>
-                    <div class="photos-box photos-box2 d-ib">
-                        <a href="javascript:;" class="d-ib"></a>
-                    </div>
-                    <div class="photos-box photos-box2 d-ib">
-                        <a href="javascript:;" class="d-ib"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="extend ta-l d-n">
-            	<div class="extend-box d-ib">
-                	<span class="d-ib c-6">设备IP地址</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">设备端口</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">第一中心上报IP</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">第一中心上报端口</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">第二中心上报IP</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">第二中心上报端口</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">平台访问地址</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">用户名</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">密码</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">设备型号</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">设备程序版本</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-                <div class="extend-box d-ib">
-                	<span class="d-ib c-6">硬件详细配置</span>
-                    <input type="text" value="山东省" readonly>
-                </div>
-            </div> 
-        </div>
     </div>
-	</div>
 
-<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+
 <script src="js/IMGUP.js"></script>
 <script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
 <script>
 	$(document).ready(function(){
-        $("#header").load('header.html');
-        $("#sidebar").load('sidebar.html',function(){
-			$("#project").addClass('active').next(".subnav").show();
-			$("#project-manage").addClass('subnav-active');
-		});
-        $("#notice").load('notice.html');
         $("#pagetable4").load('pagetable4.html');
-        $("#pagetable5").load('pagetable5.html');
-        $("#pagetable6").load('pagetable6.html');
     });
 
 	//高级搜索
@@ -644,37 +302,16 @@
 	
 	//内容跳转
 	$(".stage").click(function(){
-		$(".sheet,#add-site,#site-details").hide();
-		$("#stage-summary").show();
+        $(".sheet").hide();
+		$("#stage-summary").load('stage-summary.html');
 		$(".crumbs").append("&gt; <a href='javascript:;'>阶段总结</a>");
 		recovery()
 	})
-	$(".add-sitea").click(function(){
-		$(".sheet,#site-details,#site-management").hide();
-		$("#add-site").show();
-		$(".crumbs").append("&gt; <a href='javascript:;'>添加站点</a>");
-		sitea()
-	})
-	$("#add-site h5 span").click(function(){
-		$("#add-site h5 span").removeClass("site-active");
-	    $(this).addClass("site-active")
-	    $("#add-site .extend").hide().eq($(this).index()).fadeIn();
-	})
-	$("#site-details h5 span").click(function(){
-		$("#site-details h5 span").removeClass("site-active");
-	    $(this).addClass("site-active")
-	    $("#site-details .extend").hide().eq($(this).index()).fadeIn();
-	})
-	$(".sitedetails").click(function(){
-		$(".sheet,#add-site,#site-management").hide();
-		$("#site-details").show();
-		$(".crumbs").append("&gt; <a href='javascript:;'>详情</a>");
-		sitea()
-	})
+	
 	function sitea(){
 		$(".sitea").click(function(){
-			$(".sheet,#add-site,#site-details").hide();
-			$("#site-management").show();
+			$(".sheet").hide();
+			$("#stage-management").load('stage-management.html');
 			$(".crumbs").html("您当前的位置：项目管理 &gt <a class='crumbs-first'>项目管理</a> &gt <a class='sitea'>站点管理</a>");
 			recovery()
 		})
@@ -682,12 +319,11 @@
 	sitea()
 	function recovery(){
 		$(".crumbs-first").click(function(){
-			$("#stage-summary,#site-management,#add-site,#site-details").hide();
-			$("#sheet").show();
+			$("#stage-summary,#stage-management").empty();
+			$("#sheet2").show();
 			$(".crumbs").html("您当前的位置：项目管理 &gt; <a class='crumbs-first'>项目管理</a>");
 		})
 	}
 	
 </script>
-</body>
-</html>
+

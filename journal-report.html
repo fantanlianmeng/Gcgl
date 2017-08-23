@@ -1,18 +1,7 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>工程项目管理平台</title>
-<link href="css/base-pc.css" rel="stylesheet" type="text/css">
-<link href="css/module.css" rel="stylesheet" type="text/css">
+
 <link href="css/jedate.css" rel="stylesheet" type="text/css">
-<link href="css/select2.css" rel="stylesheet" type="text/css">
 <link href="css/journal.css" rel="stylesheet" type="text/css">
 
-</head>
-
-<body class="p-r">
-    
     <div class="content">
     	<p class="crumbs">您当前的位置：日志管理 &gt; <a href="javascript:;">日志汇报</a></p>
         
@@ -58,16 +47,22 @@
                 	<table cellspacing="1" cellpadding="0" class="fs-12 w">
                         <tbody>
                             <tr class="c-9">
-                                <td>工作内容</td>
-                                <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
+                                <td class="report-name">工作内容</td>
+                                <td class="ta-l">
+                                	<textarea>日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</textarea>
+                                </td>
                             </tr>
                             <tr class="c-9">
-                                <td>遗留问题</td>
-                                <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
+                                <td class="report-name">遗留问题</td>
+                                <td class="ta-l">
+                                	<textarea>日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</textarea>
+                                </td>
                             </tr>
                             <tr class="c-9">
-                                <td>客户反馈/评价</td>
-                                <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
+                                <td class="report-name">客户反馈/评价</td>
+                                <td class="ta-l">
+                                	<textarea>日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</textarea>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -116,21 +111,10 @@
         </div>
     </div>
      
-</body>
-<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
 <script type="text/javascript" src="js/jquery.jedate.js"></script>
 <script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
 <script>
-	$(document).ready(function(){
-        $("#header").load('header.html');
-        $("#sidebar").load('sidebar.html',function(){
-			$("#journal").addClass('active').next(".subnav").show();
-			$("#journal-report").addClass('subnav-active');
-		});
-        $("#notice").load('notice.html');
-    });
-
 	//时间控件
 	$("#dateinfo").jeDate({
 		isinitVal:true,
@@ -170,5 +154,3 @@
         $(this).next(".add-second").toggle();
     })
 </script>
-
-</html>

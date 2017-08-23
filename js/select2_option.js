@@ -1,4 +1,8 @@
 $(function(){
+	$(".js-select66").select2({
+  		width: "66px",
+	  	minimumResultsForSearch: Infinity
+	});
 	$(".js-A1-slt1").select2({
   		width: "94px",
 	  	minimumResultsForSearch: Infinity

@@ -1,17 +1,7 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>工程项目管理平台</title>
-<link href="css/base-pc.css" rel="stylesheet" type="text/css">
-<link href="css/module.css" rel="stylesheet" type="text/css">
-<link href="css/select2.css" rel="stylesheet" type="text/css">
+
 <link href="lay/css/layui.css" rel="stylesheet"/>
 <link href="css/out.css" rel="stylesheet" type="text/css">
-<link href="css/project-new.css" rel="stylesheet" type="text/css">
-</head>
 
-<body class="p-r">
     <div class="content filemanage">
     	<p class="crumbs">您当前的位置：系统管理 &gt; <a href="javascript:;">角色管理</a></p>
       	
@@ -59,19 +49,11 @@
         </div>
     </div>
 
-</body>
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
 <script src="layui.js"></script>
 <script>
 	$(document).ready(function(){
-        $("#header").load('header.html');
-        $("#sidebar").load('sidebar.html',function(){
-			$("#system").addClass('active').next(".subnav").show();
-			$("#system-role").addClass('subnav-active');
-		});
-        $("#notice").load('notice.html');
 		$("#systemtable2").load('systemtable2.html');
     });
 

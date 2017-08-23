@@ -14,7 +14,15 @@
     <div class="project-table6">
         <table id="table6"></table>
     </div>
-        
+
 </body>
 <script src="table/project-table6.js"></script>
+<script>
+	$(".sitedetails").click(function(){
+        $(".new-summary").hide();
+        $("#site-details").load('site-details.html');
+        $(".crumbs").append("&gt; <a href='javascript:;'>详情</a>");
+        sitea()
+    })
+</script>
 </html>

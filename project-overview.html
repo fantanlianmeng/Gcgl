@@ -1,18 +1,7 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>工程项目管理平台</title>
-<link href="css/base-pc.css" rel="stylesheet" type="text/css">
-<link href="css/select2.css" rel="stylesheet" type="text/css">
-<link href="css/module.css" rel="stylesheet" type="text/css">
-<link href="css/project-manage.css" rel="stylesheet" type="text/css">
-</head>
 
-<body class="p-r">
-    
-    <div id="page3">
-    	<div class="content">
+<link href="css/project-manage.css" rel="stylesheet" type="text/css">
+
+    <div class="content">
     	<p class="crumbs">您当前的位置：项目管理 &gt; <a href="javascript:;" class="crumbs-first">项目总览</a></p>
         <!--项目总览-->
         <div class="overview" id="overview">
@@ -166,112 +155,17 @@
         </div>
 		
         <!--项目详情-->
-        <div class="details ta-c d-n" id="details">
-        	<p class="add-nav fs-14 c-f ta-l">项目基本信息</p>
-            <div class="details-table">
-                <table cellspacing="1" cellpadding="0" class="fs-12 w">
-                    <tbody>
-                        <tr class="c-9">
-                            <td>项目名称</td>
-                            <td></td>
-                            <td>建档日期</td>
-                            <td></td>
-                            <td>客户名称</td>
-                            <td></td>
-                            <td>合同编号</td>
-                            <td></td>
-                            <td>订单编号</td>
-                            <td></td>
-                            <td>项目类型</td>
-                            <td></td>
-                        </tr>
-                        <tr class="c-9">
-                            <td>设备型号</td>
-                            <td></td>
-                            <td>设备数量</td>
-                            <td></td>
-                            <td>项目周期</td>
-                            <td></td>
-                            <td>立项日期</td>
-                            <td></td>
-                            <td>收款状态</td>
-                            <td></td>
-                            <td>付款方式</td>
-                            <td></td>
-                        </tr>
-                        <tr class="c-9">
-                            <td>项目经理</td>
-                            <td></td>
-                            <td>项目归属</td>
-                            <td></td>
-                            <td>运维周期</td>
-                            <td></td>
-                            <td>质保周期</td>
-                            <td></td>
-                            <td>业务经理</td>
-                            <td></td>
-                            <td>售前支持</td>
-                            <td></td>
-                        </tr>
-                        <tr class="c-9">
-                            <td>结项日期</td>
-                            <td></td>
-                            <td>所属部门</td>
-                            <td></td>
-                            <td>项目服务类型</td>
-                            <td></td>
-                            <td>产品类型</td>
-                            <td></td>
-                            <td>项目阶段</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-                
-            <p class="add-nav fs-14 c-f ta-l">项目发货信息</p>
-            <div id="pagetable8"></div>
-            
-            <p class="add-nav fs-14 c-f ta-l">项目联系人信息</p>
-            <div id="pagetable9"></div>
-                
-            <p class="add-nav fs-14 c-f ta-l">项目出差信息</p>
-            <div id="pagetable10"></div>
-            
-            <p class="add-nav fs-14 c-f ta-l">项目运维信息</p>
-            <div id="pagetable11"></div>
-                
-            <p class="add-nav fs-14 c-f ta-l">站点管理</p>
-            <div id="pagetable12"></div>
-        </div>
+        <div id="details"></div>
         
         <!--日志详情-->
-        <div class="process d-n" id="process">
-            <div id="pagetable13"></div>
-        </div>
+        <div id="pagetable13"></div>
     </div>
-	</div>
-</body>
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
 <script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
 <script>
 	$(document).ready(function(){
-        $("#header").load('header.html');
-        $("#sidebar").load('sidebar.html',function(){
-			$("#project").addClass('active').next(".subnav").show();
-			$("#project-overview").addClass('subnav-active');
-		});
-        $("#notice").load('notice.html');
         $("#pagetable7").load('pagetable7.html');
-        $("#pagetable8").load('pagetable8.html');
-        $("#pagetable9").load('pagetable9.html');
-        $("#pagetable10").load('pagetable10.html');
-        $("#pagetable11").load('pagetable11.html');
-        $("#pagetable12").load('pagetable12.html');
-        $("#pagetable13").load('pagetable13.html');
     });
 	
 	//高级搜索
@@ -283,6 +177,12 @@
 		$(this).toggleClass("operate-active")
 		$(this).parent("td").find(".manage-abox").slideToggle();
 	})
+	function recovery(){
+		$(".crumbs-first").click(function(){
+			$("#details,#pagetable13").empty()
+			$("#overview").show();
+			$(".crumbs").html("您当前的位置：项目管理 &gt; <a href='javascript:;' class='crumbs-first'>项目总览</a>");
+		})
+	}
 </script>
 
-</html>
