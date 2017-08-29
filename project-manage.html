@@ -1,6 +1,5 @@
-
+<link href="css/jedate.css" rel="stylesheet" type="text/css">
 <link href="css/IMGUP.css" rel="stylesheet" />
-<link href="css/project-manage.css" rel="stylesheet" type="text/css">
 
     <div class="content">
     	<p class="crumbs">您当前的位置：项目管理 &gt; <a href="javascript:;" class="crumbs-first">项目管理</a></p>
@@ -16,7 +15,7 @@
                 <div class="ad-box d-n">
                     <div class="search-input d-ib">
                         <span class="d-ib">建档日期：</span>
-                        <input type="text">
+                        <input type="text" id="dateinfo">
                     </div>
                     <div class="search-input d-ib">
                         <span class="d-ib">客户名称：</span>
@@ -43,7 +42,7 @@
                     </div>
                     <div class="search-input d-ib">
                         <span class="d-ib">设备数量：</span>
-                        <input type="text">
+                        <input type="text" class="limit-number">
                     </div>
                     <div class="search-input search-input2 d-ib">
                         <span class="d-ib f-l">项目周期：</span>
@@ -56,7 +55,7 @@
                     </div>
                     <div class="search-input d-ib">
                         <span class="d-ib">立项日期：</span>
-                        <input type="text">
+                        <input type="text" id="dateinfo2">
                     </div>
                     <div class="search-input d-ib">
                         <span class="d-ib">收款状态：</span>
@@ -86,6 +85,7 @@
                         </select>
                         <div class="c-b"></div>
                     </div>
+                    
                     <div class="search-input search-input2 d-ib">
                         <span class="d-ib f-l">质保周期：</span>
                         <input type="text" class="f-l">
@@ -137,151 +137,21 @@
                     </div>
                 </div>
             </div>
-            <div class="manage-table">
-                <table cellspacing="0" cellpadding="0" class="ta-c w">
-                    <tbody>
-                        <tr class="data-head fs-14 c-f">
-                            <th>状态</th>
-                            <th>项目名称</th>
-                            <th>客户名称</th>
-                            <th>产品类型</th>
-                            <th>设备数量</th>
-                            <th>项目经理</th>
-                            <th>业务经理</th>
-                            <th>项目阶段</th>
-                            <th>项目最新进展</th>
-                            <th>项目遗留问题</th>
-                            <th>客户反馈/评价</th>
-                            <th>操作</th>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td><img src="img/icon13.png" alt="" class="dot"></td>
-                            <td>安徽60套老CMA 图片设备项目</td>
-                            <td>国网富达</td>
-                            <td>视频产品</td>
-                            <td>60</td>
-                            <td>张雪峰</td>
-                            <td>尹永海</td>
-                            <td>项目运维</td>
-                            <td>已安装20套设备</td>
-                            <td>客户临时通知现场杆 塔变更，常规安… </td>
-                            <td>设备运行不稳定</td>
-                            <td>
-                                <a href="javascript:;" class="d-b">查看详情</a>
-                                <a href="javascript:;" class="sitea d-b">站点管理</a>
-                                <div class="manage-abox d-ib d-n">
-                                    <a href="javascript:;" class="d-b">日志管理</a>
-                                    <a href="javascript:;" class="d-b">出差汇报</a>
-                                    <a href="javascript:;" class="d-b">运维汇报</a>
-                                    <a href="javascript:;" class="d-b">文档管理</a>
-                                    <a href="javascript:;" class="stage d-b">阶段总结</a>
-                                </div>
-                                <i class="manage-i d-b c-p"></i>
-                            </td>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td><img src="img/icon14.png" alt="" class="dot"></td>
-                            <td>安徽60套老CMA 图片设备项目</td>
-                            <td>国网富达</td>
-                            <td>视频产品</td>
-                            <td>60</td>
-                            <td>张雪峰</td>
-                            <td>尹永海</td>
-                            <td>项目运维</td>
-                            <td>已安装20套设备</td>
-                            <td>客户临时通知现场杆 塔变更，常规安… </td>
-                            <td>设备运行不稳定</td>
-                            <td>
-                                <a href="javascript:;" class="d-b">查看详情</a>
-                                <a href="javascript:;" class="sitea d-b">站点管理</a>
-                                <div class="manage-abox d-ib d-n">
-                                    <a href="javascript:;" class="d-b">日志管理</a>
-                                    <a href="javascript:;" class="d-b">出差汇报</a>
-                                    <a href="javascript:;" class="d-b">运维汇报</a>
-                                    <a href="javascript:;" class="d-b">文档管理</a>
-                                    <a href="javascript:;" class="stage d-b">阶段总结</a>
-                                </div>
-                                <i class="manage-i d-b c-p"></i>
-                            </td>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td><img src="img/icon13.png" alt="" class="dot"></td>
-                            <td>安徽60套老CMA 图片设备项目</td>
-                            <td>国网富达</td>
-                            <td>视频产品</td>
-                            <td>60</td>
-                            <td>张雪峰</td>
-                            <td>尹永海</td>
-                            <td>项目运维</td>
-                            <td>已安装20套设备</td>
-                            <td>客户临时通知现场杆 塔变更，常规安… </td>
-                            <td>设备运行不稳定</td>
-                            <td>
-                                <a href="javascript:;" class="d-b">查看详情</a>
-                                <a href="javascript:;" class="sitea d-b">站点管理</a>
-                                <div class="manage-abox d-ib d-n">
-                                    <a href="javascript:;" class="d-b">日志管理</a>
-                                    <a href="javascript:;" class="d-b">出差汇报</a>
-                                    <a href="javascript:;" class="d-b">运维汇报</a>
-                                    <a href="javascript:;" class="d-b">文档管理</a>
-                                    <a href="javascript:;" class="stage d-b">阶段总结</a>
-                                </div>
-                                <i class="manage-i d-b c-p"></i>
-                            </td>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td><img src="img/icon13.png" alt="" class="dot"></td>
-                            <td>安徽60套老CMA 图片设备项目</td>
-                            <td>国网富达</td>
-                            <td>视频产品</td>
-                            <td>60</td>
-                            <td>张雪峰</td>
-                            <td>尹永海</td>
-                            <td>项目运维</td>
-                            <td>已安装20套设备</td>
-                            <td>客户临时通知现场杆 塔变更，常规安… </td>
-                            <td>设备运行不稳定</td>
-                            <td>
-                                <a href="javascript:;" class="d-b">查看详情</a>
-                                <a href="javascript:;" class="sitea d-b">站点管理</a>
-                                <div class="manage-abox d-ib d-n">
-                                    <a href="javascript:;" class="d-b">日志管理</a>
-                                    <a href="javascript:;" class="d-b">出差汇报</a>
-                                    <a href="javascript:;" class="d-b">运维汇报</a>
-                                    <a href="javascript:;" class="d-b">文档管理</a>
-                                    <a href="javascript:;" class="stage d-b">阶段总结</a>
-                                </div>
-                                <i class="manage-i d-b c-p"></i>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
 
-            <div id="pagetable4" class="d-n"></div>
+            <div id="pagetable4"></div>
 
-            <div class="paging ta-c fs-14 c-9">
-                <a href="javascript:;">首页</a>
-                <a href="javascript:;">上一页</a>
-                <a href="javascript:;" class="number number-active">1</a>
-                <a href="javascript:;" class="number">2</a>
-                <a href="javascript:;" class="number">3</a>
-                <a href="javascript:;">下一页</a>
-                <a href="javascript:;">尾页</a>
-                <span class="d-ib">共1页/2条数据</span>
-                跳转<input type="text" class="obtain" value="1">页
-            </div>
         </div>
 		
-        <!--阶段管理-->
-        <div id="stage-summary"></div>
-
         <!--站点管理-->
         <div id="stage-management"></div>
-
+		
+        <!--阶段总结-->
+        <div id="stage-summary"></div>
+        
     </div>
 
 
+<script type="text/javascript" src="js/jquery.jedate.js"></script>
 <script src="js/IMGUP.js"></script>
 <script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
@@ -293,30 +163,10 @@
 	//高级搜索
 	$(".ad-search").click(function(){
 		$(this).next(".ad-box").toggle();
+		$(this).find("img").toggleClass("img-active")
 	})
 	
-	$(".manage-i").click(function(){
-		$(this).toggleClass("operate-active")
-		$(this).parent("td").find(".manage-abox").slideToggle();
-	})
-	
-	//内容跳转
-	$(".stage").click(function(){
-        $(".sheet").hide();
-		$("#stage-summary").load('stage-summary.html');
-		$(".crumbs").append("&gt; <a href='javascript:;'>阶段总结</a>");
-		recovery()
-	})
-	
-	function sitea(){
-		$(".sitea").click(function(){
-			$(".sheet").hide();
-			$("#stage-management").load('stage-management.html');
-			$(".crumbs").html("您当前的位置：项目管理 &gt <a class='crumbs-first'>项目管理</a> &gt <a class='sitea'>站点管理</a>");
-			recovery()
-		})
-	}
-	sitea()
+
 	function recovery(){
 		$(".crumbs-first").click(function(){
 			$("#stage-summary,#stage-management").empty();
@@ -324,6 +174,42 @@
 			$(".crumbs").html("您当前的位置：项目管理 &gt; <a class='crumbs-first'>项目管理</a>");
 		})
 	}
+	//时间控件
+	$("#dateinfo").jeDate({
+		isinitVal:true,
+		ishmsVal:false,
+		format:"YYYY-MM-DD",
+		zIndex:3000,
+	})
+	//时间控件
+	$("#dateinfo2").jeDate({
+		isinitVal:true,
+		ishmsVal:false,
+		format:"YYYY-MM-DD",
+		zIndex:3000,
+	})
 	
+	$('input.limit-number').on('focus input propertychange click',function(){//纯数字
+		var value = $(this).val()
+		if(/\D/g.test(value)){$(this).val(value.replace(/\D/g,''))}
+	})
+
+	$(".essay").each(function(){
+		var essaywidth = $(this).text().length;
+		var essay = $(this).text();
+		var yesessay =essay.substring(0,20);
+		var noessay = "<span class='no d-n'>"+essay.substring(20,essaywidth)+"</span>";
+		$(this).html(yesessay+noessay);
+		if(essaywidth <= 20){
+			$(this).next("i").hide();
+		}else{
+			$(this).next("i").show();
+		}
+	});
+	
+	$(".essayBtn").click(function(){
+		$(this).parent("td").find(".no").toggle();
+	})
+
 </script>
 

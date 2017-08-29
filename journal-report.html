@@ -17,7 +17,7 @@
                         </li>
                         <li class="d-ib">
                             <span class="pick-span d-ib fs-14 fw-1">工作时间</span>
-                            <input type="text" name="duration" id="duration" class="duration" value="8" >
+                            <input type="text" name="duration" id="duration" class="duration work-number" value="8" >
 						</li>
                         <li class="d-ib">
                             <span class="pick-span d-ib fs-14 fw-1">工作类型</span>
@@ -33,10 +33,7 @@
                         </li>
                         <li class="d-ib">
                             <span class="pick-span d-ib fs-14 fw-1">所属部门</span>
-                            <select class="js-select100 select-normal" name="branch">
-                                <option>PC软件部</option>
-                                <option>请选择</option>
-                            </select>
+                            <input type="text" name="duration" id="duration" class="duration" value="" >
                         </li>
                         <span class="devotion-time f-r fs-12">当日已投入工作时间：8</span>
                         <div class="c-b"></div>
@@ -153,4 +150,10 @@
     $(".add-pack input").click(function(){
         $(this).next(".add-second").toggle();
     })
+	
+	//输入框限制
+	$('input.work-number').on('focus input propertychange click',function(){//纯数字
+		var value = $(this).val()
+		if(/[^\d.]/g.test(value)){$(this).val(value.replace(/[^\d.]/g,''))}
+	})
 </script>

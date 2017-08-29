@@ -1,20 +1,57 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>工程项目管理平台</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/ui.jqgrid-bootstrap.css">
-	<link href="css/project-manage.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery.jqGrid.min.js"></script>
-</head>
 
-<body>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/ui.jqgrid-bootstrap.css">
+<link href="css/project-manage.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.jqGrid.min.js"></script>
+<script src="js/grid.locale-cn.js"></script>
 
-    <div class="project-table4 w">
-        <table id="table4"></table>
-    </div>
+
+<div class="project-table4 w">
+    <table id="table4"></table>
+    <div id="table4-pager"></div>
+</div>
         
-</body>
+
 <script src="table/project-table4.js"></script>
-</html>
+<script>
+	//内容跳转
+	$(".stage").click(function(){
+        $(".sheet").hide();
+		$("#stage-summary").load('stage-summary.html');
+		$(".crumbs").append("&gt; <a href='javascript:;'>阶段总结</a>");
+		recovery()
+	})
+	function sitea(){
+		$(".sitea").click(function(){
+			$(".sheet").hide();
+			$("#stage-management").load('stage-management.html');
+			$(".crumbs").html("您当前的位置：项目管理 &gt <a class='crumbs-first'>项目管理</a> &gt <a class='sitea'>站点管理</a>");
+			recovery()
+		})
+	}
+	sitea()
+
+	$(".manage-abox").hide();
+	$(".manage-i").click(function(){
+		$(this).toggleClass("operate-active")
+		$(this).parent("td").find(".manage-abox").slideToggle();
+	})
+	
+	$(".essay").each(function(){
+		var essaywidth = $(this).text().length;
+		var essay = $(this).text();
+		var yesessay =essay.substring(0,20);
+		var noessay = "<span class='no d-n'>"+essay.substring(20,essaywidth)+"</span>";
+		$(this).html(yesessay+noessay);
+		if(essaywidth <= 20){
+			$(this).next("i").hide();
+		}else{
+			$(this).next("i").show();
+		}
+	});
+	
+	$(".essayBtn").click(function(){
+		$(this).parent("td").find(".no").toggle();
+	})
+</script>
+

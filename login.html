@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>工程项目管理平台</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
 <link href="css/base-pc.css" rel="stylesheet" type="text/css">
 <link href="css/login.css" rel="stylesheet" type="text/css">
 </head>
@@ -19,12 +20,12 @@
                 <form action="" method="post" id="login" class="fs-16">
                     <input type="text" id="username" name="userName" value="" maxlength="20" placeholder="帐号"/>
                     <input type="password" id="password" name="password" value="" maxlength="22" placeholder="密码"/>
-    				<label>
+    				        <label>
                     	<input type="checkbox" id="checkbox" class="d-n">
-                        <span class="d-ib ta-c checkbox"></span>
+                      <i class="d-ib ta-c checkbox"></i>
                      	<span class="fs-12 c-6">记住密码</span>
                     </label>
-                    <a href="project-new.html" class="submit ta-c d-b">登录</a>
+                    <a href="javascript:;" class="submit ta-c d-b">登录</a>
                 </form>
             </div>
             <div class="c-b"></div>
@@ -34,4 +35,32 @@
     
 </body>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script>
+$(".submit").click(function(){
+	$("#login").submit();
+})
+
+$(document).keypress(function(e) { 
+   if(e.which == 13) { 
+	jQuery(".submit").click(); 
+   } 
+}); 
+
+;(function (doc, win, undefined) {
+    var docEl = doc.documentElement,
+      resizeEvt = 'orientationchange' in win? 'orientationchange' : 'resize',
+      recalc = function () {
+        var clientWidth = docEl.clientWidth;
+        if (clientWidth === undefined) return;
+		if(clientWidth>1450){
+       	    docEl.style.fontSize = 100 * (clientWidth / 1366) + 'px';
+		}else{
+			docEl.style.fontSize = 120 + 'px';
+		}
+      };
+    if (doc.addEventListener === undefined) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false)
+})(document, window);
+</script>
 </html>

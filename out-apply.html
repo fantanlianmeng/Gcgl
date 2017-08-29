@@ -13,6 +13,7 @@
                 <p class="add-nav fs-14 c-f ta-l">出差申请单</p>
                 <div class="out-pick fs-12 c-9 ta-l">
                     <ul class="lif-l w">
+                    	<div>
                         <li class="d-ib">
                             <span class="pick-span d-ib c-6">出差申请人：</span>
                             <p class="datep d-ib">李一一</p>
@@ -20,11 +21,13 @@
                         <li class="d-ib">
                             <span class="pick-span d-ib c-6">拟派出差人：</span>
                             <p class="d-ib" id="staff">
-                                <input type="text" value="李一一" readonly>
+                                <input type="text" value="李一一" readonly class="d-n">
+                                <span class="d-ib c-9 ta-c">李一一</span>
                             </p>
                             <a href="#" class="traveller add-to d-ib ta-c">添加</a>
                             <img src="img/icon19.png" alt="" class="asterisk">
 						</li>
+                        </div>
                         <li class="d-ib">
                             <span class="pick-span d-ib c-6">出差地点：</span>
                             <div class="d-ib" data-toggle="distpicker">
@@ -56,11 +59,11 @@
                         <li class="d-ib"></li>
                         <li class="d-ib">
                             <span class="pick-span d-ib c-6">所用产品：</span>
-                            <input type="text" value="自动选择">
+                            <input type="text" value="自动选择" readonly>
                         </li>
                         <li class="d-ib">
                             <span class="pick-span d-ib c-6">客户名称：</span>
-                            <input type="text" value="自动选择">
+                            <input type="text" value="自动选择" readonly>
                         </li>
                         <li class="d-ib">
                             <span class="pick-span d-ib c-6">联系人：</span>
@@ -302,7 +305,7 @@
 	$(".cancel,.confirm").click(function(){
 		$(".mask,.information,.out-people").hide();
 	})
-
+	
 </script>
 <script>
 	layui.use('tree', function() {
@@ -319,6 +322,7 @@
 						return $(elem).text();
 					}).get().join(",")
 				$("#staff input").val(str);
+				$("#staff span").text(str);
 				$("#staff").show();
 				if(strchecked ==0){
 					$("#staff").hide();
@@ -491,6 +495,7 @@
 				return $(elem).text();
 			}).get().join(",")
 			$("#staff input").val(str)
+			$("#staff span").text(str)
 			if(strchecked==0){
 				$("#staff").hide();
 			}else{
@@ -507,4 +512,3 @@
 	})
 	
 </script>
-</html>

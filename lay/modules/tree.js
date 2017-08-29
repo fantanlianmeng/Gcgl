@@ -31,7 +31,6 @@ layui.define("jquery", function(e) {
 					layui.each(n, function(a, n) {
 						var id = r.uuid();
 						n.id = id;//给每一个节点都设置id
-						console.log(n.data);
 						if(n.children){//如果当前节点有子节点，则将子节点的pid设置成当前节点的id
 							layui.each(n.children, function(index,item) {
 								item.pid = n.id;

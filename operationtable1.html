@@ -1,25 +1,41 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>工程项目管理平台</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/ui.jqgrid-bootstrap.css">
 
-    <script src="js/jquery.jqGrid.min.js"></script>
-</head>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/ui.jqgrid-bootstrap.css">
+<script src="js/jquery.jqGrid.min.js"></script>
 
-<body>
-	
-    <div class="operation-table1 w">
-        <table id="operation1"></table>
-    </div>
+<div class="operation-table1 w">
+    <table id="operation1"></table>
+</div>
         
-</body>
+
 <script src="table/operation-table1.js"></script>
 <script>
 	$(".siterecord-a").click(function(){
         $(".mask,#edit-operation").show();
     })
+
+    $(".manage-abox").hide();
+    $(".manage-i").click(function(){
+        $(this).toggleClass("operate-active")
+        $(this).parent("td").find(".manage-abox").slideToggle();
+    })
+    
+    $(".essay").each(function(){
+        var essaywidth = $(this).text().length;
+        var essay = $(this).text();
+        var yesessay =essay.substring(0,20);
+        var noessay = "<span class='no d-n'>"+essay.substring(20,essaywidth)+"</span>";
+        $(this).html(yesessay+noessay);
+        if(essaywidth <= 20){
+            $(this).next("i").hide();
+        }else{
+            $(this).next("i").show();
+        }
+    });
+    
+    $(".essayBtn").click(function(){
+        $(this).parent("td").find(".no").toggle();
+    })
+
 </script>
-</html>
+

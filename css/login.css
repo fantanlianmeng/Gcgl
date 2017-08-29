@@ -1,21 +1,28 @@
 @charset "utf-8";
 /* CSS Document */
-.login-body{overflow-x:hidden;overflow-y:hidden;}
-.login{top:50%;left:50%;margin-top:-384px;margin-left:-683px;width:1366px;height:768px;background:url('../img/login-bg.png') no-repeat center center; background-size:1366px 768px;}
-.content{width:860px;margin:200px auto 0;}
-.login-left{margin-left:67px;}
-.logo{margin-bottom:25px;}
+.login-body{overflow-x:hidden;overflow-y:hidden;width:100%;height:100%;}
+.login{top:50%;left:50%;width:13.66rem;height:7.68rem;margin-top:-3.84rem;margin-left:-6.83rem;background:url('../img/login-bg.png') no-repeat center center; background-size:13.66rem 7.68rem;}
+.content{width:8.6rem;margin:2rem auto 0;}
+.login-left{margin-left:0.67rem;}
+.login-left img{width:4.11rem;height:2.73rem}
+.login-left img.logo{margin-bottom:0.25rem;width:3.77rem;height:0.38rem;}
 
-.login-right{width:270px;margin-right:24px;}
-.login-right p{color:#3EABE7;margin:35px 0 12px 0;}
-.login-right input[type="text"],.login-right input[type="password"]{width:270px;height:38px;border:1px solid #CCC;border-radius:4px;text-indent:13px;font-size:14px;margin-bottom:13px;}
-.login-right input[type="password"]{margin-bottom:17px;}
-.checkbox{background: #fff;border:1px solid #7A7A7A; width:14px;height:14px;line-height: 11px; vertical-align:middle;}
-#checkbox:checked+.checkbox:after{content:"\2714";color:#7A7A7A;font-size:12px;}
-.login-right .submit{width:270px;height:38px;line-height:38px;background:#43ACE8;border-radius:4px;color:#fff; letter-spacing:5px;margin-top:35px;}
-.copyright{margin-top:75px;}
+.login-right{width:2.7rem;margin-right:0.24rem;}
+.login-right p{color:#3EABE7;margin:0.35rem 0 0.12rem 0;}
+.login-right input[type="text"]{width:2.7rem;height:0.38rem;line-height:0.38rem;border:1px solid #CCC;border-radius:4px;text-indent:0.13rem;font-size:0.14rem;margin-bottom:0.13rem;}
+.login-right input[type="password"]{width:2.7rem;height:0.38rem;line-height:0.38rem;border:1px solid #CCC;border-radius:4px;text-indent:0.13rem;font-size:0.14rem;margin-bottom:0.17rem;}
+.checkbox{background: #fff;border:1px solid #7A7A7A; width:0.14rem;height:0.14rem;line-height: 0.11rem; vertical-align:middle;}
+#checkbox:checked + i:after{content:"\2714";color:#7A7A7A;font-size:0.1rem;margin-right: 0.02rem;}
+.login-right .submit{width:2.7rem;height:0.38rem;line-height:0.38rem;background:#43ACE8;border-radius:4px;color:#fff; letter-spacing:5px;margin-top:0.35rem;}
+.copyright{margin-top:0.75rem;}
 
-
-
-
+@media screen and (max-width: 1200px) {
+	.login{margin-left:-7.5rem;}
+}
+@media screen and (max-width: 1000px) {
+	.login{margin-left:-8.4rem;}
+}
+@media screen and (max-width: 800px) {
+	.login{margin-left:-9.5rem;}
+}
 

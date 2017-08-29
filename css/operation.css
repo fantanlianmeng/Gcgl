@@ -2,7 +2,7 @@
 /* CSS Document */
 
 .operation-plan .plan-box{margin:20px 10px 10px 30px;width:462px;}
-.plan-box .plan-classify{margin-bottom: 18px;text-align: left;height: 30px;line-height: 30px;}
+.plan-box .plan-classify{margin-bottom: 18px;text-align: left;line-height: 30px;}
 .plan-box .plan-classify .plan-span{width:85px;}
 .plan-box .plan-classify input.genre{width:130px;height:27px;border:1px solid #DFE3E9;border-radius:4px;}
 .plan-box .plan-classify input.batch-input{width:90px;height:27px;border:1px solid #DFE3E9;border-radius:4px;}

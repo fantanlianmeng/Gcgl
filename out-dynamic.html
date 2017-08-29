@@ -31,17 +31,6 @@
             </p>
 
             <div id="outtable1"></div>
-            <div class="paging ta-c fs-14 c-9">
-                <a href="javascript:;">首页</a>
-                <a href="javascript:;">上一页</a>
-                <a href="javascript:;" class="number number-active">1</a>
-                <a href="javascript:;" class="number">2</a>
-                <a href="javascript:;" class="number">3</a>
-                <a href="javascript:;">下一页</a>
-                <a href="javascript:;">尾页</a>
-                <span class="d-ib">共1页/2条数据</span>
-                跳转<input type="text" class="obtain" value="1">页
-            </div>
         </div>
         
         <!--出差详情-->
@@ -50,7 +39,7 @@
             <div class="add-render ta-c">
                 <p class="add-nav fs-14 c-f ta-l">出差日报</p>
                 <a href="javascript:;" class="shrink ta-l d-b"><img src="img/icon24.png" alt=""></a>
-                <div id="outtable2"></div>
+                <div id="outtable2" class="render-box"></div>
             </div>
             
             <!--出差总结-->
@@ -85,15 +74,15 @@
                             <table cellspacing="1" cellpadding="0" class="fs-12 w">
                                 <tbody>
                                     <tr class="c-9">
-                                        <td class="c-6 ta-c">出差总结：</td>
+                                        <td class="c-6">出差总结：</td>
                                         <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
                                     </tr>
                                     <tr class="c-9">
-                                        <td class="c-6 ta-c">存在问题：</td>
+                                        <td class="c-6">存在问题：</td>
                                         <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
                                     </tr>
                                     <tr class="c-9">
-                                        <td class="c-6 ta-c">客户反馈/评价：</td>
+                                        <td class="c-6">客户反馈/评价：</td>
                                         <td class="ta-l">日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常日常工作日常工作日常工作日常工日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常工作日常</td>
                                     </tr>
                                 </tbody>
@@ -206,7 +195,7 @@
                         <div class="cost-table">
                             <div class="construction d-ib ta-r f-l fs-12">
                                 <p class="c-6">施工费用明细：</p>
-                                <a href="#" class="d-ib ta-c">导出表格</a>
+                                <a href="javascript:;" class="d-ib ta-c">导出表格</a>
                             </div>
                             <table cellspacing="1" cellpadding="0" class="fs-12 w f-l">
                                 <tbody>
@@ -253,7 +242,7 @@
                                 <option>PC通州油烟三期项目现场安装报告</option>
                                 <option>请选择</option>
                             </select>
-                            <a href="#" class="ta-c d-ib">下载</a>
+                            <a href="javascript:;" class="ta-c d-ib">下载</a>
                         </div>
                         
                     </div>
@@ -283,7 +272,7 @@
                                 </li>
                                 <li class="d-ib">
                                     <span class="pick-span d-ib fs-12 fw-1">现场施工天数：</span>
-                                    <input type="text" name="duration" id="duration" class="duration" value="8" readonly>
+                                    <input type="text" name="duration4" id="duration4" class="duration4" value="8" readonly>
                                 </li>
                                 <li class="d-ib">
                                     <span class="pick-span d-ib fs-12 fw-1">出差结果：</span>
@@ -315,6 +304,8 @@
         </div>
     </div>
 
+<script src="js/select2.js"></script>
+<script src="js/select2_option.js"></script>
 <script>
 	$(document).ready(function(){
         $("#outtable1").load('outtable1.html');
@@ -329,5 +320,3 @@
 
 
 </script>
-
-</html>

@@ -17,9 +17,47 @@
     </div>
 </div>
 
+<!--新建总结-->
+<div class="mask p-f d-n"></div>
+<div class="add-summary bg-f p-f d-n" id="add-summary">
+    <h5 class="fs-14 c-f ta-c">新建总结</h5>
+    <div class="summary-box ta-l">
+        <p class="d-ib fs-12 c-6">
+            <span class="d-ib">客户联系人</span>
+            <input type="text" value="张晓宇">
+        </p>
+        <img src="img/icon11.png" alt="">
+        <p class="d-ib fs-12 c-6">
+            <span class="d-ib">项目最新进展</span>
+            <textarea>备注信息备注信息备注信息备注信息</textarea>
+        </p>
+        <img src="img/icon11.png" alt="">
+        <p class="d-ib fs-12 c-6">
+            <span class="d-ib">项目遗留问题</span>
+            <textarea>备注信息备注信息备注信息备注信息</textarea>
+        </p>
+        <img src="img/icon11.png" alt="">
+        <p class="d-ib fs-12 c-6">
+            <span class="d-ib">客户反馈/评价</span>
+            <textarea>备注信息备注信息备注信息备注信息</textarea>
+        </p>
+        <img src="img/icon11.png" alt="">
+        <div class="information-a ta-c fa-14">
+            <a href="javascript:;" class="cancel d-ib">取消</a>
+            <a href="javascript:;" class="confirm d-ib">保存</a>
+        </div>
+    </div>
+</div>
+
 <script>
 	$(document).ready(function(){
         $("#pagetable5").load('pagetable5.html');
     });
+	$(".summary-a").click(function(){
+		$(".mask,#add-summary").show();
+	})
+	$(".cancel,.confirm").click(function(){
+		$(".mask,#add-summary").hide();
+	})
 </script>
 

@@ -28,6 +28,7 @@
             <p class="p-r" id="file"><img src="img/icon4.png" alt="" />文档管理<i class="d-ib p-a"></i></p>
             <div class="subnav d-n">
                 <a href="javascript:;" class="d-b" id="file-manage">文档管理</a>
+                <a href="javascript:;" class="d-b" id="file-record">操作记录</a>
             </div>
         </li>
         <li>
@@ -52,10 +53,6 @@
 
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script>
-	$('input.limit-number').on('focus input propertychange click',function(){//纯数字
-		var value = $(this).val()
-		if(/\D/g.test(value)){$(this).val(value.replace(/\D/g,''))}
-	})
 	
 	$(".sidebar .active").next(".subnav").show();
 	$(".sidebar ul li p").click(function(){
@@ -63,15 +60,15 @@
 		$(this).toggleClass("active");
 		$(".sidebar ul li p").not(this).next(".subnav").slideUp();
 		$(this).next(".subnav").slideToggle();
-
 	});
+
 	$(".sidebar ul li a").click(function(){
 		$(".sidebar ul li a").removeClass('subnav-active');
 		$(this).addClass('subnav-active');
 	});
 	$(".picbox").click(function(){
 		var sidebar_width = $(".sidebar").width();
-		if(sidebar_width === 0){
+		if(sidebar_width == 0){
 			$(".sidebar").css({"width":"187px"});
 			$(".picbox").removeClass("picbox-active");
 		}else{
@@ -115,6 +112,10 @@
 	$("#file-manage").click(function(){
 		$(".content").remove()
 		$("#content-box").load('file-manage.html')
+	})
+	$("#file-record").click(function(){
+		$(".content").remove()
+		$("#content-box").load('file-record.html')
 	})
 	$("#operation-plan").click(function(){
 		$(".content").remove()

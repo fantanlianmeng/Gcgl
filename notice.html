@@ -25,6 +25,17 @@
 </div>
 <script>
 	$(".close").click(function(){
-		$(".notice").fadeOut();
+		$(".close").fadeOut();
+		$(".notice").animate({
+			bottom:'-183px',
+			width:'160px'
+		});
+		$(".notice h4").click(function(){
+			$(".close").fadeIn();
+			$(".notice").animate({
+				bottom:'3px',
+				width:'324px'
+			});
+		})
 	});
 </script>

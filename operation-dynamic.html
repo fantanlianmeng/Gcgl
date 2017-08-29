@@ -36,52 +36,17 @@
                 <a href="javascript:;" class="export d-ib fs-14 ta-c p-a">导出表格</a>
                 
                 <div class="entry-table d-n">
-                    <table cellspacing="1" cellpadding="0" class="ta-c fs-12 c-9 w f-l">
-                        <tbody>
-                            <tr class="data-head c-6">
-                                <th>站点名称</th>
-                                <th>故障运维</th>
-                                <th>例行运维</th>
-                            </tr>
-                            <tr>
-                                <td>保定扬尘在线监测仪项目</td>
-                                <td>1</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>保定扬尘在线监测仪项目</td>
-                                <td>1</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>保定扬尘在线监测仪项目</td>
-                                <td>1</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>保定扬尘在线监测仪项目</td>
-                                <td>1</td>
-                                <td>1</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div id="operationtable7" class="d-ib f-l"></div>
+
                     <a href="#" class="educe d-ib ta-c f-l">导出表格</a>
                     <div class="c-b"></div>
-                    
                 </div>
+                
+
             </div>
             
             <div id="operationtable2"></div>
-    
-            <div class="paging ta-c fs-14 c-9">
-                <a href="javascript:;">首页</a>
-                <a href="javascript:;">上一页</a>
-                <a href="javascript:;" class="number number-active">1</a>
-                <a href="javascript:;">下一页</a>
-                <a href="javascript:;">尾页</a>
-                <span class="d-ib">共1页/2条数据</span>
-                跳转<input type="text" class="obtain" value="1">页
-            </div>
+
         </div>
         
         <!--运维详情-->
@@ -245,6 +210,7 @@
 		$("#operationtable3").load('operationtable3.html');
 		$("#operationtable4").load('operationtable4.html');
 		$("#operationtable5").load('operationtable5.html');
+        $("#operationtable7").load('operationtable7.html');
     });
 
 	$(".entry .shrink2").click(function(){
@@ -257,5 +223,3 @@
     })
 	
 </script>
-
-</html>

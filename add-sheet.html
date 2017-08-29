@@ -1,4 +1,4 @@
-
+<link href="css/jedate.css" rel="stylesheet" type="text/css">
 <!--添加项目-->
 <div class="add-sheet ta-c">
     <form action="">
@@ -18,7 +18,7 @@
             </div>
             <div class="d-ib f-l">
                 <span>建档日期</span>
-                <input type="text" name="created-date" value="2017-02-03">
+                <input type="text" name="created-date" value="2017-02-03" id="dateinfo">
             </div>
             <div class="d-ib f-l">
                 <span>设备型号</span>
@@ -37,7 +37,7 @@
             </div>
             <div class="d-ib f-l">
                 <span>设备数量</span>
-                <input type="text" name="equipment-quantity" value="10">
+                <input type="text" name="equipment-quantity" value="10" class="limit-number">
             </div>
             <div class="d-ib f-l p-r">
                 <span>项目归属</span>
@@ -48,7 +48,7 @@
             </div>
             <div class="d-ib f-l">
                 <span>立项日期</span>
-                <input type="text" name="project-cycle" value="2017-02-03">
+                <input type="text" name="project-cycle" value="2017-02-03" id="dateinfo2">
             </div>
             <div class="d-ib f-l">
                 <span>运维周期</span>
@@ -257,6 +257,7 @@
         <a href="javascript:;" class="confirm d-ib">保存</a>
     </div>
 </div>
+<script type="text/javascript" src="js/jquery.jedate.js"></script>
 <script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
 <script>
@@ -273,6 +274,30 @@
     })
 	$(".cancel,.confirm").click(function(){
 		$(".mask,.information").hide();
+	})
+	
+	$(".add-submit").click(function(){
+		$(".mask,.tooltip-box").show();
+	})
+	
+	
+	//时间控件
+	$("#dateinfo").jeDate({
+		isinitVal:true,
+		ishmsVal:false,
+		format:"YYYY-MM-DD",
+		zIndex:3000,
+	})
+	//时间控件
+	$("#dateinfo2").jeDate({
+		isinitVal:true,
+		ishmsVal:false,
+		format:"YYYY-MM-DD",
+		zIndex:3000,
+	})
+	$('input.limit-number').on('focus input propertychange click',function(){//纯数字
+		var value = $(this).val()
+		if(/\D/g.test(value)){$(this).val(value.replace(/\D/g,''))}
 	})
 </script>
 

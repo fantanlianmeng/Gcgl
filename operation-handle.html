@@ -57,54 +57,9 @@
                         </table>
                     </div>
                 
-                    <p class="detailed-a fs-12 c-6 ta-l">运维费用明细：<a href="javascript:;" class="d-ib ta-c">添加明细</a></p>
-                    <div class="cost-table">
-                        <table cellspacing="1" cellpadding="0" class="fs-12 w">
-                            <tbody>
-                                <tr class="c-6">
-                                    <th>序号</th>
-                                    <th>费用品名</th>
-                                    <th>数量</th>
-                                    <th>单位</th>
-                                    <th>单价</th>
-                                    <th>总金额</th>
-                                    <th>费用类别</th>
-                                    <th>操作</th>
-                                </tr>
-                                <tr class="c-9">
-                                    <td>1</td>
-                                    <td>C40混凝土</td>
-                                    <td>12</td>
-                                    <td>L</td>
-                                    <td>350</td>
-                                    <td>4200</td>
-                                    <td>耗材费</td>
-                                    <td>
-                                        <a href="javascript:;" class="d-ib ta-c fs-12">编辑</a>
-                                        <a href="javascript:;" class="d-ib ta-c fs-12">删除</a>
-                                    </td>
-                                </tr>
-                                <tr class="c-9">
-                                    <td>1</td>
-                                    <td>C40混凝土</td>
-                                    <td>12</td>
-                                    <td>小时</td>
-                                    <td>350</td>
-                                    <td>4200</td>
-                                    <td>车辆租赁 </td>
-                                    <td>
-                                        <a href="javascript:;" class="add-submit d-ib ta-c fs-14">编辑</a>
-                                        <a href="javascript:;" class="add-submit d-ib ta-c fs-14">删除</a>
-                                    </td>
-                                </tr>
-                                <tr class="c-9">
-                                    <td colspan="5">金额总计</td>
-                                    <td>4250</td>
-                                    <td colspan="2"></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <p class="detailed-a fs-12 c-6 ta-l">运维费用明细：<a href="javascript:;" class="add-details d-ib ta-c">添加明细</a></p>
+
+                    <div id="operationtable6"></div>
                 </div>
             </form>
         </div>
@@ -128,7 +83,7 @@
     <div class="mask p-f d-n"></div>
     <div class="edit-operation p-f bg-f fs-12 c-6 d-n" id="edit-operation">
     	<h5 class="fs-14 c-f ta-c">编辑运维站点记录</h5>
-        <div class="edit-box">
+        <div class="edit-box p-r">
         	<div class="maintain-box">
             	<div class="edit-name d-ib">
                     <span>站点名称：</span>
@@ -167,7 +122,7 @@
             </div>
             <p class="edit-p">
             	<span class="f-l">备件耗材：</span>
-                <a href="#" class="d-ib f-r ta-c">添加耗材</a>
+                <a href="javascript:;" class="d-ib f-r ta-c">添加耗材</a>
                 <i class="d-ib f-r"></i>
                 <div class="c-b"></div>
             </p>
@@ -207,28 +162,78 @@
                     </tbody>
                 </table>
             </div>
+            <a href="javascript:;" class="renovate d-ib p-a">
+            	<img src="img/icon30.png" alt="">刷新
+            </a>
             <div class="opt ta-c fs-14 ta-c">
-                <a href="#" class="cancel d-ib">取消</a>
-                <a href="#" class="keep d-ib">保存</a>
+                <a href="javascript:;" class="cancel d-ib">取消</a>
+                <a href="javascript:;" class="keep d-ib">保存</a>
             </div>
         </div>
     </div>
-
+	
+    <!--添加明细弹窗-->
+    <div class="detailed bg-f p-f ta-c d-n">
+    	<h5 class="fs-14 c-f ta-c">添加明细</h5>
+        <ul class="detailed-box ta-l fa-12 c-6 lif-l">
+            <li>
+                <span class="d-ib ta-r">费用品名：</span>
+                <input type="text" value="品名">
+            </li>
+            <li>
+                <span class="d-ib ta-r">数量：</span>
+                <input type="text" value="10" class="limit-number">
+            </li>
+            <li>
+                <span class="d-ib ta-r">单位：</span>
+                <input type="text" value="品名">
+            </li>
+            <li>
+                <span class="d-ib ta-r">单价：</span>
+                <input type="text" value="品名">
+            </li>
+            <li>
+                <span class="d-ib ta-r">总金额：</span>
+                <input type="text" value="品名">
+            </li>
+            <li>
+                <span class="d-ib ta-r">费用类别：</span>
+                <input type="text" value="品名">
+            </li>
+            <div class="c-b"></div>
+        </ul>
+        <div class="information-a ta-c fa-14">
+        	<a href="javascript:;" class="cancel d-ib">取消</a>
+            <a href="javascript:;" class="confirm d-ib">保存</a>
+        </div>
+    </div>
+    
 <script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
 <script src="js/jquery.jedate.js"></script>
 <script>
 	$(document).ready(function(){
 		$("#operationtable1").load('operationtable1.html');
+        $("#operationtable6").load('operationtable6.html');
     });
 
 	$(".shrink").click(function(){
 		$(this).next(".render-box").slideToggle();
 		$(this).find("img").toggleClass("shrink-active")
 	})
-
+	$(".renovate").click(function(){
+		$(this).find("img").addClass("active")
+		setTimeout(function(){
+			$(".renovate img").removeClass("active")	
+		},1500);
+	})
+	
+	$(".add-details").click(function(){
+        $(".mask,.detailed").show();
+    })
+	
 	$(".cancel,.keep").click(function(){
-        $(".mask,#edit-operation").hide();
+        $(".mask,#edit-operation,.detailed").hide();
     })
 
 	//时间控件
@@ -246,4 +251,3 @@
     })
 
 </script>
-</html>

@@ -1,93 +1,72 @@
 
     
-    <div class="content filemanage">
-    	<p class="crumbs">您当前的位置：文档管理 &gt; <a href="javascript:;" class="crumbs-first">文档管理</a></p>
-      	
-        <!--文档管理-->
-        <div class="sheet" id="document-man">
-            <div class="search fs-14">
-                <span class="d-ib">项目名称：</span>
-                <input type="text">
-                <a href="javascript:;" class="d-ib ta-c">查询</a>
-            </div>
-            <div id="filetable1"></div>
-            <div class="paging ta-c fs-14 c-9">
-                <a href="javascript:;">首页</a>
-                <a href="javascript:;">上一页</a>
-                <a href="javascript:;" class="number number-active">1</a>
-                <a href="javascript:;" class="number">2</a>
-                <a href="javascript:;" class="number">3</a>
-                <a href="javascript:;">下一页</a>
-                <a href="javascript:;">尾页</a>
-                <span class="d-ib">共1页/2条数据</span>
-                跳转<input type="text" class="obtain" value="1">页
-            </div>
+<div class="content filemanage">
+    <p class="crumbs">您当前的位置：文档管理 &gt; <a href="javascript:;" class="crumbs-first">文档管理</a></p>
+    
+    <!--文档管理-->
+    <div class="sheet" id="document-man">
+        <div class="search fs-14">
+            <span class="d-ib">项目名称：</span>
+            <input type="text">
+            <a href="javascript:;" class="d-ib ta-c">查询</a>
         </div>
-        
-        <!--查看文档-->
-        <div class="sheet d-n" id="view-documents">
-            <div class="search fs-14 ta-r">
-                <a href="javascript:;" class="upload-files d-ib ta-c">上传文件</a>
-            </div>
-            
-			<div id="filetable2"></div>
-            <div class="paging ta-c fs-14 c-9">
-                <a href="javascript:;">首页</a>
-                <a href="javascript:;">上一页</a>
-                <a href="javascript:;" class="number number-active">1</a>
-                <a href="javascript:;" class="number">2</a>
-                <a href="javascript:;" class="number">3</a>
-                <a href="javascript:;">下一页</a>
-                <a href="javascript:;">尾页</a>
-                <span class="d-ib">共1页/2条数据</span>
-                跳转<input type="text" class="obtain" value="1">页
-            </div>
-        </div>
+        <div id="filetable1"></div>
     </div>
     
-    <!--上传文件弹窗-->
-    <div class="mask p-f d-n"></div>
-    <div class="file-popup bg-f p-f o-h d-n" id="file-popup">
-    	<h5 class="fs-14 c-f ta-c">上传文件</h5>
-        <div class="filepopup-box ta-l fs-12 c-6">
-        	<ul>
-            	<li>
-                	<span class="popup-span d-ib">成果物：</span>
-                	<select class="js-select150 select-normal" name="branch">
-                        <option>项目招标技术文件</option>
-                        <option>请选择</option>
-                    </select>
-                </li>
-                <li class="choice-popup">
-                	<span class="popup-span d-ib">选择文件：</span>
-                    <a href="javascript:;" class="file d-ib p-r ta-c">选择文件<input class="upload" type="file"></a>
-                    <a href="javascript:;" class="d-ib">确认并上传</a>
-                </li>
-                <li>
-                	<span class="popup-span d-ib">上传文件：</span>
-                    <div class="Progress c-9 d-ib">
-                    	<span class="f-l">文件.jpg(5kb)</span>
-                        <span class="f-r">已上传50%</span>
-                        <div class="c-b"></div>
-                        <div class="Progress-box">
-                        	<p class="Progress-p"></p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                	<span>已上传文件：</span>
-                    <div class="Selected d-ib">
-                    	<p>已上传文件已上传文件.jpg</p>
-                        <p>已上传文件已上传文件.jpg</p>
-                    </div>
-                </li>
-            </ul>
+    <!--查看文档-->
+    <div class="sheet d-n" id="view-documents">
+        <div class="search fs-14 ta-r">
+            <a href="javascript:;" class="upload-files d-ib ta-c">上传文件</a>
         </div>
-        <div class="information-a ta-c fa-14">
-        	<a href="javascript:;" class="cancel d-ib">取消</a>
-            <a href="javascript:;" class="confirm d-ib">保存</a>
-        </div>
+        
+        <div id="filetable2"></div>
     </div>
+</div>
+
+<!--上传文件弹窗-->
+<div class="mask p-f d-n"></div>
+<div class="file-popup bg-f p-f o-h d-n" id="file-popup">
+    <h5 class="fs-14 c-f ta-c">上传文件</h5>
+    <div class="filepopup-box ta-l fs-12 c-6">
+        <ul>
+            <li>
+                <span class="popup-span d-ib">成果物：</span>
+                <select class="js-select150 select-normal" name="branch">
+                    <option>项目招标技术文件</option>
+                    <option>请选择</option>
+                </select>
+            </li>
+            <li class="choice-popup">
+                <span class="popup-span d-ib">选择文件：</span>
+                <a href="javascript:;" class="file d-ib p-r ta-c">选择文件
+                <input class="upload" type="file" id="uploadify"></a>
+                <a href="javascript:$('#uploadify').uploadify('upload')" class="d-ib">确认并上传</a>
+            </li>
+            <li>
+                <span class="popup-span d-ib">上传文件：</span>
+                <div class="Progress c-9 d-ib">
+                    <span class="f-l">文件.jpg(5kb)</span>
+                    <span class="f-r">已上传50%</span>
+                    <div class="c-b"></div>
+                    <div class="Progress-box">
+                        <p class="Progress-p"></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <span>已上传文件：</span>
+                <div class="Selected d-ib">
+                    <p>已上传文件已上传文件.jpg</p>
+                    <p>已上传文件已上传文件.jpg</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="information-a ta-c fa-14">
+        <a href="javascript:;" class="cancel d-ib">取消</a>
+        <a href="javascript:;" class="confirm d-ib">保存</a>
+    </div>
+</div>
 
 <script>
 	$(document).ready(function(){
@@ -95,6 +74,28 @@
 		$("#filetable2").load('filetable2.html');
     });
 
-    
+    $("#uploadify").uploadify({
+		//指定swf文件
+		'swf': 'js/uploadify/uploadify.swf',
+		//后台处理的页面
+		'uploader': 'UploadHandler.ashx',
+		//按钮显示的文字
+		'buttonText': '上传图片',
+		//显示的高度和宽度，默认 height 30；width 120
+		//'height': 15,
+		//'width': 80,
+		//上传文件的类型  默认为所有文件    'All Files'  ;  '*.*'
+		//在浏览窗口底部的文件类型下拉菜单中显示的文本
+		'fileTypeDesc': 'Image Files',
+		//允许上传的文件后缀
+		'fileTypeExts': '*.gif; *.jpg; *.png',
+		//发送给后台的其他参数通过formData指定
+		//'formData': { 'someKey': 'someValue', 'someOtherKey': 1 },
+		//上传文件页面中，你想要用来作为文件队列的元素的id, 默认为false  自动生成,  不带#
+		//'queueID': 'fileQueue',
+		//选择文件后自动上传
+		'auto': false,
+		//设置为true将允许多文件上传
+		'multi': true
+	});
 </script>
-</html>

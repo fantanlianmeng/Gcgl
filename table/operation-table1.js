@@ -4,9 +4,9 @@ $("#operation1").jqGrid({
     datatype: function (data) {
         var thegrid = jQuery("#operation1")[0];
         data = eval("(" +'{"page":1,"total":2,"records":13,"rows":['
-            +' {"ctn1":"1","ctn2":"正兴鑫苑住宅楼","ctn3":"2017-08-08","ctn4":"现场问题描述现场...","ctn5":"解决方法解决方法...","ctn6":"正常","ctn7":"备注备注备注备注...","ctn8":"已完成","ctn9":"某某耗材 15个","ctn10":"<a class=\'siterecord-a d-ib\'>编辑</a><a class=\'d-ib\'>删除</a>"}'
-       		+',{"ctn1":"1","ctn2":"正兴鑫苑住宅楼","ctn3":"2017-08-08","ctn4":"现场问题描述现场...","ctn5":"解决方法解决方法...","ctn6":"正常","ctn7":"备注备注备注备注...","ctn8":"已完成","ctn9":"某某耗材 15个","ctn10":"<a class=\'siterecord-a d-ib\'>编辑</a><a class=\'d-ib\'>删除</a>"}'
-			+',{"ctn1":"1","ctn2":"正兴鑫苑住宅楼","ctn3":"2017-08-08","ctn4":"现场问题描述现场...","ctn5":"解决方法解决方法...","ctn6":"正常","ctn7":"备注备注备注备注...","ctn8":"已完成","ctn9":"某某耗材 15个","ctn10":"<a class=\'siterecord-a d-ib\'>编辑</a><a class=\'d-ib\'>删除</a>"}'
+            +' {"ctn1":"1","ctn2":"正兴鑫苑住宅楼","ctn3":"2017-08-08","ctn4":"<span class=\'essay\'>现场问题描述现场现场问题描述现场现场问题场问题场问题场问题描述现场</span><i class=\'essayBtn manage-i d-b c-p\'></i>","ctn5":"<span class=\'essay\'>现场问题描述现场现场问题描述现场现场问题场问题场问题场问题描述现场</span><i class=\'essayBtn manage-i d-b c-p\'></i>","ctn6":"正常","ctn7":"备注备注备注备注","ctn8":"已完成","ctn9":"某某耗材 15个","ctn10":"<a class=\'siterecord-a d-ib\'>编辑</a><a class=\'d-ib\'>删除</a>"}'
+       		+',{"ctn1":"1","ctn2":"正兴鑫苑住宅楼","ctn3":"2017-08-08","ctn4":"<span class=\'essay\'>现场问题描述现场现场问题描述现场现场问题描述现场</span><i class=\'essayBtn manage-i d-b c-p\'></i>","ctn5":"<span class=\'essay\'>现场问题描述现场现场问题描述现场现场问题场问题场问题场问题描述现场</span><i class=\'essayBtn manage-i d-b c-p\'></i>","ctn6":"正常","ctn7":"备注备注备注备注","ctn8":"已完成","ctn9":"某某耗材 15个","ctn10":"<a class=\'siterecord-a d-ib\'>编辑</a><a class=\'d-ib\'>删除</a>"}'
+			+',{"ctn1":"1","ctn2":"正兴鑫苑住宅楼","ctn3":"2017-08-08","ctn4":"<span class=\'essay\'>现场问题描述现场现场问题描述现场现场问题描述现场</span><i class=\'essayBtn manage-i d-b c-p\'></i>","ctn5":"<span class=\'essay\'>现场问题描述现场现场问题描述现场现场问题场问题场问题场问题描述现场</span><i class=\'essayBtn manage-i d-b c-p\'></i>","ctn6":"正常","ctn7":"备注备注备注备注","ctn8":"已完成","ctn9":"某某耗材 15个","ctn10":"<a class=\'siterecord-a d-ib\'>编辑</a><a class=\'d-ib\'>删除</a>"}'
             + "]})");
         thegrid.addJSONData(data);//给div添加json格式的数据
     },

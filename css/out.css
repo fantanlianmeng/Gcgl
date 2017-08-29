@@ -2,7 +2,7 @@
 /* CSS Document */
 
 .out-pick{margin:17px 0 10px 30px;min-width: 840px;}
-.out-pick ul li{margin-bottom:15px;width:50%;line-height:28px;height:30px; overflow:hidden;}
+.out-pick ul li{margin-bottom:15px;width:50%;line-height:28px;}
 .out-pick input[type="text"]{border:1px solid #DFE3E9;border-radius:4px;height:26px;width:201px;text-align:center;color:#999;font-size:12px;}
 .out-pick #inpstart,.out-pick #inpend{text-indent:13px;background:url('../img/icon16.png') no-repeat 50px center; background-size:16px 16px;width:201px; letter-spacing:0;}
 .out-pick ul li .pick-span{margin-right:10px;width:90px;}
@@ -22,7 +22,7 @@
 .reimbursement p span.active{background:url('../img/icon20.png') no-repeat left center; background-size:16px 16px; }
 .out-bottom label i{width:16px;height:16px;background:url('../img/icon28.png') no-repeat center center; background-size:16px 16px; vertical-align:sub;margin-right:3px;}
 .out-bottom label i.i-active{width:16px;height:16px;background:url('../img/icon29.png') no-repeat center center; background-size:16px 16px;}
-#staff input{border:none;margin-right:4px;color:#999;font-size:12px;width:70px;resize:none;height:16px;border-bottom:1px solid #ddd;text-align:center;}
+#staff span{margin-right:4px;padding:0 10px;border-bottom:1px solid #ddd;line-height:22px;max-width:350px; vertical-align:top;}
 
 
 /* 添加出差人弹窗 */
@@ -65,26 +65,26 @@
 .add-render .detailed-a{margin:10px 0 20px 30px;}
 .add-render .detailed-a a{width:64px;height:21px;line-height:21px;color:#666;background:#DFE1E5;margin-left:15px;border-radius:3px;}
 .cost-table{max-width:970px;}
-.cost-table span{width:110px;height:100px;line-height:100px;margin-right:17px;}
+.cost-table span{width:110px;margin-right:17px;}
 .cost-table table{background:#E2E2E2;margin-left:30px;margin-bottom:5px;}
 .cost-table th{background:#F2F2F2;height:32px;min-width:50px;padding: 3px 8px}
-.cost-table td{background:#fff;height:38px;padding: 3px 8px}
+.cost-table td,#outtable3 td{background:#fff;height:28px;}
 .cost-table td a{width:48px;height:21px;line-height:21px;background:#DFE1E5;color:#666;border-radius:3px;margin:5px 7px;}
 
 /* 出差总结 */
-.add-render2 .pick{margin: 0 0 10px 5px;max-width:1000px;height:100px;}
-.add-render2 .pick ul li {margin-right: 142px;width:334px;}
-.add-render2 .pick ul li .pick-span{width:100px;margin-right:12px;margin-bottom:10px;text-align:right;}
+.add-render2 .pick{margin: 0 0 10px 5px;max-width:1000px;height:95px;}
+.add-render2 .pick ul li {margin-right: 135px;width:334px;}
+.add-render2 .pick ul li .pick-span{width:100px;margin-left:22px;margin-right:0;;margin-bottom:10px;text-align:left;}
 .add-render2 .pick input[name="time"]{width: 200px;background: url(../img/icon16.png) no-repeat 30px center;}
 .add-render2 .pick input {width: 200px;}
 .add-render2 .render-table tr td{min-width:125px;}
-.add-render2 .cost-table table{margin-left:0;max-width:800px}
+.add-render2 .cost-table table{max-width:800px;margin-left:20px;}
 .add-render2 .speech{margin:35px 0 50px 20px;}
 .speech-box1{width:220px;margin:0 120px 0 20px;}
 .speech-box1 a{width:78px;height:21px;line-height:21px;color:#666;background:#DFE1E5;border-radius:3px;}
 .speech-box1 p{height:13px;}
 .file:hover {color: #444;background: #999}
-.file input[type="file"]{position: absolute;font-size: 100px;right: 0;top: 0;opacity: 0;filter: alpha(opacity=0);cursor: pointer}
+.file input[type="file"]{position: absolute;font-size: 100px;right: 0;top: 0;opacity: 0;filter: alpha(opacity=0);cursor: pointer;width:80px;}
 .speech-box2 textarea{width:450px;height:100px;;border:1px solid #DFE3E9;border-radius:4px;resize:none; vertical-align:top;margin-left:8px;padding:20px 30px;}
 
 /* 添加明细弹窗 */
@@ -115,10 +115,11 @@
 
 .add-render3 .pick input{text-align:left;text-indent:10px}
 .add-render3 .render-table tr{display:inline-block;}
-.add-render3 .render-table tr td{max-width:300px;}
+.add-render3 .render-table tr td{max-width:300px;padding:0 0 0 28px;min-width:103px;}
+.add-render3 .render-table tr td.ta-l{padding:5px 15px 5px 15px;}
 .filesummary{margin:30px 0 0 20px;}
 .filesummary span{margin-right:10px;}
-.add-render3 .cost-table .construction{margin:0 30px}
+.add-render3 .cost-table .construction{margin:0 20px 0 30px}
 .construction a{color:#666;background:#DFE1E5;width:60px;height:21px;line-height:21px; border-radius:4px;border:1px solid #CCC;margin-top:5px;margin-right:10px;}
 
 .preview{margin-left:30px;margin-top:30px;height:30px;line-height:30px;}
@@ -152,6 +153,23 @@ resize: none;color:#999;padding:10px 20px;line-height:20px;}
 .supplies-table table td a{color:#666;background:#DFE1E5;width:46px;height:21px;line-height:21px; border-radius:4px;border:1px solid #CCC;margin:0 3px;}
 .edit-box .edit-p a{width:64px;height:20px;line-height:22px;color:#666;background:#DFE1E5;border-radius:3px;}
 .edit-box .opt a{margin:0 20px;}
+.renovate{bottom:0;right:5px;width:58px;height:30px;color:#666;font-size:12px;line-height:30px;}
+.renovate img{width:19px;height:19px;margin-right:7px;vertical-align:middle;}
+.renovate img.active{animation:myfirst 0.5s linear infinite;-moz-animation:myfirst 0.5s linear infinite;-webkit-animation:myfirst 0.5s linear infinite;-o-animation:myfirst 0.5s linear infinite;}
+@keyframes myfirst
+{
+from {transform: rotate(0deg);}
+to {transform: rotate(360deg);}
+}
+
+/* 角色管理添加角色 */
+#add-roles{width:550px;height:304px;top:50%;left:50%;margin-top:-152px;margin-left:-275px;border-radius:6px;z-index:100; overflow:hidden;}
+#add-roles h5{height:42px;line-height:42px;border-radius:4px;background:#46AFE8;border-radius:6px;}
+#add-roles .roles-box{margin:25px 0 0 40px;}
+#add-roles .roles-box p{margin:10px 5px; vertical-align:middle;}
+#add-roles .roles-box p span{width:70px;}
+#add-roles .roles-box p input{border:1px solid #DFE3E9;border-radius:4px;width:132px;height:26px;line-height:26px;font-size:12px;color:#999;text-align:center;}
+#add-roles .roles-box p textarea{border:1px solid #DFE3E9;border-radius:4px;font-size:12px;color:#999;width:375px;height:80px;padding:8px; vertical-align:top;}
 
 
 

@@ -25,4 +25,5 @@ $("#system2").jqGrid({
     rowNum: 20,
     rowList: [20,50,100],
     shrinkToFit: true,
+    pager: "#system2-pager"
 });

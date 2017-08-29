@@ -35,12 +35,14 @@
 .content .crumbs a{color:#3eabe7;}
 .content .search{margin:10px 0 0 10px;margin-bottom:21px;color:#5a5a5a;}
 .content .search .ad-box .search-input>span{color:#5a5a5a;margin-right:2px;width:98px;text-align:right}
-.content .search input[type="text"]{width:202px;height:31px;border:1px solid #CFCFCF;border-radius:5px;text-indent:10px;margin-right:10px;color:#999;}
+.content .search input[type="text"]{width:202px;height:31px;border:1px solid #CFCFCF;border-radius:5px;text-indent:10px;margin-right:10px;color:#999; text-align:center;}
 .content .search .select2{margin-right:10px;}
 .content .search .select2 .select2-selection {height:33px;border:1px solid #CFCFCF;border-radius:5px;text-indent:10px;}
-.content .search .search-input span{color:#5a5a5a;}
+.content .search .search-input > span{color:#5a5a5a;margin-right:2px;}
 .content .search a{color:#fff;background:#3EABE7;width:102px;height:27px;line-height:27px;border-radius:5px;margin-right:20px;margin-top:5px;}
 .content .search a.export{background:#F2F4F7;border:1px solid #DDDEE5;color:#999;}
+.new-summary .search-input{width: 305px;}
+
 
 /* 分页 */
 .paging a{display:inline-block;padding:3px 6px;border:1px solid #DDD;color:#999;margin:0 1px;}
@@ -56,6 +58,10 @@
 .pick ul li{margin-right:17px;margin-bottom:10px;}
 .pick ul li .pick-span{margin-right:5px;}
 
+/* 提示弹窗 */
+.tooltip-box,.tooltip-box2{width:350px;height:200px;top:50%;left:50%;margin-top:-100px;margin-left:-175px;border-radius:6px;z-index:100;}
+.tooltip-box h5,.tooltip-box2 h5{height:42px;line-height:42px;background:#46AEE8;border-radius:4px;margin-bottom:45px;}
+.tooltip-box p,.tooltip-box2 p{margin-bottom:40px;}
 
 /* 共用盒子 */
 .add-submit{width:103px;height:26px;line-height:26px;color:#fff;border-radius:4px;background:#3EABE7;margin:20px 25px 20px;}
@@ -67,3 +73,6 @@
 .information-a a{width:103px;height:27px;line-height:27px;color:#fff;border-radius:4px;margin:0 12px;}
 .information-a .confirm{background:#3EABE7;}
 .information-a .cancel{background:#C9C9C9;}
+
+#record #inpstart, #record #inpend {text-indent: 13px;background: url('../img/icon16.png') no-repeat 50px center;background-size: auto auto;background-size: 16px 16px;width: 201px;letter-spacing: 0;text-align: center;}
+

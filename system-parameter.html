@@ -20,45 +20,8 @@
                 <a href="#" class="d-ib">查询</a>
                 <a href="#" class="attribute d-ib">添加参数属性</a>
             </div>
-            <div class="parameter-table fs-12 c-9">
-            	 <table cellspacing="1" cellpadding="0" class="ta-c w">
-                    <tbody>
-                        <tr class="data-head fs-14 c-f">
-                            <th>序号</th>
-                            <th>名称</th>
-                            <th>备注</th>
-                            <th>操作</th>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>1</td>
-                            <td>站点</td>
-                            <td>站点名称站点名</td>
-                            <td>
-                                <a href="javascript:;" class="d-ib">修改</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>1</td>
-                            <td>站点</td>
-                            <td>站点名称站点名</td>
-                            <td>
-                                <a href="javascript:;" class="d-ib">修改</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                        <tr class="fs-12 c-9">
-                            <td>1</td>
-                            <td>站点</td>
-                            <td>站点名称站点名</td>
-                            <td>
-                                <a href="javascript:;" class="d-ib">修改</a>
-                                <a href="javascript:;" class="d-ib">删除</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <div id="systemtable3"></div>
+
         </div>
     </div>
     
@@ -111,6 +74,7 @@
 <script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
 <script>
+    $("#systemtable3").load('systemtable3.html');
 
     $(".cancel,.confirm").click(function(){
         $(".mask,#parameter-property,#parameter-type").hide();
@@ -129,5 +93,3 @@
 	})
 	
 </script>
-
-</html>

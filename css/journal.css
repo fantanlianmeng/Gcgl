@@ -28,7 +28,8 @@
 .mylog-table .data-head{height:38px;line-height:38px;background:url('../img/bg2.png') repeat left center; background-size:1163px 38px;}
 .mylog-table table{margin-bottom:20px;}
 .mylog-table table th{padding:0 10px;max-width:128px;white-space:nowrap;}
-.mylog-table table td{font-size:12px;border-bottom:1px solid #E7E7E7;border-right:1px solid #E7E7E7;padding:15px 10px 15px 10px;min-width:82px;line-height:22px;}
+.mylog-table table td{font-size:12px;border-bottom:1px solid #E7E7E7;border-right:1px solid #E7E7E7;padding:15px 10px 15px 10px;min-width:82px;line-height:22px;height:40px;}
+.mylog-table table td textarea{height:40px}
 .postil a{color:#fff;width:70px;height:27px;line-height:27px;border-radius:3px;margin:0 25px;background:#3EABE7;}
 
 /* 批注弹窗 */

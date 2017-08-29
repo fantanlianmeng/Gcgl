@@ -29,7 +29,8 @@
                     <div class="plan-classify">
                     	<span class="plan-span d-ib">拟派运维人员：</span>
                         <p class="d-ib" id="staff">
-                            <input type="text" value="李一一" readonly>
+                            <input type="text" value="李一一" readonly class="d-n">
+                            <span class="d-ib c-9 ta-c">李一二</span>
                         </p>
                         <a href="javascript:;" class="add-personnel d-ib ta-c">添加人员</a>
                     </div>
@@ -120,28 +121,28 @@
         <div class="choose-site c-9">
         	<div class="choosebox d-ib">
             	<label>
-            		<input type="checkbox" class="checksite " id="site1">
+            		<input type="checkbox" class="checksite">
                     <i class="d-ib"></i>
                     <span>新一代E区</span>
                 </label>
             </div>
             <div class="choosebox d-ib">
             	<label>
-            		<input type="checkbox" class="checksite " id="site2">
+            		<input type="checkbox" class="checksite">
                     <i class="d-ib"></i>
                     <span>新一代E区</span>
                 </label>
             </div>
             <div class="choosebox d-ib">
                 <label>
-            		<input type="checkbox" class="checksite " id="site2">
+            		<input type="checkbox" class="checksite">
                     <i class="d-ib"></i>
                     <span>新一代E区</span>
                 </label>
             </div>
             <div class="choosebox d-ib">
                 <label>
-            		<input type="checkbox" class="checksite " id="site2">
+            		<input type="checkbox" class="checksite">
                     <i class="d-ib"></i>
                     <span>新一代E区</span>
                 </label>
@@ -256,6 +257,7 @@
 						return $(elem).text();
 					}).get().join(",")
 				$("#staff input").val(str);
+				$("#staff span").text(str);
 				$("#staff").show();
 				if(strchecked ==0){
 					$("#staff").hide();
@@ -428,6 +430,7 @@
 				return $(elem).text();
 			}).get().join(",")
 			$("#staff input").val(str)
+			$("#staff span").text(str)
 			if(strchecked==0){
 				$("#staff").hide();
 			}else{
@@ -443,4 +446,3 @@
 		$("#staff").hide();
 	})
 </script>
-</html>

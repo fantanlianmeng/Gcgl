@@ -1,4 +1,4 @@
-
+<link href="css/uploadify.css" rel="stylesheet" type="text/css">
 <link href="css/jedate.css" rel="stylesheet" type="text/css">
 <link href="css/out.css" rel="stylesheet" type="text/css">
 
@@ -65,7 +65,7 @@
                     </div>
                 
                     <p class="detailed-a fs-12 c-6 ta-l">施工费用明细：<a href="javascript:;" class="add-details d-ib ta-c">添加明细</a></p>
-                    <div class="cost-table">
+                    <div class="cost-table d-n">
                         <table cellspacing="1" cellpadding="0" class="fs-12 w">
                             <tbody>
                                 <tr class="c-6">
@@ -112,6 +112,9 @@
                             </tbody>
                         </table>
                     </div>
+
+                    <div id="outtable3"></div>
+
                     <a href="javascript:;" class="add-submit d-ib ta-c fs-14">提交</a>
                 </div>
             </form>
@@ -131,16 +134,16 @@
                             </li>
                             <li class="d-ib">
                                 <span class="pick-span d-ib fs-12 fw-1">实际结束日期：</span>
-                                <p class="datep d-ib"><input class="datainp" id="inpend" name="time" type="text" value="" placeholder="请选择"  readonly></p>
+                                <p class="datep d-ib"><input class="datainp" id="inpend" name="time2" type="text" value="" placeholder="请选择"  readonly></p>
                             </li>
                             <li class="d-ib">
                                 <span class="pick-span d-ib fs-12 fw-1">总计出差天数：</span>
-                                <input type="text" name="duration" id="duration" class="duration" value="8" >
+                                <input type="text" name="duration" class="duration limit-number" value="0" id="total">
                             </li>
                             <li class="d-ib">
                                 <span class="pick-span d-ib fs-12 fw-1">出差人员：</span>
                                 <select class="js-select200 select-normal" name="branch">
-                                    <option>PC软件部</option>
+                                    <option>小张</option>
                                     <option>请选择</option>
                                 </select>
                             </li>
@@ -175,49 +178,19 @@
                     
                     <div class="cost-table d-ib f-l">
                         <span class="d-ib f-l ta-r c-6">施工费用明细：</span>
-                        <table cellspacing="1" cellpadding="0" class="fs-12 w f-l">
-                            <tbody>
-                                <tr class="c-6">
-                                    <th>序号</th>
-                                    <th>费用品名</th>
-                                    <th>数量</th>
-                                    <th>单位</th>
-                                    <th>单价</th>
-                                    <th>总金额</th>
-                                    <th>费用类别</th>
-                                </tr>
-                                <tr class="c-9">
-                                    <td>1</td>
-                                    <td>C40混凝土</td>
-                                    <td>12</td>
-                                    <td>m³</td>
-                                    <td>350</td>
-                                    <td>4200</td>
-                                    <td>耗材费</td>
-                                </tr>
-                                <tr class="c-9">
-                                    <td>1</td>
-                                    <td>C40混凝土</td>
-                                    <td>12</td>
-                                    <td>m³</td>
-                                    <td>350</td>
-                                    <td>4200</td>
-                                    <td>耗材费</td>
-                                </tr>
-                                <tr class="c-9">
-                                    <td colspan="5">金额总计</td>
-                                    <td>4250</td>
-                                    <td colspan="2"></td>
-                                </tr>
-                            </tbody>
-                        </table>
+
+                        <div id="outtable4"></div>
                         <div class="c-b"></div>
                     </div>
                     <div class="c-b"></div>
                     <div class="speech fs-12 c-6 ta-l w">
                         <div class="speech-box1 d-ib f-l">
                             <span>出差报告文件上传：</span>
-                            <a href="javascript:;" class="file d-ib f-r p-r ta-c o-h">选择文件<input type="file" class="upload" /></a><p></p>
+                            <a href="javascript:;" class="file d-ib f-r p-r ta-c o-h" >选择文件
+                            	<div id="queue"></div>
+                            	<input id="file_upload" name="file_upload" type="file" multiple>
+                            </a>
+                            <p></p>
                             <a href="javascript:;" class="d-ib f-r ta-c">确认并上传</a>
                             <div class="c-b"></div>
                         </div>
@@ -275,7 +248,12 @@
 <script src="js/jquery.jedate.js"></script>
 <script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
+<script src="js/jquery.uploadify.js"></script>
 <script>
+$(function(){
+    $("#outtable3").load('outtable3.html');
+    $("#outtable4").load('outtable4.html');
+
 
 	$(".shrink").click(function(){
 		$(this).next(".render-box").slideToggle();
@@ -315,15 +293,34 @@
 		format: 'YYYY-MM-DD',
 		choosefun: function(elem,datas){
 			start.maxDate = datas; //将结束日的初始值设定为开始日的最大日期
+			toDate();
 		}
 	};
 	function endDates() {
 		end.trigger = false;
 		$("#inpend").jeDate(end);
 	}
+	function toDate(){
+		var a = $("#inpstart").val()
+		var b = $("#inpend").val()
+		var date1 = new Date(a).getTime();
+		var date2 = new Date(b).getTime();
+		var diff = date2 - date1; //相差的毫秒数
+		var day = Math.floor(diff / 1000 / 60 / 60 / 24)+1;
+		$("#total").val(day)
+	}
 	$("#inpstart").jeDate(start);
 	$("#inpend").jeDate(end);
 	
+	//上传文件
+	$('#file_upload').uploadify({
+   　　 'swf'      :'js/uploadify.swf',
+ 　　　 'uploader':'js/uploadify.php'
+　　　});
+	
+	$('input.limit-number').on('focus input propertychange click',function(){//纯数字
+		var value = $(this).val()
+		if(/\D/g.test(value)){$(this).val(value.replace(/\D/g,''))}
+	})
+});
 </script>
-
-</html>
