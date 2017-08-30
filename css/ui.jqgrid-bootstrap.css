@@ -15,8 +15,8 @@
 /* Caption*/
 .ui-jqgrid .ui-jqgrid-titlebar {
 	font-weight: normal;
-	min-height:37px; 
-	padding: 4px 8px; 
+	min-height:37px;
+	padding: 4px 8px;
 	position: relative; 
 	margin-right: 2px;
 	border-bottom: 1px solid #ddd; /*default*/
@@ -75,7 +75,7 @@
 	overflow: hidden;
 	white-space: nowrap;
 }
-.ui-th-ltr, .ui-jqgrid .ui-jqgrid-htable th.ui-th-ltr {text-align: center;}
+.ui-th-ltr, .ui-jqgrid .ui-jqgrid-htable th.ui-th-ltr {text-align: center;height: 38px}
 .ui-th-rtl, .ui-jqgrid .ui-jqgrid-htable th.ui-th-rtl {text-align: center; }
 .ui-jqgrid tr.jqg-first-row-header th {
 	height:auto; 
