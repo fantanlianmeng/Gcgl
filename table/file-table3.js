@@ -1,0 +1,31 @@
+
+$("#file3").jqGrid({
+    url: '',
+    datatype: function (data) {
+        var thegrid = jQuery("#file3")[0];
+        data = eval("(" +'{"page":1,"total":2,"records":13,"rows":['
+            +' {"ctn1":"1","ctn2":"2017-05-03 11:37:22","ctn3":"张晓宇","ctn4":"上传","ctn5":"2017-5-25 08：20"}'
+			+',{"ctn1":"2","ctn2":"2017-05-03 11:37:22","ctn3":"张晓宇","ctn4":"下载","ctn5":"2017-5-25 08：20"}'
+			+',{"ctn1":"3","ctn2":"2017-05-03 11:37:22","ctn3":"张晓宇","ctn4":"上传","ctn5":"2017-5-25 08：20"}'
+			+',{"ctn1":"4","ctn2":"2017-05-03 11:37:22","ctn3":"张晓宇","ctn4":"下载","ctn5":"2017-5-25 08：20"}'
+			+',{"ctn1":"5","ctn2":"2017-05-03 11:37:22","ctn3":"张晓宇","ctn4":"上传","ctn5":"2017-5-25 08：20"}'
+			+',{"ctn1":"6","ctn2":"2017-05-03 11:37:22","ctn3":"张晓宇","ctn4":"下载","ctn5":"2017-5-25 08：20"}'
+			+',{"ctn1":"7","ctn2":"2017-05-03 11:37:22","ctn3":"张晓宇","ctn4":"上传","ctn5":"2017-5-25 08：20"}'
+            + "]})");
+        thegrid.addJSONData(data);//给div添加json格式的数据
+    },
+    mtype: "GET",
+    styleUI : 'Bootstrap',
+    colModel: [
+        { label: '序号', name: 'ctn1', align: "center", width: 20},
+        { label: '成果物', name: 'ctn2', align: "center", width: 30},
+        { label: '文件名', name: 'ctn3', align: "center", width: 30},
+        { label: '上传人员', name: 'ctn4', align: "center", width: 20},
+        { label: '上传日期', name: 'ctn5', align: "center", width: 35},
+    ],
+    viewrecords: true,
+    rowNum: 20,
+    rowList: [20,50,100],
+    shrinkToFit: true,
+    pager: "#file3-pager"
+});

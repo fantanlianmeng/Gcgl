@@ -95,14 +95,14 @@
         <div id="site-extensions"></div>
 
     </div>
-
+<script src="js/IMGUP.js"></script>
 <script src="js/select2_option.js"></script>
 <script>
     $("#add-site h5 span").click(function(){
         $("#site-extensions").empty();
         $("#add-site h5 span").removeClass("site-active");
         $(this).addClass("site-active")
-        $("#add-site .extend").hide().eq($(this).index()).fadeIn();
+        $("#add-site .extend").hide().eq($(this).index()).show();
     })
     $("#extensions").click(function(){
         $("#add-site .extend").hide();

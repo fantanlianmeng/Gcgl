@@ -901,7 +901,7 @@ td.menu_text {
 .search_buttons #bs_search {
 	margin-left: 3px;
 }
-.s-ico{position: relative;top: -9px;}
+.s-ico{position: relative;top: 2px;}
 
 .data-table table th{min-width:0px;padding:0;}
 .table-bordered > thead > tr > th{border: none;}
@@ -1128,4 +1128,4 @@ padding: 0 10px;}
 .system-table3 .ui-jqgrid .ui-jqgrid-btable tbody tr.jqgrow td{border-right: 1px solid #E7E7E7;}
 .system-table3 .ui-jqgrid .ui-jqgrid-resize-ltr{display:none;}
 
-
+#operation7-pager_left{display:none;}

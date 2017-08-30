@@ -11,7 +11,7 @@
 .sidebar{width:187px;border-top:1px solid #CFCFCF;border-bottom:1px solid #D5D5D5;border-right:1px solid #D5D5D5;border-bottom-right-radius:5px;border-top-right-radius:5px;margin:5px 5px 0 0;padding-top:5px;padding-right:11px;transition:0.5s;-webkit-transition:0.5s;-mos-transition:0.5s;-mz-transition:0.5s;-o-transition:0.5s;}
 .sidebar ul{margin-left:5px;overflow:hidden;white-space:nowrap;}
 .sidebar ul li{margin-bottom:5px;}
-.sidebar ul li p{width:180px;height:45px;line-height:45px;border:1px solid #D5D5D5;background:#EFEFEF;border-radius:5px;}
+.sidebar ul li p{width:180px;height:45px;line-height:45px;border:1px solid #D5D5D5;background:#EFEFEF;border-radius:5px;cursor: pointer}
 .sidebar ul li p img{vertical-align:sub;margin:0 7px 0 14px;}
 .sidebar ul li p i{top:20px;right:15px;width:10px;height:6px;background:url('../img/icon7.png') no-repeat center center; background-size:10px 6px;transition:0.5s;-webkit-transition:0.5s;-mos-transition:0.5s;-mz-transition:0.5s;-o-transition:0.5s;}
 .sidebar ul li p.active i{transform:rotate(180deg);-ms-transform:rotate(180deg);-moz-transform:rotate(180deg);-webkit-transform:rotate(180deg);-o-transform:rotate(180deg);}

@@ -1,0 +1,54 @@
+
+<div class="content filemanage">
+    <p class="crumbs">您当前的位置：文档管理 &gt; <a href="javascript:;" class="crumbs-first">操作记录</a></p>
+    
+    <!--操作记录-->
+    <div class="sheet" id="record">
+        <div class="search fs-14">
+            <ul>
+                <li class="d-ib">
+                    <span class="d-ib">操作人员：</span>
+                    <input type="text">
+                </li>
+                <li class="d-ib">
+                    <span class="pick-span d-ib c-6">开始时间：</span>
+                    <input id="inpstart" name="time1" type="text" value="" placeholder="请选择"  readonly>
+                </li>
+                <li class="d-ib">
+                    <span class="pick-span d-ib c-6">结束时间：</span>
+                    <input id="inpend" name="time2" type="text" value="" placeholder="请选择"  readonly>
+                </li>
+                <a href="javascript:;" class="d-ib ta-c">查询</a>
+            </ul>
+        </div>
+        <div id="filetable3"></div>
+    </div>
+
+</div>
+<script src="js/jquery.jedate.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#filetable3").load('filetable3.html');
+    });
+
+    //实现日期选择联动
+    var start = {
+        format: 'YYYY-MM-DD',
+        choosefun: function(elem,datas){
+            end.minDate = datas; //开始日选好后，重置结束日的最小日期
+            endDates();
+        }
+    };
+    var end = {
+        format: 'YYYY-MM-DD',
+        choosefun: function(elem,datas){
+            start.maxDate = datas; //将结束日的初始值设定为开始日的最大日期
+        }
+    };
+    function endDates() {
+        end.trigger = false;
+        $("#inpend").jeDate(end);
+    }
+    $("#inpstart").jeDate(start);
+    $("#inpend").jeDate(end);
+</script>

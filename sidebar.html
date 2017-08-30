@@ -4,54 +4,53 @@
         <li>
             <p class="p-r active" id="project"><img src="img/icon1.png" alt="" />项目管理<i class="d-ib p-a"></i></p>
             <div class="subnav d-n">
-                <a href="javascript:;" class="d-b subnav-active" id="project-new">新建项目</a>
-                <a href="javascript:;" class="d-b" id="project-manage">项目管理</a>
-                <a href="javascript:;" class="d-b" id="project-overview">项目总览</a>
+                <a href="javascript:;" class="d-b subnav-active" id="project-new" onclick="switchs(1)">新建项目</a>
+                <a href="javascript:;" class="d-b" id="project-manage" onclick="switchs(2)">项目管理</a>
+                <a href="javascript:;" class="d-b" id="project-overview" onclick="switchs(3)">项目总览</a>
             </div>
         </li>
         <li>
             <p class="p-r" id="journal"><img src="img/icon2.png" alt="" />日志管理<i class="d-ib p-a"></i></p>
             <div class="subnav d-n">
-                <a href="javascript:;" class="d-b" id="journal-report">日志汇报</a>
-                <a href="javascript:;" class="d-b" id="journal-dynamic">日志动态</a>
+                <a href="javascript:;" class="d-b" id="journal-report" onclick="switchs(4)">日志汇报</a>
+                <a href="javascript:;" class="d-b" id="journal-dynamic" onclick="switchs(5)">日志动态</a>
             </div>
         </li>
         <li>
             <p class="p-r" id="out"><img src="img/icon3.png" alt="" />出差管理<i class="d-ib p-a"></i></p>
             <div class="subnav d-n">
-                <a href="javascript:;" class="d-b" id="out-apply">出差申请</a>
-                <a href="javascript:;" class="d-b" id="out-manage">出差汇报</a>
-                <a href="javascript:;" class="d-b" id="out-dynamic">出差动态</a>
+                <a href="javascript:;" class="d-b" id="out-apply" onclick="switchs(6)">出差申请</a>
+                <a href="javascript:;" class="d-b" id="out-manage" onclick="switchs(7)">出差汇报</a>
+                <a href="javascript:;" class="d-b" id="out-dynamic" onclick="switchs(8)">出差动态</a>
             </div>
         </li>
         <li>
             <p class="p-r" id="file"><img src="img/icon4.png" alt="" />文档管理<i class="d-ib p-a"></i></p>
             <div class="subnav d-n">
-                <a href="javascript:;" class="d-b" id="file-manage">文档管理</a>
-                <a href="javascript:;" class="d-b" id="file-record">操作记录</a>
+                <a href="javascript:;" class="d-b" id="file-manage" onclick="switchs(9)">文档管理</a>
+                <a href="javascript:;" class="d-b" id="file-record" onclick="switchs(10)">操作记录</a>
             </div>
         </li>
         <li>
             <p class="p-r" id="operation"><img src="img/icon5.png" alt="" />运维管理<i class="d-ib p-a"></i></p>
             <div class="subnav d-n">
-                <a href="javascript:;" class="d-b" id="operation-plan">运维计划</a>
-                <a href="javascript:;" class="d-b" id="operation-handle">运维处理</a>
-                <a href="javascript:;" class="d-b" id="operation-dynamic">运维动态</a>
+                <a href="javascript:;" class="d-b" id="operation-plan" onclick="switchs(11)">运维计划</a>
+                <a href="javascript:;" class="d-b" id="operation-handle" onclick="switchs(12)">运维处理</a>
+                <a href="javascript:;" class="d-b" id="operation-dynamic" onclick="switchs(13)">运维动态</a>
             </div>
         </li>
         <li>
             <p class="p-r" id="system"><img src="img/icon6.png" alt="" />系统管理<i class="d-ib p-a"></i></p>
             <div class="subnav d-n">
-                <a href="javascript:;" class="d-b" id="system-user">用户管理</a>
-                <a href="javascript:;" class="d-b" id="system-role">角色管理</a>
-                <a href="javascript:;" class="d-b" id="system-parameter">参数配置</a>
+                <a href="javascript:;" class="d-b" id="system-user" onclick="switchs(14)">用户管理</a>
+                <a href="javascript:;" class="d-b" id="system-role" onclick="switchs(15)">角色管理</a>
+                <a href="javascript:;" class="d-b" id="system-parameter" onclick="switchs(16)">参数配置</a>
             </div>
         </li>
     </ul>
     <div class="picbox p-a"></div>
 </div>
 
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script>
 	
 	$(".sidebar .active").next(".subnav").show();
@@ -77,68 +76,4 @@
 		}
 	});
 	
-	$("#project-new").click(function(){
-		$(".content").remove()
-		$("#content-box").load('sheet.html');
-	})
-	$("#project-manage").click(function(){
-		$(".content").remove()
-		$("#content-box").load('project-manage.html')
-	})
-	$("#project-overview").click(function(){
-		$(".content").remove()
-		$("#content-box").load('project-overview.html')
-	})
-	$("#journal-report").click(function(){
-		$(".content").remove()
-		$("#content-box").load('journal-report.html')
-	})
-	$("#journal-dynamic").click(function(){
-		$(".content").remove()
-		$("#content-box").load('journal-dynamic.html')
-	})
-	$("#out-apply").click(function(){
-		$(".content").remove()
-		$("#content-box").load('out-apply.html')
-	})
-	$("#out-manage").click(function(){
-		$(".content").remove()
-		$("#content-box").load('out-manage.html')
-	})
-	$("#out-dynamic").click(function(){
-		$(".content").remove()
-		$("#content-box").load('out-dynamic.html')
-	})
-	$("#file-manage").click(function(){
-		$(".content").remove()
-		$("#content-box").load('file-manage.html')
-	})
-	$("#file-record").click(function(){
-		$(".content").remove()
-		$("#content-box").load('file-record.html')
-	})
-	$("#operation-plan").click(function(){
-		$(".content").remove()
-		$("#content-box").load('operation-plan.html')
-	})
-	$("#operation-handle").click(function(){
-		$(".content").remove()
-		$("#content-box").load('operation-handle.html')
-	})
-	$("#operation-dynamic").click(function(){
-		$(".content").remove()
-		$("#content-box").load('operation-dynamic.html')
-	})
-	$("#system-user").click(function(){
-		$(".content").remove()
-		$("#content-box").load('system-user.html')
-	})
-	$("#system-role").click(function(){
-		$(".content").remove()
-		$("#content-box").load('system-role.html')
-	})
-	$("#system-parameter").click(function(){
-		$(".content").remove()
-		$("#content-box").load('system-parameter.html')
-	})
 </script>

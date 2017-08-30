@@ -454,13 +454,13 @@ fieldset {
   content: "\e068";
 }
 .glyphicon-step-backward:before {
-  content: "\e069";
+  content: "首页";
 }
 .glyphicon-fast-backward:before {
   content: "\e070";
 }
 .glyphicon-backward:before {
-  content: "\e071";
+  content: "上一页";
 }
 .glyphicon-play:before {
   content: "\e072";
@@ -472,13 +472,13 @@ fieldset {
   content: "\e074";
 }
 .glyphicon-forward:before {
-  content: "\e075";
+  content: "下一页";
 }
 .glyphicon-fast-forward:before {
   content: "\e076";
 }
 .glyphicon-step-forward:before {
-  content: "\e077";
+  content: "尾页";
 }
 .glyphicon-eject:before {
   content: "\e078";

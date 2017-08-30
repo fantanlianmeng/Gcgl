@@ -1,62 +1,56 @@
 
-<link href="lay/css/layui.css" rel="stylesheet"/>
-<link href="css/out.css" rel="stylesheet" type="text/css">
-
-    <div class="content filemanage">
-    	<p class="crumbs">您当前的位置：系统管理 &gt; <a href="javascript:;">角色管理</a></p>
-      	
-        <!--用户管理-->
-        <div class="sheet">
-            <div class="search fs-14">
-                <span class="d-ib">角色名称：</span>
-                <input type="text">
-                <a href="javascript:;" class="d-ib ta-c">查询</a>
-                <a href="javascript:;" class="roles d-ib ta-c">添加角色</a>
-            </div>
-            <div id="systemtable2"></div>
-        </div>
-        
-    </div>
-
-    <!--分配菜单权限-->
-    <div class="mask p-f d-n"></div>
-    <div class="out-people bg-f p-f d-n" id="out-people">
-    	<h5 class="fs-14 c-f ta-c">分配菜单权限</h5>
-        <div class="check-name">
-        	<span class="f-l">选择权限：</span>
-            <span class="f-r">全选</span>
-            <input type="checkbox" class="f-r d-n checkall" id="check-all">
-            <label for="check-all" class="f-r"></label>
-            <div class="c-b"></div>
-        </div>
-        <ul id="demo"></ul>
-        <div class="opt ta-c fs-14 ta-c">
-        	<a href="#" class="cancel d-ib">取消</a>
-            <a href="#" class="keep d-ib">保存</a>
-        </div>
-    </div>
-	<!--添加角色-->
-    <div class="add-roles bg-f p-f d-n" id="add-roles">
-    	<h5 class="fs-14 c-f ta-c">添加角色</h5>
-		<div class="roles-box ta-l">
-        	<p class="d-ib fs-12 c-6">
-                <span class="d-ib">角色名称：</span>
-                <input type="text" value="张晓宇">
-            </p>
-            <img src="img/icon11.png" alt="">
-            <p class="d-ib fs-12 c-6">
-            	<span class="d-ib">备注信息：</span>
-                <textarea>备注信息备注信息备注信息备注信息</textarea>
-            </p>
-            <img src="img/icon11.png" alt="">
-            <div class="information-a ta-c fa-14">
-                <a href="javascript:;" class="cancel d-ib">取消</a>
-                <a href="javascript:;" class="confirm d-ib">保存</a>
-            </div>
-        </div>
-    </div>
+<div class="content filemanage">
+    <p class="crumbs">您当前的位置：系统管理 &gt; <a href="javascript:;">角色管理</a></p>
     
-<script src="layui.js"></script>
+    <!--用户管理-->
+    <div class="sheet">
+        <div class="search fs-14">
+            <span class="d-ib">角色名称：</span>
+            <input type="text">
+            <a href="javascript:;" class="d-ib ta-c">查询</a>
+            <a href="javascript:;" class="roles d-ib ta-c">添加角色</a>
+        </div>
+        <div id="systemtable2"></div>
+    </div>
+</div>
+
+<!--分配菜单权限-->
+<div class="mask p-f d-n"></div>
+<div class="out-people bg-f p-f d-n" id="out-people">
+    <h5 class="fs-14 c-f ta-c">分配菜单权限</h5>
+    <div class="check-name">
+        <span class="f-l">选择权限：</span>
+        <span class="f-r">全选</span>
+        <input type="checkbox" class="f-r d-n checkall" id="check-all">
+        <label for="check-all" class="f-r"></label>
+        <div class="c-b"></div>
+    </div>
+    <ul id="demo"></ul>
+    <div class="opt ta-c fs-14 ta-c">
+        <a href="#" class="cancel d-ib">取消</a>
+        <a href="#" class="keep d-ib">保存</a>
+    </div>
+</div>
+<!--添加角色-->
+<div class="add-roles bg-f p-f d-n" id="add-roles">
+    <h5 class="fs-14 c-f ta-c">添加角色</h5>
+    <div class="roles-box ta-l">
+        <p class="d-ib fs-12 c-6">
+            <span class="d-ib">角色名称：</span>
+            <input type="text" value="张晓宇">
+        </p>
+        <img src="img/icon11.png" alt="">
+        <p class="d-ib fs-12 c-6">
+            <span class="d-ib">备注信息：</span>
+            <textarea>备注信息备注信息备注信息备注信息</textarea>
+        </p>
+        <img src="img/icon11.png" alt="">
+        <div class="information-a ta-c fa-14">
+            <a href="javascript:;" class="cancel d-ib">取消</a>
+            <a href="javascript:;" class="confirm d-ib">保存</a>
+        </div>
+    </div>
+</div>
 <script>
 	$(document).ready(function(){
 		$("#systemtable2").load('systemtable2.html');
@@ -67,159 +61,158 @@
 	$(".cancel,.confirm").click(function(){
 		$(".mask,#add-roles").hide();
 	})
-</script>
-<script>
+	
 	layui.use('tree', function() {
-				var tree = layui.tree({
-					elem: '#demo', //指定元素，生成的树放到哪个元素上
-					check: 'checkbox', //勾选风格
-					skin: 'as', //设定皮肤
-					drag: true,//点击每一项时是否生成提示信息
-					checkboxName: 'aa[]',//复选框的name属性值
-					checkboxStyle: "",//设置复选框的样式，必须为字符串，css样式怎么写就怎么写
-					nodes: [ //节点
-						{
-							name: '工程中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '产品中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '工程中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '产品中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '工程中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '产品中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							spread: true, //是否是展开状态，true为展开状态
-							checked: true,//复选框默认是否选中	
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2,
-								checked: true  //复选框默认是否选中
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '工程中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						},{
-							name: '产品中心', //节点名称
-							checkboxValue: 0,//复选框的值
-							data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-								nodeName: "工程中心",
-								alias: "changyong"
-							},
-							children: [{
-								name: '李一一',
-								checkboxValue: 1
-							}, {
-								name: '李一一',
-								checkboxValue: 2
-							}, {
-								name: '李一一',
-								checkboxValue: 3
-							}]
-						}
-					]
-				});
+		var tree = layui.tree({
+			elem: '#demo', //指定元素，生成的树放到哪个元素上
+			check: 'checkbox', //勾选风格
+			skin: 'as', //设定皮肤
+			drag: true,//点击每一项时是否生成提示信息
+			checkboxName: 'aa[]',//复选框的name属性值
+			checkboxStyle: "",//设置复选框的样式，必须为字符串，css样式怎么写就怎么写
+			nodes: [ //节点
+				{
+					name: '工程中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一一',
+						checkboxValue: 1
+					}, {
+						name: '李一一',
+						checkboxValue: 2
+					}, {
+						name: '李一一',
+						checkboxValue: 3
+					}]
+				},{
+					name: '产品中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一一',
+						checkboxValue: 1
+					}, {
+						name: '李一一',
+						checkboxValue: 2
+					}, {
+						name: '李一一',
+						checkboxValue: 3
+					}]
+				},{
+					name: '工程中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一一',
+						checkboxValue: 1
+					}, {
+						name: '李一一',
+						checkboxValue: 2
+					}, {
+						name: '李一一',
+						checkboxValue: 3
+					}]
+				},{
+					name: '产品中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一一',
+						checkboxValue: 1
+					}, {
+						name: '李一一',
+						checkboxValue: 2
+					}, {
+						name: '李一一',
+						checkboxValue: 3
+					}]
+				},{
+					name: '工程中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一一',
+						checkboxValue: 1
+					}, {
+						name: '李一一',
+						checkboxValue: 2
+					}, {
+						name: '李一一',
+						checkboxValue: 3
+					}]
+				},{
+					name: '产品中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					spread: true, //是否是展开状态，true为展开状态
+					checked: true,//复选框默认是否选中	
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一一',
+						checkboxValue: 1
+					}, {
+						name: '李一一',
+						checkboxValue: 2,
+						checked: true  //复选框默认是否选中
+					}, {
+						name: '李一一',
+						checkboxValue: 3
+					}]
+				},{
+					name: '工程中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一一',
+						checkboxValue: 1
+					}, {
+						name: '李一一',
+						checkboxValue: 2
+					}, {
+						name: '李一一',
+						checkboxValue: 3
+					}]
+				},{
+					name: '产品中心', //节点名称
+					checkboxValue: 0,//复选框的值
+					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
+						nodeName: "工程中心",
+						alias: "changyong"
+					},
+					children: [{
+						name: '李一一',
+						checkboxValue: 1
+					}, {
+						name: '李一一',
+						checkboxValue: 2
+					}, {
+						name: '李一一',
+						checkboxValue: 3
+					}]
+				}
+			]
+		});
 	});
 
 	$("#check-all").attr("checked",false);

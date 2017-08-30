@@ -1,7 +1,3 @@
-<link href="css/uploadify.css" rel="stylesheet" type="text/css">
-<link href="css/jedate.css" rel="stylesheet" type="text/css">
-<link href="css/out.css" rel="stylesheet" type="text/css">
-
     
     <div class="content">
     	<p class="crumbs">您当前的位置：出差管理 &gt; <a href="javascript:;">出差汇报</a></p>
@@ -246,9 +242,7 @@
     </div>
     
 <script src="js/jquery.jedate.js"></script>
-<script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
-<script src="js/jquery.uploadify.js"></script>
 <script>
 $(function(){
     $("#outtable3").load('outtable3.html');
@@ -287,6 +281,7 @@ $(function(){
 		choosefun: function(elem,datas){
 			end.minDate = datas; //开始日选好后，重置结束日的最小日期
 			endDates();
+			toDate();
 		}
 	};
 	var end = {
@@ -308,15 +303,15 @@ $(function(){
 		var diff = date2 - date1; //相差的毫秒数
 		var day = Math.floor(diff / 1000 / 60 / 60 / 24)+1;
 		$("#total").val(day)
+		
+		if(isNaN(day)){
+			$("#total").val(0)
+		}
+		
 	}
 	$("#inpstart").jeDate(start);
 	$("#inpend").jeDate(end);
 	
-	//上传文件
-	$('#file_upload').uploadify({
-   　　 'swf'      :'js/uploadify.swf',
- 　　　 'uploader':'js/uploadify.php'
-　　　});
 	
 	$('input.limit-number').on('focus input propertychange click',function(){//纯数字
 		var value = $(this).val()

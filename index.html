@@ -4,14 +4,24 @@
 <head>
 <meta charset="utf-8">
 <title>工程项目管理平台</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/ui.jqgrid-bootstrap.css" rel="stylesheet">
 <link href="css/validationEngine.jquery.css" rel="stylesheet" type="text/css">
+<link href="css/uploadify.css" rel="stylesheet" type="text/css">
+<link href="lay/css/layui.css" rel="stylesheet"/>
 <link href="js/uploadify/validationEngine.jquery.css" rel="stylesheet" type="text/css">
-<link href="css/base-pc.css" rel="stylesheet" type="text/css">
+<link href="css/jedate.css" rel="stylesheet" type="text/css">
+<link href="css/IMGUP.css" rel="stylesheet" />
+<link href="css/journal.css" rel="stylesheet" type="text/css">
 <link href="css/select2.css" rel="stylesheet" type="text/css">
 <link href="css/module.css" rel="stylesheet" type="text/css">
+<link href="css/base-pc.css" rel="stylesheet" type="text/css">
+<link href="css/operation.css" rel="stylesheet" type="text/css">
+<link href="css/project-manage.css" rel="stylesheet" type="text/css">
 <link href="css/project-new.css" rel="stylesheet" type="text/css">
-</head>
+<link href="css/out.css" rel="stylesheet" type="text/css">
 
+</head>
 
 <body class="p-r">
 	<div id="header"></div>
@@ -23,18 +33,78 @@
 
 </body>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.jqGrid.min.js"></script>
+<script type="text/javascript" src="js/grid.locale-cn.js"></script>
 <script type="text/javascript" src="js/jquery.validationEngine.js"></script>
 <script type="text/javascript" src="js/jquery.validationEngine-zh_CN.js"></script>
-<script type="text/javascript" src="js/uploadify/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/select2.js"></script>
 <script type="text/javascript" src="js/uploadify/jquery.uploadify.js"></script>
+<script type="text/javascript" src="layui.js"></script>
 <script>
-	$(document).ready(function(){
-        $("#header").load('header.html');
-        $("#sidebar").load('sidebar.html');
-        $("#notice").load('notice.html');
-        $("#tooltip-box").load('tooltip-box.html');
-		$("#content-box").load('sheet.html');
-    });
+$(document).ready(function(){
+	$("#header").load('header.html');
+	$("#sidebar").load('sidebar.html');
+	$("#notice").load('notice.html');
+	$("#tooltip-box").load('tooltip-box.html');
+	$("#content-box").load('sheet.html');
+});
+
+
+function switchs(nav) {
+	switch (nav) {
+		case 1:
+			$('#content-box').load('sheet.html', function () {
+				$.getScript('js/jquery.jqGrid.min.js');
+			});
+			break;
+		case 2:
+			$('#content-box').load('project-manage.html');
+			break;
+		case 3:
+			$('#content-box').load('project-overview.html');
+			break;
+		case 4:
+			$('#content-box').load('journal-report.html');
+			break;
+		case 5:
+			$('#content-box').load('journal-dynamic.html');
+			break;
+		case 6:
+			$('#content-box').load('out-apply.html');
+			break;
+		case 7:
+			$('#content-box').load('out-manage.html');
+			break;
+		case 8:
+			$('#content-box').load('out-dynamic.html');
+			break;
+		case 9:
+			$('#content-box').load('file-manage.html');
+			break;
+		case 10:
+			$('#content-box').load('file-record.html');
+			break;
+		case 11:
+			$('#content-box').load('operation-plan.html');
+			break;
+		case 12:
+			$('#content-box').load('operation-handle.html');
+			break;
+		case 13:
+			$('#content-box').load('operation-dynamic.html');
+			break;
+		case 14:
+			$('#content-box').load('system-user.html');
+			break;
+		case 15:
+			$('#content-box').load('system-role.html');
+			break;
+		case 16:
+			$('#content-box').load('system-parameter.html');
+			break;
+	}
+}
+
 
 </script>
 </html>

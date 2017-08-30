@@ -4,7 +4,7 @@
 /**********
 	初始化样式
 **********/
-body{font:13px/1.5 "微软雅黑 Regular","微软雅黑","宋体","Microsoft Yahei",sans-serif;background:#fff;min-width:1280px;}
+body{font:13px/1.5 "微软雅黑","宋体","Microsoft Yahei",sans-serif;background:#fff;min-width:1280px;}
 html,body,div,h1,h2,h3,h4,h5,h6,ol,ul,li,span,p,strong,em,i,img,form,input,button{margin:0;padding:0; border:0;}
 h1,h2,h3,h4,h5,h6,i,th{font-weight: normal}
 ul,ol{list-style:none;}

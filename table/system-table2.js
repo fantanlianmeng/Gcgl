@@ -14,8 +14,8 @@ $("#system2").jqGrid({
     mtype: "GET",
     styleUI : 'Bootstrap',
     colModel: [
-        { label: '序号', name: 'ctn1', align: "center", width: 10},
-        { label: '角色名称', name: 'ctn2', align: "center", width: 20},
+        { label: '序号', name: 'ctn1', align: "center", width: 12},
+        { label: '角色名称', name: 'ctn2', align: "center", width: 22},
         { label: '所属部门', name: 'ctn3', align: "center", width: 20},
         { label: '备注信息', name: 'ctn4', align: "center", width: 40},
         { label: '分配菜单权限', name: 'ctn5', align: "center", width: 25},

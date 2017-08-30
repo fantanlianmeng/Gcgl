@@ -1,156 +1,153 @@
 
-<link href="css/project-manage.css" rel="stylesheet" type="text/css">
-
-    <div class="content">
-    	<p class="crumbs">您当前的位置：项目管理 &gt; <a href="javascript:;" class="crumbs-first">项目总览</a></p>
-        <!--项目总览-->
-        <div class="overview" id="overview">
-            <div class="search fs-14">
+<div class="content">
+    <p class="crumbs">您当前的位置：项目管理 &gt; <a href="javascript:;" class="crumbs-first">项目总览</a></p>
+    <!--项目总览-->
+    <div class="overview" id="overview">
+        <div class="search fs-14">
+            <div class="search-input d-ib">
+                <span class="d-ib">项目名称：</span>
+                <input type="text">
+            </div>
+            <a href="javascript:;" class="d-ib ta-c">查询</a>
+            <a href="javascript:;" class="ad-search d-ib ta-l">高级搜索 <img src="img/icon12.png"></a>
+            <div class="ad-box d-n">
                 <div class="search-input d-ib">
-                    <span class="d-ib">项目名称：</span>
+                    <span class="d-ib">建档日期：</span>
                     <input type="text">
                 </div>
-                <a href="javascript:;" class="d-ib ta-c">查询</a>
-                <a href="javascript:;" class="ad-search d-ib ta-l">高级搜索 <img src="img/icon12.png"></a>
-                <div class="ad-box d-n">
-                    <div class="search-input d-ib">
-                        <span class="d-ib">建档日期：</span>
-                        <input type="text">
-                    </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">客户名称：</span>
-                        <input type="text">
-                    </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">合同编号：</span>
-                        <input type="text">
-                    </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">订单编号：</span>
-                        <input type="text">
-                    </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">项目类型：</span>
-                        <select class="js-select200 select-normal" name="worktype1">
-                            <option>请选择</option>
-                            <option>请选择</option>
-                        </select>
-                    </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">设备型号：</span>
-                        <input type="text">
-                    </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">设备数量：</span>
-                        <input type="text">
-                    </div>
-                    <div class="search-input search-input2 d-ib">
-                        <span class="d-ib f-l">项目周期：</span>
-                        <input type="text" class="f-l">
-                        <select class="js-A1-slt1 select-normal f-l" name="worktype1">
-                            <option>请选择</option>
-                            <option>请选择</option>
-                        </select>
-                        <div class="c-b"></div>
-                    </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">立项日期：</span>
-                        <input type="text">
-                    </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">收款状态：</span>
-                        <input type="text">
-                    </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">付款方式：</span>
-                        <input type="text">
-                    </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">项目经理：</span>
-                        <input type="text">
-                    </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">项目归属：</span>
-                        <select class="js-select200 select-normal" name="worktype1">
-                            <option>请选择</option>
-                            <option>请选择</option>
-                        </select>
-                    </div>
-                    <div class="search-input search-input2 d-ib">
-                        <span class="d-ib f-l">运维周期：</span>
-                        <input type="text" class="f-l">
-                        <select class="js-A1-slt1 select-normal f-l" name="worktype1">
-                            <option>请选择</option>
-                            <option>请选择</option>
-                        </select>
-                        <div class="c-b"></div>
-                    </div>
-                    <div class="search-input search-input2 d-ib">
-                        <span class="d-ib f-l">质保周期：</span>
-                        <input type="text" class="f-l">
-                        <select class="js-A1-slt1 select-normal f-l" name="worktype1">
-                            <option>请选择</option>
-                            <option>请选择</option>
-                        </select>
-                        <div class="c-b"></div>
-                    </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">业务经理：</span>
-                        <input type="text">
-                    </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">售前支持：</span>
-                        <input type="text">
-                    </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">结项日期：</span>
-                        <input type="text">
-                    </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">所属部门：</span>
-                        <select class="js-select200 select-normal" name="worktype1">
-                            <option>请选择</option>
-                            <option>请选择</option>
-                        </select>
-                    </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">项目服务类型：</span>
-                        <select class="js-select200 select-normal" name="worktype1">
-                            <option>请选择</option>
-                            <option>请选择</option>
-                        </select>
-                    </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">产品类型：</span>
-                        <select class="js-select200 select-normal" name="worktype1">
-                            <option>请选择</option>
-                            <option>请选择</option>
-                        </select>
-                    </div>
-                    <div class="search-input d-ib">
-                        <span class="d-ib">项目阶段：</span>
-                        <select class="js-select200 select-normal" name="worktype1">
-                            <option>请选择</option>
-                            <option>请选择</option>
-                        </select>
-                    </div>
-                
+                <div class="search-input d-ib">
+                    <span class="d-ib">客户名称：</span>
+                    <input type="text">
                 </div>
-                <p class="overview-p">进行项目统计：20 &nbsp;项目总数：30 &nbsp;进行项目统计：20 &nbsp;项目总数：30 &nbsp;进行项目统计：20 &nbsp;项目总数：30 </p>
+                <div class="search-input d-ib">
+                    <span class="d-ib">合同编号：</span>
+                    <input type="text">
+                </div>
+                <div class="search-input d-ib">
+                    <span class="d-ib">订单编号：</span>
+                    <input type="text">
+                </div>
+                <div class="search-input d-ib">
+                    <span class="d-ib">项目类型：</span>
+                    <select class="js-select200 select-normal" name="worktype1">
+                        <option>请选择</option>
+                        <option>请选择</option>
+                    </select>
+                </div>
+                <div class="search-input d-ib">
+                    <span class="d-ib">设备型号：</span>
+                    <input type="text">
+                </div>
+                <div class="search-input d-ib">
+                    <span class="d-ib">设备数量：</span>
+                    <input type="text">
+                </div>
+                <div class="search-input search-input2 d-ib">
+                    <span class="d-ib f-l">项目周期：</span>
+                    <input type="text" class="f-l">
+                    <select class="js-A1-slt1 select-normal f-l" name="worktype1">
+                        <option>请选择</option>
+                        <option>请选择</option>
+                    </select>
+                    <div class="c-b"></div>
+                </div>
+                <div class="search-input d-ib">
+                    <span class="d-ib">立项日期：</span>
+                    <input type="text">
+                </div>
+                <div class="search-input d-ib">
+                    <span class="d-ib">收款状态：</span>
+                    <input type="text">
+                </div>
+                <div class="search-input d-ib">
+                    <span class="d-ib">付款方式：</span>
+                    <input type="text">
+                </div>
+                <div class="search-input d-ib">
+                    <span class="d-ib">项目经理：</span>
+                    <input type="text">
+                </div>
+                <div class="search-input d-ib">
+                    <span class="d-ib">项目归属：</span>
+                    <select class="js-select200 select-normal" name="worktype1">
+                        <option>请选择</option>
+                        <option>请选择</option>
+                    </select>
+                </div>
+                <div class="search-input search-input2 d-ib">
+                    <span class="d-ib f-l">运维周期：</span>
+                    <input type="text" class="f-l">
+                    <select class="js-A1-slt1 select-normal f-l" name="worktype1">
+                        <option>请选择</option>
+                        <option>请选择</option>
+                    </select>
+                    <div class="c-b"></div>
+                </div>
+                <div class="search-input search-input2 d-ib">
+                    <span class="d-ib f-l">质保周期：</span>
+                    <input type="text" class="f-l">
+                    <select class="js-A1-slt1 select-normal f-l" name="worktype1">
+                        <option>请选择</option>
+                        <option>请选择</option>
+                    </select>
+                    <div class="c-b"></div>
+                </div>
+                <div class="search-input d-ib">
+                    <span class="d-ib">业务经理：</span>
+                    <input type="text">
+                </div>
+                <div class="search-input d-ib">
+                    <span class="d-ib">售前支持：</span>
+                    <input type="text">
+                </div>
+                <div class="search-input d-ib">
+                    <span class="d-ib">结项日期：</span>
+                    <input type="text">
+                </div>
+                <div class="search-input d-ib">
+                    <span class="d-ib">所属部门：</span>
+                    <select class="js-select200 select-normal" name="worktype1">
+                        <option>请选择</option>
+                        <option>请选择</option>
+                    </select>
+                </div>
+                <div class="search-input d-ib">
+                    <span class="d-ib">项目服务类型：</span>
+                    <select class="js-select200 select-normal" name="worktype1">
+                        <option>请选择</option>
+                        <option>请选择</option>
+                    </select>
+                </div>
+                <div class="search-input d-ib">
+                    <span class="d-ib">产品类型：</span>
+                    <select class="js-select200 select-normal" name="worktype1">
+                        <option>请选择</option>
+                        <option>请选择</option>
+                    </select>
+                </div>
+                <div class="search-input d-ib">
+                    <span class="d-ib">项目阶段：</span>
+                    <select class="js-select200 select-normal" name="worktype1">
+                        <option>请选择</option>
+                        <option>请选择</option>
+                    </select>
+                </div>
+            
             </div>
-
-            <div id="pagetable7"></div>
-    
+            <p class="overview-p">进行项目统计：20 &nbsp;项目总数：30 &nbsp;进行项目统计：20 &nbsp;项目总数：30 &nbsp;进行项目统计：20 &nbsp;项目总数：30 </p>
         </div>
-		
-        <!--项目详情-->
-        <div id="details"></div>
-        
-        <!--日志详情-->
-        <div id="pagetable13"></div>
-    </div>
 
-<script src="js/select2.js"></script>
+        <div id="pagetable7"></div>
+
+    </div>
+    
+    <!--项目详情-->
+    <div id="details"></div>
+    
+    <!--日志详情-->
+    <div id="pagetable13"></div>
+</div>
+
 <script src="js/select2_option.js"></script>
 <script>
 	$(document).ready(function(){

@@ -1,66 +1,61 @@
 
-    <div class="content filemanage">
-    	<p class="crumbs">您当前的位置：系统管理 &gt; <a href="javascript:;">用户管理</a></p>
-      	
-        <!--用户管理-->
-        <div class="sheet">
-            <div class="search fs-14">
-                <span class="d-ib">用户名：</span>
-                <input type="text">
-                <a href="javascript:;" class="d-ib ta-c">查询</a>
-                <a href="javascript:;" class="adduser-a d-ib ta-c">添加用户</a>
-            </div>
-            <div id="systemtable1"></div>
+<div class="content filemanage">
+    <p class="crumbs">您当前的位置：系统管理 &gt; <a href="javascript:;">用户管理</a></p>
+    
+    <!--用户管理-->
+    <div class="sheet">
+        <div class="search fs-14">
+            <span class="d-ib">用户名：</span>
+            <input type="text">
+            <a href="javascript:;" class="d-ib ta-c">查询</a>
+            <a href="javascript:;" class="adduser-a d-ib ta-c">添加用户</a>
         </div>
+        <div id="systemtable1"></div>
     </div>
+</div>
     
-    <!--添加用户-->
-    <div class="mask p-f d-n"></div>
-    <div class="information add-user bg-f p-f o-h d-n" id="add-user">
-    	<h5 class="fs-14 c-f ta-c">添加用户</h5>
-        <form action="" id="form-user">
-            <div class="information-box ta-l">
-            	<div class="d-ib f-l xing">
-                    <span class="d-ib fs-12 c-6">用户名：</span>
-                    <input type="text" name="created-date" value="" class="validate[required]">
-                </div>
-                <div class="d-ib f-l xing">
-                    <span class="d-ib fs-12 c-6">角色类型：</span>
-                    <select class="js-select133 select-normal validate[required]" name="branch">
-                        <option>项目经理</option>
-                        <option>请选择</option>
-                    </select>
-                </div>
-                <div class="d-ib f-l xing">
-                    <span class="d-ib fs-12 c-6">用户密码：</span>
-                    <input type="text" name="created-date" value="" class="validate[required]">
-                </div>
-                <div class="d-ib f-l xing">
-                    <span class="d-ib fs-12 c-6">所属部门：</span>
-                    <input type="text" name="created-date" value="" class="validate[required]">
-                </div>
-                <div class="d-ib f-l xing">
-                    <span class="d-ib fs-12 c-6">确认密码：</span>
-                    <input type="text" name="created-date" value="" class="validate[required]">
-                </div>
-                <div class="d-ib f-l">
-                    <span class="d-ib fs-12 c-6">联系方式：</span>
-                    <input type="text" name="created-date" value="" class="limit-number validate[required]">
-                </div>
-                <p class="c-b"></p>
+<!--添加用户-->
+<div class="mask p-f d-n"></div>
+<div class="information add-user bg-f p-f o-h d-n" id="add-user">
+    <h5 class="fs-14 c-f ta-c">添加用户</h5>
+    <form action="" id="form-user">
+        <div class="information-box ta-l">
+            <div class="d-ib f-l xing">
+                <span class="d-ib fs-12 c-6">用户名：</span>
+                <input type="text" name="created-date" value="" class="validate[required]">
             </div>
-            <div class="information-a ta-c fa-14">
-            	<a href="javascript:;" class="cancel d-ib">取消</a>
-                <a href="javascript:;" class="confirm d-ib">保存</a>
+            <div class="d-ib f-l xing">
+                <span class="d-ib fs-12 c-6">角色类型：</span>
+                <select class="js-select133 select-normal validate[required]" name="branch">
+                    <option>项目经理</option>
+                    <option>请选择</option>
+                </select>
             </div>
-        </form>
-    </div>
-    
+            <div class="d-ib f-l xing">
+                <span class="d-ib fs-12 c-6">用户密码：</span>
+                <input type="text" name="created-date" value="" class="validate[required]">
+            </div>
+            <div class="d-ib f-l xing">
+                <span class="d-ib fs-12 c-6">所属部门：</span>
+                <input type="text" name="created-date" value="" class="validate[required]">
+            </div>
+            <div class="d-ib f-l xing">
+                <span class="d-ib fs-12 c-6">确认密码：</span>
+                <input type="text" name="created-date" value="" class="validate[required]">
+            </div>
+            <div class="d-ib f-l">
+                <span class="d-ib fs-12 c-6">联系方式：</span>
+                <input type="text" name="created-date" value="" class="limit-number validate[required]">
+            </div>
+            <p class="c-b"></p>
+        </div>
+        <div class="information-a ta-c fa-14">
+            <a href="javascript:;" class="cancel d-ib">取消</a>
+            <a href="javascript:;" class="confirm d-ib">保存</a>
+        </div>
+    </form>
+</div>
 
-
-<script type="text/javascript" src="js/jquery.validationEngine.js"></script>
-<script type="text/javascript" src="js/jquery.validationEngine-zh_CN.js"></script>
-<script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
 <script>
     $(document).ready(function(){

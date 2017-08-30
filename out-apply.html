@@ -1,200 +1,194 @@
 
-<link href="css/jedate.css" rel="stylesheet" type="text/css">
-<link href="lay/css/layui.css" rel="stylesheet"/>
-<link href="css/out.css" rel="stylesheet" type="text/css">
-
-    
-    <div class="content">
-    	<p class="crumbs">您当前的位置：出差管理 &gt; <a href="javascript:;">出差申请</a></p>
-      
-        <!--出差申请-->
-        <div class="add-out ta-c">
-        	<form action="">
-                <p class="add-nav fs-14 c-f ta-l">出差申请单</p>
-                <div class="out-pick fs-12 c-9 ta-l">
-                    <ul class="lif-l w">
-                    	<div>
-                        <li class="d-ib">
-                            <span class="pick-span d-ib c-6">出差申请人：</span>
-                            <p class="datep d-ib">李一一</p>
-                        </li>
-                        <li class="d-ib">
-                            <span class="pick-span d-ib c-6">拟派出差人：</span>
-                            <p class="d-ib" id="staff">
-                                <input type="text" value="李一一" readonly class="d-n">
-                                <span class="d-ib c-9 ta-c">李一一</span>
-                            </p>
-                            <a href="#" class="traveller add-to d-ib ta-c">添加</a>
-                            <img src="img/icon19.png" alt="" class="asterisk">
-						</li>
-                        </div>
-                        <li class="d-ib">
-                            <span class="pick-span d-ib c-6">出差地点：</span>
-                            <div class="d-ib" data-toggle="distpicker">
-                                <select class="js-select100 select-normal" id="province1"></select>
-                                <select class="js-select100 select-normal" id="city1"></select>
-                                <select class="js-select100 select-normal" id="district1"></select>
-                                <div class="c-b"></div>
-                            </div>
-                        </li>
-                        <li class="d-ib Sale">
-                            <span class="pick-span d-ib c-6">所属销售：</span>
-                            <select class="js-A1-slt1 select-normal" name="worktype" id="province">
-                                <option>请选择</option>
-                                <option>请选择</option>
-                            </select>
-                            <select class="js-A1-slt1 select-normal city" name="worktype1">
-                            	<option>请选择</option>
-                                <option>请选择</option>
-                            </select>
-                            <img src="img/icon19.png" alt="" class="asterisk">
-                        </li>
-                        <li class="d-ib">
-                            <span class="pick-span d-ib c-6">所属项目：</span>
-                            <select class="js-select200 select-normal" name="branch">
-                                <option>PC软件部</option>
-                                <option>请选择</option>
-                            </select>
-                        </li>
-                        <li class="d-ib"></li>
-                        <li class="d-ib">
-                            <span class="pick-span d-ib c-6">所用产品：</span>
-                            <input type="text" value="自动选择" readonly>
-                        </li>
-                        <li class="d-ib">
-                            <span class="pick-span d-ib c-6">客户名称：</span>
-                            <input type="text" value="自动选择" readonly>
-                        </li>
-                        <li class="d-ib">
-                            <span class="pick-span d-ib c-6">联系人：</span>
-                            <select class="js-select200 select-normal" name="branch">
-                                <option>小张</option>
-                                <option>请选择</option>
-                            </select>
-                            <img src="img/icon19.png" alt="" class="asterisk">
-                        </li>
-                        <li class="d-ib">
-                            <span class="pick-span d-ib c-6">联系方式：</span>
-                            <input type="text" value="联系方式">
-                            <img src="img/icon19.png" alt="" class="asterisk">
-                        </li>
-                        <li class="d-ib">
-                            <span class="pick-span d-ib c-6">电子邮箱：</span>
-                            <input type="text" value="电子邮箱">
-                        </li>
-                        <li class="d-ib">
-                            <span class="pick-span d-ib c-6">QQ/MSN号：</span>
-                            <input type="text" value="QQ/MSN号">
-                        </li>
-                        <li class="d-ib">
-                            <span class="pick-span d-ib c-6">预计开始时间：</span>
-                            <input id="inpstart" name="time1" type="text" value="" placeholder="请选择"  readonly>
-                            <img src="img/icon19.png" alt="" class="asterisk">
-                        </li>
-                        <li class="d-ib">
-                            <span class="pick-span d-ib c-6">预计结束时间：</span>
-                            <input id="inpend" name="time2" type="text" value="" placeholder="请选择"  readonly>
-                            <img src="img/icon19.png" alt="" class="asterisk">
-                        </li>
-                        <div class="c-b"></div>
-                    </ul>
-                    <div class="out-bottom">
-                    	<span class="d-ib c-6 bottom-span">出差事由及 <br /> 解决问题:</span>
-                        <textarea>请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择择请选择请选择请选择</textarea>
+<div class="content">
+    <p class="crumbs">您当前的位置：出差管理 &gt; <a href="javascript:;">出差申请</a></p>
+  
+    <!--出差申请-->
+    <div class="add-out ta-c">
+        <form action="">
+            <p class="add-nav fs-14 c-f ta-l">出差申请单</p>
+            <div class="out-pick fs-12 c-9 ta-l">
+                <ul class="lif-l w">
+                    <div>
+                    <li class="d-ib">
+                        <span class="pick-span d-ib c-6">出差申请人：</span>
+                        <p class="datep d-ib">李一一</p>
+                    </li>
+                    <li class="d-ib">
+                        <span class="pick-span d-ib c-6">拟派出差人：</span>
+                        <p class="d-ib" id="staff">
+                            <input type="text" value="李一一" readonly class="d-n">
+                            <span class="d-ib c-9 ta-c">李一一</span>
+                        </p>
+                        <a href="#" class="traveller add-to d-ib ta-c">添加</a>
+                        <img src="img/icon19.png" alt="" class="asterisk">
+                    </li>
                     </div>
-                    <div class="out-bottom">
-                    	<span class="d-ib c-6 bottom-span">交通工具:</span>
-                        <select class="js-select150 select-normal" name="branch">
-                            <option>飞机</option>
-                            <option>火车</option>
+                    <li class="d-ib">
+                        <span class="pick-span d-ib c-6">出差地点：</span>
+                        <div class="d-ib" data-toggle="distpicker">
+                            <select class="js-select100 select-normal" id="province1"></select>
+                            <select class="js-select100 select-normal" id="city1"></select>
+                            <select class="js-select100 select-normal" id="district1"></select>
+                            <div class="c-b"></div>
+                        </div>
+                    </li>
+                    <li class="d-ib Sale">
+                        <span class="pick-span d-ib c-6">所属销售：</span>
+                        <select class="js-A1-slt1 select-normal" name="worktype" id="province">
+                            <option>请选择</option>
+                            <option>请选择</option>
                         </select>
-                    </div>
-                    <div class="out-bottom">
-                    	<span class="d-ib c-6 bottom-span">差旅费报销方式:</span>
-                        <div class="reimbursement d-ib">
-                        	<p>
-                            	<span class="d-ib">我司全额支付</span>
-                                <input name="Fruit" type="radio" value="" checked="checked"/>
-                            </p>
-                            <p>	
-                                <span class="d-ib">我方先垫付，客户支付</span>
-                                <input name="Fruit" type="radio" value="" />
-                                (
-                                <label class="check-box">
-                                    <input name="Fruit" type="checkbox" value="" />
-                                    <i class="d-ib"></i>
-                                    单程车票
-                                </label> 
-                                <label class="check-box">
-                                    <input name="Fruit" type="checkbox" value="" />
-                                    <i class="d-ib"></i>
-                                    往返车票
-                                </label>
-                                <label class="check-box">
-                                    <input name="Fruit" type="checkbox" value="" />
-                                    <i class="d-ib"></i>
-                                    住宿费
-                                </label> 
-                                <label class="check-box">
-                                    <input name="Fruit" type="checkbox" value="" />
-                                    <i class="d-ib"></i>
-                                    出差饭费
-                                </label> 
-                                <label class="check-box">
-                                    <input name="Fruit" type="checkbox" value="" />
-                                    <i class="d-ib"></i>
-                                    市内交通费
-                                </label> 
-                                )
-                            </p>
-                            <p>
-                                <span class="d-ib">无需垫付，客户提供</span>
-                                <input name="Fruit" type="radio" value="" />
-                                (
-                                <label class="check-box">
-                                    <input name="Fruit" type="checkbox" value="" />
-                                    <i class="d-ib"></i>
-                                    单程车票
-                                </label> 
-                                <label class="check-box">
-                                    <input name="Fruit" type="checkbox" value="" />
-                                    <i class="d-ib"></i>
-                                    往返车票
-                                </label>
-                                <label class="check-box">
-                                    <input name="Fruit" type="checkbox" value="" />
-                                    <i class="d-ib"></i>
-                                    住宿费
-                                </label> 
-                                <label class="check-box">
-                                    <input name="Fruit" type="checkbox" value="" />
-                                    <i class="d-ib"></i>
-                                    出差饭费
-                                </label> 
-                                <label class="check-box">
-                                    <input name="Fruit" type="checkbox" value="" />
-                                    <i class="d-ib"></i>
-                                    市内交通费
-                                </label> 
-                                )
-                           	</p>
-                            <p>
-                                <span class="d-ib">客户统一向公司支付每人每日</span>
-                                <input name="Fruit" type="radio" value="" />
-                                <input type="text" value="100">元人员安装费
-                            </p>
-                        </div>
+                        <select class="js-A1-slt1 select-normal city" name="worktype1">
+                            <option>请选择</option>
+                            <option>请选择</option>
+                        </select>
+                        <img src="img/icon19.png" alt="" class="asterisk">
+                    </li>
+                    <li class="d-ib">
+                        <span class="pick-span d-ib c-6">所属项目：</span>
+                        <select class="js-select200 select-normal" name="branch">
+                            <option>PC软件部</option>
+                            <option>请选择</option>
+                        </select>
+                    </li>
+                    <li class="d-ib"></li>
+                    <li class="d-ib">
+                        <span class="pick-span d-ib c-6">所用产品：</span>
+                        <input type="text" value="自动选择" readonly>
+                    </li>
+                    <li class="d-ib">
+                        <span class="pick-span d-ib c-6">客户名称：</span>
+                        <input type="text" value="自动选择" readonly>
+                    </li>
+                    <li class="d-ib">
+                        <span class="pick-span d-ib c-6">联系人：</span>
+                        <select class="js-select200 select-normal" name="branch">
+                            <option>小张</option>
+                            <option>请选择</option>
+                        </select>
+                        <img src="img/icon19.png" alt="" class="asterisk">
+                    </li>
+                    <li class="d-ib">
+                        <span class="pick-span d-ib c-6">联系方式：</span>
+                        <input type="text" value="联系方式">
+                        <img src="img/icon19.png" alt="" class="asterisk">
+                    </li>
+                    <li class="d-ib">
+                        <span class="pick-span d-ib c-6">电子邮箱：</span>
+                        <input type="text" value="电子邮箱">
+                    </li>
+                    <li class="d-ib">
+                        <span class="pick-span d-ib c-6">QQ/MSN号：</span>
+                        <input type="text" value="QQ/MSN号">
+                    </li>
+                    <li class="d-ib">
+                        <span class="pick-span d-ib c-6">预计开始时间：</span>
+                        <input id="inpstart" name="time1" type="text" value="" placeholder="请选择"  readonly>
+                        <img src="img/icon19.png" alt="" class="asterisk">
+                    </li>
+                    <li class="d-ib">
+                        <span class="pick-span d-ib c-6">预计结束时间：</span>
+                        <input id="inpend" name="time2" type="text" value="" placeholder="请选择"  readonly>
+                        <img src="img/icon19.png" alt="" class="asterisk">
+                    </li>
+                    <div class="c-b"></div>
+                </ul>
+                <div class="out-bottom">
+                    <span class="d-ib c-6 bottom-span">出差事由及 <br /> 解决问题:</span>
+                    <textarea>请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择请选择择请选择请选择请选择</textarea>
+                </div>
+                <div class="out-bottom">
+                    <span class="d-ib c-6 bottom-span">交通工具:</span>
+                    <select class="js-select150 select-normal" name="branch">
+                        <option>飞机</option>
+                        <option>火车</option>
+                    </select>
+                </div>
+                <div class="out-bottom">
+                    <span class="d-ib c-6 bottom-span">差旅费报销方式:</span>
+                    <div class="reimbursement d-ib">
+                        <p>
+                            <span class="d-ib">我司全额支付</span>
+                            <input name="Fruit" type="radio" value="" checked="checked"/>
+                        </p>
+                        <p>	
+                            <span class="d-ib">我方先垫付，客户支付</span>
+                            <input name="Fruit" type="radio" value="" />
+                            (
+                            <label class="check-box">
+                                <input name="Fruit" type="checkbox" value="" />
+                                <i class="d-ib"></i>
+                                单程车票
+                            </label> 
+                            <label class="check-box">
+                                <input name="Fruit" type="checkbox" value="" />
+                                <i class="d-ib"></i>
+                                往返车票
+                            </label>
+                            <label class="check-box">
+                                <input name="Fruit" type="checkbox" value="" />
+                                <i class="d-ib"></i>
+                                住宿费
+                            </label> 
+                            <label class="check-box">
+                                <input name="Fruit" type="checkbox" value="" />
+                                <i class="d-ib"></i>
+                                出差饭费
+                            </label> 
+                            <label class="check-box">
+                                <input name="Fruit" type="checkbox" value="" />
+                                <i class="d-ib"></i>
+                                市内交通费
+                            </label> 
+                            )
+                        </p>
+                        <p>
+                            <span class="d-ib">无需垫付，客户提供</span>
+                            <input name="Fruit" type="radio" value="" />
+                            (
+                            <label class="check-box">
+                                <input name="Fruit" type="checkbox" value="" />
+                                <i class="d-ib"></i>
+                                单程车票
+                            </label> 
+                            <label class="check-box">
+                                <input name="Fruit" type="checkbox" value="" />
+                                <i class="d-ib"></i>
+                                往返车票
+                            </label>
+                            <label class="check-box">
+                                <input name="Fruit" type="checkbox" value="" />
+                                <i class="d-ib"></i>
+                                住宿费
+                            </label> 
+                            <label class="check-box">
+                                <input name="Fruit" type="checkbox" value="" />
+                                <i class="d-ib"></i>
+                                出差饭费
+                            </label> 
+                            <label class="check-box">
+                                <input name="Fruit" type="checkbox" value="" />
+                                <i class="d-ib"></i>
+                                市内交通费
+                            </label> 
+                            )
+                        </p>
+                        <p>
+                            <span class="d-ib">客户统一向公司支付每人每日</span>
+                            <input name="Fruit" type="radio" value="" />
+                            <input type="text" value="100">元人员安装费
+                        </p>
                     </div>
                 </div>
-				
-                <div>
-                    <a href="javascript:;" class="add-submit d-ib ta-c fs-14">重置</a>
-                    <a href="javascript:;" class="add-submit d-ib ta-c fs-14">提交</a>
-                </div>
-            </form>
-        </div>
-        
+            </div>
+            
+            <div>
+                <a href="javascript:;" class="add-submit d-ib ta-c fs-14">重置</a>
+                <a href="javascript:;" class="add-submit d-ib ta-c fs-14">提交</a>
+            </div>
+        </form>
     </div>
+</div>
 	
     <!--添加出差人-->
     <div class="mask p-f d-n"></div>
@@ -250,13 +244,11 @@
         </div>
     </div>
 
-<script src="js/select2.js"></script>
 <script src="js/select2_option.js"></script>
 <script src="js/jquery.jedate.js"></script>
 <script src="js/distpicker.data.js"></script>
 <script src="js/distpicker.js"></script>
 <script src="js/main.js"></script>
-<script src="layui.js"></script>
 <script>
 	
     $(".cancel,.keep").click(function(){
