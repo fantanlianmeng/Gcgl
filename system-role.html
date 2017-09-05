@@ -72,142 +72,121 @@
 			checkboxStyle: "",//设置复选框的样式，必须为字符串，css样式怎么写就怎么写
 			nodes: [ //节点
 				{
-					name: '工程中心', //节点名称
+					name: '项目管理', //节点名称
 					checkboxValue: 0,//复选框的值
 					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-						nodeName: "工程中心",
+						nodeName: "项目管理",
 						alias: "changyong"
 					},
 					children: [{
-						name: '李一一',
+						name: '新建项目',
 						checkboxValue: 1
 					}, {
-						name: '李一一',
+						name: '项目管理',
 						checkboxValue: 2
 					}, {
-						name: '李一一',
+						name: '项目总览',
 						checkboxValue: 3
 					}]
 				},{
-					name: '产品中心', //节点名称
+					name: '日志管理', //节点名称
 					checkboxValue: 0,//复选框的值
 					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-						nodeName: "工程中心",
+						nodeName: "日志管理",
 						alias: "changyong"
 					},
 					children: [{
-						name: '李一一',
+						name: '日志汇报',
 						checkboxValue: 1
 					}, {
-						name: '李一一',
+						name: '日志动态',
 						checkboxValue: 2
-					}, {
-						name: '李一一',
-						checkboxValue: 3
 					}]
 				},{
-					name: '工程中心', //节点名称
+					name: '出差管理', //节点名称
 					checkboxValue: 0,//复选框的值
 					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-						nodeName: "工程中心",
+						nodeName: "出差管理",
 						alias: "changyong"
 					},
 					children: [{
-						name: '李一一',
+						name: '出差申请',
 						checkboxValue: 1
 					}, {
-						name: '李一一',
+						name: '出差汇报',
 						checkboxValue: 2
 					}, {
-						name: '李一一',
+						name: '出差动态',
 						checkboxValue: 3
 					}]
 				},{
-					name: '产品中心', //节点名称
+					name: '文档管理', //节点名称
 					checkboxValue: 0,//复选框的值
 					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-						nodeName: "工程中心",
+						nodeName: "文档管理",
 						alias: "changyong"
 					},
 					children: [{
-						name: '李一一',
+						name: '文档管理',
 						checkboxValue: 1
 					}, {
-						name: '李一一',
+						name: '操作记录',
 						checkboxValue: 2
-					}, {
-						name: '李一一',
-						checkboxValue: 3
 					}]
 				},{
-					name: '工程中心', //节点名称
+					name: '运维管理', //节点名称
 					checkboxValue: 0,//复选框的值
 					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-						nodeName: "工程中心",
+						nodeName: "运维管理",
 						alias: "changyong"
 					},
 					children: [{
-						name: '李一一',
+						name: '运维计划',
 						checkboxValue: 1
 					}, {
-						name: '李一一',
+						name: '运维处理',
 						checkboxValue: 2
 					}, {
-						name: '李一一',
+						name: '运维动态',
 						checkboxValue: 3
 					}]
 				},{
-					name: '产品中心', //节点名称
+					name: '系统管理', //节点名称
 					checkboxValue: 0,//复选框的值
 					spread: true, //是否是展开状态，true为展开状态
 					checked: true,//复选框默认是否选中	
 					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-						nodeName: "工程中心",
+						nodeName: "系统管理",
 						alias: "changyong"
 					},
 					children: [{
-						name: '李一一',
-						checkboxValue: 1
-					}, {
-						name: '李一一',
+						name: '用户管理',
+						spread: true,
+						checked: true,
+						checkboxValue: 1,
+						children: [{
+							name: '添加用户',
+							checked: false,
+							checkboxValue: 1-1
+						},{
+							name: '详情',
+							checked: false,
+							checkboxValue: 1-2
+						},{
+							name: '编辑',
+							checked: false,
+							checkboxValue: 1-3
+						},{
+							name: '删除',
+							checked: false,
+							checkboxValue: 1-4
+						}]
+					},{
+						name: '角色管理',
 						checkboxValue: 2,
 						checked: true  //复选框默认是否选中
-					}, {
-						name: '李一一',
-						checkboxValue: 3
-					}]
-				},{
-					name: '工程中心', //节点名称
-					checkboxValue: 0,//复选框的值
-					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-						nodeName: "工程中心",
-						alias: "changyong"
-					},
-					children: [{
-						name: '李一一',
-						checkboxValue: 1
-					}, {
-						name: '李一一',
-						checkboxValue: 2
-					}, {
-						name: '李一一',
-						checkboxValue: 3
-					}]
-				},{
-					name: '产品中心', //节点名称
-					checkboxValue: 0,//复选框的值
-					data: {//为元素添加额外数据，即在元素上添加data-xxx="yyy"，可选
-						nodeName: "工程中心",
-						alias: "changyong"
-					},
-					children: [{
-						name: '李一一',
-						checkboxValue: 1
-					}, {
-						name: '李一一',
-						checkboxValue: 2
-					}, {
-						name: '李一一',
+					},{
+						name: '参数配置',
 						checkboxValue: 3
 					}]
 				}

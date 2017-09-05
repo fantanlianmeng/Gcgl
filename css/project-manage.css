@@ -35,11 +35,13 @@
 .new-site h5{height:38px;line-height:38px;background:url('../img/bg2.png') repeat left center; background-size:1163px 38px;}
 .new-site h5 span{height:100%;padding:0 15px;border-right:1px solid #fff;}
 .new-site h5 span.site-active{color:#4234FB;}
-.new-site .extend{margin-top:20px;width:1110px;}
+.new-site .extend{margin-top:20px;width:1110px;margin-left:15px;}
 .new-site .extend .extend-box{margin-right:9px;margin-bottom:18px;}
-.new-site .extend .extend-box>span{width:80px;margin-right:23px;text-align:right;white-space:nowrap;}
+.new-site .extend .extend-box3{margin-left:23px;}
+.new-site .extend .extend-box>span{width:80px;margin-right:23px;text-align:left;white-space:nowrap;}
 .new-site .extend .extend-box input{width: 142px;height: 27px;text-align: center;font-size:12px;color:#999;border:1px solid #E0E4EA;border-radius:4px;}
 .new-site .extend .extend-box2 input{width:407px;}
+.new-site .extend .extend-box3 input{width:429px;}
 .add-photos .photos-box{width: 100%;height:172px;margin:30px 0 15px 0;}
 .new-site .keep{color:#fff;background:#3EABE7;width:102px;height:27px;line-height:27px;border-radius:5px;margin-top: 120px;}
 .add-photos .photos-box a{width:240px;height:170px;background:url('../img/icon15.png') no-repeat center center; background-size:122px 51px;color:#999;display:inline-block;border:1px solid #ddd;}

@@ -22,7 +22,10 @@ $(function(){
 		width: "133px",
 		minimumResultsForSearch: Infinity
 	});
-	
+	$(".js-select142").select2({
+		width: "144px",
+		minimumResultsForSearch: Infinity
+	});
 	$(".js-select150").select2({
   		width: "160px",
 	  	minimumResultsForSearch: Infinity

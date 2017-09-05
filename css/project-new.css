@@ -71,6 +71,7 @@
 .filepopup-box .Selected{width:320px;height:70px;border:1px solid #DFE3E9;border-radius:4px; vertical-align:top;padding:10px;}
 .file-popup .information-a{margin-top:25px;}
 
+#file-popup .filepopup-box ul li > span{text-align:left;width:75px;margin-right: -2px;}
 
 /* 参数配置 */
 .allocation{margin:20px 0 0 10px;}
