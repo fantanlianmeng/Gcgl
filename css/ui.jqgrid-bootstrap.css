@@ -169,9 +169,8 @@ div.tablediv > .table-bordered {
 }
 .ui-jqgrid .ui-jqgrid-btable tbody tr.jqgrow td {
 	font-size: 12px;
-	padding: 5px 1px;
+	padding: 5px 0px;
 	line-height: 22px;
-	margin: 0 2px;
 }
 
 .ui-jqgrid .ui-jqgrid-btable tbody tr.jqgrow td i{
@@ -1121,7 +1120,7 @@ padding: 0 10px;}
 .system-table2 #gbox_system2 .ui-jqgrid-btable tbody tr.jqgrow td{border-right: 1px solid #E7E7E7;}
 .system-table2 .ui-jqgrid .ui-jqgrid-btable tbody tr.jqgrow td{padding:10px 1px;}
 
-.system-table3 .ui-jqgrid{width:700px !important;margin-left: 20px;margin-top: 10px}
+.system-table3 .ui-jqgrid{width:700px !important;margin-left: 20px;margin-top: 10px;}
 .system-table3 .ui-jqgrid .ui-jqgrid-htable{background: #F2F2F2;color: #666;font-size: 12px;}
 .system-table3 .ui-jqgrid .ui-jqgrid-btable{border-left: 1px solid #E7E7E7;border-collapse: collapse;}
 .system-table3 .ui-jqgrid tr.jqgrow{border-bottom: 1px solid #E7E7E7;}
